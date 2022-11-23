@@ -1,16 +1,17 @@
 import { Outlet } from "react-router-dom";
-//mport Footer from "../components/Footer";
-//import NavBar from "../components/NavBar";
-//import BirdApi from "../components/BirdsDetails";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
+import '../node_modules/bootswatch/dist/lux/bootstrap.min.css'
+
 
 const User = () => {
-
     return (
-    <body className="main">
-     {/* <NavBar /> <Footer /> */}
+    <main className="container">
+    <NavBar /> 
     <Outlet />
-    
-    </body>)
+    <Footer />
+    </main>
+    )
 }
 
 export default User;

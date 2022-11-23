@@ -1,3 +1,13 @@
+import Mensaje from "../components/Mensaje"
+
 export default function Home() {
-    return <h2>Home</h2>;
+    return (
+        <>
+        <div className="container">
+        Hola Mundo
+
+        <Mensaje />
+        </div>
+        </>
+    )
   }
