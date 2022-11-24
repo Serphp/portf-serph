@@ -1,4 +1,5 @@
-import { skills } from "../serph/skills"
+import { fronted } from "../serph/fronted"
+import { backend } from "../serph/backend"
 
 export default function Experiences() {
     return (
@@ -13,22 +14,38 @@ export default function Experiences() {
         <div className="card-text">
         <h1>Frontend</h1>
         {
-            skills.map(({language, percentage, status, icon}, i) => (
-                <div className="py-3" key={i}>
+            fronted.map(({language, percentage}, i) => (
+                <div className="py-2" key={i}>
                     <h5> {language}</h5>
                     
                 <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated" 
                 role="progressbar" 
-                aria-valuenow="75" 
-                aria-valuemin="0" 
-                aria-valuemax="100" 
                 style={{ width: `${percentage}%`}}></div>
                 </div>
                 </div>
             ))
                 
         }
+        <div className="card-text">
+        <h1>Frontend</h1>
+        </div>
+        {
+            backend.map(({language, percentage, status, icon}, index) => (
+                <div className="py-2" key={index}>
+                <h5> {language}</h5>
+                
+                <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" 
+                role="progressbar" 
+                style={{ width: `${percentage}%`}}></div> {/* 80% */}
+                </div>
+                </div>
+
+
+                    ))
+        }
+
         </div>
         </div>
         </div>        

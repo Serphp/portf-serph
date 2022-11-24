@@ -7,11 +7,11 @@ import '../src/styles/Global.css'
 
 const User = () => {
     return (
-    <main>
+    <>
     <NavBar /> 
     <Outlet />
     <Footer />
-    </main>
+    </>
     )
 }
 

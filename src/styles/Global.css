@@ -3,21 +3,37 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background: #2c3e50;
+  background-image: url(/src/img/black-line.png);
+  background-repeat: repeat;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  font-weight: 400;
+  letter-spacing: 0.00938em;
+  text-align: left;
+  /* 
+  background-color: rgba(12, 12, 12, 0.977);
+  background: #2c3e50; 
+  background-image: url(/src/img/black.png);
+  */
 }
 
 .logo{
   position : relative ;
   color : #fff ;
-  padding-left: 50px;
-  font-size : 3em ;
-  text-shadow : 0 0 50px #0f0,
-                0 0 100px #0f0,
-                0 0 150px #0f0,
-                0 0 200px #0f0,
-                0 0 250px #0f0;
+  text-shadow: 20px;
+  font-size : 1rem ;
+  text-decoration: none;
+  letter-spacing: 3em;
+  font-family: monospace;
+  text-shadow : 0 0 50px #fff,
+                0 0 100px #fff,
+                0 0 150px #fff,
+                0 0 200px #fff,
+                0 0 250px #fff;
   animation: animate 5s linear infinite;
 }
+
 @keyframes animate
 {
   0%
@@ -77,7 +93,9 @@ hr {
   padding: 1.5em;
   margin: 0.2em;
   border-radius: 0.3em;
-  background: #fff;
+  background: transparent;
+  color: white;
+  backdrop-filter: blur(20px);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   will-change: transform;

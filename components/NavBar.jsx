@@ -6,7 +6,7 @@ export default function NavBar() {
 
 <nav class="navbar navbar-dark mb-4" id="nav-tab" role="tablist">
   <div class="container-fluid">
-    <a class="logo" href="#">Serph</a>
+    <span class="logo">Serph</span>
 
     <div class="navbar text-white">
       <ul class="navbar me-auto">
