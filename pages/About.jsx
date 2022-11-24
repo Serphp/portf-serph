@@ -1,3 +1,10 @@
 export default function About() {
-    return <h2>About</h2>;
+    return (
+        <>
+
+        <header className="card">
+            <h1 className="text-center">About</h1>
+        </header>
+        </>
+    )
   }

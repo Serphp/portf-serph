@@ -17,41 +17,14 @@ export default function Mensaje() {
     return (
         <>
 
+            <div className="card">
+            <h1> {heroe.name} </h1>
+            <p> {heroe.mensaje} </p>
+            <figcaption class="blockquote-footer">
+            Por <cite title="Source Title"> {heroe.name} </cite>
+            </figcaption>
+            </div>
             
-
-        <header className="row">
-        <div className="col-md-12">
-        <div className="card card-body bg-secondary">
-        <div className="row">
-        <div className="col-md-4">
-        <img src={heroe.img} alt="" className="img-fluid"/>
-        </div>
-
-                    <div className="col-md-7">
-                    <h1> {heroe.name} </h1>
-                    <p> {heroe.mensaje} </p>
-                    <figcaption class="blockquote-footer">
-                    Por <cite title="Source Title"> {heroe.name} </cite>
-                    </figcaption>
-                    </div>
-
-                    
-        </div>
-        </div>
-        </div>
-        
-        </header>
-
-
-            
-
-        
-
-
-
-
-
-
         </>
            )
 };

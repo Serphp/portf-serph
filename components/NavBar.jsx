@@ -2,18 +2,16 @@ import { Link } from "react-router-dom"
 
 export default function NavBar() {
     return (
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
+
+<nav class="navbar nav-tabs navbar-dark mb-4" id="nav-tab" role="tablist">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarColor02">
-      <ul class="navbar-nav me-auto">
+    <a class="navbar-brand logo" href="#">Serph</a>
+
+    <div class="navbar text-white">
+      <ul class="navbar me-auto">
         <li class="nav-item">
-          <Link class="nav-link" to="/">Home
-            <span class="visually-hidden">(current)</span>
-          </Link>
+          <Link class="nav-link" to="/">Home</Link>
         </li>
         <li class="nav-item">
           <Link class="nav-link" href="#">Features</Link>
@@ -28,5 +26,6 @@ export default function NavBar() {
     </div>
   </div>
 </nav>
+
     )
 }
