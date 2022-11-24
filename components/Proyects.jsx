@@ -1,4 +1,4 @@
-import { NProyects } from "../NProyects"
+import { NProyects } from "../serph/NProyects"
 
 export default function Proyects() {
     return (
@@ -13,15 +13,15 @@ export default function Proyects() {
             {
                 NProyects.map((proyect, index) => ( 
                     <div className="col-md-4" key={index}>
-                    <div className="card">
-                    <img src={NProyects.image} alt="" />
-                    <div className="card-body">
-                    <h1> {NProyects.name} </h1>
-                    <hr/>
-                    <p> {NProyects.description} </p>
-                    <a href={NProyects.url} className="ae">View </a>
-                    </div>
-                    </div>
+                        <div className="card">
+                        <img src={NProyects.image} alt="" />
+                            <div className="card-body">
+                            <h1> {NProyects.name} </h1>
+                            <hr/>
+                            <p> {NProyects.description} </p>
+                            <a href={NProyects.url} className="ae">View </a>
+                            </div>
+                        </div>
                     </div>
                 ))
             }

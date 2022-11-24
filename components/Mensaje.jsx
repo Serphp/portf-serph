@@ -1,4 +1,4 @@
-import { heroes } from "../heroes"
+import { heroes } from "../serph/heroes"
 import { useState } from "react";
 
 export default function Mensaje() {
@@ -8,7 +8,7 @@ export default function Mensaje() {
     }
     //const getHeroeRandom = () => math.floor(math.random() * heroes.length);
     const [heroe, setHeroe] = useState(heroes[getHeroeRandom()]);
-    console.log(heroe);
+    //console.log(heroe);
 
     const changeHeroe = () => {
         setHeroe(heroes[getHeroeRandom()]);
@@ -17,7 +17,7 @@ export default function Mensaje() {
     return (
         <>
             <div className="card">
-            <h1> {heroe.name} </h1>
+            <h2> {heroe.name} </h2>
             <p> {heroe.mensaje} </p>
             <figcaption class="blockquote-footer">
             Por <cite title="Source Title"> {heroe.name} </cite>

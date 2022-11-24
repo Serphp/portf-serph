@@ -1,3 +1,5 @@
+import { skills } from "../serph/skills"
+
 export default function Experiences() {
     return (
         <>
@@ -5,18 +7,28 @@ export default function Experiences() {
 <div className="row mt-4">
         <div className="col-md-5">
         <div className="card">
-        <h3>Skills</h3>
+        <h3>Skills <span className="bg-success"></span></h3>
         <hr />
         <div className="card-body">
         <div className="card-text">
         <h1>Frontend</h1>
-        <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Bootstrap</li>
-        </ul>
+        {
+            skills.map(({language, percentage, status, icon}, i) => (
+                <div className="py-3" key={i}>
+                    <h5> {language}</h5>
+                    
+                <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                role="progressbar" 
+                aria-valuenow="75" 
+                aria-valuemin="0" 
+                aria-valuemax="100" 
+                style={{ width: `${percentage}%`}}></div>
+                </div>
+                </div>
+            ))
+                
+        }
         </div>
         </div>
         </div>        
