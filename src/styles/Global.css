@@ -6,9 +6,37 @@
   background: #2c3e50;
 }
 
-.logo {
-  height: 5em;
-  padding: 1.5em;
+.logo{
+  position : relative ;
+  color : #fff ;
+  padding-left: 50px;
+  font-size : 3em ;
+  text-shadow : 0 0 50px #0f0,
+                0 0 100px #0f0,
+                0 0 150px #0f0,
+                0 0 200px #0f0,
+                0 0 250px #0f0;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+  0%
+{
+    filter: hue-rotate(0deg);
+  }
+  100%
+  {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+.navlink {
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+  transition: .5s;
+  border-bottom: 2px solid transparent;
   will-change: filter;
   transition: filter 0.3s ease-in-out;
 }
@@ -17,15 +45,14 @@
   filter: brightness(0.8);
 }
 
-
-.logo:hover {
+.navlink:hover {
   filter: drop-shadow(0 0 5em #646cffaa);
 }
-.logo.react:hover {
+.navlink.react:hover {
   filter: drop-shadow(2 0 5em #61dafbaa);
 }
 
-@keyframes logo-spin {
+@keyframes navlink {
   from {
     transform: rotate(0deg);
   }

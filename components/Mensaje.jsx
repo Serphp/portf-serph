@@ -16,7 +16,6 @@ export default function Mensaje() {
 
     return (
         <>
-
             <div className="card">
             <h1> {heroe.name} </h1>
             <p> {heroe.mensaje} </p>
@@ -24,7 +23,6 @@ export default function Mensaje() {
             Por <cite title="Source Title"> {heroe.name} </cite>
             </figcaption>
             </div>
-            
         </>
            )
 };
