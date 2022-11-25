@@ -3,7 +3,7 @@ import '../src/styles/Cards.css'
 export default function Cards() {
     return (
         <>
-    <div class="containerx mt-4">
+    <div class="containerx mt-3">
     <div class="cardx">
       <div class="face face1">
         <div class="content">

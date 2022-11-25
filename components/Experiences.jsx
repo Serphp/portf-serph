@@ -19,7 +19,7 @@ export default function Experiences() {
                     <h5> {language}</h5>
                     
                 <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                <div class="progress-bar progress-bar-striped bg-info" 
                 role="progressbar" 
                 style={{ width: `${percentage}%`}}></div>
                 </div>

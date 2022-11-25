@@ -11,13 +11,13 @@ export default function NavBar() {
     <div class="navbar text-white">
       <ul class="navbar me-auto">
         <li class="nav-item">
-          <Link class="navlink" to="/">Home</Link>
+          <Link class="navlink" to="/">Inicio</Link>
         </li>
         <li class="nav-item">
-          <Link class="navlink" href="#">Pricing</Link>
+          <Link class="navlink" to="/Proyectos"> Proyectos </Link>
         </li>
         <li class="nav-item">
-          <Link class="navlink" to="/About">About</Link>
+          <Link class="navlink" to="/About">Sobre mi</Link>
         </li>
       </ul>
     </div>

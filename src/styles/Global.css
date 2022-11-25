@@ -15,6 +15,11 @@ body {
   */
 }
 
+li{
+  text-decoration: none;
+  list-style: none;
+}
+
 /* Basic style */
 div{
   display: block;
@@ -125,6 +130,95 @@ ridge - Defines a 3D ridged border. The effect depends on the border-color value
 inset - Defines a 3D inset border. The effect depends on the border-color value
 outset - Defines a 3D outset border. The effect depends on the border-color value
 */
+
+.cardbody2{
+  text-align: center;
+  color: white;
+  text-justify: auto;
+  width: 300px;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.cardre {
+  width: 300px;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.cardre img {
+  width: 100%;
+}
+
+.cardinfo {
+  text-align: center;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in;
+}
+
+.cardbody2:hover .cardinfo {
+  transform: translateY(0);
+}
+
+.cardbody{
+  
+
+  backdrop-filter: blur(2px);
+  border-radius: 1px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: wheat;
+  flex-direction: column;
+
+}
+
+.pcard {
+  margin-top: 5em;
+  background: rgba(255, 255, 255, 0.112);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 10px rgba(0,0,0,.8);
+  transform: translateY(-100px);
+}
+
+.card2 {
+  width: auto;
+  padding: 1.5em;
+  margin: 0.2em;
+  border-radius: 0.3em;
+  background: transparent;
+  color: white;
+  border: rgb(49, 49, 49) 0.1px inset;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  will-change: transform;
+  transition: transform 0.3s ease-in-out;
+}
+
 .card {
   padding: 1.5em;
   margin: 0.2em;
@@ -132,12 +226,20 @@ outset - Defines a 3D outset border. The effect depends on the border-color valu
   background: transparent;
   color: white;
   border: white 0.1px inset;
-  backdrop-filter: blur(15px);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(1px);
+
+  box-shadow:
+  inset 0 0 20px black,
+  inset 20px 0 50px #102754,
+  /*inset 20px 0 80px #f0f, */
+  inset -20px 0 80px #f5deb3,
+  inset 20px 0 200px #102754,
+
+  -10px 0 10px #102754,
+  10px 0 30px #f5deb3; 
   transition: all 0.3s ease-in-out;
   will-change: transform;
   transition: transform 0.3s ease-in-out;
-  
 }
 
 /* Path: src\components\Header.js */
