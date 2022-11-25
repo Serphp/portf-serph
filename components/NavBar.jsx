@@ -4,7 +4,7 @@ export default function NavBar() {
     return (
       
 
-<nav class="navbar navbar-dark mb-4" id="nav-tab" role="tablist">
+<nav class="navbar navbar-dark mb-4 pcard" id="nav-tab" role="tablist">
   <div class="container-fluid">
     <span class="logo">Serph</span>
 

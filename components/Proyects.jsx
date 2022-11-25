@@ -7,7 +7,7 @@ export default function Proyects() {
             <div className="">
                 <div className="">
                     <div className="row">
-                        <div className="logo"><h1>PROYECTOS</h1></div>
+
             {
                 NProyects.map((proyect, index) => ( 
                     <div className="cardbody2" key={index}>
