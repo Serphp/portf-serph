@@ -16,9 +16,10 @@ export default function Mensaje() {
 
     return (
         <>
-            <div className="card">
+            <div className="card" style={{ textAlign: "center"}}>
             <h2> {heroe.name} </h2>
-            <p> {heroe.mensaje} </p>
+            <div className="pe"> {heroe.mensaje} </div>
+            <br/>
             <figcaption class="blockquote-footer">
             Por <cite title="Source Title"> {heroe.name} </cite>
             </figcaption>

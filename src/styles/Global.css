@@ -1,21 +1,57 @@
-#root {
+body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
   background-image: url(/src/img/black-line.png);
   background-repeat: repeat;
-  background-size: 100%;
   background-position: center;
   background-attachment: fixed;
-  font-weight: 400;
   letter-spacing: 0.00938em;
-  text-align: left;
+
   /* 
   background-color: rgba(12, 12, 12, 0.977);
   background: #2c3e50; 
   background-image: url(/src/img/black.png);
   */
+}
+
+/* Basic style */
+div{
+  display: block;
+}
+
+p, a{
+  font-size: 11.5pt;
+  color: wheat
+}
+
+hr {
+  height: 1px;
+  background-color: black;
+  border: none;
+}
+
+.pe{
+  font-family: monospace;
+  text-shadow: 0 1px 1px #fff,
+               0 2px 2px #fff,
+               0 0 0px #fff,
+               0 0 1px #fff,
+               0 0 2px #fff;
+}
+
+/* End Basic style*/
+
+#root{
+  /* background-color: rgba(12, 12, 12, 0.977); */
+  max-width: 1280px;
+  background: #2c3e50; 
+  background-image: url(/src/img/black-line.png);
+  background-repeat: repeat;
+  background-size: 30%;
+  background-position: center;
+  background-attachment: fixed;
+  letter-spacing: 0.00938em;
 }
 
 .logo{
@@ -26,12 +62,12 @@
   text-decoration: none;
   letter-spacing: 3em;
   font-family: monospace;
-  text-shadow : 0 0 50px #fff,
-                0 0 100px #fff,
-                0 0 150px #fff,
-                0 0 200px #fff,
-                0 0 250px #fff;
-  animation: animate 5s linear infinite;
+  text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #fff,
+               0 0 25px #fff;
+  animation: animate 2s linear infinite;
 }
 
 @keyframes animate
@@ -57,7 +93,7 @@
   transition: filter 0.3s ease-in-out;
 }
 
-&:hover {
+navlink:hover {
   filter: brightness(0.8);
 }
 
@@ -83,19 +119,20 @@
   }
 }
 
-hr {
-  height: 1px;
-  background-color: black;
-  border: none;
-}
-
+/*
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+*/
 .card {
   padding: 1.5em;
   margin: 0.2em;
   border-radius: 0.3em;
   background: transparent;
   color: white;
-  backdrop-filter: blur(20px);
+  border: white 0.1px inset;
+  backdrop-filter: blur(15px);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   will-change: transform;
