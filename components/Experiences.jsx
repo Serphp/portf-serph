@@ -46,16 +46,21 @@ export default function Experiences() {
         <p className="serph">Languages</p>
         <img src="./src/icons/c-.png" alt="c++" className="icons" />
         <img src="./src/icons/css-3.png" alt="css" className="icons" />
-
-        <img src="./src/icons/html-5.png" alt="" className="icons" />
-        <img src="./src/icons/js.png" alt="" className="icons" />
-        <img src="./src/icons/mysql.png" alt="" className="icons" />
-        <img src="./src/icons/node-js.png" alt="" className="icons" />
         <img src="./src/icons/php.png" alt="" className="icons" />
         <img src="./src/icons/python.png" alt="" className="icons" />
+        <img src="./src/icons/html-5.png" alt="" className="icons" />
+        <img src="./src/icons/js.png" alt="" className="icons" />
+        <p className="serph"> Database / Backend </p>
+        <img src="./src/icons/mysql.png" alt="" className="icons" />
+        <img src="https://www.postgresql.org/favicon.ico" alt="" className="icons" />
+        <img src="https://nodejs.org/static/images/logo.svg" alt="" height="80px" className="icons" />
+
         <p className="serph">framework</p>
+        
         <img src="https://astro.build/favicon.svg" alt="" className="icons" />
+        <span className="texticon"> astro1 </span>
         <img src="https://nextjs.org/static/favicon/safari-pinned-tab.svg" alt="" className="icons" />
+        <span className="texticon"> astro2 </span>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" className="icons" />
         <p className="serph">style</p>
         <img src="./src/icons/tailwind.png" alt="" className="icons" />
