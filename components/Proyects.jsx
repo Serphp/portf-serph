@@ -3,21 +3,23 @@ import { NProyects } from "../serph/NProyects"
 export default function Proyects() {
     return (
         <>
-        <div className="row mt-4">
-            <div className="">
+        <div className="containery mt-4">
+            <div className="card3">
                 <div className="">
                     <div className="row">
 
             {
-                NProyects.map((proyect, index) => ( 
-                    <div className="cardbody2" key={index}>
+                NProyects.map(({name, description, image, url, url2},i) => ( 
+                    <div className="cardbody2" key={i}>
                         <div className="cardre">
-                        <img className="image" src={proyect.image} alt="" />
+                        <img className="image" src={image} alt="" />
                             <div className="cardinfo">
-                            <h1> {proyect.name} </h1>
+                            <h2> {name} </h2>
                             <hr/>
-                            <p> {proyect.description} </p>
-                            <a href={proyect.url} className="ae">View </a>
+                            <div> {description} </div>
+                            <br/>
+                            <a href={url} className="ae"> Preview </a>
+                            <a href={url2} className="ae"> Github </a>
                             </div>
                         </div>
                     </div>

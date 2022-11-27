@@ -16,7 +16,7 @@ export default function Mensaje() {
 
     return (
         <>
-            <div className="card" style={{ textAlign: "center"}}>
+            <div className="card2 mt-4" style={{ textAlign: "center"}}>
             <h2> {heroe.name} </h2>
             <div className="pe"> {heroe.mensaje} </div>
             <br/>
