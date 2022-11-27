@@ -44,14 +44,14 @@ export default function Experiences() {
         </h2>
         <div className="skills">
         <p className="serph">Languages</p>
-        <img src="./src/icons/c-.png" alt="c++" className="icons" />
-        <img src="./src/icons/css-3.png" alt="css" className="icons" />
-        <img src="./src/icons/php.png" alt="" className="icons" />
-        <img src="./src/icons/python.png" alt="" className="icons" />
-        <img src="./src/icons/html-5.png" alt="" className="icons" />
-        <img src="./src/icons/js.png" alt="" className="icons" />
+        <img src=".\src\icons\c-.png" alt="c++" className="icons" />
+        <img src=".\src\icons\css-3.png" alt="css" className="icons" />
+        <img src=".\src\icons\php.png" alt="" className="icons" />
+        <img src=".\src\icons\python.png" alt="" className="icons" />
+        <img src=".\src\icons\html-5.png" alt="" className="icons" />
+        <img src=".\src\icons\js.png" alt="" className="icons" />
         <p className="serph"> Database / Backend </p>
-        <img src="./src/icons/mysql.png" alt="" className="icons" />
+        <img src=".\src\icons\mysql.png" alt="" className="icons" />
         <img src="https://www.postgresql.org/favicon.ico" alt="" className="icons" />
         <img src="https://nodejs.org/static/images/logo.svg" alt="" height="80px" className="icons" />
 
@@ -63,13 +63,13 @@ export default function Experiences() {
         <span className="texticon"> astro2 </span>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" className="icons" />
         <p className="serph">style</p>
-        <img src="./src/icons/tailwind.png" alt="" className="icons" />
-        <img src="./src/icons/bootstrap.png" alt="" className="icons" />
+        <img src=".\src\icons\tailwind.png" alt="" className="icons" />
+        <img src=".\src\icons\bootstrap.png" alt="" className="icons" />
         <p className="serph">Tools</p>
         <img src="https://git-scm.com/favicon.ico" alt="" width="100px" className="icons" />
-        <img src="./src/icons/github.png" alt="" className="icons" />
+        <img src=".\src\icons\github.png" alt="" className="icons" />
         <p className="serph"> OS </p>
-        <img src="./src/icons/linux.png" alt="" className="icons" />
+        <img src=".\src\icons\linux.png" alt="" className="icons" />
         <img src="https://c.s-microsoft.com/favicon.ico" alt="" className="icons" />
         </div>
 
