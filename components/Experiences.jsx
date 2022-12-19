@@ -37,13 +37,11 @@ export default function Experiences() {
     return (
         <>
 
-        <div className="row mt-4">
-        <div className="col-md-5">
-        <div className="card">
-        <h2>
-        ICONS 2
-        </h2>
-        <div className="skills">
+        <div class="grid2">
+
+        <aside class="page-rightbar">
+        <div class="card2">
+        
         <p className="serph">Languages</p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\c-.png" alt="c++" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\css-3.png" alt="css" className="icons" />
@@ -59,9 +57,9 @@ export default function Experiences() {
         <p className="serph">framework</p>
         
         <img src="https://astro.build/favicon.svg" alt="" className="icons" />
-        <span className="texticon"> astro1 </span>
+
         <img src="https://nextjs.org/static/favicon/safari-pinned-tab.svg" alt="" className="icons" />
-        <span className="texticon"> astro2 </span>
+
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" className="icons" />
         <p className="serph">style</p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" alt="" className="icons" />
@@ -73,54 +71,34 @@ export default function Experiences() {
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\linux.png" alt="" className="icons" />
         <img src="https://c.s-microsoft.com/favicon.ico" alt="" className="icons" />
         </div>
+            
+        </aside>
+        <main class="page-main">
+            <div class="card2">
+            <h2> Hola </h2>
+            <p>Main</p>
+            </div>
+        </main>
 
-        <p class="serph"><input type="submit" value="All" onClick={showAll}></input></p>
-        <p class="serph"><input type="submit" value="Fronted" onClick={showFronted}></input></p>
-        <p class="serph"><input type="submit" value="Backed" onClick={ocultbk}></input></p>
+        </div>
+
+        <div className="row mt-4">
+        <div className="col-md-5">
+        <div className="card">
+        <h2>
+        ICONS 2
+        </h2>
+
 
         <hr />
         
         <div id="oculted" className="card-body">
         <div id="fronted" className="card-text">
         <h1>Frontend</h1>
-        {
-            fronted.map(({language, percentage}, i) => (
-                <div className="py-2" key={i}>
-                    <h5> {language}</h5>
-                    
-                <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-info" 
-                role="progressbar" 
-                style={{ width: `${percentage}%`}}></div>
-                </div>
-                </div>
-            ))
-                
-        }
-        </div> 
-        <div id="backend" className="card-text">
-        <h1>Backend</h1>
-        {
-            backend.map(({language, percentage, status, icon}, index) => (
-                
-                <div className="py-2" key={index}>
-                <h5> {language}</h5>
-                
-                <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" 
-                role="progressbar" 
-                style={{ width: `${percentage}%`}}></div> {/* 80% */}
-                </div>
-                </div>
-
-
-                    ))
-        }
+       </div>
+       </div>
+         </div>
         </div>
-        </div>
-        </div>
-        </div>        
-
         
         <div className="col-md-7">
         <div className="pcard">

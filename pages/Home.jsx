@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <>
         
-        <div className="card3">
+        <div className="">
             <div className="row">
                 <div className="col-md-5">
                     <img src="https://i.imgur.com/4SdB78W.gif" class="img-fluid" alt="" />
@@ -17,7 +17,7 @@ export default function Home() {
                 
                 <div className="row col-md-7">
                     <h2> Soy Full Stack </h2>
-                    <p className="serph">Me llamo Bryan Rodriguez</p>
+                    <p className="">Me llamo Bryan Rodriguez</p>
                 </div>
             </div>
         </div>

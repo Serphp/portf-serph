@@ -1,8 +1,31 @@
-body {
+.dark{
+  /* background-color: rgba(12, 12, 12, 0.977); */
   max-width: 1280px;
+  background: #2c3e50; 
+  //background-image: url(/src/img/black-line.png);
+
+  background-repeat: repeat;
+  background-size: 30%;
+  background-position: center;
+  background-attachment: fixed;
+  letter-spacing: 0.00938em;
+}
+
+.light{
+  /* background-color: rgba(12, 12, 12, 0.977); */
+  color: black;
+  max-width: 1280px;
+  background: #fff; 
+  letter-spacing: 0.00938em;
+}
+
+
+body {
+  //max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  background-image: url(/src/img/black-line.png);
+  //background-image: url(/src/img/black-line.png);
+  background-color: #c3c7cb;
   background-repeat: repeat;
   background-position: center;
   /*   background-attachment: fixed;*/
@@ -16,20 +39,47 @@ body {
   */
 }
 
-li{
-  text-decoration: none;
-  list-style: none;
+/*
+.data-header__details {
+    display: grid;
+    grid-gap: 0 0.625rem;
+    grid-template-columns: repeat(3, auto);
+}
+*/
+
+/* GRID START */
+.grid2 {
+  display: grid;
+  grid-template-columns: auto 300px;
+  grid-template-rows: 40px minmax(150px, auto) auto;
+  grid-template-areas: 
+    'header header'
+    'main rightbar'
+    'footer footer';
+  column-gap: 6px;
+  row-gap: 7px;
 }
 
-/* Basic style */
-div{
-  display: block;
+.page-rightbar {
+  grid-area: rightbar;
+  display: inline;
 }
 
-p, a{
-  font-size: 11.5pt;
-  color: wheat
+.page-main {
+  grid-area: main;
 }
+
+.content1 {
+  color: #242424;
+  background-color: #f25fff;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px;
+}
+
+
 
 hr {
   height: 1px;
@@ -40,41 +90,13 @@ hr {
 .pe{
   font-family: monospace;
   text-shadow: 0 1px 1px #fff,
-               0 2px 2px #fff,
-               0 0 0px #fff,
-               0 0 1px #fff,
-               0 0 2px #fff;
+                0 2px 2px #fff,
+                0 0 0px #fff,
+                0 0 1px #fff,
+                0 0 2px #fff;
 }
 
 /* End Basic style*/
-
-#root{
-  /* background-color: rgba(12, 12, 12, 0.977); */
-  max-width: 1280px;
-  background: #2c3e50; 
-  background-image: url(/src/img/black-line.png);
-  background-repeat: repeat;
-  background-size: 30%;
-  background-position: center;
-  background-attachment: fixed;
-  letter-spacing: 0.00938em;
-}
-
-.logo{
-  position : relative;
-  color : #fff ;
-  font-size : 1rem ;
-  text-decoration: none;
-  letter-spacing: 2em;
-  font-family: monospace;
-  padding-left: 50px;
-  text-shadow: 0 0 5px #fff,
-               0 0 10px #fff,
-               0 0 15px #fff,
-               0 0 10px #fff,
-               0 0 15px #fff;
-  animation: animate 2s linear infinite;
-}
 
 @keyframes animate
 {
@@ -88,42 +110,6 @@ hr {
   }
 }
 
-
-.navlink {
-  color: white;
-  text-decoration: none;
-  padding: 1em;
-  transition: .5s;
-  border-bottom: 2px solid transparent;
-  will-change: filter;
-  transition: filter 0.3s ease-in-out;
-}
-
-navlink:hover {
-  filter: brightness(0.8);
-}
-
-.navlink:hover {
-  filter: drop-shadow(0 0 5em #646cffaa);
-}
-.navlink.react:hover {
-  filter: drop-shadow(2 0 5em #61dafbaa);
-}
-
-@keyframes navlink {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 /*
 groove - Defines a 3D grooved border. The effect depends on the border-color value
@@ -252,13 +238,7 @@ h2{
   padding: 1em;
 }
 
-.nav-tabs{
-  
-  backdrop-filter: blur(10px);
-  border: 1px;
-  border-radius: 0.6em;
-  box-shadow: 0 0 1em #00000033;
-}
+
 
 /* TEXTs pretty*/
 p.serph{
@@ -288,13 +268,6 @@ p.serph:hover{
   color: white;
 }
 
-span.texticon{
-position: absolute;
-top: 25%;
-left: 10%;
-  font-size: 1em;
-  color: #000000;
-}
 
 /* BOTTONS */
 

@@ -1,0 +1,63 @@
+// Define the styles for the navbar
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+
+  // Define the styles for the button
+  .button {
+    appearance: none;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 0.25rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.2s;
+
+    &:hover, &:focus {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
+
+// Define the styles for the dropdown menu
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+
+  // Define the styles for the dropdown menu links
+  a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #333;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      background-color: #f8f8f8;
+    }
+  }
+}
+
+// Show the dropdown menu when the button is clicked
+.button:focus + .dropdown, .button:active + .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
