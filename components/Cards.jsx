@@ -14,7 +14,7 @@ export default function Cards() {
       <div class="face face2">
         <div class="content">
           <p> Aqui puede encontrar una documentacion de todos lo que he aprendido. </p>
-          <a className='btn' href="#" type="button">Read More</a>
+          <a className='btncard' href="#" type="button">Read More</a>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@ export default function Cards() {
       <div class="face face2">
         <div class="content">
           <p> En mi github puede verse los proyectos en los que he trabajado y hecho.</p>
-          <a className='btn' href="#" type="button">Read More</a>
+          <a className='btncard' href="#" type="button">Read More</a>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@ export default function Cards() {
         <div class="content">
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic
             cum ratione a.</p>
-          <a className='btn' href="#" type="button">Read More</a>
+          <a className='btncard' href="#" type="button">Read More</a>
         </div>
       </div>
     </div>

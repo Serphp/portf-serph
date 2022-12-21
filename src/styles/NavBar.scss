@@ -4,14 +4,14 @@
     --text-secondary: #ececec;
     --bg-primary: #23232e;
     --bg-secondary: #141418;
-    --transition-speed: 0.4s;
 }
+
+$speed: 0.4s;
 
 
 ul {
     list-style: none;
     display: flex;
-    //flex-direction: column;
     margin: 0;
     padding: 0;
 }
@@ -27,7 +27,9 @@ nav {
     right: 0;
     width: 100%;
     z-index: 2;
-    background-color: var(--bg-primary);
+    background-color: #14141857;
+    backdrop-filter: blur(10px);
+    //background-color: var(--bg-primary);
     transition: 200ms ease;
 }
 
@@ -42,23 +44,23 @@ nav > item {
     color: var(--text-primary);
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
-    transition: var(--transition-speed);
+    transition: var($speed);
 }
 
 .link-text {
     display: none;
-    margin-left: 1rem;
+    margin-right: 10px;
 }
 
 .nav-link i,
 .nav-link svg {
-    transition: var(--transition-speed);
+    transition: var($speed);
     color: rgba(63, 248, 174, 0.849);
 }
 
 .nav-link:hover {
     filter: grayscale(0%) opacity(1);
-    background: var(--bg-secondary);
+    //background: var(--bg-secondary);
     color: var(--text-secondary);
 }
 
@@ -66,7 +68,7 @@ nav > item {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    color: var(--text-secondary);
+    //color: var(--text-secondary);
     //background: var(--bg-secondary);
     font-size: 1.5rem;
     letter-spacing: 0.3ch;
@@ -75,13 +77,22 @@ nav > item {
 
 .logo svg {
     transform: rotate(0deg);
-    transition: transform var(--transition-speed);
+    transition: transform var($speed);
 }
 
 nav:hover .logo svg {
     transform: rotate(-180deg);
 }
 
+.img {
+    position: relative;
+    width: 100%;
+}
+.img:hover {
+    //transform: scale(1.1);
+    transform: translateY(-50%);
+    transition: transform 1s ease-in-out;
+}
 
 @media only screen and (min-width: 600px) {
     .navbar {
@@ -99,7 +110,7 @@ nav:hover .logo svg {
     }
     .navbar:hover .link-text {
         display: inline;
-        transition: opacity var(--transition-speed);
+        transition: opacity var($speed);
     }
 }
 
@@ -132,7 +143,7 @@ nav:hover .logo svg {
     }
 
     .navbar:hover {
-        transition: opacity var(--transition-speed);
+        transition: opacity var($speed);
     }
 
     main {
