@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import User from "../Layout/User"
-import '../src/styles/NavBar.scss'
+//import '../src/styles/NavBar.scss'
 
 
 import { useState, useEffect } from "react";
@@ -53,12 +53,20 @@ export default function NavBar() {
 
 <> 
 
-<nav class="navbar">
-  <button onClick={handleclick} class="button">Menu</button>
-  <div class="dropdown">
-    <a class="menu-item" href="#about">About</a>
-    <a class="menu-item" href="#projects">Projects</a>
-  </div>
+<nav className="main">
+  <ul>
+    <li><a href="#"><i class="fas fa-home"></i></a></li>
+    <li><a href="#"><i class="fas fa-info-circle"></i></a></li>
+    <li>
+      <a href="#"><i class="fas fa-wrench"></i></a>
+      <ul>
+        <li><a href="#"><i class="fas fa-cog"></i> Servicio 1</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i> Servicio 2</a></li>
+        <li><a href="#"><i class="fas fa-cog"></i> Servicio 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+  </ul>
 </nav>
 </>
     )

@@ -23,25 +23,24 @@
     position: relative;
   }
   .face{
-    width:300px;
+    width:330px;
     height: 200px;
-    transition:.4s; 
+    transition:.5s; 
   }
   /*CARD BG*/
   .face1{
     position: relative;
-    
     backdrop-filter: blur(5px);
     border-radius: 5px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
-    color: #333;
+    //box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+    //color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.7em;
     
     flex-direction: column;
-    /*background: #;*/
+    background: #f5deb3;
     cursor: pointer;
     z-index: 1;
     transform: translateY(100px);
@@ -49,13 +48,7 @@
   }
   .cardx:hover .face.face1{
     transform: translateY(0);
-    box-shadow:
-    inset 0 0 60px black,
-    inset 20px 0 80px #ffffff31,
-    /*inset 20px 0 80px #f0f, */
-    inset -20px 0 80px #f5deb3,
-    inset 20px 0 200px #ffffff31,
-    inset -20px 0 200px #f5deb3; 
+
   }
   .face.face1 .content{
     opacity: .5;
@@ -78,21 +71,64 @@
     margin-bottom: 35px;
   }
   .face.face1 .content a{
-     transition: 1s;
+    transition: 1s;
   }
   .face.face2{
     position: relative;
     background: rgba(255, 255, 255, 0.112);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    //align-items: center;
+    //justify-content: center;
     padding: 15px;
-    box-sizing: border-box;
-    box-shadow: 0 10px 10px rgba(0,0,0,.8);
+    border-bottom: black 1px solid;
+    border-radius: 10px;
+    //box-sizing: border-box;
+    //box-shadow: 0 10px 10px rgba(0,0,0,.8);
     transform: translateY(-100px);
   }
   .cardx:hover .face.face2{
     transform: translateY(0);
   }
+
+  
+/* BOTTONS */
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  transition: 0.5s;
+  //margin: 10px;
+  font-size: 1em;
+  text-transform: capitalize;
+  font-weight: 600;
+  //box-shadow: 0 10px 10px rgba(0,0,0,.8);
+}
+.btn:hover{
+  background: #333;
+  color: whitesmoke;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+}
+.ae{
+  text-decoration:none;
+  display: flex;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  outline : 1px dashed #333;
+  padding: 10px;
+  margin: 15px 0 0;
+   /* display: inline-block; */
+}
+.ae:hover{
+  background: #333 ;
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+}
 
 

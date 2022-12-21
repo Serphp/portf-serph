@@ -5,6 +5,7 @@ import Cards from "../components/Cards"
 import Skills from "../components/Skills"
 
 
+
 export default function Home() {
     return (
         <>
@@ -16,15 +17,15 @@ export default function Home() {
                 </div>
                 
                 <div className="row col-md-7">
-                    <h2> Soy Full Stack </h2>
+                    <h2> Soy Full Stack 2 </h2>
                     <p className="">Me llamo Bryan Rodriguez</p>
                 </div>
             </div>
         </div>
- 
+
         <Cards />
         <Experiences />
         <Mensaje />
 
         </>)
-  }
+}

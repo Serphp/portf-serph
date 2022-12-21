@@ -4,20 +4,18 @@ import NavBar from "../components/NavBar";
 import '../node_modules/bootswatch/dist/lux/bootstrap.min.css'
 import '../src/styles/Global.scss'
 import { useState } from "react";
+import { Navbar2 } from "../components/NavBar2";
 
 
 const User = () => {
-
-
     return (
     <>
-
-    <NavBar /> 
-    <div className="space"></div>
+    
+    <Navbar2 />
+    <div className=""></div>
     <Outlet />
     <Footer />
     </>
-    
     )
 }
 

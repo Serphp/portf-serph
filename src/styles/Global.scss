@@ -1,7 +1,12 @@
+$primary-color: #333;
+$secondary-color: #444;
+$font-family: Arial, sans-serif;
+$font-size: 16px;
+
 .dark{
   /* background-color: rgba(12, 12, 12, 0.977); */
   max-width: 1280px;
-  background: #2c3e50; 
+  //background: #2c3e50; 
   //background-image: url(/src/img/black-line.png);
 
   background-repeat: repeat;
@@ -21,11 +26,11 @@
 
 
 body {
-  //max-width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   //background-image: url(/src/img/black-line.png);
-  background-color: #c3c7cb;
+  //background-color: #c3c7cb;
   background-repeat: repeat;
   background-position: center;
   /*   background-attachment: fixed;*/
@@ -39,13 +44,43 @@ body {
   */
 }
 
-/*
-.data-header__details {
-    display: grid;
-    grid-gap: 0 0.625rem;
-    grid-template-columns: repeat(3, auto);
+h1 {
+  margin: 20px;
+  font-size: 2.5em;
+  font-family: 'Rubik', sans-serif;
+  color: black;
 }
-*/
+
+h2 {
+  margin: 10px;
+  color: $primary-color;
+  font-size: 1.5em;
+  //font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  color: black;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 
 /* GRID START */
 .grid2 {
@@ -79,8 +114,6 @@ body {
   padding: 10px;
 }
 
-
-
 hr {
   height: 1px;
   background-color: black;
@@ -97,7 +130,6 @@ hr {
 }
 
 /* End Basic style*/
-
 @keyframes animate
 {
   0%
@@ -109,14 +141,6 @@ hr {
     filter: hue-rotate(360deg);
   }
 }
-
-
-/*
-groove - Defines a 3D grooved border. The effect depends on the border-color value
-ridge - Defines a 3D ridged border. The effect depends on the border-color value
-inset - Defines a 3D inset border. The effect depends on the border-color value
-outset - Defines a 3D outset border. The effect depends on the border-color value
-*/
 
 .cardbody2{
   width: 370px;
@@ -139,15 +163,6 @@ outset - Defines a 3D outset border. The effect depends on the border-color valu
   width: 100%;
 }
 
-h2{
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #fff;
-
-}
 
 .cardinfo {
   color: white;
@@ -197,8 +212,6 @@ h2{
 
 }
 
-
-
 .card2 {
   width: auto;
   padding: 1.5em;
@@ -229,16 +242,17 @@ h2{
 
 /* Path: src\components\Header.js */
 
-.footer {
+footer {
   margin-top: 2em;
   font-size: 0.8em;
   color: #888;
-  /*background-color: #1A374D;*/
-  background-color: #102754;
+  //background-color: #102754;
   padding: 1em;
 }
 
-
+.end {
+  border-color: black;
+}
 
 /* TEXTs pretty*/
 p.serph{
@@ -268,23 +282,3 @@ p.serph:hover{
   color: white;
 }
 
-
-/* BOTTONS */
-
-
-.ae{
-  text-decoration:none;
-  display: flex;
-  text-transform: capitalize;
-  color: rgb(255, 255, 255);
-  box-sizing: border-box;
-  outline : 1px dashed #333;
-  padding: 10px;
-  margin: 15px 0 0;
-   /* display: inline-block; */
-}
-.ae:hover{
-  background: #333 ;
-  color: whitesmoke; 
-  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
-}
