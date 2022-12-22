@@ -2,13 +2,17 @@ import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import '../node_modules/bootswatch/dist/lux/bootstrap.min.css'
-import '../src/styles/Global.css'
+import '../src/styles/Global.scss'
+import { useState } from "react";
+import { Navbar2 } from "../components/NavBar2";
 
 
 const User = () => {
     return (
     <>
-    <NavBar /> 
+    
+    <Navbar2 />
+    <div className=""></div>
     <Outlet />
     <Footer />
     </>

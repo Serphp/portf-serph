@@ -37,14 +37,23 @@ export default function Experiences() {
     return (
         <>
 
-        <div className="row mt-4">
-        <div className="col-md-5">
-        <div className="card">
-        <h2>
-        ICONS 2
-        </h2>
-        <div className="skills">
+        <div className="row mt-3">
+        <div className="col-md-6">
+        <div className="card2">
+            <h3>ICONS 2</h3>
+        <hr />
+            <p>Frontend</p>
+        </div>
+        </div>
+        
+        <div className="col-md-6">
+        <div className="card2">
+        <h2> Experiences </h2>
+        </div>
+        <div className="card2">
+        
         <p className="serph">Languages</p>
+        <section className="conteinericon">
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\c-.png" alt="c++" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\css-3.png" alt="css" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\php.png" alt="" className="icons" />
@@ -55,13 +64,13 @@ export default function Experiences() {
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\mysql.png" alt="" className="icons" />
         <img src="https://www.postgresql.org/favicon.ico" alt="" className="icons" />
         <img src="https://nodejs.org/static/images/logo.svg" alt="" height="80px" className="icons" />
-
+        
         <p className="serph">framework</p>
         
         <img src="https://astro.build/favicon.svg" alt="" className="icons" />
-        <span className="texticon"> astro1 </span>
+
         <img src="https://nextjs.org/static/favicon/safari-pinned-tab.svg" alt="" className="icons" />
-        <span className="texticon"> astro2 </span>
+
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" className="icons" />
         <p className="serph">style</p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" alt="" className="icons" />
@@ -72,63 +81,11 @@ export default function Experiences() {
         <p className="serph"> OS </p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\linux.png" alt="" className="icons" />
         <img src="https://c.s-microsoft.com/favicon.ico" alt="" className="icons" />
-        </div>
-
-        <p class="serph"><input type="submit" value="All" onClick={showAll}></input></p>
-        <p class="serph"><input type="submit" value="Fronted" onClick={showFronted}></input></p>
-        <p class="serph"><input type="submit" value="Backed" onClick={ocultbk}></input></p>
-
-        <hr />
-        
-        <div id="oculted" className="card-body">
-        <div id="fronted" className="card-text">
-        <h1>Frontend</h1>
-        {
-            fronted.map(({language, percentage}, i) => (
-                <div className="py-2" key={i}>
-                    <h5> {language}</h5>
-                    
-                <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-info" 
-                role="progressbar" 
-                style={{ width: `${percentage}%`}}></div>
-                </div>
-                </div>
-            ))
-                
-        }
-        </div> 
-        <div id="backend" className="card-text">
-        <h1>Backend</h1>
-        {
-            backend.map(({language, percentage, status, icon}, index) => (
-                
-                <div className="py-2" key={index}>
-                <h5> {language}</h5>
-                
-                <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" 
-                role="progressbar" 
-                style={{ width: `${percentage}%`}}></div> {/* 80% */}
-                </div>
-                </div>
-
-
-                    ))
-        }
-        </div>
-        </div>
-        </div>
-        </div>        
-
-        
-        <div className="col-md-7">
-        <div className="pcard">
-        <h2 class="mb-1">Experiences</h2></div>
-        <hr/>
-        <div className="card2">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aut dolores quos, consequatur a, doloribus, tenetur voluptatibus voluptate fugiat aliquid reprehenderit dolorem laborum sed corrupti suscipit distinctio magni illum id.</p>
-        
+        <img src="./src/icons/win.png" alt="" className="icons" />
+        <img src="./src/icons/arch.png" alt="" className="icons" />
+        <img src="./src/icons/kali.png" alt="" width="100px" className="icons" />
+        <img src="./src/icons/debian.png" alt="" width="100px" className="icons" />
+        </section> 
         </div>
         </div>
         </div>
