@@ -20,7 +20,7 @@ export default function Mensaje() {
             <h2> {heroe.name} </h2>
             <div className="pe"> {heroe.mensaje} </div>
             <br/>
-            <figcaption class="blockquote-footer">
+            <figcaption className="blockquote-footer">
             Por <cite title="Source Title"> {heroe.name} </cite>
             </figcaption>
             </div>

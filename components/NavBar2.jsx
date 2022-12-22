@@ -5,28 +5,28 @@ export const Navbar2 = () => {
     <>
         <nav>
             <ul>
-                <li class="logo">Serphp</li>
-            <li class="nav-item">
-                <a class="nav-link" href="/">
+                <li className="logo">Serphp</li>
+            <li className="nav-item">
+                <a className="nav-link" href="/">
                 <img className='img' src="./src/nav/home.png"></img>
-                    <span class="link-text">about</span></a>
+                    <span className="link-text">about</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/about">
+            <li className="nav-item">
+                <a className="nav-link" href="/about">
                 <img className='img' src="./src/nav/id.png"></img>
-                    <div class="link-text">mail</div>
+                    <div className="link-text">mail</div>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/Certificates">
+            <li className="nav-item">
+                <a className="nav-link" href="/Certificates">
                 <img  className='img' src="./src/nav/certificate.png"></img>
-                    <div class="link-text">linkedin</div>
+                    <div className="link-text">linkedin</div>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/proyectos">
+            <li className="nav-item">
+                <a className="nav-link" href="/proyectos">
                 <img className='img' src="./src/nav/proyectos.png"></img>
-                    <span class="link-text">twitter</span>
+                    <span className="link-text">twitter</span>
                 </a>
             </li>
         </ul>

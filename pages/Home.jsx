@@ -16,7 +16,7 @@ export default function Home() {
             <hr/>
                 <div className="col-md-5">
                 
-                <img src="https://i.imgur.com/4SdB78W.gif" class="img-fluid" alt="" />
+                <img src="https://i.imgur.com/4SdB78W.gif" className="img-fluid" alt="" />
                 </div>
                 
                 <div className="row col-md-7">
