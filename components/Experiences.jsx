@@ -40,16 +40,16 @@ export default function Experiences() {
         <div className="row mt-3">
         <div className="col-md-6">
         <div className="card2">
-            <h3>ICONS 2</h3>
+            <h2> How learn this ?</h2>
         <hr />
-            <p>Frontend</p>
+            <p> lorem </p>
         </div>
         </div>
         
         <div className="col-md-6">
-        <div className="card2">
-        <h2> Experiences </h2>
-        </div>
+ 
+        <h1 className="mt-2 mb-4"> Experiences </h1>
+
         <div className="card2">
         
         <p className="serph">Languages</p>
@@ -75,6 +75,9 @@ export default function Experiences() {
         <p className="serph">style</p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" alt="" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\bootstrap.png" alt="" className="icons" />
+        <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="" className="icons" />
+        <img src="https://bulma.io/favicons/favicon-32x32.png" alt="" width="100px" className="icons" />
+        <img src="https://picocss.com/img/apple-touch-icon.png" alt="" width="100px" className="icons" />
         <p className="serph">Tools</p>
         <img src="https://git-scm.com/favicon.ico" alt="" width="100px" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\github.png" alt="" className="icons" />
@@ -83,7 +86,7 @@ export default function Experiences() {
         <img src="https://c.s-microsoft.com/favicon.ico" alt="" className="icons" />
         <img src="./src/icons/win.png" alt="" className="icons" />
         <img src="./src/icons/arch.png" alt="" className="icons" />
-        <img src="./src/icons/kali.png" alt="" width="100px" className="icons" />
+        <img src="./src/icons/kali.png" alt=""  width="100px" className="icons" />
         <img src="./src/icons/debian.png" alt="" width="100px" className="icons" />
         </section> 
         </div>
