@@ -1,0 +1,70 @@
+// define the background color for the sections
+$section-bg-color: #e8e8e8;
+
+// define the animation for the hover effect on the buttons
+@keyframes button-hover {
+    0% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(2px);
+    }
+    }
+
+    // define the styles for the section container
+    .section-container {
+    display: block;
+    flex-direction: row;
+    //width: 100%;
+    align-items: center;
+
+    // define the styles for the section
+    .section {
+        width: 100%;
+        background-color: $section-bg-color;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+
+        // define the styles for the image container
+        .image-container {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+        }
+
+        // define the styles for the text container
+        .text-container {
+        width: 50%;
+        padding: 0 20px;
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        }
+
+        // define the styles for the button
+        .button {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+            cursor: pointer;
+            animation: button-hover 0.3s ease;
+        }
+    }
+    }
+}

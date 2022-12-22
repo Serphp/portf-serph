@@ -48,7 +48,8 @@ export default function Experiences() {
         
         <div className="col-md-6">
         <div className="card2">
-        <h2 class="title">Experiences</h2></div>
+        <h2> Experiences </h2>
+        </div>
         <div className="card2">
         
         <p className="serph">Languages</p>
