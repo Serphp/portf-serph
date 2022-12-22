@@ -1,4 +1,5 @@
-import '../src/styles/navBar.scss'
+
+
 export const Navbar2 = () => {
     return (
     <>
