@@ -53,8 +53,8 @@ export default function About() {
                 <div className="py-2" key={i}>
                     <h5> {language}</h5>
                     
-                <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-info" 
+                <div className="progress">
+                <div className="progress-bar progress-bar-striped bg-info" 
                 role="progressbar" 
                 style={{ width: `${percentage}%`}}></div>
                 </div>
@@ -71,8 +71,8 @@ export default function About() {
                 <div className="py-2" key={index}>
                 <h5> {language}</h5>
                 
-                <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-success" 
+                <div className="progress">
+                <div className="progress-bar progress-bar-striped bg-success" 
                 role="progressbar" 
                 style={{ width: `${percentage}%`}}></div> {/* 80% */}
                 </div>

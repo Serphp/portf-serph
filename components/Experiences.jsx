@@ -40,14 +40,21 @@ export default function Experiences() {
         <div className="row mt-3">
         <div className="col-md-6">
         <div className="card2">
-            <h2> How learn this ?</h2>
+            <h2> Algo corto sobre mi?</h2>
         <hr />
-            <p> lorem </p>
+            <p> Puedo decir mucho sobre mi, pero lo mas importante es que soy una persona, 
+            que apesar de que una situación este complicada, siempre encuentro la manera de 
+            darle solución, aúnque nadie la vea, siempre estoy dispuesto ayudar al que no puede avanzar,
+            y no me molesta en lo absoluto, de lo contrario al ayudarlo también aprendo cosas. </p>
+
+        <button className="btn"> 
+        {/* <a href="/about"> Sobre mi </a>  */}
+        <a href="/about" class="buttoned small" title="Este boton fue uno de los botones que utilice en el 2013"> Sobre mi </a>
+        </button>
         </div>
         </div>
         
         <div className="col-md-6">
- 
         <h1 className="mt-2 mb-4"> Experiences </h1>
 
         <div className="card2">

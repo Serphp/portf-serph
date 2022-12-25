@@ -12,7 +12,7 @@ export default function Home() {
         
         <div className="row">
             <div className="row">
-            <h1> Soy Full Stack 2 </h1>
+            <h1> Soy un gato </h1>
             <hr/>
                 <div className="col-md-5">
                 
@@ -20,8 +20,13 @@ export default function Home() {
                 </div>
                 
                 <div className="row col-md-7">
-                    
-                    <p className="">Me llamo Bryan Rodriguez</p>
+                    <div id="spcontainer">
+                        <p>Me llamo Bryan Rodriguez</p>
+                        <section id="pinfo"> 
+                        <p>Te doy la <b>bienvenida</b> a mi portafolio!</p>
+
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>

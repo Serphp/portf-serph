@@ -1,6 +1,7 @@
 $primary-color: #333;
 $secondary-color: #444;
-$font-family: r;
+$tertiary-color: rgb(3, 188, 201);
+$font-family: "Roboto", sans-serif;
 $font-size: 16px;
 
 /*
@@ -39,12 +40,67 @@ body {
   background-repeat: repeat;
   background-position: center;
   //letter-spacing: 0.00938em;
+  b {
+    font-weight: bold;
+  }
+  p {
+    //display: block;
+    color: black;
+    padding: 0 10px 0 10px;
+    text-align: justify;
+    //margin: 1em 2px 2px 50px;
+  }
+  #pinfo {
+    color: black;
+    margin: 1em 2px 2px 50px;
+  }
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+      color: $tertiary-color;
+      transition: all .2s ease-in;
+    }
+  }
 }
 
+// OLD STYLE
+.buttoned {
+  color: #48C2D6;
+  background-color: transparent;
+  border: 2px solid #48C2D6;
+  padding: 13px 28px;
+  text-shadow: none;
+  margin-right: 10px;
+  &:hover {
+    color: #fff !important;
+    background-color: #48C2D6;
+    border-color: #48C2D6;
+    .small {
+      font-size: 14px;
+      padding: 5px 15px 6px !important;
+    }
+    a.button, .button, button {
+      background-color: #48C2D6;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      clear: both;
+      display: inline-block;
+      padding: 10px 30px;
+      border: none;
+    }
+}
+}
+// REMENBER
 h1 {
   margin: 5px 20px;
   font-size: 2.5em;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', sans-serif !important;
   color: black;
 }
 
@@ -56,7 +112,7 @@ h2 {
   font-weight: 600;
   margin: 0;
   padding: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', sans-serif !important;
 }
 
 
@@ -68,15 +124,7 @@ h3 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-}
-
-p {
-  display: block;
-  color: black;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  font-family: 'Rubik', sans-serif !important;
 }
 
 /* GRID START */
@@ -103,8 +151,9 @@ p {
 
 
 hr {
-  height: 1px;
+  height: 0.5px;
   background-color: black;
+  margin: 15px 0 10px 0;
   border: none;
 }
 
@@ -328,6 +377,29 @@ p.serph:hover{
 }
 
 
+#spcontainer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  .spicons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    .spicon{
+      margin: 5px;
+      padding: 5px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px black;
+      transition: background-color 1s linear;
+      &:hover{
+        background-color: #1A374D;
+      }
+    }
+  }
+}
+
 .containerimg {
   margin: 1em;
   padding: auto;
@@ -342,9 +414,27 @@ p.serph:hover{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  background-color: black;
+  //background-color: black;
   margin: 10px;
   padding: 20px;
+  .Ccontainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    .imgcer {
+      width: 100%;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 1px black;
+      transition: background-color 1s linear;
+      &:hover {
+        box-shadow: 0 0 5px black;
+      }
+    }
+  }
   @media (max-width: 1280px) {
     .imgcer {
       width: 100%;

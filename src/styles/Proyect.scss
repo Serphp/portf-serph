@@ -1,5 +1,5 @@
 // define the background color for the sections
-$section-bg-color: #e8e8e8;
+$section-bg-color: #e8e8e8b0;
 
 // define the animation for the hover effect on the buttons
 @keyframes button-hover {
@@ -22,8 +22,8 @@ $section-bg-color: #e8e8e8;
     .section {
         width: 100%;
         background-color: $section-bg-color;
-        display: flex;
-        flex-direction: row;
+        display: inline-flex;
+        flex-direction: row wrap;
         align-items: center;
         padding: 20px;
 
@@ -33,12 +33,21 @@ $section-bg-color: #e8e8e8;
         img {
             width: 100%;
         }
+        .img2{
+            background-size: 100px;
+            transform: 1s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+                transition: transform 0.3s ease-in-out;
+            }
+        }
         }
 
         // define the styles for the text container
         .text-container {
         width: 50%;
         padding: 0 20px;
+
 
         h2 {
             font-size: 24px;
@@ -56,7 +65,8 @@ $section-bg-color: #e8e8e8;
         background-color: #333;
         color: #fff;
         font-size: 16px;
-        padding: 10px 20px;
+        margin: 2px;
+        padding: 10px 15px;
         border-radius: 5px;
         text-decoration: none;
         transition: all 0.3s ease;
@@ -66,5 +76,31 @@ $section-bg-color: #e8e8e8;
             animation: button-hover 0.3s ease;
         }
     }
+    }
+
+    // define style for mobile
+    @media only screen and (max-width: 600px) {
+        .section {
+        flex-direction: column;
+
+        .image-container {
+            width: 100%;
+            background-size: 100px;
+        }
+
+        .text-container {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            padding: 20px 10px 0 0px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        }
     }
 }

@@ -1,36 +1,40 @@
+import { Link } from "react-router-dom";
 
 
 export const Navbar2 = () => {
     return (
     <>
         <nav>
+        <div class="nav2">
+        <li className="logo">Serphp</li>
             <ul>
-                <li className="logo">Serphp</li>
             <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/">
                 <img className='img' src="./src/nav/home.png"></img>
-                    <span className="link-text">about</span></a>
+                    <span className="link-text">about</span></Link>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="/about">
+                <Link className="nav-link" to="/about">
                 <img className='img' src="./src/nav/id.png"></img>
-                    <div className="link-text">mail</div>
-                </a>
+                    <span className="link-text">mail</span>
+                </Link>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="/Certificates">
+                <Link className="nav-link" to="/Certificates">
                 <img  className='img' src="./src/nav/certificate.png"></img>
-                    <div className="link-text">linkedin</div>
-                </a>
+                    <span className="link-text">linkedin</span>
+                </Link>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="/proyectos">
+                <Link className="nav-link" to="/proyectos">
                 <img className='img' src="./src/nav/proyectos.png"></img>
                     <span className="link-text">twitter</span>
-                </a>
+                </Link>
             </li>
         </ul>
+        </div>
         </nav>
+
     </>
     )
 };
