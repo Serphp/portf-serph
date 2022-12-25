@@ -18,10 +18,14 @@ export default function Footer() {
     </div>
 
 
-  <div className="end text-center text-white p-3">
-  <p>© 2022 Copyright </p><a className="" href="/"> Serph</a>
-  </div>
-</footer>
-</>
+    <div className="end text-center text-white p-3">
+    <div style={{ textAlign: "center", color: "black", fontFamily: "rubik" }}> 
+    © 2022 Copyright 
+    <hr/>
+      <a> Serph</a>
+    </div>
+    </div>
+    </footer>
+    </>
     );
 }

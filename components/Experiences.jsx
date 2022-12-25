@@ -2,37 +2,6 @@ import { fronted } from "../serph/fronted"
 import { backend } from "../serph/backend"
 
 export default function Experiences() {
-    const png = `.png`;
-
-    function showFronted() {
-        if (document.getElementById("oculted").style.display === "block"){
-        document.getElementById("fronted").style.display = "none";
-        document.getElementById("backend").style.display = "block"; 
-        }
-
-    }
-
-    function ocultbk() {
-        if (document.getElementById("oculted").style.display = "block") {
-        document.getElementById("backend").style.display = "none";
-        document.getElementById("fronted").style.display = "block";
-        }
-    }
-
-    function showAll() {
-        if (document.getElementById("oculted").style.display === "block") 
-        {
-            document.getElementById("fronted").style.display = "block";
-            document.getElementById("backend").style.display = "block";
-        } else if (document.getElementById("oculted").style.display === "none") {
-            document.getElementById("fronted").style.display = "none";
-            document.getElementById("backend").style.display = "none";
-        }
-    
-    }
-
-    const github = "https://raw.githubusercontent.com/Serphp/serph-portafolio/master";
-    //const [showed, setShowed] = useState(false);
 
     return (
         <>

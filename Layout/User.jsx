@@ -3,15 +3,14 @@ import Footer from "../components/Footer";
 import '../node_modules/bootswatch/dist/lux/bootstrap.min.css'
 import '../src/styles/Global.scss'
 import '../src/styles/Navbar.scss'
-import { useState } from "react";
-import { Navbar2 } from "../components/NavBar2";
+import { Navbar } from "../components/Navbar";
 
 
 const User = () => {
     return (
     <>
     
-    <Navbar2 />
+    <Navbar />
     <div className=""></div>
     <Outlet />
     <Footer />

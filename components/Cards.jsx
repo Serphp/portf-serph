@@ -4,7 +4,7 @@ export default function Cards() {
     return (
         <>
     <div className="containerx mt-3">
-    <div className="cardx">
+    {/* <div className="cardx">
       <div className="face face1">
         <div className="content">
         <i className="fa-solid fa-book"></i>
@@ -17,7 +17,7 @@ export default function Cards() {
           <a className='btncard' href="#" type="button">Read More</a>
         </div>
       </div>
-    </div>
+    </div> */}
     <div className="cardx">
       <div className="face face1">
         <div className="content">
