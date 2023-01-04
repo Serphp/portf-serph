@@ -47,16 +47,17 @@ export default function About() {
             
             <div id="oculted" className="card-body">
             <div id="fronted" className="card-text">
+            <div className=""> 
         <h1>Frontend</h1>
+
+        </div>
         {
             fronted.map(({language, percentage}, i) => (
                 <div className="py-2" key={i}>
                     <h5> {language}</h5>
                     
-                <div className="progress">
-                <div className="progress-bar progress-bar-striped bg-info" 
-                role="progressbar" 
-                style={{ width: `${percentage}%`}}></div>
+                <div className="progress-bar">
+                <div className="progress-bar-percent" style={{ width: `${percentage}%`}}></div>
                 </div>
                 </div>
             ))
@@ -64,6 +65,7 @@ export default function About() {
         }
         </div> 
         <div id="backend" className="card-text">
+        <div className="size"> 
         <h1>Backend</h1>
         {
             backend.map(({language, percentage, status, icon}, index) => (
@@ -84,6 +86,9 @@ export default function About() {
         </div>
         </div>
         </div>
+        
+        </div>
+        
         </div>        
 
         
@@ -94,7 +99,9 @@ export default function About() {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aut dolores quos, consequatur a, doloribus, tenetur voluptatibus voluptate fugiat aliquid reprehenderit dolorem laborum sed corrupti suscipit distinctio magni illum id.</p>
         
         </div>
+        
         </div>
+        
         </div>
         
         </>

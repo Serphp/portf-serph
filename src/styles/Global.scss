@@ -1,3 +1,7 @@
+// extras
+@import "./Navbar.scss";
+
+// variables
 $primary-color: #333;
 $secondary-color: #444;
 $tertiary-color: rgb(3, 188, 201);
@@ -247,6 +251,11 @@ hr {
   transition: transform 0.2s ease-in;
 }
 
+.size{
+  transform: scale(0.8, 0.7);
+  -webkit-transform: scale(0.7, 0.7);
+}
+
 .cardbody2:hover .cardinfo {
   transform: translateY(0);
 }
@@ -329,7 +338,7 @@ footer {
 /* TEXTs pretty*/
 p.serph{
   font-size: 14px;
-  display: block;
+  //display: block;
   width: 100%;
   text-align: center;
   font-family: monospace;
@@ -377,7 +386,7 @@ p.serph:hover{
 .Abutton {
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding: 10px 25px;
   display: inline-block;
   //font-size: 15px;
   margin: 2px 2px;
@@ -474,3 +483,38 @@ p.serph:hover{
     }
   }
 }
+
+// BARRA DE PORCENTAJE
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: rgba(179, 169, 169, 0.461);
+  border: 1px solid #000;
+  transition: width 0.2s;
+  
+  .progress-bar-percent {
+    /* Ancho y alto */
+    height: 100%;
+    
+    /* Fondo y color de texto */
+    background-color: #4db150b1;
+    color: #fff;
+    
+    /* Alineación del texto */
+    text-align: center;
+    
+    /* Posición del texto */
+    line-height: 20px;
+    font-size: 13px;
+    transition: width 0.2s;
+        .textbar {
+          margin: 5px 20px;
+          font-size: 2px;
+          font-weight: 600;
+          font-family: 'Rubik', sans-serif !important;
+          color: black;
+        }
+  }
+}
+//END
