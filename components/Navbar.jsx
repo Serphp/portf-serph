@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
 
-export const Navbar = () => {
+export default function Navbar() {
+
     return (
     <>
         <nav>
