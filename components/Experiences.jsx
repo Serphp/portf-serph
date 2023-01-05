@@ -57,7 +57,7 @@ export default function Experiences() {
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\js.png" alt="" className="icons" />
         <p className="serph"> Database / Backend </p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\mysql.png" alt="" className="icons" />
-        {/* <img src="https://www.postgresql.org/favicon.ico" alt="" className="icons" /> */}
+        <img src="https://www.postgresql.org/favicon.ico" alt="" className="icons" />
         <img src="https://nodejs.org/static/images/logo.svg" alt="" height="80px" className="icons" />
         
         <p className="serph">framework</p>
@@ -74,11 +74,11 @@ export default function Experiences() {
         <img src="https://bulma.io/favicons/favicon-32x32.png" alt="" width="100px" className="icons" />
         <img src="https://picocss.com/img/apple-touch-icon.png" alt="" width="100px" className="icons" />
         <p className="serph">Tools</p>
-        {/* <img src="https://git-scm.com/favicon.ico" alt="" width="100px" className="icons" /> */}
+        <img src="https://git-scm.com/favicon.ico" alt="" width="100px" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\github.png" alt="" className="icons" />
         <p className="serph"> OS </p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\linux.png" alt="" className="icons" />
-        {/* <img src="https://c.s-microsoft.com/favicon.ico" alt="" className="icons" /> */}
+        <img src="https://c.s-microsoft.com/favicon.ico" alt="" className="icons" />
         <img src="./src/icons/win.png" alt="" className="icons" />
         <img src="./src/icons/arch.png" alt="" className="icons" />
         <img src="./src/icons/kali.png" alt=""  width="100px" className="icons" />
