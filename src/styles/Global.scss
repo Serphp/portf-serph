@@ -623,3 +623,82 @@ color: var(--text-secondary);
   transform: rotate(-180deg);
   transition: transform 0.1s ease-in-out;
 }
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+      top: 0;
+      width: 5rem;
+      height: 100vh;
+  }
+  .nav-link i,
+  .nav-link svg {
+      font-size: 1.5rem;
+      margin: 0 1.5rem;
+  }
+  .navbar:hover {
+      width: 16rem;
+  }
+  .navbar:hover .link-text {
+      display: inline;
+      transition: opacity 0.1s;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  
+  .logo{
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+      &.activo {
+          /* Estilo para el menú cuando esté activo (se haya deslizado hacia arriba) */
+          height: 300px; /* Altura del menú */
+      }
+  }
+  
+  .nav-link i,
+  .nav-link svg {
+      font-size: 1.2rem;
+      margin: 0rem;
+  }
+
+  .logo {
+      display: none;
+  }
+
+  .navbar-nav {
+      flex-direction: row;
+  }
+
+  .nav-link {
+      justify-content: center;
+  }
+
+  .navbar:hover {
+      width: 100%;
+  }
+
+  .navbar:hover {
+      transition: opacity 0.1s;
+  }
+
+  main {
+      margin-left: 0px;
+      margin-bottom: 60px;
+  }
+
+  #square-vid,
+  #laptop,
+  #habitus {
+      width: 300px
+  }
+
+  .emotes>img {
+      width: 70px;
+  }
+}

@@ -8,10 +8,12 @@ import '../src/styles/Global.scss'
 //import '../src/styles/Navbar.scss'
 
 
+
 const User = () => {
     return (
         
     <>
+    
     <Navbar />
     <div className=""></div>
     <Outlet />
