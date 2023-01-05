@@ -1,5 +1,6 @@
 {
-  "name": "serph-cat",
+  "name": "serph-portf",
+  "homepage": ".",
   "private": true,
   "version": "0.0.0",
   "type": "module",

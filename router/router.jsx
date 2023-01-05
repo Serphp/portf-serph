@@ -4,8 +4,7 @@ import User from "../Layout/User"
 import Home from "../pages/Home"
 import Proyectos from "../pages/Proyectos"
 import Certificates from "../pages/Certificates"
-//import SearchBird from "../pages/SearchBird"
-//import Test from "../pages/Test"
+import NotFound from "../pages/NotFound"
 
 export const router = createBrowserRouter([
     { 
@@ -28,6 +27,10 @@ export const router = createBrowserRouter([
             path: "Certificates",
             element: <Certificates />
         },
+        {
+            path: "*",
+            element: <NotFound />
+        }
     ]
     },
 ])
