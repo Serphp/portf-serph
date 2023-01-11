@@ -1,6 +1,9 @@
 import { Outlet } from "react-router-dom";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+
+import {
+    Footer,
+    Navbar,
+} from "../components"
 
 //styles
 import '../node_modules/bootswatch/dist/lux/bootstrap.min.css'
@@ -10,8 +13,7 @@ import '../src/styles/Global.scss'
 
 
 const User = () => {
-    return (
-        
+    return (  
     <>
     
     <Navbar />

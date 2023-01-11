@@ -1,4 +1,5 @@
 import '../src/styles/Skills.css';
+//import '../src/styles/Skills.css'
 
 
 export default function Skills() {

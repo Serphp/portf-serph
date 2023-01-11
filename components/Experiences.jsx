@@ -1,52 +1,14 @@
-import { fronted } from "../serph/fronted"
-import { backend } from "../serph/backend"
+//import { fronted } from "../serph/fronted"
+//import { backend } from "../serph/backend"
 
 export default function Experiences() {
 
     return (
         <>
-
-        <div className="row mt-3">
-        <div className="col-md-6">
-        <h1 className="mt-2 mb-4"> Como soy? </h1>
-        <div className="card2">
-            <p> Puedo decir mucho sobre mi, pero lo mas importante es que soy una persona, 
-            que apesar de que una situación este complicada, siempre encuentro la manera de 
-            darle solución, aúnque nadie la vea, siempre estoy dispuesto ayudar al que no puede avanzar,
-            y no me molesta en lo absoluto, de lo contrario al ayudarlo también aprendo cosas. </p>
-
-        <div style={{'display': 'flex', 'justify-content': 'center'}}>
-        <button className="btn" > 
-        {/* <a href="/about"> Sobre mi </a>  */}
-        <a href="/about" class="buttoned small" title="Este boton fue uno de los botones que utilice en el 2013"> Sobre mi </a>
-        </button>
-        </div>
-        </div>
-
-        <h1 className="mt-2 mb-2"> Habilidades </h1>
-        <div className="card2">
-            <p> Puedo decir mucho sobre mi, pero lo mas importante es que soy una persona, 
-            que apesar de que una situación este complicada, siempre encuentro la manera de 
-            darle solución, aúnque nadie la vea, siempre estoy dispuesto ayudar al que no puede avanzar,
-            y no me molesta en lo absoluto, de lo contrario al ayudarlo también aprendo cosas. </p>
-
-        <div style={{'display': 'flex', 'justify-content': 'center'}}>
-        <button className="btn" > 
-        {/* <a href="/about"> Sobre mi </a>  */}
-        <a href="/about" class="buttoned small" title="Este boton fue uno de los botones que utilice en el 2013"> Sobre mi </a>
-        </button>
-        </div>
-        </div>
-        {/* SEPARATION */}
-        </div>
-
         
-        
-        <div className="col-md-6">
-        <h1 className="mt-2 mb-4"> Experiences </h1>
-
-        <div className="card2">
-        
+        <h1> Experiences </h1>
+        <hr/>
+        <div className="">
         <p className="serph">Languages</p>
         <section className="conteinericon">
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\c-.png" alt="c++" className="icons" />
@@ -57,11 +19,11 @@ export default function Experiences() {
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\js.png" alt="" className="icons" />
         <p className="serph"> Database / Backend </p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\mysql.png" alt="" className="icons" />
-        <img src="https://www.postgresql.org/favicon.ico" alt="" className="icons" />
+        <img src="https://www.postgresql.org/favicon.ico" alt="" height="80px" className="icons" />
         <img src="https://nodejs.org/static/images/logo.svg" alt="" height="80px" className="icons" />
-        
+
         <p className="serph">framework</p>
-        
+
         <img src="https://astro.build/favicon.svg" alt="" className="icons" />
 
         <img src="https://nextjs.org/static/favicon/safari-pinned-tab.svg" alt="" className="icons" />
@@ -71,23 +33,101 @@ export default function Experiences() {
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" alt="" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\bootstrap.png" alt="" className="icons" />
         <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="" className="icons" />
-        <img src="https://bulma.io/favicons/favicon-32x32.png" alt="" width="100px" className="icons" />
-        <img src="https://picocss.com/img/apple-touch-icon.png" alt="" width="100px" className="icons" />
+        <img src="https://bulma.io/favicons/favicon-32x32.png" alt="" height="80px" className="icons" />
+        <img src="https://picocss.com/img/apple-touch-icon.png" alt="" height="80px" className="icons" />
         <p className="serph">Tools</p>
-        <img src="https://git-scm.com/favicon.ico" alt="" width="100px" className="icons" />
+        <img src="https://git-scm.com/favicon.ico" alt="" height="80px" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\github.png" alt="" className="icons" />
         <p className="serph"> OS </p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\linux.png" alt="" className="icons" />
         <img src="https://c.s-microsoft.com/favicon.ico" alt="" className="icons" />
         <img src="./src/icons/win.png" alt="" className="icons" />
         <img src="./src/icons/arch.png" alt="" className="icons" />
-        <img src="./src/icons/kali.png" alt=""  width="100px" className="icons" />
-        <img src="./src/icons/debian.png" alt="" width="100px" className="icons" />
+        <img src="./src/icons/kali.png" alt=""  height="80px" className="icons" />
+        <img src="./src/icons/debian.png" alt="" height="80px" width="80px" className="icons" />
         </section> 
         </div>
-        </div>
-        </div>
-        
+
         </>
     )
 };
+
+
+{/* <div className="row mt-3">
+<div className="col-md-6">
+<h1 className="mt-2 mb-4"> Como soy? </h1>
+<div className="card2">
+    <p> </p>
+
+<div style={{'display': 'flex', 'justify-content': 'center'}}>
+<button className="btn" > 
+
+<a href="/about" class="buttoned small" title="Este boton fue uno de los botones que utilice en el 2013"> Sobre mi </a>
+</button>
+</div>
+</div>
+
+<h1 className="mt-2 mb-2"> Habilidades </h1>
+<div className="card2">
+    <p> Puedo decir mucho sobre mi, pero lo mas importante es que soy una persona, 
+    que apesar de que una situación este complicada, siempre encuentro la manera de 
+    darle solución, aúnque nadie la vea, siempre estoy dispuesto ayudar al que no puede avanzar,
+    y no me molesta en lo absoluto, de lo contrario al ayudarlo también aprendo cosas. </p>
+
+<div style={{'display': 'flex', 'justify-content': 'center'}}>
+<button className="btn" > 
+
+<a href="/about" class="buttoned small" title="Este boton fue uno de los botones que utilice en el 2013"> Sobre mi </a>
+</button>
+</div>
+</div>
+
+</div>
+
+
+
+<div className="col-md-6">
+<h1 className="mt-2 mb-4"> Experiences </h1>
+
+<div className="card2">
+
+<p className="serph">Languages</p>
+<section className="conteinericon">
+<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\c-.png" alt="c++" className="icons" />
+<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\css-3.png" alt="css" className="icons" />
+<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\php.png" alt="" className="icons" />
+<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\python.png" alt="" className="icons" />
+<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\html-5.png" alt="" className="icons" />
+<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\js.png" alt="" className="icons" />
+<p className="serph"> Database / Backend </p>
+<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\mysql.png" alt="" className="icons" />
+<img src="https://www.postgresql.org/favicon.ico" alt="" height="80px" className="icons" />
+<img src="https://nodejs.org/static/images/logo.svg" alt="" height="80px" className="icons" />
+
+<p className="serph">framework</p>
+
+<img src="https://astro.build/favicon.svg" alt="" className="icons" />
+
+<img src="https://nextjs.org/static/favicon/safari-pinned-tab.svg" alt="" className="icons" />
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" className="icons" />
+<p className="serph">style</p>
+<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" alt="" className="icons" />
+<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\bootstrap.png" alt="" className="icons" />
+<img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="" className="icons" />
+<img src="https://bulma.io/favicons/favicon-32x32.png" alt="" height="80px" className="icons" />
+<img src="https://picocss.com/img/apple-touch-icon.png" alt="" height="80px" className="icons" />
+<p className="serph">Tools</p>
+<img src="https://git-scm.com/favicon.ico" alt="" height="80px" className="icons" />
+<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\github.png" alt="" className="icons" />
+<p className="serph"> OS </p>
+<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\linux.png" alt="" className="icons" />
+<img src="https://c.s-microsoft.com/favicon.ico" alt="" className="icons" />
+<img src="./src/icons/win.png" alt="" className="icons" />
+<img src="./src/icons/arch.png" alt="" className="icons" />
+<img src="./src/icons/kali.png" alt=""  height="80px" className="icons" />
+<img src="./src/icons/debian.png" alt="" height="80px" width="80px" className="icons" />
+</section> 
+</div>
+</div>
+</div> */}

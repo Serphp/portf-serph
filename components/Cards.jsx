@@ -3,7 +3,12 @@ import '../src/styles/Cards.scss'
 export default function Cards() {
     return (
         <>
-    <div className="containerx mt-3">
+
+<div className='cardflot'> 
+        <h1 > Soft Skills </h1>
+        </div>
+        
+    <div className="containerx">
     {/* <div className="cardx">
       <div className="face face1">
         <div className="content">
@@ -18,35 +23,56 @@ export default function Cards() {
         </div>
       </div>
     </div> */}
+
+
     <div className="cardx">
       <div className="face face1">
         <div className="content">
-          <i className="fab fa-github"></i>
-          <h3> Github </h3>
+        <i class="fa fa-tree"></i>
+          <h3> Balance </h3>
         </div>
       </div>
       <div className="face face2">
-        <div className="content">
-          <p> En mi github puede verse los proyectos en los que he trabajado y hecho.</p>
-          <a className='btncard' href="#" type="button">Read More</a>
-        </div>
+      <a className='btncard' href="/about" type="button">Read More</a>
       </div>
     </div>
+    {/* SEPARATE  */}
     <div className="cardx">
       <div className="face face1">
         <div className="content">
-        <i className="fa-brands fa-linkedin"></i>
-          <h3> LinkID </h3>
+        <i class="fa fa-bug"></i>
+          <h3> Solucions </h3>
         </div>
       </div>
       <div className="face face2">
-        <div className="content">
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic
-            cum ratione a.</p>
-          <a className='btncard' href="#" type="button">Read More</a>
-        </div>
+      <a className='btncard' href="/about" type="button">Read More</a>
       </div>
     </div>
+        {/* SEPARATE  */}
+        <div className="cardx">
+      <div className="face face1">
+        <div className="content">
+        <i class="fa fa-list"></i>
+          <h3> Order </h3>
+        </div>
+      </div>
+      <div className="face face2">
+      <a className='btncard' href="/about" type="button">Read More</a>
+      </div>
+    </div>
+        {/* SEPARATE  */}
+        <div className="cardx">
+      <div className="face face1">
+        <div className="content">
+        <i class="fa fa-chalkboard"></i>
+          <h3> Learning </h3>
+        </div>
+      </div>
+      <div className="face face2">
+      <a className='btncard' href="/about" type="button">Read More</a>
+      </div>
+    </div>
+    {/* END */}
   </div>
   
         </>

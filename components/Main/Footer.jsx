@@ -17,7 +17,6 @@ export default function Footer() {
       <i className="fab fa-github"></i></a>
     </div>
 
-
     <div className="end text-center text-white p-3">
     <div style={{ textAlign: "center", color: "black", fontFamily: "rubik" }}> 
     © 2022 Copyright 

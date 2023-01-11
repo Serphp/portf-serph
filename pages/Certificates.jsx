@@ -11,7 +11,7 @@ export default function Certificates() {
     <section className='Ccontainer'>
     <Zoom>
     <picture>
-    <img className='imgcer' alt="openwebin ars" src="./src/Cer/certificado.jpg" width="500"/>
+    <img className='imgcer' alt="openwebin ars" src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/Cer/certificado.jpg" width="500"/>
     </picture>
     </Zoom>
     </section>
@@ -19,7 +19,7 @@ export default function Certificates() {
     <section className='Ccontainer'>
     <Zoom>
     <picture>
-    <img className='imgcer' alt="openwebin ars" src="./src/Cer/certificado.jpg" width="500"/>
+    <img className='imgcer' alt="openwebin ars" src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/Cer/certificado.jpg" width="500"/>
     </picture>
     </Zoom>
     </section>
