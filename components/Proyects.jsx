@@ -1,4 +1,4 @@
-import { NProyects } from "../serph/NProyects"
+//import { NProyects } from '../../serph/NProyects'
 import '../src/styles/Proyect.scss'
 
 {/*
@@ -36,7 +36,7 @@ export default function Proyects() {
         {/* SEPARACION */}
         <div className="section">
         <div className="image-container">
-        <img className="img2" src="./src/media/todo.gif" alt="image 1" />
+        <img className="img2" src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/media/todo.gif" alt="image 1" />
         </div>
         <div className="text-container">
         <h2>T O D O</h2>
@@ -50,7 +50,7 @@ export default function Proyects() {
 
         <div className="section">
             <div className="image-container">
-                <img  className="img2" src="./src/media/laravel.gif" alt="image 1" />
+                <img  className="img2" src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/media/laravel.gif" alt="image 1" />
                 </div>
                 <div className="text-container">
                 <h2> Notas </h2>
@@ -64,7 +64,7 @@ export default function Proyects() {
 
         <div className="section">
             <div className="image-container">
-                <img  className="img2" src="./src/media/laravel.gif" alt="image 1" />
+                <img  className="img2" src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/media/laravel.gif" alt="image 1" />
                 </div>
                 <div className="text-container">
                 <h2> Notas </h2>

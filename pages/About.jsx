@@ -1,6 +1,7 @@
 import { fronted } from "../serph/fronted";
 import { backend } from "../serph/backend";
 
+
 export default function About() {
 
     function done(){
@@ -11,6 +12,7 @@ export default function About() {
         done();
         document.getElementById("fronted").style.display = "block";
         document.getElementById("backend").style.display = "block";
+        
     }
 
     const showFronted = () => {
@@ -33,10 +35,11 @@ export default function About() {
         <>
 
         <h1> Acerca de mi </h1>
+        <main className="mainbg"> 
         <div className="row mt-4">
         <div className="col-md-5">
         <div className="card2">
-
+        
         <section className="Acontainer">
         <button className="Abutton" onClick={showall}> Todos </button>
         <button className="Abutton" onClick={showFronted} > Frontend </button>
@@ -47,14 +50,14 @@ export default function About() {
             
             <div id="oculted" className="card-body">
             <div id="fronted" className="card-text">
-            <div className=""> 
+            <div className="skillhide"> 
         <h1>Frontend</h1>
 
-        </div>
+
         {
             fronted.map(({language, percentage}, i) => (
                 <div className="py-2" key={i}>
-                    <h5> {language}</h5>
+                    <div className="textbar"> {language}</div>
                     
                 <div className="progress-bar">
                 <div className="progress-bar-percent" style={{ width: `${percentage}%`}}></div>
@@ -65,7 +68,7 @@ export default function About() {
         }
         </div> 
         <div id="backend" className="card-text">
-        <div className="size"> 
+        <div className="skillhide"> 
         <h1>Backend</h1>
         {
             backend.map(({language, percentage, status, icon}, index) => (
@@ -73,8 +76,8 @@ export default function About() {
                 <div className="py-2" key={index}>
                 <h5> {language}</h5>
                 
-                <div className="progress">
-                <div className="progress-bar progress-bar-striped bg-success" 
+                <div className="progress-bar">
+                <div className="progress-bar-percent" 
                 role="progressbar" 
                 style={{ width: `${percentage}%`}}></div> {/* 80% */}
                 </div>
@@ -83,6 +86,7 @@ export default function About() {
 
                     ))
         }
+        
         </div>
         </div>
         </div>
@@ -90,20 +94,20 @@ export default function About() {
         </div>
         
         </div>        
-
+</div>
         
         <div className="col-md-7">
         <h1>Experiences</h1>
         <hr/>
         <div className="content1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aut dolores quos, consequatur a, doloribus, tenetur voluptatibus voluptate fugiat aliquid reprehenderit dolorem laborum sed corrupti suscipit distinctio magni illum id.</p>
+        <p style={{'font-size': '1.5em'}}> Hola </p>
         
         </div>
         
         </div>
         
         </div>
-        
+        </main>
         </>
     )
 }

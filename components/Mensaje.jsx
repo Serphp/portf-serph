@@ -1,4 +1,5 @@
-import { heroes } from "../serph/heroes"
+
+import { heroes } from '../serph/heroes';
 import { useState } from "react";
 
 export default function Mensaje() {
@@ -25,5 +26,5 @@ export default function Mensaje() {
             </figcaption>
             </div>
         </>
-           )
+        )
 };
