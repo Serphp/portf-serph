@@ -1,34 +1,6 @@
 //import { NProyects } from '../../serph/NProyects'
 import '../src/styles/Proyect.scss'
 
-{/*
-        <div className="containery mt-4">
-            <div className="card3">
-                <div className="">
-                    <div className="row">
-
-            {
-                NProyects.map(({name, description, image, url, url2},i) => ( 
-                    <div className="cardbody2" key={i}>
-                        <div className="cardre">
-                        <img className="image" src={image} alt="" />
-                            <div className="cardinfo">
-                            <h2> {name} </h2>
-                            <hr/>
-                            <div> {description} </div>
-                            <br/>
-                            <a href={url} className="ae"> Preview </a>
-                            <a href={url2} className="ae"> Github </a>
-                            </div>
-                        </div>
-                    </div>
-                ))
-            }
-            </div>
-            </div>
-            </div>
-            </div>
-*/}
 export default function Proyects() {
     return (
         <>
@@ -36,27 +8,31 @@ export default function Proyects() {
         {/* SEPARACION */}
         <div className="section">
         <div className="image-container">
-        <img className="img2" src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/media/todo.gif" alt="image 1" />
+        <img className="img2" src="https://pbs.twimg.com/media/FmNL62hWAAEXIGH?format=jpg&name=large" alt="image 1" />
         </div>
         <div className="text-container">
-        <h2>T O D O</h2>
-        <p> En este proyecto utilice: HTML5, CSS3, ReactJS + Vite, Tailwind </p>
+        <h1>T O D O</h1>
+        <h4> En este proyecto utilice: HTML5, CSS3, ReactJS + Vite, Tailwind </h4>
+        <div className="containerx">
         <a href="https://github.com/Serphp/react-todo" target="_blank" className="button">Github</a>
         <a href="https://minniecat.netlify.app/" target="_blank" className="button">View</a>
         </div>
         </div>
+        </div>
 
         <hr/>
 
         <div className="section">
             <div className="image-container">
-                <img  className="img2" src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/media/laravel.gif" alt="image 1" />
+                <img  className="img2" src="https://pbs.twimg.com/media/FmNL62hWAAEXIGH?format=jpg&name=large" alt="image 1" />
                 </div>
                 <div className="text-container">
-                <h2> Notas </h2>
-                <p>Un compartido de Notas con Laravel + PHP + Bootstrap + HTML5/CSS3 + JavaScript + SASS ++</p>
-                <a href="https://github.com/Serphp/react-todo" target="_blank" className="button">Github</a>
-                <a href="https://minniecat.netlify.app/" target="_blank" className="button">View</a>
+                <h1> Notas </h1>
+                <h4>Un compartido de Notas con Laravel + PHP + Bootstrap + HTML5/CSS3 + JavaScript + SASS ++</h4>
+                <div className="containerx">
+        <a href="https://github.com/Serphp/react-todo" target="_blank" className="button">Github</a>
+        <a href="https://minniecat.netlify.app/" target="_blank" className="button">View</a>
+        </div>
                 </div>
         </div>
 
@@ -64,13 +40,15 @@ export default function Proyects() {
 
         <div className="section">
             <div className="image-container">
-                <img  className="img2" src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/media/laravel.gif" alt="image 1" />
+                <img  className="img2" src="https://pbs.twimg.com/media/FmNL62hWAAEXIGH?format=jpg&name=large" alt="image 1" />
                 </div>
                 <div className="text-container">
-                <h2> Notas </h2>
-                <p>Un compartido de Notas con Laravel + PHP + Bootstrap + HTML5/CSS3 + JavaScript + SASS ++</p>
-                <a href="https://github.com/Serphp/react-todo" target="_blank" className="button">Github</a>
-                <a href="https://minniecat.netlify.app/" target="_blank" className="button">View</a>
+                <h1> Notas </h1>
+                <h4>Un compartido de Notas con Laravel + PHP + Bootstrap + HTML5/CSS3 + JavaScript + SASS ++</h4>
+                <div className="containerx">
+        <a href="https://github.com/Serphp/react-todo" target="_blank" className="button">Github</a>
+        <a href="https://minniecat.netlify.app/" target="_blank" className="button">View</a>
+        </div>
                 </div>
         </div>
         {/* SEPARACION */}

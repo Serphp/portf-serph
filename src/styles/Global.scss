@@ -7,7 +7,7 @@ $secondary-color: #444;
 $tertiary-color: rgb(3, 188, 201);
 $font-family: "Roboto", sans-serif;
 $font-size: 16px;
-$anim: 0.4s;
+$anim: 0.5s;
 
 /*
 .dark{
@@ -34,9 +34,9 @@ $anim: 0.4s;
 
 
 body {
-  //max-width: 1200px;
+  max-width: 1200px;
   margin: auto;
-  max-width: 95%;
+  //max-width: 75%;
   //padding: 5rem;
   --fa-style-family-classic: "Font Awesome 6 Free";
   --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
@@ -386,7 +386,6 @@ hr {
 /* Path: src\components\Header.js */
 
 footer {
-  margin-top: 2em;
   font-size: 0.8em;
   color: #888;
   //background-color: #102754;
@@ -437,7 +436,7 @@ p.serph{
 
 .icons:hover{
   background-color: rgba(255, 255, 255, 0.096);
-  backdrop-filter: blur(10px);
+  //backdrop-filter: blur(10px);
   max-width: 75px;
   max-height: 70px;
   opacity: 1;
