@@ -1,4 +1,5 @@
 import '../src/styles/Cards.scss'
+import { Link } from "react-router-dom";
 
 export default function Cards() {
     return (
@@ -17,7 +18,9 @@ export default function Cards() {
         </div>
       </div>
       <div className="face face2">
-      <a className='btncard' href="/about" type="button">Read More</a>
+        
+      <Link className="btncard" to="/about" type="button">Read More</Link>
+      {/* <a className='btncard' href="/about" type="button">Read More</a> */}
       </div>
     </div>
     {/* SEPARATE  */}
@@ -29,7 +32,7 @@ export default function Cards() {
         </div>
       </div>
       <div className="face face2">
-      <a className='btncard' href="/about" type="button">Read More</a>
+      <Link className="btncard" to="/about" type="button">Read More</Link>
       </div>
     </div>
         {/* SEPARATE  */}
@@ -41,7 +44,7 @@ export default function Cards() {
         </div>
       </div>
       <div className="face face2">
-      <a className='btncard' href="/about" type="button">Read More</a>
+      <Link className="btncard" to="/about" type="button">Read More</Link>
       </div>
     </div>
         {/* SEPARATE  */}
@@ -53,7 +56,7 @@ export default function Cards() {
         </div>
       </div>
       <div className="face face2">
-      <a className='btncard' href="/about" type="button">Read More</a>
+      <Link className="btncard" to="/about" type="button">Read More</Link>
       </div>
     </div>
     {/* END */}

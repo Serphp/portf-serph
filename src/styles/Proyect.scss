@@ -1,5 +1,5 @@
 // define the background color for the sections
-$section-bg-color: #e8e8e8b0;
+$section-bg-color: #0f0c0c5a;
 
 // define the animation for the hover effect on the buttons
 @keyframes button-hover {
@@ -13,20 +13,29 @@ $section-bg-color: #e8e8e8b0;
 
     // define the styles for the section container
     .section-container {
-    display: block;
-    flex-direction: row;
-    //width: 100%;
-    align-items: center;
-
-    // define the styles for the section
-    .section {
-        width: 100%;
-        background-color: $section-bg-color;
-        display: inline-flex;
-        flex-direction: row wrap;
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        padding: 20px;
+        flex-wrap: wrap;
+        align-content: center;
+        border-radius: 5px;
+    .section {
+        width: 50%;
+        background-color: $section-bg-color;
+        display: flex;
+        //flex-direction: row wrap;
+        flex-grow: 2;
+        justify-content: center;
+        align-items: center;
+        //margin: 2px;
+        //padding: 20px;
+        //
+        transition: all 0.5s ease;
 
+        &:hover {
+            backdrop-filter: blur(5px) !important;
+            box-shadow: #333 
+        }
         // define the styles for the image container
         .image-container {
         width: 50%;
@@ -34,11 +43,12 @@ $section-bg-color: #e8e8e8b0;
             width: 100%;
         }
         .img2{
+            width: 100%;
             background-size: 100px;
             transform: 1s ease-in-out;
             &:hover {
                 transform: scale(1.1);
-                transition: transform 0.3s ease-in-out;
+                transition: transform 0.5s ease-in;
             }
         }
         }
