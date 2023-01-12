@@ -8,9 +8,9 @@ export default function Experiences() {
         
         <h1> Experiences </h1>
         <hr/>
-        <div className="">
+        <div className="containerh">
+        <div className="conteinericon">
         <p className="serph">Languages</p>
-        <section className="conteinericon">
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\c-.png" alt="c++" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\css-3.png" alt="css" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\php.png" alt="" className="icons" />
@@ -19,35 +19,32 @@ export default function Experiences() {
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\js.png" alt="" className="icons" />
         <p className="serph"> Database / Backend </p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\mysql.png" alt="" className="icons" />
-        <img src="https://www.postgresql.org/favicon.ico" alt="" height="80px" className="icons" />
-        <img src="https://nodejs.org/static/images/logo.svg" alt="" height="80px" className="icons" />
+        <img src="https://www.postgresql.org/favicon.ico" alt="" className="icons" />
+        <img src="https://nodejs.org/static/images/logo.svg" alt="" className="icons" />
 
         <p className="serph">framework</p>
-
         <img src="https://astro.build/favicon.svg" alt="" className="icons" />
-
         <img src="https://nextjs.org/static/favicon/safari-pinned-tab.svg" alt="" className="icons" />
-
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" className="icons" />
+        </div> 
+        <div className="containerh">
+        <div className="conteinericon">
         <p className="serph">style</p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" alt="" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\bootstrap.png" alt="" className="icons" />
         <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="" className="icons" />
-        <img src="https://bulma.io/favicons/favicon-32x32.png" alt="" height="80px" className="icons" />
-        <img src="https://picocss.com/img/apple-touch-icon.png" alt="" height="80px" className="icons" />
+        <img src="https://image.pngaaa.com/787/6130787-middle.png" alt="Bulma" width="50px" height="50px" title="Bulma" className="icons" />
+        <img src="https://picocss.com/img/apple-touch-icon.png" alt="" className="icons" />
         <p className="serph">Tools</p>
-        <img src="https://git-scm.com/favicon.ico" alt="" height="80px" className="icons" />
+        <img src="https://git-scm.com/favicon.ico" alt="" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\github.png" alt="" className="icons" />
         <p className="serph"> OS </p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\linux.png" alt="" className="icons" />
         <img src="https://c.s-microsoft.com/favicon.ico" alt="" className="icons" />
         <img src="./src/icons/win.png" alt="" className="icons" />
-        <img src="./src/icons/arch.png" alt="" className="icons" />
-        <img src="./src/icons/kali.png" alt=""  height="80px" className="icons" />
-        <img src="./src/icons/debian.png" alt="" height="80px" width="80px" className="icons" />
-        </section> 
+        </div> 
         </div>
-
+        </div>
         </>
     )
 };
@@ -101,8 +98,8 @@ export default function Experiences() {
 <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\js.png" alt="" className="icons" />
 <p className="serph"> Database / Backend </p>
 <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\mysql.png" alt="" className="icons" />
-<img src="https://www.postgresql.org/favicon.ico" alt="" height="80px" className="icons" />
-<img src="https://nodejs.org/static/images/logo.svg" alt="" height="80px" className="icons" />
+<img src="https://www.postgresql.org/favicon.ico" alt="" className="icons" />
+<img src="https://nodejs.org/static/images/logo.svg" alt="" className="icons" />
 
 <p className="serph">framework</p>
 
@@ -115,18 +112,18 @@ export default function Experiences() {
 <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" alt="" className="icons" />
 <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\bootstrap.png" alt="" className="icons" />
 <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="" className="icons" />
-<img src="https://bulma.io/favicons/favicon-32x32.png" alt="" height="80px" className="icons" />
-<img src="https://picocss.com/img/apple-touch-icon.png" alt="" height="80px" className="icons" />
+<img src="https://bulma.io/favicons/favicon-32x32.png" alt="" className="icons" />
+<img src="https://picocss.com/img/apple-touch-icon.png" alt="" className="icons" />
 <p className="serph">Tools</p>
-<img src="https://git-scm.com/favicon.ico" alt="" height="80px" className="icons" />
+<img src="https://git-scm.com/favicon.ico" alt="" className="icons" />
 <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\github.png" alt="" className="icons" />
 <p className="serph"> OS </p>
 <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\linux.png" alt="" className="icons" />
 <img src="https://c.s-microsoft.com/favicon.ico" alt="" className="icons" />
 <img src="./src/icons/win.png" alt="" className="icons" />
 <img src="./src/icons/arch.png" alt="" className="icons" />
-<img src="./src/icons/kali.png" alt=""  height="80px" className="icons" />
-<img src="./src/icons/debian.png" alt="" height="80px" width="80px" className="icons" />
+<img src="./src/icons/kali.png" alt=""  className="icons" />
+<img src="./src/icons/debian.png" alt="" className="icons" />
 </section> 
 </div>
 </div>
