@@ -19,16 +19,14 @@ export default function Home() {
         <hr/>
         <p style={{'display': 'flex', 'justify-content': 'center', 'margin-top': '-40px', 'margin-right': '100px'}}> SysAdmin </p>   */}
 
-        <div className="greywrap"> 
-        <p> Holaa           wadwaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa wdawdw a</p></div>
+        {/* <div className="greywrap"> 
+        <p> Holaa           wadwaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa wdawdw a</p></div> */}
 
         <section id="home" class="hello">
         <div className="hello-text ">
-            <h2>Hola, soy Bryan </h2> 
-            <h4> SysAdmin<br/> </h4>
-            <h4>Web Dev <br/> </h4>
-            <h4>Tecnico en sistemas</h4>
-            <p>Me gusta ser creer en mi mismo.</p>
+            <h1 style={{'textAlign': 'center'}}>Hola, soy Bryan </h1> 
+            <h4> SysAdmin | Web Dev | Tecnico en sistemas</h4>
+            <p>Yo creo, en que todos podemos lograr grandes cosas, si nos lo promonemos.</p>
         </div>
         <div class="hello-img">
             <img src="https://pbs.twimg.com/media/FmJcezlXEAUQmTz?format=jpg&name=small" alt="" />
