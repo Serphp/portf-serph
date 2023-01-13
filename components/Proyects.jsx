@@ -11,8 +11,8 @@ export default function Proyects() {
         <img className="img2" src="https://pbs.twimg.com/media/FmNL62hWAAEXIGH?format=jpg&name=large" alt="image 1" />
         </div>
         <div className="text-container">
-        <h1>T O D O</h1>
-        <h4> En este proyecto utilice: HTML5, CSS3, ReactJS + Vite, Tailwind </h4>
+        <h2>T O D O</h2>
+        <h5> En este proyecto utilice: HTML5, CSS3, ReactJS + Vite, Tailwind, JavaScript y un estilizado propio.</h5>
         <div className="containerx">
         <a href="https://github.com/Serphp/react-todo" target="_blank" className="button">Github</a>
         <a href="https://minniecat.netlify.app/" target="_blank" className="button">View</a>
@@ -27,8 +27,8 @@ export default function Proyects() {
                 <img  className="img2" src="https://pbs.twimg.com/media/FmNL62hWAAEXIGH?format=jpg&name=large" alt="image 1" />
                 </div>
                 <div className="text-container">
-                <h1> Notas </h1>
-                <h4>Un compartido de Notas con Laravel + PHP + Bootstrap + HTML5/CSS3 + JavaScript + SASS ++</h4>
+                <h2> Notas </h2>
+                <h5>Un compartido de Notas con Laravel + PHP + Bootstrap + HTML5/CSS3 + JavaScript + SASS ++</h5>
                 <div className="containerx">
         <a href="https://github.com/Serphp/react-todo" target="_blank" className="button">Github</a>
         <a href="https://minniecat.netlify.app/" target="_blank" className="button">View</a>
@@ -44,7 +44,7 @@ export default function Proyects() {
                 </div>
                 <div className="text-container">
                 <h1> Notas </h1>
-                <h4>Un compartido de Notas con Laravel + PHP + Bootstrap + HTML5/CSS3 + JavaScript + SASS ++</h4>
+                <h5>Un compartido de Notas con Laravel + PHP + Bootstrap + HTML5/CSS3 + JavaScript + SASS ++</h5>
                 <div className="containerx">
         <a href="https://github.com/Serphp/react-todo" target="_blank" className="button">Github</a>
         <a href="https://minniecat.netlify.app/" target="_blank" className="button">View</a>

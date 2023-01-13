@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <>
         <main>
-        <div className="p-5"></div>
+
 
         <section id="home" class="hello">
         <div className="hello-text ">

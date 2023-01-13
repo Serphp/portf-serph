@@ -17,7 +17,7 @@ const User = () => {
     <>
     
     <Navbar />
-    <div className=""></div>
+    <div className="header"> /Serph </div>
     <Outlet />
     <Footer />
     </>

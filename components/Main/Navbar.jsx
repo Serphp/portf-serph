@@ -9,31 +9,29 @@ export default function Navbar() {
         <nav>
         <div class="nav2">
         {/* <div class="deco">_</div> */}
-            <ul>
+            <ul className="containernav">
             <li className="nav-item">
-                <Link className="nav-link" to="/">
-                <span className="link-text">Inicio</span>
+                <Link to="/">
+                <span className="link-text"><img className="img" src="src/icons/home.svg"></img>Inicio</span>
                 </Link>
-                <img className="img" src="src/icons/home.svg"></img>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link to="/about">
                 {/* <img className='img' src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/nav/id.png"></img> */}
-                    <span className="link-text">Me</span>
+                    <span className="link-text"><img className="img" src="src/icons/about.svg"></img>About Me</span>
                 </Link>
-                <img className="img" src="src/icons/about.svg"></img>
             </li>
 
             <li className="nav-item">
-                <Link className="nav-link" to="/Certificates">
+                <Link to="/Certificates">
                 {/* <img  className='img' src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/nav/certificate.png"></img> */}
-                    <span className="link-text">Certificates</span>
+                    <span className="link-text"><img className="img" src="src/icons/home.svg"></img>Certificates</span>
                 </Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to="/proyectos">
+                <Link to="/proyectos">
                 {/* <img className='img' src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/nav/proyectos.png"></img> */}
-                    <span className="link-text">Proyects</span>
+                    <span className="link-text"><img className="img" src="src/icons/home.svg"></img>Proyects</span>
                 </Link>
             </li>
         </ul>
