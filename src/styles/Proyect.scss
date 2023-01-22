@@ -1,5 +1,5 @@
 // define the background color for the sections
-$section-bg-color: #0f0c0c5a;
+$section-bg-color: #ffffff9d;
 
 // define the animation for the hover effect on the buttons
 @keyframes button-hover {
@@ -26,19 +26,18 @@ $section-bg-color: #0f0c0c5a;
         width: 50%;
         background-color: $section-bg-color;
         display: flex;
-        //flex-direction: row wrap;
         flex-grow: 2;
         justify-content: center;
         align-items: center;
-        border-color: black solid 5px;
+        border: #333 solid 1px;
         //
         transition: all 0.5s ease;
         @media screen and (max-width: 600px) {
             width: 100%;
         }
         &:hover {
-            backdrop-filter: blur(5px) !important;
-            box-shadow: #333 
+            // backdrop-filter: blur(5px) !important;
+
         }
         // define the styles for the image container
         .image-container {

@@ -56,16 +56,25 @@ export default function Certificates() {
     <div className='Ccontainer'>
         <Zoom>
         <picture>
-        <img className='imgcer' alt="openwebin ars" src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/Cer/certificado.jpg" width="500"/>
+        <img className='imgcer' alt="openwebin ars" src="./src/Cer/python.jpg" width="500"/>
         </picture>
         </Zoom>
+        <Zoom>
+        <picture>
+        <img className='imgcer' alt="openwebin ars" src="./src/Cer/web.jpg" width="500"/>
+        </picture>
+        </Zoom>
+    </div>
+
+    <h2 style={{'margin': '50px', 'textAlign': 'center'}}> OpenWebinars </h2>
+
+    <div className='Ccontainer'>
         <Zoom>
         <picture>
         <img className='imgcer' alt="openwebin ars" src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/Cer/certificado.jpg" width="500"/>
         </picture>
         </Zoom>
     </div>
-
 
     {/* END */}
     </div>

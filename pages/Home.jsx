@@ -17,7 +17,7 @@ export default function Home() {
         <div className="hello-text ">
             <h1 style={{'textAlign': 'center'}}>Hola, soy Bryan </h1> 
             <h4> SysAdmin | Web Dev | Tecnico en sistemas</h4>
-            <p>Yo creo, que todos podemos lograr grandes cosas, si nos proponemos hacerlo.</p>
+            {/* <p>Yo creo, que todos podemos lograr grandes cosas, si nos proponemos hacerlo.</p> */}
         </div>
         <div class="hello-img">
             <img src="https://pbs.twimg.com/media/FmJcezlXEAUQmTz?format=jpg&name=small" alt="" />
@@ -25,7 +25,7 @@ export default function Home() {
     </section>
         
         <Cards />
-        <div className="p-5"></div>
+        {/* <div className="p-5"></div> */}
         </main>
         <Experiences />
         <Mensaje />

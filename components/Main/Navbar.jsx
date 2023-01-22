@@ -15,12 +15,11 @@ export default function Navbar() {
                 <span className="link-text"><img className="img" src="src/icons/home.svg"></img>Inicio</span>
                 </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
                 <Link to="/about">
-                {/* <img className='img' src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/nav/id.png"></img> */}
                     <span className="link-text"><img className="img" src="src/icons/about.svg"></img>About Me</span>
                 </Link>
-            </li>
+            </li> */}
 
             <li className="nav-item">
                 <Link to="/Certificates">

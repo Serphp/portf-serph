@@ -34,8 +34,9 @@ $anim: 0.5s;
 
 
 body {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
+  padding: 20px;
   //max-width: 75%;
   //padding: 5rem;
   --fa-style-family-classic: "Font Awesome 6 Free";
@@ -59,6 +60,22 @@ body {
       transition: all .2s ease-in;
     }
   }
+  b {
+    font-weight: bold;
+  }
+  p {
+    color: black;
+    text-align: justify;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'Rubik', sans-serif !important;
+  }
+  li {
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif !important;
+    margin-bottom: 10px;
+
+  }
 }
 
 .mainbg {
@@ -74,12 +91,20 @@ body {
 
 }
 
+.containerexp {
+  margin: 5px;
+}
+.containery {
+  border-left: #000 solid 1px;
+  width: 100%;
+}
+
 .containerh {
   align-items: center;
   display: flex;
   flex-grow: 3;
   height: 100%;
-  margin: 0 auto;
+  margin: 20px 0 30px 0;
   width: 100%;
 }
 
@@ -166,7 +191,7 @@ article {
 //
 
 h1 {
-  margin: 15px 0 15px 15px;
+  margin: 15px 0 15px 0px;
   font-size: 2.5em;
   font-family: 'Rubik', sans-serif !important;
   color: black;
@@ -175,16 +200,6 @@ h1 {
   
 } 
 
-b {
-  font-weight: bold;
-}
-p {
-  color: black;
-  text-align: justify;
-  font-size: 0.9em;
-  font-weight: lighter;
-  font-family: 'Rubik', sans-serif !important;
-}
 
 h2 {
   margin: 10px;
@@ -199,13 +214,10 @@ h2 {
 
 
 h3 {
-  display: block;
+  text-align: left;
   font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-weight: bold;
+  padding: 10px 0 10px 0;
   font-family: 'Rubik', sans-serif !important;
 }
 
@@ -255,9 +267,9 @@ h5 {
 }
 
 hr {
-  height: 0.5px;
-  background-color: black;
-  margin: 15px 0 10px 0;
+  height: 0.6px;
+  background-color: rgba(0, 0, 0, 0.959);
+  margin: 5px 0 25px 0;
   border: none;
 }
 
@@ -272,23 +284,6 @@ hr {
   {
     filter: hue-rotate(360deg);
   }
-}
-
-.cardbody2{
-  width: 370px;
-  margin: 1rem;
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-.cardre {
-  width: 300px;
-  margin: 1rem;
-
-  position: relative;
-  overflow: hidden;
-  border-radius: 3px;
 }
 
 .cardre img {
@@ -348,20 +343,29 @@ hr {
 
 }
 
+.lang {
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.809);
+  color: white;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    opacity: 1;
+    box-shadow: -2px -2px 5px 1px #c797aa, 2px 2px 5px 1px #8080d1;
+  }
+}
+
 .card2 {
   width: 100%;
   padding: 15px;
   margin: 5px 4px;
   border-radius: 0.3em;
-  //background: transparent;
-  //color: white;
-  //border: rgb(49, 49, 49) 0.1px inset;
-  //backdrop-filter: blur(15px);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  //transition: all 0.3s ease-in-out;
-  //will-change: transform;
   transition: all 0.4s ease-in-out;
-
   &:hover {
     backdrop-filter: blur(2px);
     opacity: 1;
@@ -375,20 +379,7 @@ hr {
     margin: 0;
     padding: 0;
   }
-}
-
-.card {
-  padding: 1.5em;
-  margin: 0.2em;
-  border-radius: 0.3em;
-  background: rgba(255, 255, 255, 0.158);
-  color: white;
-  box-shadow:
-  inset 0 0 20px black;
-  //transition: all 0.3s ease-in-out;
-  will-change: transform;
-  //transition: transform 0.3s ease-in-out;
-}
+}q
 
 /* Path: src\components\Header.js */
 
@@ -403,18 +394,14 @@ footer {
   border-color: black;
 }
 
-/* TEXTs pretty*/
-p.serph{
-  font-size: 14px;
-  width: 100%;
-  margin: 5px 0 5px 0;
-  text-align: center;
-  //font-family: monospace;
-  transition: font-size .1s linear;
+.cexp {
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: auto auto;
+  .exp1 {
+    color: #000;
+  }
 }
-// p.serph:hover{
-//   font-size: 16px;
-// }
 /* ICONS EXPERIENCES */
 
 .conteinericon {
@@ -424,37 +411,51 @@ p.serph{
   justify-content: center;
 }
 
-.icons{
+.btn {
+  font-size: 15px;
+  &:hover {
+    font-size: 25px;
+  }
+}
 
-  border-radius: 50px;
+/* TEXTs pretty*/
+p.serph{
+  font-size: 16px;
+  width: 100%;
+  margin: 10px 0 10px 0;
+  text-align: center;
+  font-family: Rubik;
+  transition: font-size .1s linear;
+}
+// p.serph:hover{
+//   font-size: 16px;
+// }
+
+.icons{
+  border-radius: 10px;
   padding: 10px;
-  max-width: 55px;
-  max-height: 50px;
+  max-width: 75px;
+
   opacity: 0.5;
-  //border: black 0.5px solid;
   background-color: rgba(57, 53, 53, 0.096);
   box-shadow: 1px 1px 20px rgb(125 125 125 / 75%);
-  border-color: #000;
-  margin: 5px;
-  //background-color: white;
-  //transform: translateX(-50%);
+  margin: 0 5px 0 5px;
   transition: $anim ease-in-out;
+  
 }
 
 .icons:hover{
   background-color: rgba(255, 255, 255, 0.096);
   //backdrop-filter: blur(10px);
   max-width: 75px;
-  max-height: 70px;
+
   opacity: 1;
   box-shadow: -2px -2px 5px 1px #db7093, 2px 2px 5px 1px #3737eb;
 }
 
-.Acontainer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+.fa {
+  font-size: 35px;
+  padding: 10px;
 }
 
 .Abutton {
@@ -635,7 +636,7 @@ nav {
   position: fixed;
   display: flex;
   justify-content: center;
-  height: 3%;
+  height: 4%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -652,6 +653,13 @@ nav {
     height: 5%;
   }
 }
+.nav2:hover {
+  height: 7%;
+  @media screen and (max-width: 600px) {
+    height: 5%;
+  }
+}
+
 
 .header {
   margin: 20px;
@@ -659,12 +667,6 @@ nav {
   font-size: 2em;
   font-weight: 800;
 
-}
-.nav2:hover {
-  height: 10%;
-  @media screen and (max-width: 600px) {
-    height: 5%;
-  }
 }
 
 .containernav {
@@ -751,18 +753,141 @@ color: var(--text-secondary);
 }
 
 .hello {
+  width: 100%;
+  height: 250px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  // margin: 10px;
+  backdrop-filter: blur(2px);
+  background-repeat: round;
+  border: black solid 2px;
+  box-shadow: #000 5px 5px 10px;
+  margin-bottom: 2em;
+  @media (max-width: 400px) {
+    margin-left: auto;
+    height: 450px;
+  }
 }
 
 .hello-text {
   text-align: center;
   margin: 20px;
+  color: wheat;
 }
 
 .hello-img img {
-  width: 300px;
+  // margin-left: 5em;
+  margin: 0 0 15px 5em;
+  width: 200px;
+  border-radius: 50%;
+  @media (max-width: 400px) {
+    margin-left: auto;
+  }
 }
+
+// Mensajes 
+.mensaje-bar {
+  background-color: rgba(64, 64, 64, 0.438);
+  height: 4px;
+  width: 100%;
+  animation: update 20s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes update {
+  0% {
+    transform: scaleX(0);
+  }
+}
+// End mensajes
+
+//Experiences 
+.faq {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.faq.active {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+  content: '\f075';
+  font-family: 'Font Awesome 5 Free';
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+
+.faq.active::before {
+  color: #3498db;
+  top: -10px;
+  left: -30px;
+  transform: rotateY(180deg);
+}
+
+.faq-title {
+  margin: 0 35px 0 0;
+}
+
+.faq-text {
+  display: none;
+  margin: 30px 0 0;
+}
+
+.faq.active .faq-text {
+  display: block;
+}
+
+.faq-toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.faq-toggle:focus {
+  outline: 0;
+}
+
+.faq-toggle .fa-times {
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+  color: #fff;
+  display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+.faq.active .faq-toggle {
+  background-color: #9fa4a8;
+}
+//

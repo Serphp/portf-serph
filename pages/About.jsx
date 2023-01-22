@@ -1,6 +1,6 @@
 import { fronted } from "../serph/fronted";
 import { backend } from "../serph/backend";
-
+import '../src/styles/Skills.scss'
 
 export default function About() {
 
@@ -27,6 +27,13 @@ export default function About() {
         document.getElementById("backend").style.display = "block";
     }
 
+    const toggles = document.querySelectorAll('.faq-toggle')
+    
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active')
+    })
+    })
 
     const github = "https://raw.githubusercontent.cortafolio/master";
     //const [showed, setShowed] = useState(false);
@@ -35,6 +42,27 @@ export default function About() {
         <>
 
         <h1> Acerca de mi </h1>
+
+
+    <h1>Frequently Asked Questions</h1>
+<div class="faq-container">
+    <div class="faq active">
+    <h3 class="faq-title">
+        Why shouldn't we trust atoms?
+    </h3>
+
+    <p class="faq-text">
+        They make up everything
+    </p>
+
+    <button class="faq-toggle">
+        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-times"></i>
+    </button>
+    </div>
+
+    </div>
+
         <main className="mainbg"> 
         <div className="row mt-4">
         <div className="col-md-5">
@@ -50,15 +78,13 @@ export default function About() {
             
             <div id="oculted" className="card-body">
             <div id="fronted" className="card-text">
-            <div className="skillhide"> 
+            <section className="skillhide"> 
         <h1>Frontend</h1>
-
-
+        {/* SKILL CONTAIN */}
         {
             fronted.map(({language, percentage}, i) => (
-                <div className="py-2" key={i}>
-                    <div className="textbar"> {language}</div>
-                    
+                <div className="section1" key={i}>
+                <div> {language}</div>
                 <div className="progress-bar">
                 <div className="progress-bar-percent" style={{ width: `${percentage}%`}}></div>
                 </div>
@@ -66,35 +92,27 @@ export default function About() {
             ))
                 
         }
-        </div> 
-        <div id="backend" className="card-text">
-        <div className="skillhide"> 
-        <h1>Backend</h1>
+        </section>
+        <div id="backend">
+        <section className="skillhide"> 
+        {/* <h1>Backend</h1> */}
         {
-            backend.map(({language, percentage, status, icon}, index) => (
-                
-                <div className="py-2" key={index}>
+            backend.map(({language, percentage}, index) => (
+                <div className="section2" key={index}>
                 <h5> {language}</h5>
-                
                 <div className="progress-bar">
-                <div className="progress-bar-percent" 
-                role="progressbar" 
-                style={{ width: `${percentage}%`}}></div> {/* 80% */}
+                <div className="progress-bar-percent" style={{ width: `${percentage}%`}}></div>
                 </div>
                 </div>
-
-
-                    ))
+            ))
         }
-        
+        </section>
+        {/* SKILL CONTAIN */}
         </div>
         </div>
         </div>
-        
-        </div>
-        
         </div>        
-</div>
+        </div>
         
         <div className="col-md-7">
         <h1>Experiences</h1>

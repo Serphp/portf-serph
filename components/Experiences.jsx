@@ -6,8 +6,37 @@ export default function Experiences() {
     return (
         <>
         
-        <h1> Experiences </h1>
+        <h1> EXPERIENCIAS </h1>
+        <hr />
+        
+        <div className="cexp">
+        <h3> Administrador en sistemas </h3>
+        <h3> Tecnico en Sistemas </h3>
+        </div>
+        <div className="cexp">
+        <ul className="">
+            <li>Sistemas operativos: Linux | Windows</li>
+            <li>Instalación, actualización y mantenimiento.</li>
+            <li>Servidores, Administración, configuración, mantenimiento, monitorización y seguridad.</li>
+            <li>Redes básicas, Virtualización, Administración en la nube</li>
+            <li>Copia de seguridad y recuperación: programación y protección.</li>
+        </ul>
+        <ul className="containery">
+            <li>Conocimiento de hardware, como discos duros, memoria RAM y procesadores.</li>
+            <li>Conocimiento de software, como sistemas de gestión de bases de datos y programas de oficina.</li>
+            <li>Multiples Habilidades para solucionar problemas técnicos mediante la resolución de problemas y la depuración de errores.</li>
+            <li>Habilidad para comunicarse efectivamente con usuarios finales, colegas y superiores.</li>
+            <li>Capacidad para aprender y aplicar nuevas tecnologías y metodologías.</li>
+            <li>Conocimiento en seguridad informática y buenas prácticas.</li>
+            
+        </ul>
+        </div>
+
+        <div className="p-5"></div>
+
+        <h1> Web Developer </h1>
         <hr/>
+        <p> Habilidades </p>
         <div className="containerh">
         <div className="conteinericon">
         <p className="serph">Languages</p>
@@ -27,16 +56,16 @@ export default function Experiences() {
         <img src="https://nextjs.org/static/favicon/safari-pinned-tab.svg" alt="" className="icons" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" className="icons" />
         </div> 
-        <div className="containerh">
-        <div className="conteinericon">
+        <div className="">
+        <div className="conteinericon containery">
         <p className="serph">style</p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" alt="" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\bootstrap.png" alt="" className="icons" />
         <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="" className="icons" />
-        <img src="https://image.pngaaa.com/787/6130787-middle.png" alt="Bulma" width="50px" height="50px" title="Bulma" className="icons" />
+        <img src="https://image.pngaaa.com/787/6130787-middle.png" alt="Bulma" width="75px" height="75px" title="Bulma" className="icons" />
         <img src="https://picocss.com/img/apple-touch-icon.png" alt="" className="icons" />
         <p className="serph">Tools</p>
-        <img src="https://git-scm.com/favicon.ico" alt="" className="icons" />
+        <img src="https://git-scm.com/favicon.ico" alt="" width="75px" height="75px" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\github.png" alt="" className="icons" />
         <p className="serph"> OS </p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\linux.png" alt="" className="icons" />

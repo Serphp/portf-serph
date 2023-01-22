@@ -15,8 +15,15 @@ export default function Mensaje() {
         setHeroe(heroes[getHeroeRandom()]);
     }
 
+    function updateHeroes() {
+        setHeroe(heroes[getHeroeRandom()]);
+    }
+    setInterval(updateHeroes, 20000)
+
+
     return (
         <>
+
         <hr/>
             <div className="card3 m-5" style={{ textAlign: "center"}}>
             <h2> {heroe.name} </h2>
@@ -26,8 +33,10 @@ export default function Mensaje() {
             Por <cite title="Source Title"> {heroe.name} </cite>
             </figcaption>
             </div>
-            <hr/>
+
+            <div class="mensaje-bar"></div>
+        <hr/>
+
         </>
-        
         )
 };

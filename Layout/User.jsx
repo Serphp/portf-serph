@@ -18,6 +18,7 @@ const User = () => {
     
     <Navbar />
     <div className="header"> /Serph </div>
+    <hr/>
     <Outlet />
     <Footer />
     </>
