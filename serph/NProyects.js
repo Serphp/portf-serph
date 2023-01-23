@@ -4,7 +4,7 @@ export const NProyects = [
         name: 'TODO',
         description: 'Administrador de tareas',
         lang: 'HTML5, CSS3, REACTJS + VITE, TAILWIND',
-        image: 'https://picsum.photos/200/300',
+        image: './src/media/todo.gif',
         url: 'https://github.com/Serphp/react-todo',
         url2: 'https://minniecat.netlify.app/'
     },
@@ -13,31 +13,35 @@ export const NProyects = [
         name: 'Laravel Notes',
         description: 'UN COMPARTIDO DE NOTAS.',
         lang: 'Laravel | PHP | BOOTSTRAP | HTML5 | JS | SASS',
-        image: 'https://picsum.photos/200/300',
-        url: 'https://google.com',
-        url2: 'https://googl2e.com'
+        image: './src/media/laravel.png',
+        url: 'https://github.com/Serphp/Laravel-Notes',
+        url2: 'https://imgur.com/a/mCovB2R'
     },
     {
         id: 3,
         name: 'QR Generate',
         description: 'Generador de Codigos QR, textos y urls.',
         lang: 'html + css + js + npm',
-        image: 'https://picsum.photos/200/300',
-        url: 'https://google.com',
-        url2: 'https://goog2le.com'
+        image: './src/media/qr.png',
+        url: 'https://github.com/Serphp/QR-Generator',
+        url2: 'https://serphqr.netlify.app/'
     },
     {
         id: 4,
-        name: 'Proyect 4',
-        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
-        image: 'https://picsum.photos/200/300',
-        url: 'https://google.com'
+        name: 'Login and SignUP',
+        description: '',
+        lang: 'React, ReactRouter, Vite, Context, Pico CSS, Firebase, Axios',
+        image: 'https://raw.githubusercontent.com/Serphp/Serph-BaseAuth/master/src/assets/img/browser_QrlTSvhemR.png',
+        url: 'https://github.com/Serphp/Serph-BaseAuth',
+        url2: 'https://exquisite-speculoos-e07e7a.netlify.app/'
     },
     {
         id: 5,
-        name: 'Proyect 5',
-        description: 'lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
-        image: 'https://picsum.photos/200/300',
-        url: 'https://google.com'
+        name: 'Portfolio ReactJS',
+        description: 'Mi Primer portfolio.',
+        lang: 'ReactJS + npm + API + Context + JS/HTML5/CSS3 ',
+        image: './src/media/port.png',
+        url: 'https://github.com/Serphp/portf-serph',
+        url2: 'https://serph.netlify.app/'
     },
 ]

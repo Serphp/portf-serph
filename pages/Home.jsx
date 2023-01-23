@@ -13,7 +13,7 @@ export default function Home() {
         <main>
 
 
-        <section id="home" class="hello">
+        <section class="hello">
         <div className="hello-text ">
             <h1 style={{'textAlign': 'center'}}>Hola, soy Bryan </h1> 
             <h4> SysAdmin | Web Dev | Tecnico en sistemas</h4>

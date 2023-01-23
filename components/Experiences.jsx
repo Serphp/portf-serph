@@ -6,33 +6,42 @@ export default function Experiences() {
     return (
         <>
         
+        {/* <div className="contery">
+        <img src="https://mimo.app/i/bitcoin.png" />
+        <p>Join us for a live webinar/crypto party to learn more about the future of currency.</p>
+        </div>
+         */}
         <h1> EXPERIENCIAS </h1>
         <hr />
-        
+
+        <div className="container-exp">
         <div className="cexp">
         <h3> Administrador en sistemas </h3>
-        <h3> Tecnico en Sistemas </h3>
-        </div>
-        <div className="cexp">
-        <ul className="">
             <li>Sistemas operativos: Linux | Windows</li>
             <li>Instalación, actualización y mantenimiento.</li>
             <li>Servidores, Administración, configuración, mantenimiento, monitorización y seguridad.</li>
             <li>Redes básicas, Virtualización, Administración en la nube</li>
             <li>Copia de seguridad y recuperación: programación y protección.</li>
-        </ul>
-        <ul className="containery">
+        </div>
+        <div className="cexp">
+        <h3> Tecnico en Sistemas </h3>
             <li>Conocimiento de hardware, como discos duros, memoria RAM y procesadores.</li>
             <li>Conocimiento de software, como sistemas de gestión de bases de datos y programas de oficina.</li>
             <li>Multiples Habilidades para solucionar problemas técnicos mediante la resolución de problemas y la depuración de errores.</li>
             <li>Habilidad para comunicarse efectivamente con usuarios finales, colegas y superiores.</li>
             <li>Capacidad para aprender y aplicar nuevas tecnologías y metodologías.</li>
             <li>Conocimiento en seguridad informática y buenas prácticas.</li>
-            
-        </ul>
         </div>
-
-        <div className="p-5"></div>
+        {/* <div className="cexp">
+        <h3> Ethical Hacking </h3>
+            <li>Conocimiento de hardware, como discos duros, memoria RAM y procesadores.</li>
+            <li>Conocimiento de software, como sistemas de gestión de bases de datos y programas de oficina.</li>
+            <li>Multiples Habilidades para solucionar problemas técnicos mediante la resolución de problemas y la depuración de errores.</li>
+            <li>Habilidad para comunicarse efectivamente con usuarios finales, colegas y superiores.</li>
+            <li>Capacidad para aprender y aplicar nuevas tecnologías y metodologías.</li>
+            <li>Conocimiento en seguridad informática y buenas prácticas.</li>
+        </div> */}
+        </div>
 
         <h1> Web Developer </h1>
         <hr/>
@@ -57,7 +66,7 @@ export default function Experiences() {
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" className="icons" />
         </div> 
         <div className="">
-        <div className="conteinericon containery">
+        <div className="conteinericon">
         <p className="serph">style</p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" alt="" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\bootstrap.png" alt="" className="icons" />
