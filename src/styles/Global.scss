@@ -725,11 +725,12 @@ nav {
 
 
 .header {
-  margin: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 10px 0 10px 0;
   font-family: monospace;
-  font-size: 2em;
+  font-size: 1.3em;
   font-weight: 800;
-
 }
 
 .containernav {

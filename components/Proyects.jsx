@@ -7,8 +7,7 @@ export default function Proyects() {
         <>
 
     <div className="section-container">
-            {/* SEPARACION */}
-
+        {/* SEPARACION */}
         {
             NProyects.map(({name, description, lang, image, url, url2}, i) => (
                 <div className="section">

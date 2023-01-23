@@ -17,11 +17,11 @@ export default function Footer() {
       <i className="fab fa-github"></i></a>
     </div>
 
-    <div className="end text-center text-white p-3">
+    <div className="text-center">
     <div style={{ textAlign: "center", color: "black", fontFamily: "rubik" }}> 
-    © 2022 Copyright 
+    © 2022 Copyright - <b>Bryan Rodriguez</b>
     <hr/>
-      <a> Serph</a>
+
     </div>
     </div>
     </footer>
