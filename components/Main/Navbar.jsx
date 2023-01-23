@@ -9,10 +9,13 @@ export default function Navbar() {
         <nav>
         <div class="nav2">
         {/* <div class="deco">_</div> */}
-            <ul className="containernav">
+            <div className="containernav">
             <li className="nav-item">
                 <Link to="/">
-                <span className="link-text"><img className="img" src="src/icons/home.svg"></img>Inicio</span>
+                <span className="link-text"><svg className="fa2" width="40" height="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <path d="M9 22V12h6v10"></path>
+                </svg>Inicio</span>
                 </Link>
             </li>
             {/* <li className="nav-item">
@@ -23,17 +26,21 @@ export default function Navbar() {
 
             <li className="nav-item">
                 <Link to="/Certificates">
-                {/* <img  className='img' src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/nav/certificate.png"></img> */}
-                    <span className="link-text"><img className="img" src="src/icons/home.svg"></img>Certificates</span>
+                    <span className="link-text">
+                        <svg className="fa2" width="40" height="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+</svg>Certificates</span>
                 </Link>
             </li>
             <li className="nav-item">
                 <Link to="/proyectos">
-                {/* <img className='img' src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/nav/proyectos.png"></img> */}
-                    <span className="link-text"><img className="img" src="src/icons/home.svg"></img>Proyects</span>
+                    <span className="link-text"><svg className="fa2" width="40" height="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="m16 18 6-6-6-6"></path>
+  <path d="m8 6-6 6 6 6"></path>
+</svg>Proyects</span>
                 </Link>
             </li>
-        </ul>
+        </div>
         <li className="logo">Serphp</li>
         {/* <div class="deco">_</div> */}
         </div>

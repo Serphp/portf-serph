@@ -487,6 +487,11 @@ p.serph{
   padding: 10px;
 }
 
+.fa2 {
+  width: 40px;
+  padding: 10px;
+}
+
 .Abutton {
   border: none;
   color: black;
@@ -699,6 +704,9 @@ nav {
 }
 
 .containernav {
+  display: flex;
+  justify-content: center;
+  padding: auto;
   @media screen and (max-width: 600px) {
     align-items: flex-start;
     display: flex;

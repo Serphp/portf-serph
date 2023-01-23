@@ -4,7 +4,7 @@ export const NProyects = [
         name: 'TODO',
         description: 'Administrador de tareas',
         lang: 'HTML5, CSS3, REACTJS + VITE, TAILWIND',
-        image: './src/media/todo.gif',
+        image: 'https://github.com/Serphp/portf-serph/blob/master/src/media/todo.gif',
         url: 'https://github.com/Serphp/react-todo',
         url2: 'https://minniecat.netlify.app/'
     },
@@ -13,7 +13,7 @@ export const NProyects = [
         name: 'Laravel Notes',
         description: 'UN COMPARTIDO DE NOTAS.',
         lang: 'Laravel | PHP | BOOTSTRAP | HTML5 | JS | SASS',
-        image: './src/media/laravel.png',
+        image: 'https://github.com/Serphp/portf-serph/blob/master/src/media/laravel.png',
         url: 'https://github.com/Serphp/Laravel-Notes',
         url2: 'https://imgur.com/a/mCovB2R'
     },
@@ -22,7 +22,7 @@ export const NProyects = [
         name: 'QR Generate',
         description: 'Generador de Codigos QR, textos y urls.',
         lang: 'html + css + js + npm',
-        image: './src/media/qr.png',
+        image: 'https://raw.githubusercontent.com/Serphp/portf-serph/master/src/media/qr.png',
         url: 'https://github.com/Serphp/QR-Generator',
         url2: 'https://serphqr.netlify.app/'
     },
@@ -40,7 +40,7 @@ export const NProyects = [
         name: 'Portfolio ReactJS',
         description: 'Mi Primer portfolio.',
         lang: 'ReactJS + npm + API + Context + JS/HTML5/CSS3 ',
-        image: './src/media/port.png',
+        image: 'https://raw.githubusercontent.com/Serphp/portf-serph/master/src/media/port.png',
         url: 'https://github.com/Serphp/portf-serph',
         url2: 'https://serph.netlify.app/'
     },
