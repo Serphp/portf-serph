@@ -25,7 +25,6 @@ export default function Home() {
     </section>
         
         <Cards />
-        {/* <div className="p-5"></div> */}
         </main>
         <Experiences />
         <Mensaje />

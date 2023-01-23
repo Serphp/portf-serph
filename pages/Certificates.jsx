@@ -15,25 +15,12 @@ export default function Certificates() {
     <div className='Ccontainer'>
         <Zoom>
         <picture>
-        <img className='imgcer' alt="openwebin ars" src="https://api2.sololearn.com/v2/certificates/CT-I572BGAV/image/jpg" width="500"/>
+        <img className='imgcer' alt="Solo Learn" src="https://api2.sololearn.com/v2/certificates/CT-I572BGAV/image/jpg" width="500"/>
         </picture>
         </Zoom>
         <Zoom>
         <picture>
-        <img className='imgcer' alt="openwebin ars" src="https://api2.sololearn.com/v2/certificates/CT-GHQSZIQD/image/jpg" width="500"/>
-        </picture>
-        </Zoom>
-    </div>
-    {/* SPACE */}
-    <div className='Ccontainer'>
-        <Zoom>
-        <picture>
-        <img className='imgcer' alt="openwebin ars" src="https://api2.sololearn.com/v2/certificates/CT-NXVGTBZX/image/jpg" width="500"/>
-        </picture>
-        </Zoom>
-        <Zoom>
-        <picture>
-        <img className='imgcer' alt="openwebin ars" src="https://api2.sololearn.com/v2/certificates/CT-BXZMAORQ/image/jpg" width="500"/>
+        <img className='imgcer' alt="Solo Learn" src="https://api2.sololearn.com/v2/certificates/CT-GHQSZIQD/image/jpg" width="500"/>
         </picture>
         </Zoom>
     </div>
@@ -41,12 +28,25 @@ export default function Certificates() {
     <div className='Ccontainer'>
         <Zoom>
         <picture>
-        <img className='imgcer' alt="openwebin ars" src="https://api2.sololearn.com/v2/certificates/CT-VOAJF5JQ/image/jpg" width="500"/>
+        <img className='imgcer' alt="Solo Learn" src="https://api2.sololearn.com/v2/certificates/CT-NXVGTBZX/image/jpg" width="500"/>
         </picture>
         </Zoom>
         <Zoom>
         <picture>
-        <img className='imgcer' alt="openwebin ars" src="https://www.sololearn.com/Certificate/1162-15192096/jpg" width="500"/>
+        <img className='imgcer' alt="Solo Learn" src="https://api2.sololearn.com/v2/certificates/CT-BXZMAORQ/image/jpg" width="500"/>
+        </picture>
+        </Zoom>
+    </div>
+    {/* SPACE */}
+    <div className='Ccontainer'>
+        <Zoom>
+        <picture>
+        <img className='imgcer' alt="Solo Learn" src="https://api2.sololearn.com/v2/certificates/CT-VOAJF5JQ/image/jpg" width="500"/>
+        </picture>
+        </Zoom>
+        <Zoom>
+        <picture>
+        <img className='imgcer' alt="Solo Learn" src="https://www.sololearn.com/Certificate/1162-15192096/jpg" width="500"/>
         </picture>
         </Zoom>
     </div>
@@ -56,12 +56,12 @@ export default function Certificates() {
     <div className='Ccontainer'>
         <Zoom>
         <picture>
-        <img className='imgcer' alt="openwebin ars" src="./src/Cer/python.jpg" width="500"/>
+        <img className='imgcer' alt="Microsoft learn" src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/Cer/python.jpg" width="500"/>
         </picture>
         </Zoom>
         <Zoom>
         <picture>
-        <img className='imgcer' alt="openwebin ars" src="./src/Cer/web.jpg" width="500"/>
+        <img className='imgcer' alt="Microsoft learn" src="https://raw.githubusercontent.com/Serphp/portf-serph/master/src/Cer/web.jpg" width="500"/>
         </picture>
         </Zoom>
     </div>

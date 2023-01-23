@@ -4,7 +4,7 @@ export const NProyects = [
         name: 'TODO',
         description: 'Administrador de tareas',
         lang: 'HTML5, CSS3, REACTJS + VITE, TAILWIND',
-        image: 'https://github.com/Serphp/portf-serph/blob/master/src/media/todo.gif',
+        image: 'https://raw.githubusercontent.com/Serphp/portf-serph/master/src/media/todo.gif',
         url: 'https://github.com/Serphp/react-todo',
         url2: 'https://minniecat.netlify.app/'
     },
@@ -13,7 +13,7 @@ export const NProyects = [
         name: 'Laravel Notes',
         description: 'UN COMPARTIDO DE NOTAS.',
         lang: 'Laravel | PHP | BOOTSTRAP | HTML5 | JS | SASS',
-        image: 'https://github.com/Serphp/portf-serph/blob/master/src/media/laravel.png',
+        image: 'https://raw.githubusercontent.com/Serphp/portf-serph/master/src/media/laravel.png',
         url: 'https://github.com/Serphp/Laravel-Notes',
         url2: 'https://imgur.com/a/mCovB2R'
     },

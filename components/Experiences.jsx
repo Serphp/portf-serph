@@ -45,9 +45,9 @@ export default function Experiences() {
 
         <h1> Web Developer </h1>
         <hr/>
-        <p> Habilidades </p>
-        <div className="containerh">
-        <div className="conteinericon">
+        {/* <p> Habilidades </p> */}
+        <div className="container-lang">
+        <div className="clang">
         <p className="serph">Languages</p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\c-.png" alt="c++" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\css-3.png" alt="css" className="icons" />
@@ -65,8 +65,8 @@ export default function Experiences() {
         <img src="https://nextjs.org/static/favicon/safari-pinned-tab.svg" alt="" className="icons" />
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" className="icons" />
         </div> 
-        <div className="">
-        <div className="conteinericon">
+        
+        <div className="clang">
         <p className="serph">style</p>
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" alt="" className="icons" />
         <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\bootstrap.png" alt="" className="icons" />
@@ -82,7 +82,8 @@ export default function Experiences() {
         <img src="./src/icons/win.png" alt="" className="icons" />
         </div> 
         </div>
-        </div>
+        
+
         </>
     )
 };

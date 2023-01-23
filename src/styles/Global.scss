@@ -432,6 +432,35 @@ footer {
     }
   }
 
+  .container-lang {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+@media screen and (max-width: 400px) {
+    display: flex;
+    flex-direction: column;
+}
+.clang {
+  flex-grow: 2;
+    width: 50%;
+    padding: 10px 25px 10px 25px;
+    background-color: #8f8f8f19;
+    //opacity: 0.5;
+    border-radius: 5px;
+    // backdrop-filter: blur(5px);
+    border: white solid 2px;
+    transition: all 0.5s ease;
+@media screen and (max-width: 600px) {
+    width: 100%;
+    opacity: 1;
+    }
+&:hover {
+    //opacity: 1;
+    }
+  }
+}
+
 /* ICONS EXPERIENCES */
 .conteinericon {
   width: 100%;

@@ -18,9 +18,8 @@ export default function Cards() {
         </div>
       </div>
       <div className="face face2">
-        
-      <Link className="btncard" to="/about" type="button">Read More</Link>
-      {/* <a className='btncard' href="/about" type="button">Read More</a> */}
+      <p> Comprensible y Adaptable </p>
+      {/* <Link className="btncard" to="/about" type="button">Read More</Link> */}
       </div>
     </div>
     {/* SEPARATE  */}
@@ -32,7 +31,7 @@ export default function Cards() {
         </div>
       </div>
       <div className="face face2">
-      <Link className="btncard" to="/about" type="button">Read More</Link>
+      <p> Altamente capacitado para solucionar y encontrar problemas.</p>
       </div>
     </div>
         {/* SEPARATE  */}
@@ -44,7 +43,7 @@ export default function Cards() {
         </div>
       </div>
       <div className="face face2">
-      <Link className="btncard" to="/about" type="button">Read More</Link>
+      <p> Capaz de mantener la calma y controlar situaciones delicadas.</p>
       </div>
     </div>
         {/* SEPARATE  */}
@@ -56,7 +55,7 @@ export default function Cards() {
         </div>
       </div>
       <div className="face face2">
-      <Link className="btncard" to="/about" type="button">Read More</Link>
+      <p> Capaz de entender y aprender nuevas tecnologías de forma sencilla.</p>
       </div>
     </div>
     {/* END */}
