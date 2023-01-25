@@ -23,7 +23,7 @@ $section-bg-color: #ffffff9d;
         flex-direction: column;
     }
     .section {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-flow: wrap;
         flex-grow: 2;
@@ -40,10 +40,11 @@ $section-bg-color: #ffffff9d;
     .image-container {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 40%;
     height: 100%;
     .img2{
-        width: 50%;
+        width: 100%;
+        
     }
 }
 
