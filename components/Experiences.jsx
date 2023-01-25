@@ -48,38 +48,48 @@ export default function Experiences() {
         {/* <p> Habilidades </p> */}
         <div className="container-lang">
         <div className="clang">
+    
+        <section className="tcontainer">
         <p className="serph">Languages</p>
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\c-.png" alt="c++" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\css-3.png" alt="css" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\php.png" alt="" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\python.png" alt="" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\html-5.png" alt="" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\js.png" alt="" className="icons" />
-        <p className="serph"> Database / Backend </p>
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\mysql.png" alt="" className="icons" />
-        <img src="https://www.postgresql.org/favicon.ico" alt="" className="icons" />
-        <img src="https://nodejs.org/static/images/logo.svg" alt="" className="icons" />
+            <article className="tlang"> JavaScript </article>
+            <article className="tlang"> HTML </article>
+            <article className="tlang"> PHP</article>
+            <article className="tlang"> Python</article>
 
-        <p className="serph">framework</p>
-        <img src="https://astro.build/favicon.svg" alt="" className="icons" />
-        <img src="https://nextjs.org/static/favicon/safari-pinned-tab.svg" alt="" className="icons" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" className="icons" />
+            <p className="serph">Languages Low</p>
+            <article className="tlang"> Java</article>
+            <article className="tlang"> C</article>
+            <article className="tlang"> C#</article>
+        <p className="serph"> Database / Backend </p>
+        <article className="tlang"> NoSQL</article>
+            <article className="tlang"> MySQL</article>
+            <article className="tlang"> PostgreSQL</article>
+            <article className="tlang"> MariaDB</article>
+            <article className="tlang"> MongoDB</article>
+            <article className="tlang"> NodeJS</article>
+            <article className="tlang"> API Rest</article>
+        </section>
         </div> 
         
         <div className="clang">
+        <section className="tcontainer">
         <p className="serph">style</p>
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" alt="" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\bootstrap.png" alt="" className="icons" />
-        <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="" className="icons" />
-        <img src="https://image.pngaaa.com/787/6130787-middle.png" alt="Bulma" width="75px" height="75px" title="Bulma" className="icons" />
-        <img src="https://picocss.com/img/apple-touch-icon.png" alt="" className="icons" />
-        <p className="serph">Tools</p>
-        <img src="https://git-scm.com/favicon.ico" alt="" width="75px" height="75px" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\github.png" alt="" className="icons" />
-        <p className="serph"> OS </p>
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\linux.png" alt="" className="icons" />
-        <img src="https://c.s-microsoft.com/favicon.ico" alt="" className="icons" />
-        <img src="./src/icons/win.png" alt="" className="icons" />
+            <article className="tlang"> BootStrap</article>
+            <article className="tlang"> Tailwind</article>
+            <article className="tlang"> CSS3</article>
+        <p className="serph"> FrameWorks </p>
+            <article className="tlang"> ReactJS </article>
+            <article className="tlang"> NextJS </article>
+            <article className="tlang"> AstroJS </article>
+
+        <p className="serph">System Operative</p>
+            <article className="tlang"> Windows 11/10/8/7 </article>
+            <article className="tlang"> Windows Desatendido </article>
+            <article style={{"backgroundColor": "black"}} className="tlang"> Linux </article>
+            <article className="tlang"> Kali Linux</article>
+            <article className="tlang"> Arch Linux</article>
+        </section>
+
         </div> 
         </div>
         
@@ -88,82 +98,34 @@ export default function Experiences() {
     )
 };
 
+        {/* <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\c-.png" title="c++" className="icons" />
+        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\css-3.png" title="CSS3" className="icons" />
+        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\php.png" title="PHP" className="icons" />
+        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\python.png" title="Python" className="icons" />
+        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\html-5.png" title="HTML5" className="icons" />
+        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\js.png" title="JS" className="icons" />
+        <p className="serph"> Database / Backend </p>
+        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\mysql.png" title="MySQL" className="icons" />
+        <img src="https://www.postgresql.org/favicon.ico" width="75px" height="75px" title="PostgreSQL" className="icons" />
+        <img src="https://nodejs.org/static/images/logo.svg" width="75px" height="75px" title="NodeJS" className="icons" />
+        <img src="https://laravel.com/img/favicon/apple-touch-icon.png" title="Laravel" className="icons" />
+        <img src="https://www.mongodb.com/assets/images/global/favicon.ico" title="mongodb" className="icons" />
 
-{/* <div className="row mt-3">
-<div className="col-md-6">
-<h1 className="mt-2 mb-4"> Como soy? </h1>
-<div className="card2">
-    <p> </p>
-
-<div style={{'display': 'flex', 'justify-content': 'center'}}>
-<button className="btn" > 
-
-<a href="/about" class="buttoned small" title="Este boton fue uno de los botones que utilice en el 2013"> Sobre mi </a>
-</button>
-</div>
-</div>
-
-<h1 className="mt-2 mb-2"> Habilidades </h1>
-<div className="card2">
-    <p> Puedo decir mucho sobre mi, pero lo mas importante es que soy una persona, 
-    que apesar de que una situación este complicada, siempre encuentro la manera de 
-    darle solución, aúnque nadie la vea, siempre estoy dispuesto ayudar al que no puede avanzar,
-    y no me molesta en lo absoluto, de lo contrario al ayudarlo también aprendo cosas. </p>
-
-<div style={{'display': 'flex', 'justify-content': 'center'}}>
-<button className="btn" > 
-
-<a href="/about" class="buttoned small" title="Este boton fue uno de los botones que utilice en el 2013"> Sobre mi </a>
-</button>
-</div>
-</div>
-
-</div>
-
-
-
-<div className="col-md-6">
-<h1 className="mt-2 mb-4"> Experiences </h1>
-
-<div className="card2">
-
-<p className="serph">Languages</p>
-<section className="conteinericon">
-<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\c-.png" alt="c++" className="icons" />
-<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\css-3.png" alt="css" className="icons" />
-<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\php.png" alt="" className="icons" />
-<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\python.png" alt="" className="icons" />
-<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\html-5.png" alt="" className="icons" />
-<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\js.png" alt="" className="icons" />
-<p className="serph"> Database / Backend </p>
-<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\mysql.png" alt="" className="icons" />
-<img src="https://www.postgresql.org/favicon.ico" alt="" className="icons" />
-<img src="https://nodejs.org/static/images/logo.svg" alt="" className="icons" />
-
-<p className="serph">framework</p>
-
-<img src="https://astro.build/favicon.svg" alt="" className="icons" />
-
-<img src="https://nextjs.org/static/favicon/safari-pinned-tab.svg" alt="" className="icons" />
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" className="icons" />
-<p className="serph">style</p>
-<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" alt="" className="icons" />
-<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\bootstrap.png" alt="" className="icons" />
-<img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="" className="icons" />
-<img src="https://bulma.io/favicons/favicon-32x32.png" alt="" className="icons" />
-<img src="https://picocss.com/img/apple-touch-icon.png" alt="" className="icons" />
-<p className="serph">Tools</p>
-<img src="https://git-scm.com/favicon.ico" alt="" className="icons" />
-<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\github.png" alt="" className="icons" />
-<p className="serph"> OS </p>
-<img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\linux.png" alt="" className="icons" />
-<img src="https://c.s-microsoft.com/favicon.ico" alt="" className="icons" />
-<img src="./src/icons/win.png" alt="" className="icons" />
-<img src="./src/icons/arch.png" alt="" className="icons" />
-<img src="./src/icons/kali.png" alt=""  className="icons" />
-<img src="./src/icons/debian.png" alt="" className="icons" />
-</section> 
-</div>
-</div>
-</div> */}
+        <p className="serph">framework</p>
+        <img src="https://astro.build/favicon.svg" title="Astro JS" className="icons" />
+        <img src="https://nextjs.org/static/favicon/safari-pinned-tab.svg" title="Next JS" className="icons" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title="React JS" className="icons" /> */}
+        
+        {/* <p className="serph">style</p>
+        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" title="" className="icons" />
+        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\bootstrap.png" title="" className="icons" />
+        <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" title="" className="icons" />
+        <img src="https://image.pngaaa.com/787/6130787-middle.png" title="Bulma" width="75px" height="75px" className="icons" />
+        <img src="https://picocss.com/img/apple-touch-icon.png" title="" className="icons" />
+        <p className="serph">Tools</p>
+        <img src="https://git-scm.com/favicon.ico" title="" width="75px" height="75px" className="icons" />
+        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\github.png" title="" className="icons" />
+        <p className="serph"> OS </p>
+        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\linux.png" title="" className="icons" />
+        <img src="https://c.s-microsoft.com/favicon.ico" title="" className="icons" />
+        <img src="./src/icons/win.png" title="" className="icons" /> */}

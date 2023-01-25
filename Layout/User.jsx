@@ -17,8 +17,7 @@ const User = () => {
     <>
     
     <Navbar />
-    <div className="header"> /Serph </div>
-    <hr/>
+    <div className="header"><span className="beta">Beta </span>  /Serph </div>
     <Outlet />
     <Footer />
     </>

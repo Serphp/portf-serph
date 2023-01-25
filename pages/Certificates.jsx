@@ -37,6 +37,7 @@ export default function Certificates() {
         </picture>
         </Zoom>
     </div>
+    
     {/* SPACE */}
     <div className='Ccontainer'>
         <Zoom>
@@ -52,7 +53,7 @@ export default function Certificates() {
     </div>
     <h2 style={{'margin': '50px', 'textAlign': 'center'}}> Microsoft Learn </h2>
 
-        {/* SPACE */}
+    {/* SPACE */}
     <div className='Ccontainer'>
         <Zoom>
         <picture>
@@ -76,11 +77,21 @@ export default function Certificates() {
         </Zoom>
     </div>
 
+    <h2 style={{'margin': '50px', 'textAlign': 'center'}}> Udemy </h2>
+    <div className='Ccontainer'>
+        <Zoom>
+        <picture>
+        <img className='imgcer' alt="openwebin ars" src="https://udemy-certificate.s3.amazonaws.com/image/UC-a300cfe2-d0a8-4d62-84c8-cd982d079634.jpg?v=1670066678000" width="500"/>
+        </picture>
+        </Zoom>
+        <Zoom>
+        <picture>
+        <img className='imgcer' alt="openwebin ars" src="https://udemy-certificate.s3.amazonaws.com/image/UC-8f81babb-4dd5-4964-bd1f-02971468ae2f.jpg?v=1672188528000" width="500"/>
+        </picture>
+        </Zoom>
+        </div>
+
     {/* END */}
-    </div>
-
-
-    
-
+        </div>
         </>)
 }
