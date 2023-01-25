@@ -498,7 +498,7 @@ p.serph{
 .tlang{
   font-family: monospace;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 16px;
 
   text-align: center;
   border-radius: 5px;
@@ -771,7 +771,7 @@ nav {
     padding: 5px;
     transition: color 1s;
     &:hover{
-      color: #00ffc8;
+      color: #ffa200;
     }
   }
 }
@@ -822,7 +822,7 @@ nav {
 .link-text {
   display: flex;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.1ch;
   text-transform: uppercase;
