@@ -20,7 +20,7 @@ export default function Home() {
             {/* <p>Yo creo, que todos podemos lograr grandes cosas, si nos proponemos hacerlo.</p> */}
         </div>
         <div class="hello-img">
-            <img src="https://pbs.twimg.com/media/FmJcezlXEAUQmTz?format=jpg&name=small" alt="" />
+            <img src="https://media.licdn.com/dms/image/D4E03AQHk5VD69aRJGg/profile-displayphoto-shrink_800_800/0/1674619813456?e=1680134400&v=beta&t=ui5a91ZP2C0fZmH0syj_WEKSG8RNlgmTjgzOeDJZJQ8" alt="" />
         </div>
     </section>
         

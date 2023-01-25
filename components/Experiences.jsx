@@ -77,8 +77,8 @@ export default function Experiences() {
             <article className="tlang"> BootStrap</article>
             <article className="tlang"> Tailwind</article>
             <article className="tlang"> CSS3</article>
-        <p className="serph"> FrameWorks </p>
-            <article className="tlang"> ReactJS </article>
+        <p className="serph"> Frameworks </p>
+            <article className="tlang"> <b>ReactJS</b> </article>
             <article className="tlang"> NextJS </article>
             <article className="tlang"> AstroJS </article>
 
@@ -88,6 +88,12 @@ export default function Experiences() {
             <article style={{"backgroundColor": "black"}} className="tlang"> Linux </article>
             <article className="tlang"> Kali Linux</article>
             <article className="tlang"> Arch Linux</article>
+
+            <p className="serph">Tools</p>
+            <article className="tlang"> Git </article>
+            <article className="tlang"> Github </article>
+            <article className="tlang"> Figma / Adobe XD </article>
+            <article className="tlang"> VMware / VirtualBox</article>
         </section>
 
         </div> 
