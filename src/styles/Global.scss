@@ -857,7 +857,8 @@ nav {
   width: 100%;
   height: auto;
   display: flex;
-  flex-flow: row;
+  // flex-flow: row;
+  flex-wrap:wrap;
   justify-content: center;
   align-items: center;
   // margin: 10px;

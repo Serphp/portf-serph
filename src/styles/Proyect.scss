@@ -11,6 +11,12 @@ $section-bg-color: #ffffff9d;
     }
     }
 
+    .containerq{
+        display: flex;
+        justify-content: center;
+        margin: 15px 0 15px 0;
+    }
+    
     // define the styles for the section container
     .section-container {
         width: 100%;

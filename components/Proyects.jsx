@@ -18,7 +18,7 @@ export default function Proyects() {
                 <h2>{name}</h2>
                 <p style={{ 'fontSize': '16px' }}> {description}</p>
                 <div className="lang">{lang}</div>
-                <div className="containerx">
+                <div className="containerq">
                 <a href={url} target="_blank" className="button">Github</a>
                 <a href={url2} target="_blank" className="button">View</a>
                 </div>
