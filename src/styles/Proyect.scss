@@ -34,17 +34,15 @@ $section-bg-color: #ffffff9d;
             transform: scale(1);
         }
     transition: all 0.5s ease;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 400px) {
         width: 100%;
     }
     .image-container {
     display: flex;
     justify-content: center;
     width: 40%;
-    height: 100%;
     .img2{
         width: 100%;
-        
     }
 }
 
