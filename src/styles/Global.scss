@@ -876,17 +876,17 @@ nav {
 
 .hello-text {
   text-align: center;
-  margin: 20px;
+  margin: 15px;
   color: wheat;
 }
 
 .hello-img img {
   // margin-left: 5em;
-  margin: 15px 0 15px 5em;
+  margin: 15px;
   width: 200px;
   border-radius: 50%;
   @media (max-width: 400px) {
-    margin-left: auto;
+    margin: 15px;
   }
 }
 
