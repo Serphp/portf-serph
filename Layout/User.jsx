@@ -17,7 +17,13 @@ const User = () => {
     <>
     
     <Navbar />
-    <div className="header"><span className="beta">Beta </span>  /Serph </div>
+    <div className="header">
+    <div className="headermenu">
+    </div>
+    <div className="titlen">
+        <span className="beta">Beta </span>  /Serph 
+    </div>
+    </div>
     <Outlet />
     <Footer />
     </>
