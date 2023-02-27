@@ -3,42 +3,40 @@
     //width: 100%;
     //position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     flex-wrap:wrap;
-    //padding: 5px;
   }
 
   title {
     background-color: black;
   }
-
+  //contenedor
   .cardx{
-    // margin: 0px 15px 10px 15px;
     margin-top: -100px;
-    margin-bottom: 100px;
+    margin-bottom: -60px;
     margin-left: 10px;
-
+    margin-right: 10px;
   }
 
+  //tamaño
   .face{
-    width:250px;
-    height: 100px;
+    width: 250px;
+    height: 150px;
     transition:.5s; 
   }
 
   /*CARD BG*/
   .face1{
     position: relative;
-    
-    backdrop-filter: blur(5px);
+    //backdrop-filter: blur(5px);
     border-radius: 5px;
-    background-color: rgba(215, 215, 215, 0.217);
+    background-color: rgb(255, 255, 255);
     color: #333;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
+    //align-items: flex-end;
+    font-size: 1.1em; //title size
     flex-direction: column;
     cursor: pointer;
     z-index: 1;
@@ -53,16 +51,19 @@
   }
   .cardx:hover .face.face1 .content{
     opacity: 2;
+    transform: scale(1.1);
   }
   .face.face1 .content i{
-    //font-size: 45px;
-    color: black;
+    //font-size: 35px;
+    color: #94d8e4;
     //display: inline-block;  
   }
   /* TITLE CARD */
   .face.face1 .content h3{
-    font-size: 1.1em;
-    color: black;
+    font-size: 1em;
+    color: #94d8e4;
+    //color: rgb(21, 21, 21);
+    font-weight: bold;
     text-align: center;
     //margin-bottom: 5px;
   }
@@ -71,23 +72,25 @@
   }
   .face.face2{
     //position: relative;
-    height: 70px;
+    //height: 50px;
     background: rgba(255, 255, 255, 0.112);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    border-bottom: black 1px solid;
+    padding: 5px;
+    //border-bottom: black 1px solid;
     border-radius: 10px;
-    transform: translateY(30px);
+    transform: translateY(-50px);
   }
   .cardx:hover .face.face2{
-    transform: translateY(100px);
+    transform: translateY(-40px);
   }
 
-  
-/* BOTTONS */
 
+
+
+
+/* BOTTONS */
 .btncard{
   align-items: center;
   text-decoration: none;

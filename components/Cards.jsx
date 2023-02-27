@@ -5,11 +5,12 @@ export default function Cards() {
     return (
         <>
 
-      <h1 > Soft Skills </h1>
-      <hr/>
-        
-    <div className="containerx">
+    <div className='mainbg'>
+    <h6 className="subtitle">Soft skill</h6>
+    <h2>¿Que hago?</h2>
+    <p className='centert mb-5'>El compromiso de perseverar y nunca abandonar es un lema personal que guía mi actitud y enfoque en la vida.</p>
 
+    <div className="containerx">
     <div className="cardx">
       <div className="face face1">
         <div className="containerx content">
@@ -18,7 +19,6 @@ export default function Cards() {
         </div>
       </div>
       <div className="face face2">
-      <p> Comprensible y Adaptable </p>
       {/* <Link className="btncard" to="/about" type="button">Read More</Link> */}
       </div>
     </div>
@@ -27,11 +27,10 @@ export default function Cards() {
     <div className="face face1">
         <div className="containerx content">
         <i class="fa fa-bug"></i>
-          <h3> Solucions </h3>
+          <h3> Organizado </h3>
         </div>
       </div>
       <div className="face face2">
-      <p> Altamente capacitado para solucionar y encontrar problemas.</p>
       </div>
     </div>
         {/* SEPARATE  */}
@@ -39,11 +38,32 @@ export default function Cards() {
         <div className="face face1">
         <div className="containerx content">
         <i class="fa fa-list"></i>
-          <h3> Order </h3>
+          <h3> Resiliente </h3>
         </div>
       </div>
       <div className="face face2">
-      <p> Capaz de mantener la calma y controlar situaciones delicadas.</p>
+      </div>
+    </div>
+            {/* SEPARATE  */}
+            <div className="cardx">
+        <div className="face face1">
+        <div className="containerx content">
+        <i class="fa fa-list"></i>
+          <h3> Autodidacta </h3>
+        </div>
+      </div>
+      <div className="face face2">
+      </div>
+    </div>
+            {/* SEPARATE  */}
+            <div className="cardx">
+        <div className="face face1">
+        <div className="containerx content">
+        <i class="fa fa-list"></i>
+          <h3> Comunicativo </h3>
+        </div>
+      </div>
+      <div className="face face2">
       </div>
     </div>
         {/* SEPARATE  */}
@@ -55,12 +75,11 @@ export default function Cards() {
         </div>
       </div>
       <div className="face face2">
-      <p> Capaz de entender y aprender nuevas tecnologías de forma sencilla.</p>
       </div>
     </div>
     {/* END */}
   </div>
-  
+  </div>
         </>
     )
 };
