@@ -11,22 +11,35 @@ export default function Home() {
     return (
         <>
         <main>
+        <header class="header2" id="home">
+        <div class="container">
+            <div class="infos">
+                <h6 class="subtitle">Bienvenido a mi portfolio.</h6>
+                <h1 class="title">Bryan Rodriguez</h1>
+                <p>SysAdmin | Web Developer | Técnico IT</p>
+
+                <div class="buttons pt-3">
+                    <button class="buttoned"> <a href="mailto:serphp@hotmail.com"></a> CONTACTAME</button>
+                    <button class="buttoned">DOWNLOAD CV</button>
+                </div>      
+
+                <div class="socials mt-4">
+                    <a className="btn btn-link btn-floating m-1" target="_blank" href="https://twitter.com/Serphp">
+                    <i className="fab fa-twitter"></i></a>
 
 
-        <section class="hello">
-            <div className="hello-text">
-                <h1 style={{'textAlign': 'center'}}>Hola, soy Bryan </h1> 
-                <h4> SysAdmin | Web Dev | Tecnico en sistemas</h4>
-            </div>
-            <div class="hello-img">
-            <img src="https://media.licdn.com/dms/image/D4E03AQHk5VD69aRJGg/profile-displayphoto-shrink_800_800/0/1674619813456?e=1680134400&v=beta&t=ui5a91ZP2C0fZmH0syj_WEKSG8RNlgmTjgzOeDJZJQ8" alt="" />
-            </div>
-        </section>
-        {/* <section class="hello">
-            <div class="hello-text">
-                <p>Sobre mi</p>
-            </div>
-        </section> */}
+                    <a className="btn btn-link btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/bryaninit/">
+                    <i class="fab fa-linkedin"></i></a>
+
+                    <a className="btn btn-link btn-floating m-1" target="_blank" href="https://github.com/Serphp">
+                    <i className="fab fa-github"></i></a>
+                </div>
+            </div>              
+            <div class="img-holder">
+                <img src="https://pbs.twimg.com/media/Fpe8OdhXgAEjp--?format=jpg&name=medium" alt="" />
+            </div>      
+        </div>  
+        </header>
         
         <Cards />
         </main>
