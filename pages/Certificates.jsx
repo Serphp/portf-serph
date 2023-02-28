@@ -5,10 +5,8 @@ import 'react-medium-image-zoom/dist/styles.css'
 export default function Certificates() {
     return (
         <>
-    <h1> Certificados </h1>
-        <hr/>
-
-    <h2 style={{'margin': '50px', 'textAlign': 'center'}}> Solo Learn </h2>
+    <h6 className="subtitle"> Certificados </h6>
+    <h2 style={{'margin-bottom': '50px', 'textAlign': 'center'}}> Solo Learn </h2>
 
     <div className='certificates'>
     {/* START  */}
@@ -51,6 +49,7 @@ export default function Certificates() {
         </picture>
         </Zoom>
     </div>
+    
     <h2 style={{'margin': '50px', 'textAlign': 'center'}}> Microsoft Learn </h2>
 
     {/* SPACE */}
