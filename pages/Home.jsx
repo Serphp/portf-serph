@@ -14,9 +14,13 @@ export default function Home() {
         <header class="header2" id="home">
         <div class="container">
             <div class="infos">
-                <h6 class="subtitle">Bienvenido a mi portfolio.</h6>
-                <h1 class="title">Bryan Rodriguez</h1>
-                <p>SysAdmin | Web Developer | Técnico IT</p>
+                <h6 class="subtitle" style={{'textAlign':'left'}}>Bienvenido a mi portfolio.</h6>
+                <h1 class="title">Bryan</h1>
+                <h1 class="title">Rodriguez</h1>
+                <p></p>
+                <h6 class="subtitle" style={{'textAlign':'left'}}>
+                SysAdmin | Web Developer | Técnico IT
+                </h6>
 
                 <div class="buttons pt-3">
                     <button class="buttoned"> <a href="mailto:serphp@hotmail.com"></a> CONTACTAME</button>
