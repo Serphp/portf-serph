@@ -11,127 +11,66 @@ export default function Experiences() {
         <p>Join us for a live webinar/crypto party to learn more about the future of currency.</p>
         </div>
          */}
-        <h1> EXPERIENCIAS </h1>
-        <hr />
 
-        <div className="container-exp">
-        <div className="cexp">
-        <h3> Administrador en sistemas </h3>
-            <li>Sistemas operativos: Linux | Windows</li>
-            <li>Instalación, actualización y mantenimiento.</li>
-            <li>Servidores, Administración, configuración, mantenimiento, monitorización y seguridad.</li>
-            <li>Redes básicas, Virtualización, Administración en la nube</li>
-            <li>Copia de seguridad y recuperación: programación y protección.</li>
-        </div>
-        <div className="cexp">
-        <h3> Tecnico en Sistemas </h3>
-            <li>Conocimiento de hardware, como discos duros, memoria RAM y procesadores.</li>
-            <li>Conocimiento de software, como sistemas de gestión de bases de datos y programas de oficina.</li>
-            <li>Multiples Habilidades para solucionar problemas técnicos mediante la resolución de problemas y la depuración de errores.</li>
-            <li>Habilidad para comunicarse efectivamente con usuarios finales, colegas y superiores.</li>
-            <li>Capacidad para aprender y aplicar nuevas tecnologías y metodologías.</li>
-            <li>Conocimiento en seguridad informática y buenas prácticas.</li>
-        </div>
-        {/* <div className="cexp">
-        <h3> Ethical Hacking </h3>
-            <li>Conocimiento de hardware, como discos duros, memoria RAM y procesadores.</li>
-            <li>Conocimiento de software, como sistemas de gestión de bases de datos y programas de oficina.</li>
-            <li>Multiples Habilidades para solucionar problemas técnicos mediante la resolución de problemas y la depuración de errores.</li>
-            <li>Habilidad para comunicarse efectivamente con usuarios finales, colegas y superiores.</li>
-            <li>Capacidad para aprender y aplicar nuevas tecnologías y metodologías.</li>
-            <li>Conocimiento en seguridad informática y buenas prácticas.</li>
-        </div> */}
-        </div>
 
-        <h1> Web Developer </h1>
-        <hr/>
-        {/* <p> Habilidades </p> */}
-        <div className="container-lang">
+        <h6 className="subtitle">Web developer</h6>
+        <h5> Tecnologías </h5>
+        
+        <div className="mainbg container-lang">
         <div className="clang">
     
-        <section className="tcontainer">
-        <p className="serph">Languages</p>
-            <article className="tlang"> JavaScript </article>
-            <article className="tlang"> HTML </article>
-            <article className="tlang"> PHP</article>
-            <article className="tlang"> Python</article>
+        <section className="tcontainer ">
+        <h6 className="subtitle"> Languages </h6>
+            <img className="conteinericon" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="" />
+            <img className="conteinericon" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="" />
+            <img className="conteinericon" src="https://img.shields.io/badge/php_8+-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="" />
+            <img className="conteinericon" src="https://img.shields.io/badge/python_2+-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="" />
 
-            <p className="serph">Languages Low</p>
-            <article className="tlang"> Java</article>
-            <article className="tlang"> C</article>
-            <article className="tlang"> C#</article>
-        <p className="serph"> Database / Backend </p>
-        <article className="tlang"> NoSQL</article>
-            <article className="tlang"> MySQL</article>
-            <article className="tlang"> PostgreSQL</article>
-            <article className="tlang"> MariaDB</article>
-            <article className="tlang"> MongoDB</article>
-            <article className="tlang"> NodeJS</article>
-            <article className="tlang"> API Rest</article>
+        <h6 className="subtitle"> Database </h6>
+            <img className="conteinericon" src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white" alt="" />
+            <img className="conteinericon" src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="" />
+            <img className="conteinericon" src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="" />
+            <img className="conteinericon" src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="" />
+        <h6 className="subtitle"> Back-end </h6>
+            <img className="conteinericon" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="" />
+            <img className="conteinericon" src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" alt="" />
+            <img className="conteinericon" src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="" />
         </section>
+
+
         </div> 
         
         <div className="clang">
         <section className="tcontainer">
-        <p className="serph">style</p>
-            <article className="tlang"> BootStrap</article>
-            <article className="tlang"> Tailwind</article>
-            <article className="tlang"> CSS3</article>
-        <p className="serph"> Frameworks </p>
-            <article className="tlang"> <b>ReactJS</b> </article>
-            <article className="tlang"> NextJS </article>
-            <article className="tlang"> AstroJS </article>
+        {/* <p className="serph">style</p> */}
+        <h6 className="subtitle"> Styles </h6>
+        <img className="conteinericon" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" title="CSS3" />
+        <img className="conteinericon" src="https://img.shields.io/badge/bootstrap_4+-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" title="Bootstrap" />
+        <img className="conteinericon" src="https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white" title="Chakra" />
+        <img className="conteinericon" src="https://img.shields.io/badge/bulma-00d1b2.svg?style=for-the-badge&logo=bulma&logoColor=white" title="Bulma CSS" />
+        <img className="conteinericon" src="https://img.shields.io/badge/Tailwind-0b1121.svg?style=for-the-badge&logo=tailwindcss&logoColor=38bdf8" title="Chakra" />
 
-        <p className="serph">System Operative</p>
-            <article className="tlang"> Windows 11/10/8/7 </article>
-            <article className="tlang"> Windows Desatendido </article>
-            <article style={{"backgroundColor": "black"}} className="tlang"> Linux </article>
-            <article className="tlang"> Kali Linux</article>
-            <article className="tlang"> Arch Linux</article>
+        <h6 className="subtitle"> Front-end </h6>
+        <img className="conteinericon" src="https://img.shields.io/badge/react_16+-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" title="React" />
+        <img className="conteinericon" src="https://img.shields.io/badge/React_Router_6.4+-CA4245?style=for-the-badge&logo=react-router&logoColor=white" title="React Router" />
+        <img className="conteinericon" src="https://img.shields.io/badge/React_redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white" title="React" />
+        <img className="conteinericon" src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" title="NextJS" />
 
-            <p className="serph">Tools</p>
-            <article className="tlang"> Git </article>
-            <article className="tlang"> Github </article>
-            <article className="tlang"> Figma / Adobe XD </article>
-            <article className="tlang"> VMware / VirtualBox</article>
+        <h6 className="subtitle"> System Operative </h6>
+        <img className="conteinericon" src="https://img.shields.io/badge/Windows_11-_10-01adef?style=for-the-badge&logo=Windows&logoColor=white" title="Windows 11-7" />
+        <img className="conteinericon" src="https://img.shields.io/badge/Kali_Linux-357bf1?style=for-the-badge&logo=kali-linux&logoColor=white" title="Kali Linux 19+" />
+        <img className="conteinericon" src="https://img.shields.io/badge/Arch_Linux-1793d1?style=for-the-badge&logo=arch-linux&logoColor=white" title="Arch Linux" />
+        <img className="conteinericon" src="https://img.shields.io/badge/Linux-white?style=for-the-badge&logo=linux&logoColor=e7b311" title="Linux" />
+
+        <h6 className="subtitle"> Tools </h6>
+        <img className="conteinericon" src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" title="Figma" />
+        <img className="conteinericon" src="https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6" title="AdobeXD" />
+        <img className="conteinericon" src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" title="Docker" />
+        <img className="conteinericon" src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white" title="Markdown" />
+
         </section>
-
         </div> 
         </div>
-        
-
         </>
     )
 };
-
-        {/* <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\c-.png" title="c++" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\css-3.png" title="CSS3" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\php.png" title="PHP" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\python.png" title="Python" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\html-5.png" title="HTML5" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\js.png" title="JS" className="icons" />
-        <p className="serph"> Database / Backend </p>
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\mysql.png" title="MySQL" className="icons" />
-        <img src="https://www.postgresql.org/favicon.ico" width="75px" height="75px" title="PostgreSQL" className="icons" />
-        <img src="https://nodejs.org/static/images/logo.svg" width="75px" height="75px" title="NodeJS" className="icons" />
-        <img src="https://laravel.com/img/favicon/apple-touch-icon.png" title="Laravel" className="icons" />
-        <img src="https://www.mongodb.com/assets/images/global/favicon.ico" title="mongodb" className="icons" />
-
-        <p className="serph">framework</p>
-        <img src="https://astro.build/favicon.svg" title="Astro JS" className="icons" />
-        <img src="https://nextjs.org/static/favicon/safari-pinned-tab.svg" title="Next JS" className="icons" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title="React JS" className="icons" /> */}
-        
-        {/* <p className="serph">style</p>
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\tailwind.png" title="" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\bootstrap.png" title="" className="icons" />
-        <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" title="" className="icons" />
-        <img src="https://image.pngaaa.com/787/6130787-middle.png" title="Bulma" width="75px" height="75px" className="icons" />
-        <img src="https://picocss.com/img/apple-touch-icon.png" title="" className="icons" />
-        <p className="serph">Tools</p>
-        <img src="https://git-scm.com/favicon.ico" title="" width="75px" height="75px" className="icons" />
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\github.png" title="" className="icons" />
-        <p className="serph"> OS </p>
-        <img src="https://raw.githubusercontent.com/Serphp/serph-portafolio/master\src\icons\linux.png" title="" className="icons" />
-        <img src="https://c.s-microsoft.com/favicon.ico" title="" className="icons" />
-        <img src="./src/icons/win.png" title="" className="icons" /> */}
