@@ -23,7 +23,7 @@ export default function Home() {
                 </h6>
 
                 <div class="buttons pt-3">
-                    <button class="buttoned"> <a href="mailto:serphp@hotmail.com"> CONTACTAME</a></button>
+                <button class="buttoned"> <a href="mailto:serphp@hotmail.com"> CONTACTAME </a> </button>
                     <button class="buttoned">DOWNLOAD CV</button>
                 </div>      
 
