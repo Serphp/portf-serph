@@ -23,7 +23,7 @@ export default function Home() {
                 </h6>
 
                 <div class="buttons pt-3">
-                    <button class="buttoned"> <a href="mailto:serphp@hotmail.com"></a> CONTACTAME</button>
+                    <button class="buttoned"> <a href="mailto:serphp@hotmail.com"> CONTACTAME</a></button>
                     <button class="buttoned">DOWNLOAD CV</button>
                 </div>      
 
@@ -40,7 +40,7 @@ export default function Home() {
                 </div>
             </div>              
             <div class="img-holder">
-                <img src="https://pbs.twimg.com/media/Fpe8OdhXgAEjp--?format=jpg&name=medium" alt="" />
+                <img src="https://media.licdn.com/dms/image/D4E03AQFVakegPgSg7A/profile-displayphoto-shrink_800_800/0/1676919483085?e=1683158400&v=beta&t=qtGDekgtXY8DG9W_EmBbosoOVsP1krpklXQCIqk7r64" alt="" />
             </div>      
         </div>  
         </header>

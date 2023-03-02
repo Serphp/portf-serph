@@ -22,7 +22,7 @@ export default function Proyects() {
 
                             <p className='tdescription' style={{ 'fontSize': '16px' }}> {description}</p>
 
-                            <div className="tlinks">{lang}</div>
+                            <div className="tlinks" style={{'textAlign': 'center'}}>{lang}</div>
 
                         <div className="containerq">
                             <a href={url} target="_blank" className="button">Github</a>

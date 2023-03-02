@@ -25,15 +25,14 @@ export default function Mensaje() {
         <>
 
         <hr/>
-            <div className="card3 m-5" style={{ textAlign: "center"}}>
-            <h2> {heroe.name} </h2>
-            <div className="pe"> {heroe.mensaje} </div>
+            <div className="mainbgg card3 m-5" style={{ textAlign: "center"}}>
+            <h2 className='mb-3'> {heroe.name} </h2>
+            <h6 className="subtitle"> {heroe.mensaje} </h6>
             <br/>
             <figcaption className="blockquote-footer">
             Por <cite title="Source Title"> {heroe.name} </cite>
             </figcaption>
             </div>
-
             <div class="mensaje-bar"></div>
         <hr/>
 

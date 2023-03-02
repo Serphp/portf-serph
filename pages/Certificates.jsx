@@ -89,6 +89,15 @@ export default function Certificates() {
         </picture>
         </Zoom>
         </div>
+        <div className='Ccontainer'>
+        <Zoom>
+        <picture>
+        <img className='imgcer' alt="openwebin ars" src="https://udemy-certificate.s3.amazonaws.com/image/UC-2a337a0a-2846-4727-a0ad-c83cc43ebc39.jpg?v=1676077459000" width="500"/>
+        </picture>
+        </Zoom>
+
+        </div>
+        
 
     {/* END */}
         </div>
