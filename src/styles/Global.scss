@@ -871,7 +871,7 @@ footer {
   }
 }
 
-.loading {
+#loading {
   position: fixed;
   top: 0;
   left: 0;
@@ -882,6 +882,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
+  transition: opacity 2s ease-out;
+  .loading.hidden {
+    opacity: 0;
+    pointer-events: none;
+    animation: fadeOut 2s;
+  }
+  .loading-photo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    
+  }
   .loading-text {
     font-size: 30px;
     font-weight: 600;

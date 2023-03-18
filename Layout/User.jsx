@@ -16,9 +16,8 @@ const User = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-    setTimeout(() => {
-        setIsLoading(false);
-      }, 3000); // tiempo en milisegundos para mostrar el componente de "loading"
+    setTimeout(() => {setIsLoading(false);}, 3000); // tiempo en milisegundos para mostrar el componente de "loading"
+    setTimeout(function() { document.getElementById("loading").style.transform = "translateX(100%)";}, 3000);
     }, []);
 
     return (  
