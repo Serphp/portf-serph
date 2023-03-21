@@ -41,7 +41,10 @@
     cursor: pointer;
     z-index: 1;
     transform: translateY(100px);
-    
+    &:hover{
+      //transform: translateY(0px);
+      box-shadow: 1px 5px 5px rgba(0,0,0,.8);
+    }
   }
 
   .face.face1 .content{
@@ -82,9 +85,6 @@
     border-radius: 10px;
     transform: translateY(-50px);
   }
-  .cardx:hover .face.face2{
-    transform: translateY(-40px);
-  }
 
 
 
@@ -108,7 +108,7 @@
 .btncard:hover{
   background: #333;
   color: whitesmoke;
-  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+  box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.5);
 }
 .ae{
   text-decoration:none;
