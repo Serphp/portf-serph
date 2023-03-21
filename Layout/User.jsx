@@ -18,6 +18,9 @@ const User = () => {
     
     <Navbar />
     <div className="header">
+        <input type="checkbox" id="dark-mode" />
+        <label for="dark-mode"></label>
+        
     <div className="headermenu">
     </div>
     <div className="titlen">
