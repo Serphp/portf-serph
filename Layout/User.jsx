@@ -1,31 +1,40 @@
-import { Outlet } from "react-router-dom";
-
+import { NavLink, Outlet } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import Loading from '../components/Loading';
 import {
     Footer,
     Navbar,
 } from "../components"
-
-//styles
 import '../node_modules/bootswatch/dist/lux/bootstrap.min.css'
 import '../src/styles/Global.scss'
-//import '../src/styles/Navbar.scss'
+
 
 
 
 const User = () => {
+
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+    setTimeout(() => {setIsLoading(false);}, 3000); // tiempo en milisegundos para mostrar el componente de "loading"
+    setTimeout(function() { document.getElementById("loading").style.transform = "translateX(100%)";}, 3000);
+    }, []);
+
     return (  
     <>
     
     <Navbar />
     <div className="header">
+    {/* <NavLink to="/"> Home </NavLink>
+    <NavLink to="/Certificates"> Certificates </NavLink>
+    <NavLink to="/proyectos"> Proyectos </NavLink> */}
     <div className="headermenu">
     </div>
     <div className="titlen">
         <span className="beta">Theme </span>  /Serph 
-        {/* <h1><span id="serphp">Serphp</span></h1> */}
     </div>
     </div>
-    <Outlet />
+    {isLoading ? <Loading /> : <Outlet />}
     <Footer />
     </>
 

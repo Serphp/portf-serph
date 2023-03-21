@@ -15,18 +15,13 @@ export default function Proyects() {
                     <div className="image-container">
                     <img className="img2" src={image} alt="image 1" />
                     </div>
-
                     <div className="text-container">
-
-                            <h2 className='ttitle'>{name}</h2>
-
-                            <p className='tdescription' style={{ 'fontSize': '16px' }}> {description}</p>
-
-                            <div className="tlinks" style={{'textAlign': 'center'}}>{lang}</div>
-
+                        <h2 className='ttitle'>{name}</h2>
+                        <p className='tdescription' style={{ 'fontSize': '16px' }}> {description}</p>
+                        <div className="tlinks" style={{'textAlign': 'center'}}>{lang}</div>
                         <div className="containerq">
-                            <a href={url} target="_blank" className="button">Github</a>
-                            <a href={url2} target="_blank" className="button">View</a>
+                        <a href={url} target="_blank" className="button">Github</a>
+                        <a href={url2} target="_blank" className="button">View</a>
                         </div>
                     </div>
                 </div>
