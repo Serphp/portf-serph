@@ -145,17 +145,12 @@ body {
 }
 
 .header2 .container .img-holder img {
-  width: 100%;
-
-  max-width: 620px;
+  width: 90%;
+  max-width: 600px;
   border-radius: 50%;
-  //max-height: 90%; //fix for display 3000x2000px
-  
-  filter: drop-shadow(0 -4px 20px rgba(206, 212, 218, 0.4));
-  //filter: drop-shadow(0 -4px 20px rgba(206, 212, 218, 0.4));
-
   margin-left: auto;
-  margin-right: -2rem;
+  //margin-right: -5rem;
+  filter: drop-shadow(0 -5px 20px rgba(206, 212, 218, 0.4));
 }
 
 //MOBILE DESIGN
@@ -293,11 +288,7 @@ article {
   }
 }
 
-
-
 // REMENBER
-
-//
 .greywrap {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -308,14 +299,11 @@ article {
 //
 
 h1 {
-  //margin: 15px 0 15px 0px;
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-family: 'Rubik', sans-serif !important;
-  //color: black;
   font-weight: 600;
   text-align: left;
 } 
-
 
 h2 {
   margin: 10px;
@@ -323,11 +311,9 @@ h2 {
   font-size: 1.5em;
   //font-size: 1.5rem;
   font-weight: 600;
-  margin: 0;
   padding: 0;
   font-family: 'Rubik', sans-serif !important;
 }
-
 
 h3 {
   text-align: left;
@@ -338,20 +324,11 @@ h3 {
 }
 
 h4 {
-  display: block;
-  font-size: 0.6em;
+  //display: block;
+  font-size: 0.7em;
   font-weight: lighter;
-  //margin: 5px 0 5px 0;
   font-family: 'Rubik', sans-serif !important;
-  transition: all .2s ease-in;
 } 
-
-h4:hover {
-  //transform: rotate(360deg);
-  transform: scale(5px);
-  font-size: 0.8em;
-  //transition: all .2s ease-in;
-}
 
 h5 {
   display: block;
@@ -525,8 +502,6 @@ footer {
 }
 
 .mainbgg {
-  //background-image: url('/src/img/flor.svg');
-  //background-image: url(/src/img/flor.jpg);
   background-repeat: no-repeat;
   background-size: 130%;
   border-radius: 5px;
@@ -916,7 +891,7 @@ nav {
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   //background: linear-gradient(to top, black, white);
   backdrop-filter: blur(5px);
-  background-color: #d5d5d5dd;
+  //background-color: #d5d5d5dd;
   //transition: all 1s;
   @media screen and (max-width: 600px) {
     height: 5%;
@@ -1046,41 +1021,6 @@ nav {
   transition: transform 0.3s ease-in-out;
 }
 
-.hello {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  //align-items: center;
-  margin: 2em 0 2em 0;
-}
-
-.textup {
-  font-size: 24px;
-}
-
-.hello-text {
-  display: flex;
-  margin-bottom: 20px;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 1em;
-  align-items: center;
-  flex-direction: column;
-}
-
-.hello-img > img {
-  //margin-left: 10em;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 25px;
-  width: 600px;
-  height: 500px;
-  border-radius: 10%;
-  @media (max-width: 400px) {
-    margin: 15px;
-  }
-}
 
 @media only screen and (max-width: 300px) {
   .hello-text {
