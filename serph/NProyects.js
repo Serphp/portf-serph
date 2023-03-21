@@ -35,32 +35,40 @@ export const NProyects = [
         url: 'https://github.com/Serphp/Serph-BaseAuth',
         url2: 'https://exquisite-speculoos-e07e7a.netlify.app/'
     },
-    // {
-    //     id: 5,
-    //     name: 'GunGale World SA:MP',
-    //     description: 'GGW fue un juego orientado en el Roleplay y Estilo libre fue trabajado bajo el lenguaje Pawno un lenguaje de script de alto nivel, similar al C.',
-    //     lang: ' C , Pawno ',
-    //     image: 'https://cdn.discordapp.com/attachments/493832893580312579/1030802314539302952/Sin_titulo-1.png',
-    //     url: 'https://github.com/Serphp/portf-serph',
-    //     url2: 'https://serph.netlify.app/'
-    // },
     {
         id: 7,
-        name: 'Word press e-commerce',
-        description: 'Word press e-commerce de plantas para dar un ejemplo de como se puede hacer un e-commerce con word press',
-        lang: ' C , Pawno ',
-        image: 'https://cdn.discordapp.com/attachments/493832893580312579/1030802314539302952/Sin_titulo-1.png',
-        url: 'https://github.com/Serphp/portf-serph',
+        name: 'WP e-commerce',
+        description: 'Wordpress e-commerce de plantas para dar un ejemplo de como se puede hacer sitio web de venta de plantas.',
+        lang: ' Wordpress , WooCommerce , Elementor',
+        image: 'https://i.imgur.com/pRXcsVl.jpeg',
+        url: '#',
         url2: 'https://serph.netlify.app/'
     },
     {
         id: 8,
-        name: 'Word press Pagina web',
+        name: 'WP Blog (en desarrollo)',
+        description: 'En desarrollo, un blog donde publicare cosas sobre mi, proyectos, aprendizaje, explicaciones de tecnologias y mas.',
+        lang: ' Wordpress , Elementor',
+        image: 'https://i.cbc.ca/1.5359228.1577206958!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_940/smudge-the-viral-cat.jpg',
+        url: '#',
+        url2: 'https://serph.netlify.app/'
+    },
+    {
+        id: 9,
+        name: 'Serph Movie',
+        description: 'En desarrollo, un blog donde publicare cosas sobre mi, proyectos, aprendizaje, explicaciones de tecnologias y mas.',
+        lang: ' HTML ,  PICO CSS/CSS , JS , NPM , API ',
+        image: 'https://i.imgur.com/c6nZNl9.png',
+        url: 'https://github.com/Serphp/serph-movie',
+        url2: 'https://serphp.github.io/serph-movie/'
+    },
+    {
+        id: 5,
+        name: 'GunGale World SA:MP',
         description: 'GGW fue un juego orientado en el Roleplay y Estilo libre fue trabajado bajo el lenguaje Pawno un lenguaje de script de alto nivel, similar al C.',
         lang: ' C , Pawno ',
         image: 'https://cdn.discordapp.com/attachments/493832893580312579/1030802314539302952/Sin_titulo-1.png',
-        url: 'https://github.com/Serphp/portf-serph',
-        url2: 'https://serph.netlify.app/'
+        url: 'https://github.com/Serphp/SAMP-GGW',
+        url2: 'https://www.facebook.com/GunGaleZ'
     },
-    
 ]
