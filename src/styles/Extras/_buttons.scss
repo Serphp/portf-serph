@@ -6,7 +6,8 @@
 
 label {
     position: relative;
-    width: 140px;
+    //width: 140px;
+    width: 10%;
     height: 55px;
     margin: 20px;
     display: block;
@@ -18,10 +19,6 @@ label {
     cursor: pointer;
     transition: 1s ease;
     box-shadow: 0 0 25px rgba(0, 0 , 0, 0.2);
-    @media screen and (max-width: 600) {
-        width: 100px;
-        height: 40px;        
-    }
     &::after {
         content: '';
         position: absolute;
@@ -46,6 +43,34 @@ label {
         transition: 0.8s ease;
         box-shadow: 0 0 50px rgba(0, 0 , 0, 0.18);
     }
+
+}
+//Intermediate
+@media screen and (max-width: 1200px) {
+    label{
+        width: 20%;
+        height: 55px; 
+    }
+    label::after {
+        width: 35px;
+        height: 35px;
+    }
+}
+//mobile
+@media screen and (max-width: 600px) {
+    label{
+
+        width: 25%;
+        height: 40px; 
+    }
+    label::after {
+        width: 20px;
+        height: 20px;
+    }
+    label::before {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .background {
@@ -59,12 +84,14 @@ label {
 
 
 input:checked ~ label::before {
-    left: 120px;
+    //left: 120px;
+    left: 100%;
     border: 10px solid rgba(90, 79, 136, 0.2);
     transform: translateX(-100%);
 }
 input:checked ~ label::after {
-    left: 120px;
+    //left: 120px;
+    left: 100%;
     transform: translateX(-100%);
     background: #777ba5;
 }

@@ -19,22 +19,17 @@ const User = () => {
     }, []);
     
 
-    // useEffect(() => {
-    //     document.documentElement.setAttribute("data-theme", theme);
-    //     localStorage.setItem("theme", theme);
-    // }, [theme]);
+useEffect(() => {
+    if (theme){
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", "dark");
+    } else {
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", "light");
+    }
+}, [theme]);
 
-    useEffect(() => {
-        if (theme){
-            document.documentElement.setAttribute("data-theme", theme);
-            localStorage.setItem("theme", "dark");
-        } else {
-            document.documentElement.setAttribute("data-theme", theme);
-            localStorage.setItem("theme", "light");
-        }
-    }, [theme]);
-
-    return (  
+return (  
     <>
     
     <Navbar />
@@ -42,10 +37,6 @@ const User = () => {
 
     <input type="checkbox" id="dark-mode" onClick={() => setTheme(!theme)} />
     <label for="dark-mode"></label>
-
-    {/* <NavLink to="/"> Home </NavLink>
-    <NavLink to="/Certificates"> Certificates </NavLink>
-    <NavLink to="/proyectos"> Proyectos </NavLink> */}
 
     <div className="headermenu">
     </div>
@@ -59,5 +50,10 @@ const User = () => {
 
     )
 }
+
+{/* <NavLink to="/"> Home </NavLink>
+<NavLink to="/Certificates"> Certificates </NavLink>
+<NavLink to="/proyectos"> Proyectos </NavLink> */}
+
 
 export default User;
