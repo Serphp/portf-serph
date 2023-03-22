@@ -56,7 +56,7 @@ export const NProyects = [
     {
         id: 9,
         name: 'Serph Movie',
-        description: 'En desarrollo, un blog donde publicare cosas sobre mi, proyectos, aprendizaje, explicaciones de tecnologias y mas.',
+        description: 'Una pagina web donde puedes buscar peliculas y series donde también puedes encontrar su información.',
         lang: ' HTML ,  PICO CSS/CSS , JS , NPM , API ',
         image: 'https://i.imgur.com/c6nZNl9.png',
         url: 'https://github.com/Serphp/serph-movie',
