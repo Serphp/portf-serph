@@ -26,8 +26,8 @@ export default function Home() {
                 </h6>
 
                 <div class="buttons pt-3">
-                <a href={page} target="_blank"><button class="buttoned">  WebDev CV  </button></a>
-                <a href={page2} target="_blank"><button class="buttoned">  SysAdmin CV</button></a>
+                <a href={page} target="_blank"><button class="buttoned"> SysAdmin CV </button></a>
+                <a href={page2} target="_blank"><button class="buttoned"> WebDev CV </button></a>
 
                 </div>      
 
