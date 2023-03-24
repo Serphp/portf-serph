@@ -1,18 +1,14 @@
 //import { fronted } from "../serph/fronted"
 //import { backend } from "../serph/backend"
+import { slider } from "../serph/slider"
 
 export default function Experiences() {
 
+    slider();
+
     return (
         <>
-        
-        {/* <div className="contery">
-        <img src="https://mimo.app/i/bitcoin.png" />
-        <p>Join us for a live webinar/crypto party to learn more about the future of currency.</p>
-        </div>
-         */}
-
-
+        {/* ////////////////////////////  EXPERIENCES  //////////////////////////// */}
         <h6 className="subtitle">Web developer</h6>
         <h5> Tecnologías </h5>
         
@@ -22,10 +18,10 @@ export default function Experiences() {
         <section className="tcontainer ">
         <h6 className="subtitle"> Languages </h6>
             <img className="conteinericon" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="" />
+            <img className="conteinericon" src="https://img.shields.io/badge/c-3670A0?style=for-the-badge&logo=c&logoColor=ffdd54" alt="" />
             <img className="conteinericon" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="" />
-            <img className="conteinericon" src="https://img.shields.io/badge/php_8+-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="" />
-            <img className="conteinericon" src="https://img.shields.io/badge/python_2+-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="" />
-
+            <img className="conteinericon" src="https://img.shields.io/badge/python_2-3-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="" />
+            
         <h6 className="subtitle"> Database </h6>
             <img className="conteinericon" src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white" alt="" />
             <img className="conteinericon" src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="" />
@@ -35,6 +31,7 @@ export default function Experiences() {
             <img className="conteinericon" src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="" />
             <img className="conteinericon" src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" alt="" />
             <img className="conteinericon" src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="" />
+            <img className="conteinericon" src="https://img.shields.io/badge/php_8+-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="" />
         </section>
 
 

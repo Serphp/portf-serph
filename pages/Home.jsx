@@ -21,9 +21,9 @@ export default function Home() {
                 <h1 class="title">Bryan</h1>
                 <h1 class="title">Rodriguez</h1>
                 <p></p>
-                <h6 class="subtitle" style={{'textAlign':'left'}}>
+                <h4 class="" style={{'textAlign':'left'}}>
                 SysAdmin | Web Developer | Técnico IT
-                </h6>
+                </h4>
 
                 <div class="buttons pt-3">
                 <a href={page} target="_blank"><button class="buttoned"> SysAdmin CV </button></a>
