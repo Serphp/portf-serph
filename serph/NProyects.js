@@ -42,7 +42,7 @@ export const NProyects = [
         lang: ' Wordpress , WooCommerce , Elementor',
         image: 'https://i.imgur.com/pRXcsVl.jpeg',
         url: '#',
-        url2: 'https://serph.netlify.app/'
+        url2: 'http://serphecommerce.byethost7.com/'
     },
     {
         id: 8,

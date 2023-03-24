@@ -1,18 +1,14 @@
 //import { fronted } from "../serph/fronted"
 //import { backend } from "../serph/backend"
+import { slider } from "../serph/slider"
 
 export default function Experiences() {
 
+    slider();
+
     return (
         <>
-        
-        {/* <div className="contery">
-        <img src="https://mimo.app/i/bitcoin.png" />
-        <p>Join us for a live webinar/crypto party to learn more about the future of currency.</p>
-        </div>
-         */}
-
-
+        {/* ////////////////////////////  EXPERIENCES  //////////////////////////// */}
         <h6 className="subtitle">Web developer</h6>
         <h5> Tecnologías </h5>
         
