@@ -46,12 +46,12 @@ export const NProyects = [
     },
     {
         id: 8,
-        name: 'WP Blog (en desarrollo)',
+        name: 'Blog Serph',
         description: 'En desarrollo, un blog donde publicare cosas sobre mi, proyectos, aprendizaje, explicaciones de tecnologias y mas.',
-        lang: ' Wordpress , Elementor',
-        image: 'https://i.cbc.ca/1.5359228.1577206958!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_940/smudge-the-viral-cat.jpg',
-        url: '#',
-        url2: 'https://serph.netlify.app/'
+        lang: ' React , Next, Vercel, SASS + shorthandcss',
+        image: 'https://cdn.discordapp.com/attachments/493832893580312579/1095520058039607456/image.png',
+        url: 'https://blogserph.vercel.app/',
+        url2: 'https://github.com/Serphp/blog'
     },
     {
         id: 9,
@@ -71,4 +71,13 @@ export const NProyects = [
         url: 'https://github.com/Serphp/SAMP-GGW',
         url2: 'https://www.facebook.com/GunGaleZ'
     },
+    {
+        id: 10,
+        name: 'Gestor de tiempo',
+        description: 'Un gestor de tiempo donde puedes crear, editar, eliminar y marcar como completada las tareas.',
+        lang: ' React + Vite3 , Context , SASS , Hooks+ ',
+        image: 'https://cdn.discordapp.com/attachments/493832893580312579/1095520003454926959/image.png',
+        url: 'https://github.com/Serphp/Timer',
+        url2: 'https://spomodoro-serphp.vercel.app/'
+    }
 ]
