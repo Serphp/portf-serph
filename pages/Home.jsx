@@ -1,4 +1,4 @@
-import Mensaje from "../components/Mensaje"
+//import Mensaje from "../components/Mensaje"
 import Experiences from "../components/Experiences"
 import Cards from "../components/Cards"
 
@@ -57,7 +57,7 @@ export default function Home() {
         <Cards />
         </main>
         <Experiences />
-        <Mensaje />
+
 
         </>)
 }

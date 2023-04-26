@@ -12,7 +12,7 @@ export default function Cards() {
     <div className="containerx">
     <div className="cardx">
       <div className="face face1">
-        <div className="containerx content">
+        <div className=" content">
         <i class="fa fa-door-open"></i>
           <h3> adaptación </h3>
         </div>
@@ -24,7 +24,7 @@ export default function Cards() {
     {/* SEPARATE  */}
     <div className="cardx">
     <div className="face face1">
-        <div className="containerx content">
+        <div className=" content">
         <i class="fa fa-layer-group"></i>
           <h3> Organizado </h3>
         </div>
@@ -35,7 +35,7 @@ export default function Cards() {
         {/* SEPARATE  */}
         <div className="cardx">
         <div className="face face1">
-        <div className="containerx content">
+        <div className=" content">
         <i class="fa fa-spa"></i>
           <h3> Resiliente </h3>
         </div>
@@ -46,7 +46,7 @@ export default function Cards() {
             {/* SEPARATE  */}
             <div className="cardx">
         <div className="face face1">
-        <div className="containerx content">
+        <div className=" content">
         <i class="fa fa-stack-overflow"></i>
           <h3> Autodidacta </h3>
         </div>
@@ -57,7 +57,7 @@ export default function Cards() {
             {/* SEPARATE  */}
             <div className="cardx">
         <div className="face face1">
-        <div className="containerx content">
+        <div className=" content">
         <i class="fa fa-users"></i>
           <h3> Comunicativo </h3>
         </div>
@@ -68,7 +68,7 @@ export default function Cards() {
         {/* SEPARATE  */}
         <div className="cardx">
         <div className="face face1">
-        <div className="containerx content">
+        <div className=" content">
         <i class="fa fa-chalkboard"></i>
           <h3> Aprendizaje </h3>
         </div>
@@ -79,7 +79,7 @@ export default function Cards() {
       {/* SEPARATE  */}
         <div className="cardx">
         <div className="face face1">
-        <div className="containerx content">
+        <div className=" content">
         <i class="fa fa-icons"></i>
         <h3> Creativo </h3>
         </div>
@@ -90,7 +90,7 @@ export default function Cards() {
       {/* SEPARATE  */}
         <div className="cardx">
         <div className="face face1">
-        <div className="containerx content">
+        <div className=" content">
         <i class="fa fa-hand-holding-heart"></i>
         <h3> Apasionado </h3>
         </div>

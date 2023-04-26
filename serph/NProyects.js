@@ -74,8 +74,8 @@ export const NProyects = [
     {
         id: 10,
         name: 'Gestor de tiempo',
-        description: 'Un gestor de tiempo donde puedes crear, editar, eliminar y marcar como completada las tareas.',
-        lang: ' React + Vite3 , Context , SASS , Hooks+ ',
+        description: 'Un gestor de tiempo donde puedes crear, editar, eliminar y marcar como completada las tareas y puedes crear una cuenta y desbloquear nuevas funcionalidades.',
+        lang: ' React + Vite3 , Context , SASS , Hooks+, Firebase',
         image: 'https://cdn.discordapp.com/attachments/493832893580312579/1095520003454926959/image.png',
         url: 'https://github.com/Serphp/Timer',
         url2: 'https://spomodoro-serphp.vercel.app/'
