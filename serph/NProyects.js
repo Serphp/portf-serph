@@ -50,8 +50,8 @@ export const NProyects = [
         description: 'En desarrollo, un blog donde publicare cosas sobre mi, proyectos, aprendizaje, explicaciones de tecnologias y mas.',
         lang: ' React , Next, Vercel, SASS + shorthandcss',
         image: 'https://cdn.discordapp.com/attachments/493832893580312579/1095520058039607456/image.png',
-        url: 'https://blogserph.vercel.app/',
-        url2: 'https://github.com/Serphp/blog'
+        url: 'https://github.com/Serphp/blog',
+        url2: 'https://blogserph.vercel.app/'
     },
     {
         id: 9,
