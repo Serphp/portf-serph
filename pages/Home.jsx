@@ -25,13 +25,13 @@ export default function Home() {
                 SysAdmin | Web Developer | Técnico IT
                 </h4>
 
-                <div class="buttons pt-3">
+                <div class="pt-3">
                 <a href={page} target="_blank"><button class="buttoned"> SysAdmin CV </button></a>
                 <a href={page2} target="_blank"><button class="buttoned"> WebDev CV </button></a>
 
                 </div>      
 
-                <div class="socials mt-4">
+                <div class="mt-4">
                     <a className="btn btn-link btn-floating m-1" target="_blank" href="https://twitter.com/Serphp">
                     <i className="fab fa-twitter"></i></a>
 

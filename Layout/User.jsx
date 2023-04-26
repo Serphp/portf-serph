@@ -13,11 +13,18 @@ const User = () => {
     const [theme, setTheme] = useState(InicialTheme);
     const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
+useEffect(() => {
     setTimeout(() => {setIsLoading(false);}, 3000); // tiempo en milisegundos para mostrar el componente de "loading"
     setTimeout(function() { document.getElementById("loading").style.transform = "translateX(100%)";}, 3000);
-    }, []);
+}, []);
     
+useEffect(() => {
+    if(theme == "dark") {
+      localStorage.setItem("label::before", JSON.stringify({label}));
+    } else if(theme == "light") {
+      localStorage.setItem("label::after", JSON.stringify({label}));
+    }
+  }, [theme]);
 
 useEffect(() => {
     if (theme){
@@ -35,8 +42,13 @@ return (
     <Navbar />
     <div className="header">
 
-    <input type="checkbox" id="dark-mode" onClick={() => setTheme(!theme)} />
-    <label for="dark-mode"></label>
+    {/* <input type="checkbox" id="dark-mode" onClick={() => setTheme(!theme)} />
+    <label for="dark-mode"></label> */}
+    <button className="buttont" onClick={() => setTheme(!theme)}>
+        {
+            theme ? <i className="fas fa-sun"></i> : <i className="fas fa-moon"></i>
+        }
+        </button>
 
     <div className="headermenu">
     </div>
