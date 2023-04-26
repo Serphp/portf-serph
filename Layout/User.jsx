@@ -1,6 +1,7 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 import Loading from '../components/Loading';
+
 import {
     Footer,
     Navbar,
@@ -12,19 +13,16 @@ const InicialTheme = localStorage.getItem('theme') === 'dark';
 const User = () => {
     const [theme, setTheme] = useState(InicialTheme);
     const [isLoading, setIsLoading] = useState(true);
+    const { pathname } = useLocation();
 
 useEffect(() => {
     setTimeout(() => {setIsLoading(false);}, 3000); // tiempo en milisegundos para mostrar el componente de "loading"
     setTimeout(function() { document.getElementById("loading").style.transform = "translateX(100%)";}, 3000);
 }, []);
-    
+
 useEffect(() => {
-    if(theme == "dark") {
-      localStorage.setItem("label::before", JSON.stringify({label}));
-    } else if(theme == "light") {
-      localStorage.setItem("label::after", JSON.stringify({label}));
-    }
-  }, [theme]);
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
 useEffect(() => {
     if (theme){
