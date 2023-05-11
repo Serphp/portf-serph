@@ -8,10 +8,10 @@ export default function Footer() {
 
 <div className="text-center p-5">
 
-    <Mensaje/>
+    {/* <Mensaje/> */}
 
     <div style={{ textAlign: "center", color: "black", fontFamily: "rubik" }}> 
-    <h4>© 2022 Copyright - <b>Bryan Rodriguez</b></h4>
+    <h4>© 2022 - 2023 Copyright - <b>Bryan Rodriguez</b></h4>
 
     </div>
     </div>

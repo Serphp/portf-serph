@@ -37,7 +37,7 @@ export default function Cards() {
         <div className="face face1">
         <div className=" content">
         <i class="fa fa-spa"></i>
-          <h3> Resiliente </h3>
+          <h3> Resiliencia </h3>
         </div>
       </div>
       <div className="face face2">

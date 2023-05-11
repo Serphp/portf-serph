@@ -6,13 +6,13 @@ export default function Certificates() {
     return (
         <>
 
-    <br/>
+    {/* <br/>
     <h2 style={{'textAlign': 'center'}}> Educación </h2>
     <ul style={{'margin-bottom': '50px', 'textAlign': 'center'}}>
         <li style={{'list-style': 'none',}}> <h4 style={{'fontSize': '14px'}}> Lic. Administrador en Sistemas <b>(2019-2023)</b>  </h4> </li>
         <li style={{'list-style': 'none',}}> <h4 style={{'fontSize': '14px'}}> Bachiller en Ciencias <b>(2016-2018)</b> </h4> </li>
         <li style={{'list-style': 'none',}}> <h4 style={{'fontSize': '14px'}}> Programador Autodidacta <b>(2014-Actualidad) </b></h4> </li>
-    </ul>
+    </ul> */}
 
     <h6 className="subtitle"> Certificados </h6>
     <h2 style={{'margin-bottom': '50px', 'textAlign': 'center'}}> Solo Learn </h2>

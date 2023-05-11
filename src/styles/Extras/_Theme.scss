@@ -20,6 +20,9 @@
         border: 1px solid #bcbcbcb3;
         box-shadow: 10px 5px 2px 3px #fdfdfdb3;
       }
+      code {
+        background-color: #282c34;
+      }
 }
 //light
 [data-theme="false"] {
@@ -30,11 +33,17 @@
     }
     .face1:hover {
         background-color: #ffffffd4 !important;
-        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 5px #ffffff80;
     }
     .header2 .container .img-holder img {
         border: 1px solid #000000b3;
         box-shadow: 10px 5px 2px 3px #000000;
+      }
+
+      code {
+        //background-color: #00000030;
+        border: #000000 solid 1px;
+        color: #000000;
       }
 }
 
