@@ -66,9 +66,6 @@ export default function Home() {
 
         <div class="img-holder">
             <img src="https://media.licdn.com/dms/image/D4E03AQFVakegPgSg7A/profile-displayphoto-shrink_800_800/0/1676919483085?e=1689206400&v=beta&t=o8pPRjPuacy0nTSVw_poNAl34mbMLBk6G6mqKCtDMJ0" alt="" class="img-fluid"/>
-            {/* <code>
-            <canvas ref={canvasRef} width={200} height={250} />
-            </code> */}
         </div>     
 
         </div>  
