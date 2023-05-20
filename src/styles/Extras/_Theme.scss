@@ -17,11 +17,19 @@
         transition: all 0.7s ease;
     }
     .header2 .container .img-holder img {
+                transition: all 1s ease;
         border: 1px solid #bcbcbcb3;
         box-shadow: 10px 5px 2px 3px #fdfdfdb3;
       }
       code {
         background-color: #282c34;
+      }
+      .face.face1 .content i{ //icon
+        background-color: #ffffff32;
+      }
+      .boxitem {
+        border: #28293e2d solid 1px;
+        background-color: #343543 !important;
       }
 }
 //light
@@ -36,14 +44,21 @@
         box-shadow: 0px 0px 5px #ffffff80;
     }
     .header2 .container .img-holder img {
+        transition: all 1s ease;
         border: 1px solid #000000b3;
         box-shadow: 10px 5px 2px 3px #000000;
       }
-
       code {
         //background-color: #00000030;
         border: #000000 solid 1px;
         color: #000000;
+      }
+      .face.face1 .content i{ //icon
+        background-color: #f2e4e432;
+      }
+      .boxitem {
+        border: #28293e2d solid 1px;
+        background-color: whitesmoke !important;
       }
 }
 

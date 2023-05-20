@@ -1,4 +1,4 @@
-//import { NProyects } from '../../serph/NProyects'
+
 import '../src/styles/Proyect.scss'
 import { NProyects } from '../serph/NProyects';
 
@@ -13,7 +13,7 @@ export default function Proyects() {
                 <div className="section">
 
                     <div className="image-container">
-                    <img className="img2" src={image} alt="image 1" />
+                    <img className="img2" src={image} alt={name} title={name}/>
                     </div>
                     <div className="text-container">
                         <h2 className='ttitle'>{name}</h2>

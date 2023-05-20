@@ -75,9 +75,6 @@ export default function Home() {
         </main>
         <Experiences />
 
-        <script>
-        <script type="module" src="../src/anim/anim"></script>
 
-        </script>
         </>)
 }

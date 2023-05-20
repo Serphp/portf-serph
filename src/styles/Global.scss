@@ -50,6 +50,16 @@ body {
   a {
     text-decoration: none;
     }
+    .link {
+      font-size: 20px;
+      margin-left: -10px;
+      text-decoration: underline;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: #209dbc !important;
+      }
+    }
   b {
     font-weight: bold;
   }
@@ -1204,13 +1214,33 @@ code {
 }
 // End mensajes
 
+.boxitemrow {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  .boxcolunm {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
 .box {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  gap: 10px;
+  margin-top: 40px;
+  //background-color: #d6dce2de;
+  border-radius: 20px;
+
+  padding: 20px;
+  gap: 20px;
   @media screen and (max-width: 680px) {
     flex-direction: column;
     height: 100%;
@@ -1220,9 +1250,8 @@ code {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    //border: red solid 1px;
-    font-size: 14px;
-    overflow: auto;
+    font-size: 13px;
+    //overflow: auto;
     height: 100px;
   }
   .boxtitle{
@@ -1234,12 +1263,12 @@ code {
   }
   .boxitem {
     margin: 0 auto;
-    padding: 20px;
-    //background-color: #14182447;
-    border-style: dashed;
-    border: rgba(0, 0, 0, 0.107) solid 1px;
+    padding: 20px 10px 20px 10px;
     height: 100%;
     width: 100%;
+    background-color: rgba(245, 245, 245, 0.969);
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px 2px rgb(102, 175, 199);
     transition: all 0.5s;
     &:hover {
       transform: scaleY(1.1);
@@ -1249,9 +1278,9 @@ code {
       justify-content: center;
       align-items: center;
       margin: 0 auto;
-      padding: 20px;
-      height: 180px;
-      width: 150px;
+      padding: 10px;
+      height: 100px;
+      width: 130px;
       transition: all 0.5s;
       &:hover {
         transform: scale(1.1);

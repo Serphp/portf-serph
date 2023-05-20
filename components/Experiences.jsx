@@ -14,6 +14,7 @@ export default function Experiences() {
         <h5> Tecnologías </h5>
 
             <section className="box">
+
                 <div className="boxitem">
                 <i class="iconbox">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -23,8 +24,7 @@ export default function Experiences() {
                 </svg>
                 </i>
                 <h6 className="boxtitle"> LANGUAGES </h6>
-  
-                    <p className="boxcontent"> 
+                <p className="boxcontent"> 
                     HTML5,
                     C,
                     JavaScript,
@@ -33,12 +33,16 @@ export default function Experiences() {
                     PHP,
                     SQL,
                     CSS3,
-
-                    </p>
-
+                </p>
                 </div>
 
+
+                <article className="boxitemrow">
+
+
                 <div className="boxitem">
+                <div className="boxcolunm">
+
                 <i class="iconbox">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17 6v4.5c-1.478 0-2.805.64-3.72 1.66a4.981 4.981 0 0 0-1.208 4.19 5.005 5.005 0 0 0 2.465 3.502c-1.331.403-3.098.648-5.037.648C5.358 20.5 2 19.38 2 18V6"></path>
@@ -50,6 +54,8 @@ export default function Experiences() {
                 <path d="m15.5 16.5-1-1 1-1"></path>
                 </svg>
                 </i>
+                    
+
                 <h6 className="boxtitle">Backend</h6>
 
                 <p className="boxcontent"> 
@@ -62,12 +68,14 @@ export default function Experiences() {
                 Django,
 
                  </p>
-
+                 </div>
                 </div>
 
 
 
+
                 <div className="boxitem">
+                <div className="boxcolunm">
                 <i class="iconbox">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.5 3h-15A1.5 1.5 0 0 0 3 4.5v15A1.5 1.5 0 0 0 4.5 21h15a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 19.5 3Z"></path>
@@ -80,8 +88,9 @@ export default function Experiences() {
                 <path d="M21 13.5v3"></path>
                 </svg>
                 </i>
+                
                 <h6 className="boxtitle"> Fronted </h6>
-
+                
                 <p className="boxcontent"> 
                 ReactJS 16+,
                 NextJS,
@@ -94,8 +103,9 @@ export default function Experiences() {
                 Adobe XD,
                 </p>
                 </div>
+                </div>
 
-
+                </article>
 
             </section>
 

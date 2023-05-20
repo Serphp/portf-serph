@@ -8,10 +8,12 @@ import {
 } from "../components"
 import '../node_modules/bootswatch/dist/lux/bootstrap.min.css'
 import '../src/styles/Global.scss'
+import SunIcon from "../src/assets/sunIcon";
+import MonnIcon from "../src/assets/MoonIcon";
 const InicialTheme = localStorage.getItem('theme') === 'dark';
 
 const User = () => {
-    const [theme, setTheme] = useState(InicialTheme);
+    const [theme, setTheme] = useState(InicialTheme || false);
     const [isLoading, setIsLoading] = useState(true);
     const { pathname } = useLocation();
 
@@ -25,13 +27,13 @@ useEffect(() => {
   }, [pathname]);
 
 useEffect(() => {
-    if (theme){
+    if (theme) {
         document.documentElement.setAttribute("data-theme", theme);
         localStorage.setItem("theme", "dark");
-    } else {
+      } else {
         document.documentElement.setAttribute("data-theme", theme);
         localStorage.setItem("theme", "light");
-    }
+      }
 }, [theme]);
 
 return (  
@@ -39,12 +41,9 @@ return (
     
     <Navbar />
     <div className="header">
-
-    {/* <input type="checkbox" id="dark-mode" onClick={() => setTheme(!theme)} />
-    <label for="dark-mode"></label> */}
     <button className="buttont" onClick={() => setTheme(!theme)}>
         {
-            theme ? <i className="fas fa-sun"></i> : <i className="fas fa-moon"></i>
+            theme ? <SunIcon/> : <MonnIcon/>
         }
         </button>
 
@@ -60,10 +59,5 @@ return (
 
     )
 }
-
-{/* <NavLink to="/"> Home </NavLink>
-<NavLink to="/Certificates"> Certificates </NavLink>
-<NavLink to="/proyectos"> Proyectos </NavLink> */}
-
 
 export default User;
