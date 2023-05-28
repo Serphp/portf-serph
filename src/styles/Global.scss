@@ -18,7 +18,7 @@ body {
   --fa-style-family-classic: "Font Awesome 6 Free";
   --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(64,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(257,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='3.3'%3E%3Cpath transform='translate(-64.75 14.8) rotate(9.25 1409 581) scale(1.037)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='1.1' transform='translate(-37 37) rotate(11.1 800 450) scale(1.019)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(33.3 -111) rotate(111 401 736) scale(1.019)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='1'%3E%3Cpath transform='translate(222 -14.8) rotate(3.7 150 345) scale(0.963)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='2.2' transform='translate(-148 -92.5) rotate(133.2 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-222 74) rotate(22.2 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  //background-color: #f5f5f5d4;
+  background-color: #4e1f1fd4;
   background-attachment: fixed;
   background-repeat: repeat;
   background-position: center;
@@ -168,23 +168,30 @@ body {
 //MOBILE DESIGN
 @media (max-width: 600px) {
   .header2 .container .infos .subtitle {
+    display: flex;
+    justify-content: center;
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
   }
   .header2 .container .infos .title {
     margin-bottom: 0px;
-    font-size: 63px;
+    text-align: center;
+    font-size: 53px;
     font-weight: bold;
   }
   .header2 .container {
     //height: 80%;
-    display: flex;
-    align-items: center;
+    text-align: center;
+    //border: red solid 2px;
   }
   .header2 {
-    height: 55vh;
+    height: 85vh;
     min-height: 450px;
+  }
+  h4 {
+    text-align: center !important;
+    font-size: 11px !important;
   }
 }
 
@@ -669,11 +676,13 @@ footer {
 .btn {
   font-size: 20px;
   color: #48C2D6;
-  border-bottom: #000 solid 1px;
+  border-bottom: #48C2D6 solid 1px;
   border-radius: 10px;
   animation: anim 3s ease-in-out infinite alternate;
   &:hover {
-    color: #ff8c00;
+    border: #ffffff22 solid 2px;
+    background: #48C2D6;
+    color: #ffffff;
   }
 }
 
@@ -1166,10 +1175,8 @@ code {
     font-size: 0px;
   }
   &:hover {
-      //animation: borders 1s infinite;
       opacity: 1;
-      color: #48C2D6;
-      //border-top:  #48C2D6 solid 2px;
+      color: #2ebdd3;
   }
 }
 
@@ -1177,7 +1184,6 @@ code {
   position: static;
   width: 30px;
   height: 35px;
-
 }
 .img:hover {
   transform: scale(10px);
@@ -1236,9 +1242,7 @@ code {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  //background-color: #d6dce2de;
   border-radius: 20px;
-
   padding: 20px;
   gap: 20px;
   @media screen and (max-width: 680px) {
@@ -1250,15 +1254,18 @@ code {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
-    //overflow: auto;
-    height: 100px;
+    color: #94d8e4 !important;
+    font-size: 14px;
+    height: 100%;
+    @media screen and (max-width: 680px) {
+      height: 100%;
+      padding: 10px;
+    }
   }
   .boxtitle{
     margin: 0 auto;
     padding: 10px;
-    //background-color: #14182447;
-    //border: red solid 1px;
+    color: #94d8e4 !important;
     transition: all 1s;
   }
   .boxitem {
@@ -1266,12 +1273,14 @@ code {
     padding: 20px 10px 20px 10px;
     height: 100%;
     width: 100%;
+    color: #94d8e4;
     background-color: rgba(245, 245, 245, 0.969);
     border-radius: 10px;
-    box-shadow: 5px 5px 0px 2px rgb(102, 175, 199);
+    box-shadow: 5px 5px 0px 2px rgba(102, 175, 199, 0.511);
     transition: all 0.5s;
     &:hover {
       transform: scaleY(1.1);
+      box-shadow: 5px 5px 0px 2px rgb(102, 175, 199);
     }
     .iconbox {
       display: flex;

@@ -21,12 +21,6 @@
         border: 1px solid #bcbcbcb3;
         box-shadow: 10px 5px 2px 3px #fdfdfdb3;
       }
-      code {
-        background-color: #282c34;
-      }
-      .face.face1 .content i{ //icon
-        background-color: #ffffff32;
-      }
       .boxitem {
         border: #28293e2d solid 1px;
         background-color: #343543 !important;
@@ -34,28 +28,21 @@
 }
 //light
 [data-theme="false"] {
-    --background-color: #f2f2f2d4;
-    --text-color: #000000 !important;
+    --background-color: rgba(212, 221, 223, 0.838) !important;
+    --text-color: #000000a0 !important;
     .face1 {
         background-color: #f8f8f8 !important;
-    }
-    .face1:hover {
-        background-color: #ffffffd4 !important;
-        box-shadow: 0px 0px 5px #ffffff80;
-    }
+        box-shadow: 5px 5px 0px 2px rgba(102, 175, 199, 0.317);
+        &:hover{
+          box-shadow: 5px 5px 0px 2px rgb(102, 175, 199);
+        }
+      }
     .header2 .container .img-holder img {
         transition: all 1s ease;
         border: 1px solid #000000b3;
         box-shadow: 10px 5px 2px 3px #000000;
       }
-      code {
-        //background-color: #00000030;
-        border: #000000 solid 1px;
-        color: #000000;
-      }
-      .face.face1 .content i{ //icon
-        background-color: #f2e4e432;
-      }
+
       .boxitem {
         border: #28293e2d solid 1px;
         background-color: whitesmoke !important;
@@ -86,26 +73,3 @@ body {
 .face1 {
     background-color: var(--background-color) !important;
 }
-
-/*
-.dark{
-  background-color: rgba(12, 12, 12, 0.977); 
-  max-width: 1280px;
-  //background: #2c3e50; 
-  //background-image: url(/src/img/black-line.png);
-
-  background-repeat: repeat;
-  background-size: 30%;
-  background-position: center;
-  background-attachment: fixed;
-  letter-spacing: 0.00938em;
-}
-
-.light{
-  //background-color: rgba(12, 12, 12, 0.977);
-  color: black;
-  max-width: 1280px;
-  background: #fff; 
-  letter-spacing: 0.00938em;
-}
-*/
