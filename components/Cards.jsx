@@ -5,9 +5,10 @@ export default function Cards() {
         <>
 
     <div className='mainbg'>
-    <h6 className="subtitle">Soft skill</h6>
-    <h2>¿Como soy?</h2>
-    <p className='centert mb-5'>El compromiso de perseverar y nunca abandonar es un lema personal que guía mi actitud y enfoque en la vida.</p>
+    <h6 className="subtitle"> I </h6>
+    <h5> Soft skills </h5>
+
+    <p className='mb-5'></p>
 
     <div className="containerx">
     <div className="cardx">

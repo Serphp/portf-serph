@@ -3,7 +3,7 @@ export const NProyects = [
         id: 1,
         name: 'TODO',
         description: 'Administrador de tareas, donde puedes crear, editar, eliminar y marcar como completada las tareas.',
-        lang: 'HTML5, CSS3, REACTJS + VITE, TAILWIND',
+        lang: 'HTML5, CSS3, VITEJS, TAILWIND, LocalStorage',
         image: 'https://raw.githubusercontent.com/Serphp/portf-serph/master/src/media/todo.gif',
         url: 'https://github.com/Serphp/react-todo',
         url2: 'https://minniecat.netlify.app/'
@@ -28,12 +28,12 @@ export const NProyects = [
     },
     {
         id: 4,
-        name: 'Sign In and Sign Up',
-        description: 'Pagina de Login y Registro de usuarios con Firebase.',
-        lang: 'React 16, ReactRouter, Vite, Context, Pico CSS, Firebase, Axios',
+        name: 'Cats Serphp',
+        description: 'Portal de gatos, donde puedes ver, generar, buscar, descargar y compartir imágenes de gatos.',
+        lang: 'Nextjs , Typescript , Tailwindcss , Vercel , API , NPM , React , HTML5 , CSS3 , JS',
         image: 'https://raw.githubusercontent.com/Serphp/Serph-BaseAuth/master/src/assets/img/browser_QrlTSvhemR.png',
-        url: 'https://github.com/Serphp/Serph-BaseAuth',
-        url2: 'https://exquisite-speculoos-e07e7a.netlify.app/'
+        url: 'https://github.com/Serphp/Serph-Cat',
+        url2: 'https://serph-cat.vercel.app/'
     },
     {
         id: 7,
@@ -47,8 +47,8 @@ export const NProyects = [
     {
         id: 8,
         name: 'Blog Serph',
-        description: 'En desarrollo, un blog donde publicare cosas sobre mi, proyectos, aprendizaje, explicaciones de tecnologias y mas.',
-        lang: ' React , Next, Vercel, SASS + shorthandcss',
+        description: 'En desarrollo, de este blog para utilizarlo como blog personal, utilice mucha logica de programación, por ejemplo los favoritos, el remarcar, el buscador, el paginador, etc.',
+        lang: ' React , NextJS, Sanity, SASS + shorthandcss',
         image: 'https://cdn.discordapp.com/attachments/493832893580312579/1095520058039607456/image.png',
         url: 'https://github.com/Serphp/blog',
         url2: 'https://blogserph.vercel.app/'
@@ -64,20 +64,20 @@ export const NProyects = [
     },
     {
         id: 5,
-        name: 'GunGale World SA:MP',
-        description: 'GGW fue un juego orientado en el Roleplay y Estilo libre fue trabajado bajo el lenguaje Pawno un lenguaje de script de alto nivel, similar al C.',
-        lang: ' C , Pawno ',
+        name: 'Calculator App',
+        description: 'Un calculadora donde puedes realizar operaciones matemáticas básicas.',
+        lang: ' Ionic ',
         image: 'https://cdn.discordapp.com/attachments/493832893580312579/1030802314539302952/Sin_titulo-1.png',
-        url: 'https://github.com/Serphp/SAMP-GGW',
-        url2: 'https://www.facebook.com/GunGaleZ'
+        url: 'https://github.com/Serphp/CalculadorApp',
+        url2: ''
     },
     {
         id: 10,
-        name: 'Gestor de tiempo',
-        description: 'Un gestor de tiempo donde puedes crear, editar, eliminar y marcar como completada las tareas y puedes crear una cuenta y desbloquear nuevas funcionalidades.',
-        lang: ' React + Vite3 , Context , SASS , Hooks+, Firebase',
+        name: 'Calculadora de Edad',
+        description: 'Una calculadora donde puedes calcular tu edad en base a tu fecha de nacimiento.',
+        lang: 'Flutter , Dart',
         image: 'https://cdn.discordapp.com/attachments/493832893580312579/1095520003454926959/image.png',
-        url: 'https://github.com/Serphp/Timer',
-        url2: 'https://spomodoro-serphp.vercel.app/'
+        url: 'https://github.com/Serphp/DayApp',
+        url2: ''
     }
 ]

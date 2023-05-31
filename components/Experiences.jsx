@@ -25,14 +25,13 @@ export default function Experiences() {
                 </i>
                 <h6 className="boxtitle"> LANGUAGES </h6>
                 <p className="boxcontent"> 
-                    HTML5,
+
                     C,
                     JavaScript,
                     TypeScript,
                     Python,
-                    PHP,
-                    SQL,
-                    CSS3,
+                    PHP.
+
                 </p>
                 </div>
 
@@ -59,13 +58,12 @@ export default function Experiences() {
                 <h6 className="boxtitle">Backend</h6>
 
                 <p className="boxcontent"> 
-                MySQL, MongoDB,
+                MySQL, 
+                MongoDB,
                 MariaDB,
                 PostgreSQL,
-                NodeJS,
-                Express,
                 Laravel,
-                Django,
+                Django.
 
                  </p>
                  </div>
@@ -92,11 +90,11 @@ export default function Experiences() {
                 <h6 className="boxtitle"> Fronted </h6>
                 
                 <p className="boxcontent"> 
-                ReactJS 16+,
+                CSS3,
+                SASS,
+                ReactJS
                 NextJS,
                 Redux,
-                Astro,
-                CSS3,
                 Boostrap 4+,
                 Tailwind,
                 Figma,

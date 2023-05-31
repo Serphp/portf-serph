@@ -31,95 +31,167 @@ $section-bg-color: #ffffff9d;
     transition: all 0.3s ease;
     &:hover {
         box-shadow: 5px 5px 0px 1px rgba(255, 255, 255, 0.2);
-        color: #fff;
+        //color: #fff;
     }
 }
     .containerq{
         //width: 100%;
         display: flex;
         justify-content: center;
-        margin: 15px 0 15px 0;
+        margin: 10px 0 15px 0;
     }
 
     // define the styles for the section container
     .section-link {
-        max-width: 900px;
-        margin: 0 auto;
         display: flex;
-        flex-wrap: wrap;
-        gap: 20px; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        margin: 0 auto;
+
     }
+
+.section-container-top {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.section-top {
+    width: 33%;
+    //display: flex;
+    //flex-flow: wrap-reverse;
+    flex-grow: 1;
+    padding: 20px;
+    opacity: 0.7;
+    background-color: #27272727;
+    transition: all 0.5s ease;
+    &:hover {
+        border: none;
+        opacity: .8 !important;
+        box-shadow: 5px 5px 0px 1px rgba(108, 108, 108, 0.553) !important;
+        border-radius: 10px;
+        transform: translateY(-5px);
+    }
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        }
+    .top-cont-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .top-title{
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        //padding: 10px;
+    }
+
+    .top-description {
+        padding: 10px;
+    }
+}
+
+.space {
+    margin-bottom: 15px;
+}
+
+.sub{
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 2;
+    text-align: right;
+    margin-right: 15px; 
+}
+
 .section-container {
-    max-width: 900px;
+    //max-width: 900px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     gap: 10px; 
-    // define the space between the sections
-    padding: auto 20px auto 20px;
 
 
 .section {
     width: 33%;
-    height: 100%;
+    //height: 200px;
     display: flex;
     flex-flow: wrap;
     flex-grow: 2;
     justify-content: center;
     align-items: center;
     opacity: 0.7;
+    background-color: #000000cf;
     transition: all 0.5s ease;
     
     &:hover {
         border: none;
         opacity: 1;
+        box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 0.553);
         transform: translateY(-5px);
-        border-radius: 10px;
-        //box-shadow: 5px 5px 0 2px #94d8e4;
     }
 
     .image-container {
+    //position: relative;
+    //bottom: 30px;
+    //right: 110px;
+    
     display: flex;
     justify-content: center;
-    width: 100%;
-    //height: 80%;
-    .img2{
+    width: 50% !important;
+    height: 80%;
+    img{
         overflow: hidden;
-        width: 100%;
-        height: 90%;
+        border-radius: 10px;
+        //width: 100%;
+        //height: 200px !important;
+    }
+    @media screen and (max-width: 600px) {
+        display: flex;
+        justify-content: center;
+        position: none;
     }
 }
 
 .text-container {
-    width: auto;
-    height: auto;
-    position: relative;
+
+    width: 100%;
     color: #868686;
     font-weight: 200;
     padding: 0 20px;
-    background-color: #000000cf;
+
     //backdrop-filter: blur(1px);
-    margin-top: -30%;
+    //margin-top: -60%;
 
     .ttitle{ 
         text-align: right;
-        font-size: 20px;
+        font-size: 21px;
         font-weight: 900;
-        //margin-bottom: 15px;
-        padding: 20px 5px 0 0px;
+        padding: 20px 0 0 0;
     }
     .tdescription{
         font-size: 14px;
-        //line-height: 1.5;
         margin-bottom: 1px;
         padding: 0px 10px 0 0px;
     }
     .tlinks{
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 2;
-        //margin-bottom: 15px;
-        padding: 20px 10px 0 0px;
+        //padding: 10px 0 10px 0px;
+        margin: 10px 0 10px 0;
     }
 }
     }
