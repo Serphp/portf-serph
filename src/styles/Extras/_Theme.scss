@@ -13,7 +13,6 @@
     }
     .imgcer {
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
-        background-color: white;
         transition: all 0.7s ease;
     }
     .header2 .container .img-holder img {
@@ -27,7 +26,7 @@
       }
       .section, .section-top  {
         color: var(--text-color);
-        background-color: #272727c2 !important;
+        background-color: #2727275a !important;
         &:hover {
             border: none;
             opacity: .8 !important;
@@ -43,7 +42,6 @@
                 color: #fff;
             }
         }
-        
       }
 }
 //light
@@ -57,6 +55,9 @@
           box-shadow: 5px 5px 0px 2px rgb(102, 175, 199);
         }
       }
+      .imgcer {
+        transition: all 0.7s ease;
+    }
     .header2 .container .img-holder img {
         transition: all 1s ease;
         border: 1px solid #000000b3;

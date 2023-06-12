@@ -1,9 +1,15 @@
 //import Mensaje from "../components/Mensaje"
 import Experiences from "../components/Experiences"
 import Cards from "../components/Cards"
-import { useRef, useEffect } from 'react';
+import { useState } from "react";
 
 export default function Home() {
+
+    const [show, setShow] = useState(false);
+
+    const handleshow = () => {
+        setShow(!show);
+    }
 
     // const canvasRef = useRef(null);
 
@@ -30,7 +36,7 @@ export default function Home() {
         <>
         <main>
         <header class="header2" id="home">
-        <div class="container">
+        <section class="container">
             <div class="infos">
                 <h6 class="subtitle" style={{'textAlign':'left'}}>Bienvenido a mi portfolio.</h6>
                 <h1 class="title">Bryan</h1>
@@ -64,17 +70,48 @@ export default function Home() {
                 </div>
             </div>        
 
-        <div class="img-holder">
-            <img src="https://media.licdn.com/dms/image/D4E03AQFVakegPgSg7A/profile-displayphoto-shrink_800_800/0/1676919483085?e=1689206400&v=beta&t=o8pPRjPuacy0nTSVw_poNAl34mbMLBk6G6mqKCtDMJ0" alt="" class="img-fluid"/>
-        </div>     
 
-        </div>  
-        </header>
-        
-        <Cards />
-        </main>
-        <Experiences />
+            <div class="about">
 
+            <div className="extras">
+                <h4> Ciudad de panamá </h4>
+                <h4><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/1200px-Flag_of_Panama.svg.png" width={30}/> Panamá </h4>
+            </div>
+
+            <h1> Acerca de mi </h1>
+            <p>
+                Hola, soy programador me distingo por ser una persona sencilla, entusiasta en la creación e innovación de proyectos y el aprendizaje constante.  🐱‍👤
+                <div className="mt-3"></div>
+                <button className="btnshow" onClick={handleshow}> 
+                {
+                    show ? "Ocultar" : "Leer más"
+                } </button>
+                <p className={
+                    show ? "show" : "hide"
+                }>
+                    Mi trayectoria en este campo comienza a la edad de 14 años, cuando comencé a explorar el mundo de la programación a través de la creación de páginas web utilizando HTML, donde se me enseño en la escuela por una profesora de informática, lo que despertó mi curiosidad y me impulsó a sumergirme en este fascinante campo.
+                    <div className="mt-3"></div>
+                    A medida que crecía en edad, me comenzó a encantar las nuevas tecnologías, no solo los lenguajes de programación, sino también como funcionaba la computadora en donde programaba y todo lo que requería una conexión a internet.
+                    <div className="mt-3"></div>
+                    Mis principales habilidades interpersonales, que me han ayudado en este campo, es mi capacidad de resiliencia y paciencia. Poseo una destreza basada en constante aprendizaje en el manejo y resolución de errores, lo que me contribuye a mantener una alta calidad y amor por mis proyectos con una constante mejora cada cierto tiempo. Además, mi habilidad para organizar eficientemente mis tareas y mi capacidad para detallar las cosas de manera clara y comprensible basados en diagramas o dibujos. Mi enfoque innovador, creativo y curioso se refleja en mi por ser una persona muy profunda en todo lo que hago. 
+                </p>
+                <div className="mt-3"></div>
+                Mi lema actual y la que llevare acabo hasta el final, <b>Nunca rendirse.</b>
+            </p>
+
+            <div className="extras">
+                <h4> Lenguajes </h4>
+                <h4> Español, ingles, japones </h4>
+            </div>
+
+            </div>     
+
+            </section>  
+            </header>
+
+            <Cards />
+            </main>
+            <Experiences />
 
         </>)
 }

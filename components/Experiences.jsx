@@ -1,111 +1,164 @@
-//import { fronted } from "../serph/fronted"
-//import { backend } from "../serph/backend"
-import { slider } from "../serph/slider"
+import { fronted } from "../serph/fronted"
+import { backend } from "../serph/backend"
+import { Mobile } from "../serph/Mobile"
+import { cloud } from "../serph/cloud"
+import { serverless } from "../serph/serverless"
+//import { php } from "../serph/conint"
+
+//import { slider } from "../serph/slider"
 
 export default function Experiences() {
 
-    slider();
+    
 
     return (
         <>
         {/* ////////////////////////////  EXPERIENCES  //////////////////////////// */}
 
-        <h6 className="subtitle">Web developer</h6>
-        <h5> Tecnologías </h5>
+        {/* <h6 className="subtitle">Web developer</h6>
+        <h5> Tecnologías </h5> */}
 
-            <section className="box">
+<section className="">
+    <div className="container">
+        <div className="row">
+            <div className="col-md-5">
+                <div className="box-part text-center">
 
-                <div className="boxitem">
-                <i class="iconbox">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="m7 8-4 4 4 4"></path>
-                <path d="m17 8 4 4-4 4"></path>
-                <path d="m14 4-4 16"></path>
-                </svg>
-                </i>
-                <h6 className="boxtitle"> LANGUAGES </h6>
-                <p className="boxcontent"> 
+                <h6 className="subtitle">Web developer</h6>
+                <h5> Quality Practices </h5>
 
-                    C,
-                    JavaScript,
-                    TypeScript,
-                    Python,
-                    PHP.
+                    <div className="practices">
+                        <ul className="">
+                            <li className="subpractices"><i></i>Consistencia en el estilo de código </li> 
+                            <li className="subpractices"><i></i> Comentarios y documentación </li>
+                            <li className="subpractices"><i></i> Pruebas unitarias y de integración </li>
+                            <li className="subpractices"><i></i> Optimización de recursos </li>
+                            <li className="subpractices"><i></i> Control de versiones </li>
+                            <li className="subpractices"><i></i> Metodologías ágiles </li>
+                            <li className="subpractices"><i></i> Mantenimiento proactivos </li>
+                        </ul>
+                    </div>
 
-                </p>
-                </div>
-
-
-                <article className="boxitemrow">
-
-
-                <div className="boxitem">
-                <div className="boxcolunm">
-
-                <i class="iconbox">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17 6v4.5c-1.478 0-2.805.64-3.72 1.66a4.981 4.981 0 0 0-1.208 4.19 5.005 5.005 0 0 0 2.465 3.502c-1.331.403-3.098.648-5.037.648C5.358 20.5 2 19.38 2 18V6"></path>
-                <path d="M17 6c0 1.38-3.358 2.5-7.5 2.5C5.358 8.5 2 7.38 2 6s3.358-2.5 7.5-2.5C13.642 3.5 17 4.62 17 6Z"></path>
-                <path d="M2 14c0 1.38 3.358 2.5 7.5 2.5.903 0 1.77-.053 2.572-.15"></path>
-                <path d="M2 10c0 1.38 3.358 2.5 7.5 2.5 1.378 0 2.67-.124 3.78-.34"></path>
-                <path d="M22 15.5a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"></path>
-                <path d="m18.5 14.5 1 1-1 1"></path>
-                <path d="m15.5 16.5-1-1 1-1"></path>
-                </svg>
-                </i>
-                    
-
-                <h6 className="boxtitle">Backend</h6>
-
-                <p className="boxcontent"> 
-                MySQL, 
-                MongoDB,
-                MariaDB,
-                PostgreSQL,
-                Laravel,
-                Django.
-
-                 </p>
-                 </div>
-                </div>
-
-
-
-
-                <div className="boxitem">
-                <div className="boxcolunm">
-                <i class="iconbox">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.5 3h-15A1.5 1.5 0 0 0 3 4.5v15A1.5 1.5 0 0 0 4.5 21h15a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 19.5 3Z"></path>
-                <path d="M3 8h18"></path>
-                <path d="M3 6.5v3"></path>
-                <path d="M21 6.5v3"></path>
-                <path d="M8.5 15H21"></path>
-                <path d="M8.5 8v13"></path>
-                <path d="M7 21h3"></path>
-                <path d="M21 13.5v3"></path>
-                </svg>
-                </i>
-                
-                <h6 className="boxtitle"> Fronted </h6>
-                
-                <p className="boxcontent"> 
-                CSS3,
-                SASS,
-                ReactJS
-                NextJS,
-                Redux,
-                Boostrap 4+,
-                Tailwind,
-                Figma,
-                Adobe XD,
-                </p>
-                </div>
-                </div>
-
+                    <article className="boxitemrow">
+                    <div className="boxitem">
+                        Python
+                    </div>
+                    <div className="contsecond">
+                        <li className="boxsecond">
+                            <h4> Django </h4>
+                        </li>
+                        <li className="boxsecond">
+                            <h4> Flask </h4>
+                        </li>
+                        <li className="boxsecond">
+                            <h4> FastAPI </h4>
+                        </li>
+                    </div>
                 </article>
 
-            </section>
+                </div>
+            </div>
+            <div className="col-md-7">
+
+                <h6 className="subtitle">Web developer</h6>
+                <h5> Tecnologías </h5>
+
+                <article className="boxitemrow">
+                    <div className="boxitem">
+                        JavaScript
+                    </div>
+                    <div className="contsecond">
+                        {
+                            fronted.map(({language, percentage}, i) => (
+                                <article className="boxsecond" key={i}>
+                                    <h4> {language}</h4>
+                                    <div className="progresbar">
+                                    <div className="pprogress" style={{ width: `${percentage}%` }}>
+                {percentage !== 0 ? null : <h4>none</h4>}</div>
+                                    </div>
+                                </article>
+                            ))
+                        } 
+                    </div>
+                </article>
+
+                <article className="boxitemrow">
+                    <div className="boxitem">
+                        Backend
+                    </div>
+                    <ol className="contsecond">
+                        {
+                            backend.map(({language, percentage}, index) => (
+                                <li className="boxsecond" key={index}>
+                                    <h4> {language}</h4>
+                                    <div className="progresbar">
+                                    <div className="pprogress" style={{ width: `${percentage}%`}}></div>
+                                    </div>
+                                </li>
+                            ))
+                        }
+                    </ol>
+                </article>
+
+                <article className="boxitemrow">
+                    <div className="boxitem">
+                        Cloud
+                    </div>
+                    <ol className="contsecond">
+                        {
+                            cloud.map(({language, percentage}, index) => (
+                                <li className="boxsecond" key={index}>
+                                    <h4> {language}</h4>
+                                    <div className="progresbar">
+                                    <div className="pprogress" style={{ width: `${percentage}%`}}></div>
+                                    </div>
+                                </li>
+                            ))
+                        }
+                    </ol>
+                </article>
+
+                <article className="boxitemrow">
+                    <div className="boxitem">
+                    Serverless
+                    </div>
+                    <ol className="contsecond">
+                        {
+                            serverless.map(({language, percentage}, index) => (
+                                <li className="boxsecond" key={index}>
+                                    <h4> {language}</h4>
+                                    <div className="progresbar">
+                                    <div className="pprogress" style={{ width: `${percentage}%`}}></div>
+                                    </div>
+                                </li>
+                            ))
+                        }
+                    </ol>
+                </article>
+
+                <article className="boxitemrow">
+                    <div className="boxitem">
+                    Mobile
+                    </div>
+                    <ol className="contsecond">
+                        {
+                            Mobile.map(({language, percentage}, index) => (
+                                <li className="boxsecond" key={index}>
+                                    <h4> {language}</h4>
+                                    <div className="progresbar">
+                                    <div className="pprogress" style={{ width: `${percentage}%`}}></div>
+                                    </div>
+                                </li>
+                            ))
+                        }
+                    </ol>
+                </article>
+
+            </div>
+        </div>
+    </div>
+    
+</section>
 
         </>
     )

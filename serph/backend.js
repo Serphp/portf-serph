@@ -1,20 +1,27 @@
 export const backend = [
     {
-        language: 'Node',
+        language: 'MariaDB',
         percentage: 40,
         status: 'Full Stack',
-        icon: 'badge bg-success'
     },
     {
         language: 'MongoDB',
         percentage: 40,
-        status: 'Full Stack',
-        icon: 'badge bg-success'
     },
     {
         language: 'MySQL',
         percentage: 40,
-        status: 'Full Stack',
-        icon: 'badge bg-success'
+    },
+    {
+        language: 'PostgreSQL',
+        percentage: 40,
+    },
+    {
+        language: 'Supabase',
+        percentage: 40,
+    },
+    {
+        language: 'Firebase',
+        percentage: 40,
     },
 ]

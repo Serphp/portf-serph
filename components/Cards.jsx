@@ -5,7 +5,7 @@ export default function Cards() {
         <>
 
     <div className='mainbg'>
-    <h6 className="subtitle"> I </h6>
+    <h6 className="subtitle"> Habilidades </h6>
     <h5> Soft skills </h5>
 
     <p className='mb-5'></p>

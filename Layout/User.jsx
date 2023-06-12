@@ -53,7 +53,8 @@ return (
         <span className="beta">Theme </span>  /Serph 
     </div>
     </div>
-    {isLoading ? <Loading /> : <Outlet />}
+    {/* {isLoading ? <Loading /> : <Outlet />} */}
+    <Outlet/>
     <Footer />
     </>
 
