@@ -10,7 +10,7 @@ export default function Footer() {
 
     {/* <Mensaje/> */}
 
-    <div style={{ textAlign: "center", color: "black", fontFamily: "rubik" }}> 
+    <div style={{ textAlign: "center", color: "black", fontFamily: "rubik", marginTop: '120px'}}> 
     <h4>© 2022 - 2023 Copyright - <b>Bryan Rodriguez</b></h4>
 
     </div>

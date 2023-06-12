@@ -71,7 +71,7 @@ export default function Experiences() {
                     </div>
                     <div className="contsecond">
                         <li className="boxsecond">
-                            <p> Django </p>
+                            <h4 style={{ marginTop: '8px'}}> Django </h4>
                         </li>
                     </div>
                 </article>
@@ -82,13 +82,13 @@ export default function Experiences() {
                     </div>
                     <div className="contsecond">
                         <li className="boxsecond">
-                            <p> Composer </p>
+                            <h4 style={{ marginTop: '8px'}}> Composer </h4>
                         </li>
                         <li className="boxsecond">
-                            <p> Laravel </p>
+                            <h4 style={{ marginTop: '8px'}}> Laravel </h4>
                         </li>
                         <li className="boxsecond">
-                            <p> Wordpress </p>
+                            <h4 style={{ marginTop: '8px'}}> Wordpress </h4>
                         </li>
 
                     </div>
