@@ -39,23 +39,6 @@ export default function Experiences() {
                         </ul>
                     </div>
 
-                    <article className="boxitemrow">
-                    <div className="boxitem">
-                        Python
-                    </div>
-                    <div className="contsecond">
-                        <li className="boxsecond">
-                            <h4> Django </h4>
-                        </li>
-                        <li className="boxsecond">
-                            <h4> Flask </h4>
-                        </li>
-                        <li className="boxsecond">
-                            <h4> FastAPI </h4>
-                        </li>
-                    </div>
-                </article>
-
                 </div>
             </div>
             <div className="col-md-7">
@@ -84,9 +67,38 @@ export default function Experiences() {
 
                 <article className="boxitemrow">
                     <div className="boxitem">
+                        Python
+                    </div>
+                    <div className="contsecond">
+                        <li className="boxsecond">
+                            <p> Django </p>
+                        </li>
+                    </div>
+                </article>
+
+                <article className="boxitemrow">
+                    <div className="boxitem">
+                        PHP
+                    </div>
+                    <div className="contsecond">
+                        <li className="boxsecond">
+                            <p> Composer </p>
+                        </li>
+                        <li className="boxsecond">
+                            <p> Laravel </p>
+                        </li>
+                        <li className="boxsecond">
+                            <p> Wordpress </p>
+                        </li>
+
+                    </div>
+                </article>
+
+                <article className="boxitemrow">
+                    <div className="boxitem">
                         Backend
                     </div>
-                    <ol className="contsecond">
+                    <div className="contsecond">
                         {
                             backend.map(({language, percentage}, index) => (
                                 <li className="boxsecond" key={index}>
@@ -97,14 +109,14 @@ export default function Experiences() {
                                 </li>
                             ))
                         }
-                    </ol>
+                    </div>
                 </article>
 
                 <article className="boxitemrow">
                     <div className="boxitem">
                         Cloud
                     </div>
-                    <ol className="contsecond">
+                    <div className="contsecond">
                         {
                             cloud.map(({language, percentage}, index) => (
                                 <li className="boxsecond" key={index}>
@@ -115,14 +127,14 @@ export default function Experiences() {
                                 </li>
                             ))
                         }
-                    </ol>
+                    </div>
                 </article>
 
                 <article className="boxitemrow">
                     <div className="boxitem">
                     Serverless
                     </div>
-                    <ol className="contsecond">
+                    <div className="contsecond">
                         {
                             serverless.map(({language, percentage}, index) => (
                                 <li className="boxsecond" key={index}>
@@ -133,14 +145,14 @@ export default function Experiences() {
                                 </li>
                             ))
                         }
-                    </ol>
+                    </div>
                 </article>
 
                 <article className="boxitemrow">
                     <div className="boxitem">
                     Mobile
                     </div>
-                    <ol className="contsecond">
+                    <div className="contsecond">
                         {
                             Mobile.map(({language, percentage}, index) => (
                                 <li className="boxsecond" key={index}>
@@ -151,7 +163,7 @@ export default function Experiences() {
                                 </li>
                             ))
                         }
-                    </ol>
+                    </div>
                 </article>
 
             </div>
