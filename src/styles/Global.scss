@@ -92,12 +92,6 @@ body {
   margin-bottom: 20px;
 }
 
-.about {
-  margin: 20px 10px 10px 10px;
-  border-left: rgba(0, 255, 247, 0.282) solid 1px;
-  padding-left: 20px;
-}
-
 .container {
   //width: 100%;
   animation: animate 3s ease forwards;
@@ -189,7 +183,7 @@ body {
 @media (max-width: 600px) {
   .header2 .container .infos .subtitle {
     display: flex;
-
+    border: red solid 1px;
     justify-content: center;
     margin-bottom: 0;
     font-size: 14px;
@@ -203,13 +197,14 @@ body {
   }
   .header2 .container {
     //height: 80%;
+    gap: 30px;
     flex-direction: column !important;
     text-align: center;
-    //border: red solid 2px;
+    border: red solid 2px;
   }
   .header2 {
     height: 85vh;
-    min-height: 450px;
+    //min-height: 450px;
   }
   h4 {
     text-align: center !important;
@@ -1388,23 +1383,73 @@ code {
     }
   }
 
+  .home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 20px;
+    @media screen and (max-width: 680px) {
+      flex-direction: column;
+      height: 100%;      
+      gap: 30px;
+    }
+  }
+  
+.about {
+  width: 50%;
+  margin: 20px 10px 10px 10px;
+  border-left: rgba(0, 255, 247, 0.282) solid 1px;
+  padding-left: 20px;
+  @media screen and (max-width: 600px) {
+
+    width: 100%;
+    margin: -10px;
+    padding-left: 0px;
+    border-left: none;    
+  }
+}
+
+.name {
+  justify-content: center;
+  //font-size: 1.5em;
+  font-weight: 600;
+  color: #94d8e4 !important;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+  .show {
+    position: relative;
+    // position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    //center page
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+  }
+
   .hide {
     display: none;
-    transition: all 1s ease-in-out;
+    //transition: all 1s ease-in-out;
   }
 
   .btnshow{
     position: relative;
+    z-index: 1;
     border: #209dbc solid 1px;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    background-color: #209dbc3a;
-    color: white;
+    padding: 5px;
+    background-color: #209dbc00;
+    color: #209dbc;
     transition: all 0.5s;
     //positon left
     bottom: 30px;
-    left: 93.5%;
+    left: 90%;
     transform: translateX(-50%);
     margin: 0 auto;
     &:hover {

@@ -8,7 +8,7 @@ export default function Cards() {
     <h6 className="subtitle"> Habilidades </h6>
     <h5> Soft skills </h5>
 
-    <p className='mb-5'></p>
+    <div className='mb-5'></div>
 
     <div className="containerx">
     <div className="cardx">

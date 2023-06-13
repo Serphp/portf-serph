@@ -35,9 +35,9 @@ export default function Home() {
     return (
         <>
         <main>
-        <header class="header2" id="home">
-        <section class="container">
-            <div class="infos">
+        <header class="">
+        <section class="home">
+            <div class="name">
                 <h6 class="subtitle" style={{'textAlign':'left'}}>Bienvenido a mi portfolio.</h6>
                 <h1 class="title">Bryan</h1>
                 <h1 class="title">Rodriguez</h1>
@@ -85,16 +85,18 @@ export default function Home() {
                 <button className="btnshow" onClick={handleshow}> 
                 {
                     show ? "Ocultar" : "Leer más"
-                } </button>
-                <p className={
-                    show ? "show" : "hide"
-                }>
-                    Mi trayectoria en este campo comienza a la edad de 14 años, cuando comencé a explorar el mundo de la programación a través de la creación de páginas web utilizando HTML, donde se me enseño en la escuela por una profesora de informática, lo que despertó mi curiosidad y me impulsó a sumergirme en este fascinante campo.
+                } 
+                </button>
+                <section className={show ? "show" : "hide"}>
+       
+                <p>Mi trayectoria en este campo comienza a la edad de 14 años, cuando comencé a explorar el mundo de la programación a través de la creación de páginas web utilizando HTML, donde se me enseño en la escuela por una profesora de informática, lo que despertó mi curiosidad y me impulsó a sumergirme en este fascinante campo.
                     <div className="mt-3"></div>
                     A medida que crecía en edad, me comenzó a encantar las nuevas tecnologías, no solo los lenguajes de programación, sino también como funcionaba la computadora en donde programaba y todo lo que requería una conexión a internet.
                     <div className="mt-3"></div>
                     Mis principales habilidades interpersonales, que me han ayudado en este campo, es mi capacidad de resiliencia y paciencia. Poseo una destreza basada en constante aprendizaje en el manejo y resolución de errores, lo que me contribuye a mantener una alta calidad y amor por mis proyectos con una constante mejora cada cierto tiempo. Además, mi habilidad para organizar eficientemente mis tareas y mi capacidad para detallar las cosas de manera clara y comprensible basados en diagramas o dibujos. Mi enfoque innovador, creativo y curioso se refleja en mi por ser una persona muy profunda en todo lo que hago. 
-                </p>
+                    </p>
+    
+                </section>
                 <div className="mt-3"></div>
                 Mi lema actual y la que llevare acabo hasta el final, <b>Nunca rendirse.</b>
             </p>
