@@ -14,4 +14,9 @@ export const Mobile = [
         percentage: 20,
         status: 'Full Stack',
     },
+    {
+        language: 'Capacitor',
+        percentage: 20,
+        status: 'Full Stack',
+    }
 ]

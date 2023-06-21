@@ -54,11 +54,11 @@ export default function Experiences() {
                         {
                             fronted.map(({language, percentage}, i) => (
                                 <article className="boxsecond" key={i}>
-                                    <h4> {language}</h4>
-                                    <div className="progresbar">
+                                    <h4 style={{ marginTop: '-1px'}}> {language}</h4>
+                                    {/* <div className="progresbar">
                                     <div className="pprogress" style={{ width: `${percentage}%` }}>
                 {percentage !== 0 ? null : <h4>none</h4>}</div>
-                                    </div>
+                                    </div> */}
                                 </article>
                             ))
                         } 
@@ -71,7 +71,7 @@ export default function Experiences() {
                     </div>
                     <div className="contsecond">
                         <li className="boxsecond">
-                            <h4 style={{ marginTop: '8px'}}> Django </h4>
+                            <h4 style={{ marginTop: '-1px'}}> Django </h4>
                         </li>
                     </div>
                 </article>
@@ -82,13 +82,13 @@ export default function Experiences() {
                     </div>
                     <div className="contsecond">
                         <li className="boxsecond">
-                            <h4 style={{ marginTop: '8px'}}> Composer </h4>
+                            <h4 style={{ marginTop: '-1px'}}> Composer </h4>
                         </li>
                         <li className="boxsecond">
-                            <h4 style={{ marginTop: '8px'}}> Laravel </h4>
+                            <h4 style={{ marginTop: '-1px'}}> Laravel </h4>
                         </li>
                         <li className="boxsecond">
-                            <h4 style={{ marginTop: '8px'}}> Wordpress </h4>
+                            <h4 style={{ marginTop: '-1px'}}> Wordpress </h4>
                         </li>
 
                     </div>
@@ -102,10 +102,10 @@ export default function Experiences() {
                         {
                             backend.map(({language, percentage}, index) => (
                                 <li className="boxsecond" key={index}>
-                                    <h4> {language}</h4>
-                                    <div className="progresbar">
+                                    <h4 style={{ marginTop: '-1px'}}> {language}</h4>
+                                    {/* <div className="progresbar">
                                     <div className="pprogress" style={{ width: `${percentage}%`}}></div>
-                                    </div>
+                                    </div> */}
                                 </li>
                             ))
                         }
@@ -120,10 +120,10 @@ export default function Experiences() {
                         {
                             cloud.map(({language, percentage}, index) => (
                                 <li className="boxsecond" key={index}>
-                                    <h4> {language}</h4>
-                                    <div className="progresbar">
+                                    <h4 style={{ marginTop: '-1px'}}> {language}</h4>
+                                    {/* <div className="progresbar">
                                     <div className="pprogress" style={{ width: `${percentage}%`}}></div>
-                                    </div>
+                                    </div> */}
                                 </li>
                             ))
                         }
@@ -138,10 +138,10 @@ export default function Experiences() {
                         {
                             serverless.map(({language, percentage}, index) => (
                                 <li className="boxsecond" key={index}>
-                                    <h4> {language}</h4>
-                                    <div className="progresbar">
+                                    <h4 style={{ marginTop: '-1px'}}> {language}</h4>
+                                    {/* <div className="progresbar">
                                     <div className="pprogress" style={{ width: `${percentage}%`}}></div>
-                                    </div>
+                                    </div> */}
                                 </li>
                             ))
                         }
@@ -156,10 +156,10 @@ export default function Experiences() {
                         {
                             Mobile.map(({language, percentage}, index) => (
                                 <li className="boxsecond" key={index}>
-                                    <h4> {language}</h4>
-                                    <div className="progresbar">
+                                    <h4 style={{ marginTop: '-1px'}}> {language}</h4>
+                                    {/* <div className="progresbar">
                                     <div className="pprogress" style={{ width: `${percentage}%`}}></div>
-                                    </div>
+                                    </div> */}
                                 </li>
                             ))
                         }

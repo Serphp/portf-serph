@@ -24,19 +24,8 @@ export const fronted = [
          
     },
     {
-        language: 'Bootstrap',
-        percentage: 60,
-        status: 'Full Stack',
-         
-    },
-    {
-        language: 'Tailwind',
+        language: 'Astro',
         percentage: 30,
         status: 'Full Stack',
-    },
-    {
-        language: 'SASS',
-        percentage: 60,
-        status: 'Full Stack',
-    },
+    }
 ]
