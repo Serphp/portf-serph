@@ -45,19 +45,19 @@ export default function About() {
 
 
     <h1>Frequently Asked Questions</h1>
-<div class="faq-container">
-    <div class="faq active">
-    <h3 class="faq-title">
+<div className="faq-container">
+    <div className="faq active">
+    <h3 className="faq-title">
         Why shouldn't we trust atoms?
     </h3>
 
-    <p class="faq-text">
+    <p className="faq-text">
         They make up everything
     </p>
 
-    <button class="faq-toggle">
-        <i class="fas fa-chevron-down"></i>
-        <i class="fas fa-times"></i>
+    <button className="faq-toggle">
+        <i className="fas fa-chevron-down"></i>
+        <i className="fas fa-times"></i>
     </button>
     </div>
 

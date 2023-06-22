@@ -35,30 +35,30 @@ export default function Home() {
     return (
         <>
         <main>
-        <header class="">
-        <section class="home">
-            <div class="name">
-                <h6 class="subtitle" style={{'textAlign':'left'}}>Bienvenido a mi portfolio.</h6>
-                <h1 class="title">Bryan</h1>
-                <h1 class="title">Rodriguez</h1>
+        <header className="">
+        <section className="home">
+            <div className="name">
+                <h6 className="subtitle" style={{'textAlign':'left'}}>Bienvenido a mi portfolio.</h6>
+                <h1 className="title">Bryan</h1>
+                <h1 className="title">Rodriguez</h1>
                 <p></p>
-                <h4 class="" style={{'textAlign':'left'}}>
+                <h4 className="" style={{'textAlign':'left'}}>
                 SysAdmin | Web Developer | Técnico IT
                 </h4>
 
-                <div class="pt-3">
-                <a href={page} target="_blank"><button class="buttoned"> SysAdmin CV </button></a>
-                <a href={page2} target="_blank"><button class="buttoned"> WebDev CV </button></a>
+                <div className="pt-3">
+                <a href={page} target="_blank"><button className="buttoned"> SysAdmin CV </button></a>
+                <a href={page2} target="_blank"><button className="buttoned"> WebDev CV </button></a>
 
                 </div>      
 
-                <div class="mt-4">
+                <div className="mt-4">
                     <a className="btn btn-link btn-floating m-1" target="_blank" href="https://twitter.com/Serphp">
                     <i className="fab fa-twitter"></i></a>
 
 
                     <a className="btn btn-link btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/bryaninit/">
-                    <i class="fab fa-linkedin"></i></a>
+                    <i className="fab fa-linkedin"></i></a>
 
                     <a className="btn btn-link btn-floating m-1" target="_blank" href="https://github.com/Serphp">
                     <i className="fab fa-github"></i></a>
@@ -71,7 +71,7 @@ export default function Home() {
             </div>        
 
 
-            <div class="about">
+            <div className="about">
 
             <div className="extras">
                 <h4> Ciudad de panamá </h4>

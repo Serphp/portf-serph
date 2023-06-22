@@ -31,7 +31,7 @@ export default function Mensaje() {
             Por <cite title="Source Title"> {heroe.name} </cite>
             </figcaption>
             </div>
-            <div class="mensaje-bar"></div>
+            <div className="mensaje-bar"></div>
         <hr/>
 
         </>

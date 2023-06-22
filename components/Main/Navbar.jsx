@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
 <>
 <nav>
-        <div class="nav2">
+        <div className="nav2">
             <div className="containernav">
 
                 <Link to="/">

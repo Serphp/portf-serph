@@ -14,7 +14,7 @@ export default function Certificates() {
 
             <a href="https://www.linkedin.com/in/bryaninit/" target="_blank">
             <h2 className="link">
-            <svg width="30" height="46" className="link" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg width="30" height="46" className="link" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M18 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"></path>
             <path d="M8 11v5"></path>
             <path d="M8 8v.01"></path>
