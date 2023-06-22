@@ -103,17 +103,20 @@ export default function Home() {
 
             <div className="extras">
                 <h4> Lenguajes </h4>
-                <h4> Español, ingles, japones </h4>
+                <h4> Español, ingles </h4>
             </div>
 
             </div>     
 
             </section>  
             </header>
-
+            
+            <div className="mt-5"></div>
             <Cards />
-            </main>
+            
+           
+            
             <Experiences />
-
+            </main>
         </>)
 }
