@@ -18,9 +18,8 @@ export default function Experiences() {
         {/* <h6 className="subtitle">Web developer</h6>
         <h5> Tecnologías </h5> */}
 
-<section className="">
-    <div className="container">
-        <div className="row">
+
+        <section className="row">
             <div className="col-md-5">
                 <div className="box-part text-center">
 
@@ -167,10 +166,8 @@ export default function Experiences() {
                 </article>
 
             </div>
-        </div>
-    </div>
-    
-</section>
+        </section>
+
 
         </>
     )
