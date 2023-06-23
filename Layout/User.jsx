@@ -41,18 +41,20 @@ return (
     
     <Navbar />
     <div className="header">
-    <button className="buttont" onClick={() => setTheme(!theme)}>
-        {
-            theme ? <SunIcon/> : <MonnIcon/>
-        }
+
+        <button className="buttont" onClick={() => setTheme(!theme)}>
+            {theme ? <SunIcon/> : <MonnIcon/>}
         </button>
 
-    <div className="headermenu">
+    <div className="">
+       
     </div>
-    <div className="titlen">
-        <span className="beta">Theme </span>  /Serph 
+    
+        <div className="titlen">
+            <span className="beta">Theme </span>  /Serphp
+        </div>
     </div>
-    </div>
+
     {/* {isLoading ? <Loading /> : <Outlet />} */}
     <Outlet/>
     <Footer />
