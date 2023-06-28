@@ -364,7 +364,7 @@ article {
 //
 
 h1 {
-  font-size: 2.3em;
+  font-size: 2.5em;
   font-family: 'Rubik', sans-serif !important;
   font-weight: 600;
   text-align: left;
@@ -372,6 +372,17 @@ h1 {
     font-size: 1.5em;
   }
 } 
+
+
+h1.title {
+  font-size: 55px;
+  line-height: 45px;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
+  @media screen and (max-width: 600px) {
+    font-size: 2.5em;
+  }
+}
 
 h2 {
   margin: 10px;
@@ -1228,7 +1239,7 @@ code {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  margin: 20px;
+  margin-bottom: 10px;
   .subpractices{
     font-size: 1.2em;
     margin: 10px;
@@ -1393,12 +1404,22 @@ code {
 }
 
 .name {
-  justify-content: center;
-  //font-size: 1.5em;
+  //justify-content: center;
   font-weight: 600;
   color: #94d8e4 !important;
   margin: 0 auto;
   padding: 10px;
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    
+  }
 }
 
   .show {

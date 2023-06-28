@@ -27,7 +27,7 @@ export default function Experiences() {
                 <h5> Quality Practices </h5>
 
                     <div className="practices">
-                        <ul className="">
+                       
                             <li className="subpractices"><i></i>Consistencia en el estilo de código </li> 
                             <li className="subpractices"><i></i> Comentarios y documentación </li>
                             <li className="subpractices"><i></i> Pruebas unitarias y de integración </li>
@@ -35,7 +35,7 @@ export default function Experiences() {
                             <li className="subpractices"><i></i> Control de versiones </li>
                             <li className="subpractices"><i></i> Metodologías ágiles </li>
                             <li className="subpractices"><i></i> Mantenimiento proactivos </li>
-                        </ul>
+                        
                     </div>
 
                 </div>
