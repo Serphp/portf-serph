@@ -38,10 +38,6 @@ body {
     .headermenu {
       display: none;
     }
-    .header {
-
-      margin: 60px 0 0 0;
-    }
   }
   #pinfo {
     color: black;
@@ -1099,7 +1095,7 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 60px 0 0 100px;
+  margin: 60px 0 0 0;
   // margin-top: 50px;
   // margin-bottom: 20px;
   .headermenu{
