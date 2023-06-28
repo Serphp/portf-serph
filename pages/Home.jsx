@@ -2,6 +2,7 @@
 import Experiences from "../components/Experiences"
 import Cards from "../components/Cards"
 import { useState } from "react";
+import Education from "../components/education";
 
 export default function Home() {
 
@@ -69,8 +70,6 @@ export default function Home() {
                     </svg></a>
                 </div>
             </div>        
-
-
             <div className="about">
 
             <div className="extras">
@@ -111,6 +110,9 @@ export default function Home() {
             </section>  
             </header>
             
+            <Education/>
+
+
             <div className="mt-5"></div>
             <Cards />
             

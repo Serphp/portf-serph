@@ -24,11 +24,11 @@ export default function Experiences() {
                 <div className="box-part text-center">
 
                 <h6 className="subtitle">Web developer</h6>
-                <h5> Quality Practices </h5>
+                <h5> Practicas </h5>
 
                     <div className="practices">
                        
-                            <li className="subpractices"><i></i>Consistencia en el estilo de código </li> 
+                            <li className="subpractices"><i></i> Consistencia en el estilo de código </li> 
                             <li className="subpractices"><i></i> Comentarios y documentación </li>
                             <li className="subpractices"><i></i> Pruebas unitarias y de integración </li>
                             <li className="subpractices"><i></i> Optimización de recursos </li>

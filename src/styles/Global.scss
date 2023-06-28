@@ -1218,6 +1218,43 @@ code {
   }
 }
 
+.educont{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 50px;
+  b {
+    color: rgba(255, 255, 255, 0.637);
+    font-weight: bold;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.edu {
+ width: 50%;
+ @media screen and (max-width: 600px) {
+  width: 100%;
+ }
+}
+
+.edu2 {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
 // Mensajes 
 .mensaje-bar {
   background-color: rgba(64, 64, 64, 0.438);
@@ -1404,7 +1441,7 @@ code {
 }
 
 .name {
-  //justify-content: center;
+  width: 50%;
   font-weight: 600;
   color: #94d8e4 !important;
   margin: 0 auto;

@@ -42,7 +42,13 @@
                 color: #fff;
             }
         }
-      }
+    } //fin
+    .educont {
+        b{
+            color: #ffffffac;
+            transition: all 0.8s ease;
+        }
+    }
 }
 //light
 [data-theme="false"] {
@@ -57,6 +63,12 @@
       }
       .imgcer {
         transition: all 0.7s ease;
+    }
+    .educont {
+        b{
+            color: #000000ac;
+            transition: all 0.8s ease;
+        }
     }
     .header2 .container .img-holder img {
         transition: all 1s ease;
