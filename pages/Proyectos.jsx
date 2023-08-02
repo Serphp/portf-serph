@@ -1,4 +1,5 @@
 import Proyects from "../components/Proyects"
+import ED from "../serph/text/ED"
 import GGW from "../serph/text/GGW"
 import SPT from "../serph/text/SPT"
 
@@ -51,19 +52,35 @@ export default function Proyectos() {
         </article>
 
         <article className="section-top">
+            <div className="text-container">
+                <div className="top-cont-title">
+                <a href='https://spomodoro-serphp.vercel.app/' target="_blank" className="buttonp">View</a>
+                    <h2 className='ttitle'> Emporium Developers </h2>
+                    
+                </div>
+                <ED/>
+            </div>
+        </article>
+        </section>
+
+        <div className="space"></div>
+        <h1> En Desarrollo <span className="pause"> Pause </span></h1>
+
+        <article className="dev">
+
             <p style={{marginBottom: '10px'}}>
                 El desarrollo de estos proyectos son de largo plazo, la documentacion de cada proyecto se encuentra en desarrollo y se ira actualizando con el tiempo.
                 </p>
                 <ul>
-                    <li><a href="https://github.com/Serphp/SI2" target="_blank" className="">[Github] Proyecto SI2</a></li>
+                    <li><a href="https://github.com/Serphp/SI2" target="_blank"><h4>[Github] Proyecto SI2</h4></a></li>
                     <ul>
                         <li style={{marginBottom: '10px'}}> Tecnologias: <b> NextJS, Typescript, NextAuth, Prisma, Tailwind, SASS  </b></li>
                     </ul>
-                    <li><a href="https://github.com/Serphp/SI" target="_blank" className="">[Github] Proyecto SI</a></li>
+                    <li><a href="https://github.com/Serphp/SI" target="_blank"><h4>[Github] Proyecto SI</h4></a></li>
                     <ul style={{marginBottom: '10px'}}>
                         <li> Tecnologias: <b> Angular 16, Typescript, SASS  </b></li>
                     </ul>
-                    <li><a href="https://github.com/Serphp/SerphGenPass" target="_blank" className="">[Github] Proyecto Django</a></li>
+                    <li><a href="https://github.com/Serphp/SerphGenPass" target="_blank"><h4>[Github] Proyecto Django</h4></a></li>
                     <ul style={{marginBottom: '10px'}}>
                         <li> Tecnologias: <b> Python, Django  </b></li>
                     </ul>
@@ -89,7 +106,7 @@ export default function Proyectos() {
                 </div>
             </div>
         </div> */}
-    </section>
+
 
     <div className="space"></div>
 

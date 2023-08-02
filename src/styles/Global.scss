@@ -73,9 +73,15 @@ body {
     font-family: 'Rubik', sans-serif !important;
   }
   li {
+    font-weight: bold;
+    margin: 10px 0 10px 0;
     font-size: 14px;
     font-family: 'Rubik', sans-serif !important;
     //margin-bottom: 10px;
+  }
+  ul {
+    margin: 0 auto;
+    padding: 0 auto;
   }
 }
 
