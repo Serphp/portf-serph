@@ -53,12 +53,28 @@
 }
 //light
 [data-theme="false"] {
-    --background-color: rgb(238, 238, 238) !important;
-    --text-color: #000000a0 !important;
+    --background-color: #171B26 !important;
+    --text-color: #ffffffa0 !important;
+    
+    @keyframes cyberpunk {
+        0% {
+            filter: hue-rotate(0deg);
+        }
+        100% {
+            filter: hue-rotate(360deg);
+        }
+    
+        
+    }
+    h6 {
+        color: #0be6dfc2 !important;
+        //animation: cyberpunk 10s linear infinite;
+    }
     .face1 {
-        background-color: #f8f8f8 !important;
+        //background-color: #f8f8f862 !important;
         box-shadow: 5px 5px 0px 2px rgba(102, 175, 199, 0.317);
         &:hover{
+            background-color: #171B26;
           box-shadow: 5px 5px 0px 2px rgb(102, 175, 199);
         }
       }
@@ -67,7 +83,7 @@
     }
     .educont {
         b{
-            color: #000000ac;
+            color: #00eeffac;
             transition: all 0.8s ease;
         }
     }
@@ -79,7 +95,7 @@
 
       .boxitem {
         border: #28293e2d solid 1px;
-        background-color: whitesmoke !important;
+        background-color: rgba(255, 255, 255, 0.003) !important;
       }
       .section, .section-top  {
         color: var(--text-color);
@@ -106,6 +122,7 @@
 p {
     color: var(--text-color) !important;
 }
+
 
 .nav2 {
     background-color: var(--background-color) !important;

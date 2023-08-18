@@ -3,6 +3,7 @@ import Experiences from "../components/Experiences"
 import Cards from "../components/Cards"
 import { useState } from "react";
 import Education from "../components/education";
+import Freelance from "../components/Freelance";
 
 export default function Home() {
 
@@ -87,7 +88,7 @@ export default function Home() {
                 } 
                 </button>
                 <section className={show ? "show" : "hide"}>
-       
+    
                 <p>Mi trayectoria en este campo comienza a la edad de 14 años, cuando comencé a explorar el mundo de la programación a través de la creación de páginas web utilizando HTML, donde se me enseño en la escuela por una profesora de informática, lo que despertó mi curiosidad y me impulsó a sumergirme en este fascinante campo.
                     <div className="mt-3"></div>
                     A medida que crecía en edad, me comenzó a encantar las nuevas tecnologías, no solo los lenguajes de programación, sino también como funcionaba la computadora en donde programaba y todo lo que requería una conexión a internet.
@@ -109,6 +110,38 @@ export default function Home() {
 
             </section>  
             </header>
+
+    <div className="mainbg">
+    <h6 className="subtitle"><i class="fa fa-box-open"></i> Servicios profesionales </h6>
+    <h2> Freelance </h2>
+    <div className="mb-5"></div>
+
+    <section className="educont">
+
+    <article className="free">
+            
+            <div className="obra">
+                Obra <span> <i class="fa fa-arrow-right"></i></span>
+            </div>
+            <div className="obra">
+                Contrato <span> <i class="fa fa-arrow-right"></i></span>
+                <div className="obrac">
+                    ola
+                </div>
+            </div>
+            
+            <div className="obra">
+                Trabajos realizados <span> <i class="fa fa-arrow-right"></i></span>
+                <div className="obrac">
+                    ola
+                </div>
+            </div>
+
+        </article>
+
+    </section>
+
+    </div>
             
             <Education/>
 
@@ -116,7 +149,7 @@ export default function Home() {
             <div className="mt-5"></div>
             <Cards />
             
-           
+    
             
             <Experiences />
             </main>

@@ -118,3 +118,64 @@
 }
 
 
+.free{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px;
+  //border: red solid 1px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@keyframes identifier {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.obra {
+  width: 300px;
+  display: flex;
+  opacity: 0.5;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #17b6d2;
+  border: #00fffb solid 1px;
+  animation: identifier 2s infinite alternate;
+  box-shadow: 0px 0px 1px 2px rgba(0, 242, 255, 0.5);
+  transition: all .5s ease;
+  &:hover {
+    opacity: 1;
+    display: flex;
+    box-shadow: 5px 5px 1px 2px rgba(0, 242, 255, 0.5);
+  }
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
+  .fa {
+    font-size: 1.5em;
+    color: #f8feff;
+  }
+}
+
+.obrac {
+  position: absolute;
+  top: 750px;
+  //width: 300px;
+  border: red solid 1px;
+}
+
+.contrato {
+  width: 200px;
+  padding: 10px;
+  border: white solid 1px;
+}
