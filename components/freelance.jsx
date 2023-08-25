@@ -1,7 +1,7 @@
 export default function Freelance() {
     return (
- <>
-     <div className="mainbg">
+    <>
+    <div className="mainbg">
     <h6 className="subtitle"><i class="fa fa-box-open"></i> Servicios profesionales </h6>
     <h2> Freelance </h2>
     <div className="mb-5"></div>
@@ -32,6 +32,6 @@ export default function Freelance() {
     </section>
 
     </div>
- </>
+    </>
     );
     }
