@@ -100,21 +100,21 @@
       .section, .section-top  {
         color: var(--text-color);
         border: #28293e2d solid 1px;
-        background-color: #ffffff !important;
+        background-color: #e6e6e614 !important;
         &:hover {
             border: none;
             opacity: .8 !important;
             border-radius: 10px;
-            box-shadow: 5px 5px 0px 1px rgba(7, 5, 5, 0.553) !important;
+            box-shadow: 5px 5px 0px 1px rgba(2, 238, 207, 0.553) !important;
             transform: translateY(-5px);
         }
       }
       .buttonp {
-        background-color: #e3e3e3;
+        background-color: #e4e4e420;
         border: #28293e2d solid 1px;
-        color: #000000a6;
+        color: #ffffffa6;
         &:hover {
-            box-shadow: 5px 5px 0px 1px rgba(22, 22, 22, 0.2);
+            box-shadow: 5px 5px 0px 1px rgba(11, 213, 220, 0.751);
         }
     }
 }
