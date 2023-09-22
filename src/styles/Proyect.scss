@@ -102,14 +102,14 @@ $section-bg-color: #ffffff9d;
     .edimg{
         position: absolute;
         z-index: -1;
-        width: 100%;
-        height: auto;
+        //width: 100%;
+        //height: auto;
     }
     img {
         width: 100px;
         height: 100%;
         opacity: 0.5;
-        background-size: contain;
+        background-size: cover;
         transform: rotate(270deg);
         object-fit: cover;
         transition: all 0.7s ease-in-out;
