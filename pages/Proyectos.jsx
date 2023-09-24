@@ -5,6 +5,9 @@ import SPT from "../serph/text/SPT"
 
 export default function Proyectos() {
 
+
+    
+
     
     return (
         <>
@@ -29,12 +32,13 @@ export default function Proyectos() {
     </div>
 
     <section className="section-container-top">
-        <article className="section-top">
+        <article className="section-top parallax" data-speed="2">
             <div className="text-container">
                 <div className="top-cont-title">
                 <a href='https://github.com/Serphp/GunGaleWorld' target="_blank" className="buttonp">Github</a>
                 <h2 className='ttitle'> GunGale World </h2>
                 </div>
+                
                     <GGW />
             </div>
         </article>
@@ -51,17 +55,25 @@ export default function Proyectos() {
             </div>
         </article>
 
-        <article className="section-top">
+        </section>
+
+        <h1> New section </h1>
+        <section className="edall">
+        <ED/>
+        </section>
+
+
+        {/* <article className="ed">
             <div className="text-container">
                 <div className="top-cont-title">
                 <a href='https://spomodoro-serphp.vercel.app/' target="_blank" className="buttonp">View</a>
-                    <h2 className='ttitle'> Emporium Developers </h2>
+                    <h2 className='ttitle'> ED Panama </h2>
                     
                 </div>
                 <ED/>
+                
             </div>
-        </article>
-        </section>
+        </article> */}
 
         <div className="space"></div>
         <h1> En Desarrollo <span className="pause"> Pause </span></h1>
