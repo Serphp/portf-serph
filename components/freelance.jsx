@@ -13,12 +13,16 @@ export default function Freelance() {
             <div className="obra">
                 Obra <span> <i class="fa fa-arrow-right"></i></span>
             </div>
+            <a href="/About">
             <div className="obra">
+                
                 Contrato <span> <i class="fa fa-arrow-right"></i></span>
+                
                 <div className="obrac">
                     ola
                 </div>
-            </div>
+                
+            </div></a>
             
             <div className="obra">
                 Trabajos realizados <span> <i class="fa fa-arrow-right"></i></span>
