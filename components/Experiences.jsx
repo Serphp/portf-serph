@@ -24,7 +24,7 @@ export default function Experiences() {
                 <div className="box-part text-center">
 
                 <h6 className="subtitle"> Practicas </h6>
-                <h5>  Technology  </h5>
+                <h5>  Practices  </h5>
 
                     <div className="practices">          
                             <li className="subpractices"><i></i> Consistencia en el estilo de código </li> 
