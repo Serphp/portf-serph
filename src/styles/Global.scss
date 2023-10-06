@@ -1374,6 +1374,7 @@ code {
     border-radius: 20px;
     @media screen and (max-width: 680px) {
       flex-direction: column;
+      width: 100%;
       height: 100%;      
       gap: 30px;
     }
@@ -1385,7 +1386,7 @@ code {
   border-left: rgba(0, 255, 247, 0.282) solid 1px;
   padding-left: 20px;
     @media screen and (max-width: 600px) {
-      width: 100%;
+      width: 90%;
       margin: -10px;
       padding-left: 0px;
       border-left: none;    
@@ -1448,5 +1449,9 @@ code {
     &:hover {
       background-color: #48C2D6;
       color: #ffffff;
+    }
+    @media screen and (max-width: 600px) {
+      bottom: 0px;
+      left: 80%;
     }
   }
