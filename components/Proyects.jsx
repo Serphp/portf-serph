@@ -40,7 +40,15 @@ export default function Proyects() {
         }
         {/* SEPARACION */}
         </div>
+        <div className="mb-3"></div>
+            <div className='buttoned'>
+                <a href='https://github.com/Serphp'>  Mas proyectos </a>
+            </div>
+
+            {/* {{end}} */}
         </div>
+
+
         </>
     )
 };

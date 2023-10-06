@@ -145,7 +145,7 @@ export default function Home() {
 
     <Proyects/>
 
-    {/* <Formulario/> */}
+    <Formulario/>
             </main>
         </>)
 }
