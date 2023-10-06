@@ -1,9 +1,9 @@
-export default function Freelance() {
+export default function Jobs() {
     return (
     <>
     <div className="mainbg">
-    <h6 className="subtitle"><i class="fa fa-box-open"></i> Servicios profesionales </h6>
-    <h2> Freelance </h2>
+    <h6 className="subtitle"><i class="fa fa-box-open"></i> Servicios </h6>
+    <h2> Services </h2>
     <div className="mb-5"></div>
 
     <section className="educont">
@@ -11,21 +11,22 @@ export default function Freelance() {
     <article className="free">
             
             <div className="obra">
-                Obra <span> <i class="fa fa-arrow-right"></i></span>
+                Desarrollo web <span> </span>
             </div>
-            <a href="/About">
+
             <div className="obra">
                 
-                Contrato <span> <i class="fa fa-arrow-right"></i></span>
+                Analista de Programación <span> </span>
                 
                 <div className="obrac">
                     ola
                 </div>
                 
-            </div></a>
+            </div>
             
             <div className="obra">
-                Trabajos realizados <span> <i class="fa fa-arrow-right"></i></span>
+            {/* <i class="fa fa-arrow-right"></i> */}
+                Desarrollador Front-End <span> </span>
                 <div className="obrac">
                     ola
                 </div>

@@ -7,7 +7,19 @@ export default function About() {
     return (
         <>
     <div className="mainbg">
-    <h1> Hi </h1>
+
+    <div className="contenedor">
+    <div class="container px-4">
+    <div class="row gx-5">
+        <div class="col">
+        <div class="p-3 border">Custom column padding</div>
+        </div>
+        <div class="col">
+        <div class="p-3 border">Custom column padding</div>
+        </div>
+    </div>
+    </div>
+    </div>
 
     </div>
         </>

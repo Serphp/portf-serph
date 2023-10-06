@@ -3,7 +3,9 @@ import Experiences from "../components/Experiences"
 import Cards from "../components/Cards"
 import { useState } from "react";
 import Education from "../components/education";
-import Freelance from "../components/Freelance";
+import Jobs from "../components/freelance";
+import Proyects from "../components/Proyects";
+import Formulario from "../components/form";
 
 export default function Home() {
 
@@ -111,17 +113,39 @@ export default function Home() {
             </section>  
             </header>
 
-            <Freelance/>
+            <Jobs/>
             
             <Education/>
 
-
             <div className="mt-5"></div>
+
             <Cards />
-            
-    
-            
+
             <Experiences />
+
+    {/* <div className="mainbg">
+            <h6 className="subtitle"><i class="fa fa-location-arrow"></i> Mas información </h6>
+        <h2> Contacto </h2>
+        <div className="mb-5"></div>
+
+        <div className="educont">
+            <div className="edu3">
+                Correo: <br/>
+                <a href="mailto:Serphp@hotmail.com">Serphp@hotmail.com</a>
+            </div>
+            <div className="edu3">
+                País <br/>
+                Ciudad de Panamá
+            </div>
+            <div className="edu3">
+                test3
+            </div>
+        </div>
+    </div> */}
+
+    <Proyects/>
+
+    {/* <Formulario/> */}
             </main>
         </>)
 }

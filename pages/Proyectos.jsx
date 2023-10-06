@@ -1,7 +1,5 @@
 import Proyects from "../components/Proyects"
 import ED from "../serph/text/ED"
-import GGW from "../serph/text/GGW"
-import SPT from "../serph/text/SPT"
 
 export default function Proyectos() {
 
@@ -20,7 +18,7 @@ export default function Proyectos() {
         <ED/>
         </div>
 
-
+{/* 
         <div className="space"></div>
         <h1> En Desarrollo <span className="pause"> Pause </span></h1>
 
@@ -31,9 +29,6 @@ export default function Proyectos() {
             </div>
 
         <article className="dev">
-
-
-
             <p style={{marginBottom: '10px'}}>
                 El desarrollo de estos proyectos son de largo plazo, la documentacion de cada proyecto se encuentra en desarrollo y se ira actualizando con el tiempo.
                 </p>
@@ -51,9 +46,7 @@ export default function Proyectos() {
                         <li> Tecnologias: <b> Python, Django  </b></li>
                     </ul>
                 </ul>
-                
-                
-        </article>
+        </article> */}
 
         {/* <div className="section-top">
             <div className="text-container">
@@ -73,12 +66,14 @@ export default function Proyectos() {
             </div>
         </div> */}
 
-
+{/* 
     <div className="space"></div>
 
     <h1> Normal Project's </h1>
 
-        <Proyects />
+        <Proyects /> */}
+
+
         </>
         
     )

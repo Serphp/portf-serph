@@ -23,11 +23,10 @@ export default function Experiences() {
             <div className="col-md-5">
                 <div className="box-part text-center">
 
-                <h6 className="subtitle">Web developer</h6>
-                <h5> Practicas </h5>
+                <h6 className="subtitle"> Practicas </h6>
+                <h5>  Technology  </h5>
 
-                    <div className="practices">
-                       
+                    <div className="practices">          
                             <li className="subpractices"><i></i> Consistencia en el estilo de código </li> 
                             <li className="subpractices"><i></i> Comentarios y documentación </li>
                             <li className="subpractices"><i></i> Pruebas unitarias y de integración </li>
@@ -42,8 +41,8 @@ export default function Experiences() {
             </div>
             <div className="col-md-7">
 
-                <h6 className="subtitle">Web developer</h6>
-                <h5> Tecnologías </h5>
+                <h6 className="subtitle"> Tecnologías </h6>
+                <h5> Technology </h5>
 
                 <article className="boxitemrow">
                     <div className="boxitem">

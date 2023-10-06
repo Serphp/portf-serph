@@ -6,17 +6,20 @@ export default function Proyects() {
     return (
         <>
 
+<div className="mainbg">
+            <h6 className="subtitle"><i class="fa fa-location-arrow"></i> Proyectos </h6>
+        <h2> Proyects </h2>
+        <div className="mb-5"></div>
+        
     <div className="section-container">
-        {/* SEPARACION */}
-
 
         {
             NProyects.map(({name, description, lang, image, url, url2}, i) => (
                 <div className="section">
 
-                    {/* <div className="image-container">
+                    <div className="image-container">
                     <img className="" src={image} alt={name} title={name}/>
-                    </div> */}
+                    </div>
                     <div className="text-container">
                         <div className="tlinks">{lang}</div>
                         <h2 className='ttitle'>{name}</h2>
@@ -36,6 +39,7 @@ export default function Proyects() {
                 
         }
         {/* SEPARACION */}
+        </div>
         </div>
         </>
     )

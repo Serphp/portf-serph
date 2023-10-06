@@ -1,12 +1,10 @@
+import { NProyects } from "../NProyects";
 import { ed } from "../ed";
 import { sphp } from "../ed";
 
 const ED = () => {
     return (
         <>
-
-
-
 
 
 {
@@ -37,8 +35,8 @@ const ED = () => {
             </div>
             </div>
             {/* <h2 className="etitle"> {nombre} </h2> */}
-                                        <div className="edbtn"> 
-                            <a href={url}>Ver Proyecto  </a></div>
+                                        <div className="buttoned"> 
+                            <a href={url}>Ver Proyecto</a></div>
                                 </div>
         </div>
         </>
@@ -79,7 +77,7 @@ const ED = () => {
                     </span>               
                 </div>
             </div>
-            <div className="edbtn"> 
+            <div className="buttoned"> 
                 <a href={url}>Ver Proyecto  </a></div>
             </div>
         </div>
@@ -94,8 +92,41 @@ const ED = () => {
     </div>
 </div>
 
+{/* PROYECTOS EXTRAS */}
 
-
+{
+    NProyects.map(({name, description, lang, image, url, url2}, i) => (
+        <>
+        <div className="ed" key={i}>
+            <div className="edimg2">
+                <img src={image}  />
+            </div>
+            <div className="space2">  
+            </div>
+        <div className="edcont">
+            <div className="edcont2">
+                <span className="sub">
+                {name}
+                </span>
+                <p className="top-description">
+                    {description}
+                </p>
+                <div className="top-cont-title">
+                    <span className="tlinks">
+                        ..
+                    </span>
+                    <span className="tlinks">
+                        ...
+                    </span>               
+                </div>
+            </div>
+            <div className="buttoned"> 
+                <a href={url}>Ver Proyecto  </a></div>
+            </div>
+        </div>
+        </>
+    ))
+}
 
 
         </>

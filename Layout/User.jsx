@@ -24,36 +24,34 @@ useEffect(() => {
 
 useEffect(() => {
     window.scrollTo(0, 0);
-  }, [pathname]);
+}, [pathname]);
 
 useEffect(() => {
-    if (theme) {
-        document.documentElement.setAttribute("data-theme", theme);
-        localStorage.setItem("theme", "dark");
-      } else {
-        document.documentElement.setAttribute("data-theme", theme);
-        localStorage.setItem("theme", "light");
-      }
+if (theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", "dark");
+    } else {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", "light");
+    }
 }, [theme]);
 
 return (  
     <>
     
-    <Navbar />
+    {/* <Navbar /> */}
     <div className="header">
 
         <button className="buttont" onClick={() => setTheme(!theme)}>
             {theme ? <SunIcon/> : <MonnIcon/>}
         </button>
-
-    <div className="">
-       
-    </div>
     
-        <div className="titlen">
-            <span className="beta">Theme </span>  /Serphp
-        </div>
     </div>
+
+    <div className="titlen">
+            {/* <span className="beta">Theme </span>   */}
+            /Serphp
+        </div>
 
     {/* {isLoading ? <Loading /> : <Outlet />} */}
     <Outlet/>

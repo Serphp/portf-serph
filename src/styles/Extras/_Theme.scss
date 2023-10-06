@@ -1,7 +1,81 @@
 //dark
 [data-theme="true"] {
-    --background-color: #343543;
-    --text-color: #bcbcbcb3 !important;
+    --cyan: #0be6dfc2;
+    --cyberpunk: #c79288;
+    --cyberpunkPlus: #c79288;
+    --background-color: #d2d2d2e8;
+    --background-color-second: #ffffff;
+    --text-color: #1a1a1ab3 !important;
+    
+    .text-container {
+        background-color: #b2b2b279;
+        .text-container, .ttitle, .tdescription {
+            color: rgb(0, 0, 0) !important;
+        }
+    }
+    .title {
+        color: var(--cyberpunk) !important;
+        text-shadow: 0 10px 20px var(--cyberpunk);
+    }
+    i {
+        &:before {
+            color: var(--cyberpunk);
+            margin-right: 8px;
+        }
+    }
+    .obra, .buttoned{
+        a{color: var(--cyberpunkPlus);}
+        &:hover{
+            box-shadow: 5px 5px 1px 2px var(--cyberpunk);
+        }
+    }
+    
+    .face1, .face, .boxitem {
+        transition: all 0.3s ease-in-out;
+        background-color: #e4e4e4a5;
+        border-bottom: var(--cyberpunk) solid 1px;
+        &:hover{
+            box-shadow: 5px 5px 0px 2px var(--cyberpunk);
+        }
+    }
+
+    .face.face1 .content i, h3 {
+        color: var(--cyberpunk) !important;
+    }
+    .edcont{
+        // background-color: #2b2b2b0a;
+        // backdrop-filter: blur(2px);
+        // background-size: cover;
+        //box-shadow: 1px 1px 10px 1px rgba(0, 255, 115, 0.414);
+        //background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200617/pngtree-futuristic-geometric-neon-background-with-glowing-neon-and-with-cyberpunk-colors-image_339498.jpg');
+        background: linear-gradient(135deg, #0505055d 60%, #fded0e2e);
+    }
+    .space2, .about, .boxsecond {
+        transition: all 0.7s ease;
+        opacity: 0.7;
+        border-color: var(--cyberpunk) !important;
+        &:active, &:hover {
+            opacity: 1;
+        }
+    }
+    h6 {
+        opacity: 0.8;
+        font-weight: 100;
+        color: var(--cyberpunk) !important;
+        transition: all 0.7s ease;
+        &:hover{
+            color: var(--cyberpunkPlus) !important;
+        }
+    }
+    .buttoned, .btn, .obra, .btnshow {
+        background-color: #ffffff21 !important;
+        border-color: var(--cyberpunk) !important;
+        color: var(--cyberpunk);
+        &:hover{
+            //background-color: #0000003f;
+            color: var(--cyberpunkPlus) !important;
+        }
+    }
     .button {
         background-color: white !important;
         color: black!important;
@@ -17,45 +91,83 @@
         transition: all 0.7s ease;
     }
     .header2 .container .img-holder img {
-                transition: all 1s ease;
+        transition: all 1s ease;
         border: 1px solid #bcbcbcb3;
         box-shadow: 10px 5px 2px 3px #fdfdfdb3;
-      }
-      .boxitem {
-        border: #28293e2d solid 1px;
-        background-color: #343543 !important;
-      }
-      .section, .section-top  {
+    }
+    .section, .section-top  {
         color: var(--text-color);
-        background-color: #2727275a !important;
+        background-color: #d4d4d475 !important;
         &:hover {
             border: none;
             opacity: .8 !important;
-            box-shadow: 5px 5px 0px 1px rgba(102, 175, 199, 0.743) !important;
+            box-shadow: 5px 5px 0px 1px var(--cyberpunk) !important;
             border-radius: 10px;
             transform: translateY(-5px);
         }
         .buttonp {
-            background-color: #d3d3d3;
-            color: #000000;
+            background-color: #d3d3d3d7;
+            color: black;
             &:hover {
-                box-shadow: 5px 5px 0px 1px rgba(102, 175, 199, 0.706);
+                box-shadow: 5px 5px 0px 1px var(--cyberpunk);
                 color: #1f1f1f;
             }
         }
     } //fin
     .educont {
         b{
-            color: #ffffffac;
+            color: var(--cyberpunk);
             transition: all 0.8s ease;
         }
     }
 }
 //light
 [data-theme="false"] {
+    --cyan: #0be6dfc2;
+    --cyberpunk: #0be6dfc2;
     --background-color: #171B26 !important;
+    --background-color-second: #33365f;
     --text-color: #ffffffa0 !important;
     
+    .text-container {
+        background-color: #00000020;
+        .text-container, .ttitle, .tdescription {
+            color: white !important;
+        }
+    }
+// @keyframes fadeIn {
+//         0% {
+//             opacity: 1;
+//             //transform: translateY(10px);
+//             border: rgba(255, 255, 255, 0) solid 1px;
+//             box-shadow: 0 0 0px 2px rgb(72, 194, 214);
+//         }
+//         20% {
+//             opacity: 0.6;
+//             //transform: translateY(-5px);
+//             border: 1px solid #48C2D6;
+//             box-shadow: 0 0 0px 3px rgb(72, 194, 214);
+//         }
+//         50% {
+//             opacity: 0.8;
+//             //transform: translateY(-5px);
+//             border: 1px solid #48C2D6;
+        
+//             box-shadow: 0 0 0px 3px rgb(72, 194, 214);
+//         }
+//         100% {
+//             opacity: 1;
+//             border: rgba(60, 116, 119, 0.223) solid 1px;
+//             //transform: translateY(0);
+//         }
+//     }
+
+
+    .face1 {
+        border-bottom: var(--cyan) solid 1px;
+    }
+
+
     @keyframes cyberpunk {
         0% {
             filter: hue-rotate(0deg);
@@ -63,22 +175,30 @@
         100% {
             filter: hue-rotate(360deg);
         }
-    
-        
+    }
+
+    .edcont{
+        //background-color: #2b2b2b !important;
+        background: linear-gradient(135deg, rgba(40, 40, 40, 0.532) 60%, #00ffff28);
+    }
+    .space2, .about {
+        transition: all 0.8s ease;
+        opacity: 0.5;
+        border-color: var(--cyan) !important;
+        &:active, &:hover {
+            opacity: 1;
+        }
+        @media screen {
+            
+        }
     }
     h6 {
+        transition: all 0.8s ease;
+        font-weight: 100;
         color: #0be6dfc2 !important;
         //animation: cyberpunk 10s linear infinite;
     }
-    .face1 {
-        //background-color: #f8f8f862 !important;
-        box-shadow: 5px 5px 0px 2px rgba(102, 175, 199, 0.317);
-        &:hover{
-            background-color: #171B26;
-          box-shadow: 5px 5px 0px 2px rgb(102, 175, 199);
-        }
-      }
-      .imgcer {
+    .imgcer {
         transition: all 0.7s ease;
     }
     .educont {
@@ -91,13 +211,17 @@
         transition: all 1s ease;
         border: 1px solid #000000b3;
         box-shadow: 10px 5px 2px 3px #000000;
-      }
+    }
 
-      .boxitem {
-        border: #28293e2d solid 1px;
+    .boxitem {
+        transition: all 0.7s ease;
+        border-bottom: var(--cyan) solid 1px;
         background-color: rgba(255, 255, 255, 0.003) !important;
-      }
-      .section, .section-top  {
+        &:hover{
+            box-shadow: 5px 5px 0px 2px var(--cyan);
+        }
+    }
+    .section, .section-top  {
         color: var(--text-color);
         border: #28293e2d solid 1px;
         background-color: #e6e6e614 !important;
@@ -108,8 +232,8 @@
             box-shadow: 5px 5px 0px 1px rgba(2, 238, 207, 0.553) !important;
             transform: translateY(-5px);
         }
-      }
-      .buttonp {
+    }
+    .buttonp {
         background-color: #e4e4e420;
         border: #28293e2d solid 1px;
         color: #ffffffa6;
@@ -134,13 +258,44 @@ p {
 }
 
 
-body {
-    background-color: var(--background-color) !important;
-    color: var(--text-color) !important;
-    h1, h2, h4, h5, h6 {
-        color: var(--text-color) !important;}
+@keyframes identifier {
+    0% {
+        opacity: 1;
+        box-shadow: 0px 0px 3px 0px var(--cyberpunk);
+    }
+    25% {
+        opacity: 0.8;
+        box-shadow: 0px 0px 3px 0px var(--cyberpunk);
+    }
+    50% {
+        opacity: 0.6;
+        box-shadow: 0px 0px 0px 4px var(--cyberpunk);
+    }
+    75% {
+        opacity: 0.8;
+        box-shadow: 0px 0px 0px 4px var(--cyberpunk);
+    }
+    100% {
+        opacity: 1;
+        box-shadow: 0px 0px 3px 0px var(--cyberpunk);
+    }
 }
 
-.face1 {
-    background-color: var(--background-color) !important;
+.buttont{
+    //color: #000000 !important;
+    background-color: var(--cyberpunk) !important;
+    //border: red solid 2px;
+}
+
+
+body {
+    transition: background 0.7s ease;
+    background: linear-gradient(0.25turn, var(--background-color), var(--background-color-second), var(--background-color));
+
+    //background: linear-gradient(to left, var(--background-color) 40%, #) !important;
+    //background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    
+    h1, h2, h4, h5, h6 {
+        color: var(--text-color) !important;}
 }
