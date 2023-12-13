@@ -57,17 +57,17 @@ export default function Home() {
                 </div>      
 
                 <div className="mt-4">
-                    <a className="btn btn-link btn-floating m-1" target="_blank" href="https://twitter.com/Serphp">
+                    <a className="btn btn-link btn-floating" target="_blank" href="https://twitter.com/Serphp">
                     <i className="fab fa-twitter"></i></a>
 
 
-                    <a className="btn btn-link btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/bryaninit/">
+                    <a className="btn btn-link btn-floating" target="_blank" href="https://www.linkedin.com/in/bryaninit/">
                     <i className="fab fa-linkedin"></i></a>
 
-                    <a className="btn btn-link btn-floating m-1" target="_blank" href="https://github.com/Serphp">
+                    <a className="btn btn-link btn-floating" target="_blank" href="https://github.com/Serphp">
                     <i className="fab fa-github"></i></a>
 
-                    <a className="btn btn-link btn-floating m-1" href="mailto:serphp@hotmail.com">
+                    <a className="btn btn-link btn-floating" href="mailto:serphp@hotmail.com">
                     <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="m22.08 7.892-9.74-4.813a.767.767 0 0 0-.68 0L1.923 7.892a.75.75 0 0 0-.422.67V20.25a.754.754 0 0 0 .759.75h19.48a.756.756 0 0 0 .759-.75V8.563a.75.75 0 0 0-.42-.671ZM12 4.588l8.11 4.006-8.237 4.067-8.109-4.005L12 4.588Z"></path>
                     </svg></a>
