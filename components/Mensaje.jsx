@@ -23,7 +23,7 @@ export default function Mensaje() {
         <>
 
         <hr/>
-            <div className="mainbgg card3 m-5" style={{ textAlign: "center"}}>
+            <div className="" style={{ textAlign: "center"}}>
             <h2 className='mb-3'> {heroe.name} </h2>
             <h6 className="subtitle"> {heroe.mensaje} </h6>
             <br/>

@@ -5,6 +5,7 @@ import Home from "../pages/Home"
 import Proyectos from "../pages/Proyectos"
 import Certificates from "../pages/Certificates"
 import NotFound from "../pages/NotFound"
+import Select from "../pages/Select"
 
 export const router = createBrowserRouter([
     { 
@@ -13,7 +14,11 @@ export const router = createBrowserRouter([
         children: [
         {
             index: true,
-            element: <Home />
+            element: <Select />
+        },
+        {
+            path: "Home",
+            element: <Home/>
         },
         {
             path: "about",

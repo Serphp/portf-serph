@@ -15,9 +15,12 @@ export default function Jobs() {
             </div>
 
             <div className="obra">
+                Desarrollo web <span> </span>
+            </div>
+
+            <div className="obra">
                 
                 Analista de Programación <span> </span>
-                
                 <div className="obrac">
                     ola
                 </div>
