@@ -10,6 +10,11 @@
     .tlinks{
         color: #000000 !important;
     }
+
+    .blank{
+        background: linear-gradient(0.50turn, var(--background-color), var(--background-color-second));
+    }
+
     .text-container {
         background-color: #b2b2b2a4;
         .text-container, .ttitle, .tdescription {
@@ -263,32 +268,35 @@ p {
 @keyframes identifier {
     0% {
         opacity: 1;
-        box-shadow: 0px 0px 3px 0px var(--cyberpunk);
+        box-shadow: 0px 0px 2px 0px var(--cyberpunk);
     }
     25% {
         opacity: 0.8;
-        box-shadow: 0px 0px 3px 0px var(--cyberpunk);
+        box-shadow: 0px 0px 2px 0px var(--cyberpunk);
     }
     50% {
         opacity: 0.6;
-        box-shadow: 0px 0px 0px 4px var(--cyberpunk);
+        box-shadow: 0px 0px 0px 3px var(--cyberpunk);
     }
     75% {
         opacity: 0.8;
-        box-shadow: 0px 0px 0px 4px var(--cyberpunk);
+        box-shadow: 0px 0px 0px 3px var(--cyberpunk);
     }
     100% {
         opacity: 1;
-        box-shadow: 0px 0px 3px 0px var(--cyberpunk);
+        box-shadow: 0px 0px 2px 0px var(--cyberpunk);
     }
 }
 
-.buttont{
-    //color: #000000 !important;
+.buttont, .buttonb{
+    //fill: white !important;
     background-color: var(--cyberpunk) !important;
     //border: red solid 2px;
 }
 
+.blank{
+    background: linear-gradient(0.50turn, var(--background-color), var(--background-color-second));
+}
 
 body {
     transition: all 0.7s ease;

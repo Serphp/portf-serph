@@ -23,7 +23,9 @@ export default function Select({ intervalTime = 5000 }) {
         <section className="blank2">
             
             <div className="ninicio">
+                
                 <img class="nlogo" src="https://i.imgur.com/mUMi6bU.png"/>
+
             <div className="ncontenedor">
                 <h6 className="ndes"> {slogans[currentSloganIndex]} </h6>
                 <Link to="/home"><div className="obra2"> 

@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 import Loading from '../components/Loading';
 
@@ -10,12 +10,14 @@ import '../node_modules/bootswatch/dist/lux/bootstrap.min.css'
 import '../src/styles/Global.scss'
 import SunIcon from "../src/assets/sunIcon";
 import MonnIcon from "../src/assets/MoonIcon";
+import Back from "../src/assets/back";
 const InicialTheme = localStorage.getItem('theme') === 'dark';
 
 const User = () => {
     const [theme, setTheme] = useState(InicialTheme || false);
     const [isLoading, setIsLoading] = useState(true);
     const { pathname } = useLocation();
+    const location = useLocation();
 
 useEffect(() => {
     setTimeout(() => {setIsLoading(false);}, 3000); // tiempo en milisegundos para mostrar el componente de "loading"
@@ -42,9 +44,20 @@ return (
     {/* <Navbar /> */}
     <div className="header">
 
-        <button className="buttont" onClick={() => setTheme(!theme)}>
+    {location.pathname !== '/' && (
+        <button className="buttonb">
+            <Link to="/">
+            <Back/>
+            </Link>
+        </button>
+        )}
+
+    {location.pathname !== '/' && (
+            <button className="buttont" onClick={() => setTheme(!theme)}>
             {theme ? <SunIcon/> : <MonnIcon/>}
         </button>
+    )}
+
     
     </div>
 
