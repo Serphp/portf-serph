@@ -4,35 +4,29 @@ export default function Jobs() {
     <div className="mainbg">
     <h6 className="subtitle"><i class="fa fa-box-open"></i> Servicios </h6>
     <h2> Services </h2>
-    <div className="mb-5"></div>
+    <div className="mb-4"></div>
 
     <section className="educont">
 
     <article className="free">
             
             <div className="obra">
-                Desarrollo web <span> </span>
-            </div>
 
-            <div className="obra">
-                Desarrollo web <span> </span>
+                Desarrollo web
+
             </div>
 
             <div className="obra">
                 
-                Analista de Programación <span> </span>
-                <div className="obrac">
-                    ola
-                </div>
+                Soluciones 
                 
             </div>
             
             <div className="obra">
-            {/* <i class="fa fa-arrow-right"></i> */}
-                Desarrollador Front-End <span> </span>
-                <div className="obrac">
-                    ola
-                </div>
+            <i class="fa fa-arrow-right"></i>
+            
+                Implementaciones 
+
             </div>
 
         </article>

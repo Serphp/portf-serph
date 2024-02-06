@@ -56,7 +56,7 @@ export const NProyects = [
         id: 0,
         name: 'GunGale World',
         description: 'En 2016, comenzó el desarrollo de GunGale Word con un servidor FR (FreeRoam). En 2017, desarrollado por un programador y un aprendiz, introdujeron el modo de juego VSR (50% FreeRoam / 50% RolePlay), destacando su innovación, con un límite diario de 60 usuarios.',
-        lang: 'Juego Multijugador',
+        lang: 'C, C#,Lua, Pawno',
         categoria: 'Proyecto',
         image: 'https://cdn.discordapp.com/attachments/493832893580312579/1113385091423539240/15391264_743951305754867_3671193001231709174_o.png',
         url: 'https://github.com/Serphp/GunGaleWorld',

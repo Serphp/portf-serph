@@ -19,7 +19,7 @@ export default function Proyects() {
                 <div className="section">
 
                     <div className="image-container">
-                    <img className="" src={item.image} alt={name} title={name}/>
+                    <img src={item.image} alt={item.name} title={item.name}/>
                     </div>
                     
                     <div className="text-container">
@@ -27,7 +27,7 @@ export default function Proyects() {
                         <div className='ttitle'>{item.name}</div>
 
                         <div className='contenedor_des'>
-                            {item.categoria}
+                            <b>{item.categoria}</b>
                             <div className="contech">
                                 
                                 {item.lang.split(',').map((image) => (
