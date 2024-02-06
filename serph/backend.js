@@ -20,8 +20,4 @@ export const backend = [
         language: 'Supabase',
         percentage: 40,
     },
-    {
-        language: 'Firebase',
-        percentage: 40,
-    },
 ]

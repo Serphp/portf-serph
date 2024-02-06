@@ -1,14 +1,17 @@
 //dark
 [data-theme="true"] {
-    --cyan: #0be6dfc2;
+    --cyan: #0be6df46;
     --cyberpunk: #c79288;
     --cyberpunkPlus: #c79288;
     --background-color: #d2d2d2e8;
     --background-color-second: #ffffff;
     --text-color: #1a1a1ab3 !important;
     
+    .tlinks{
+        color: #000000 !important;
+    }
     .text-container {
-        background-color: #b2b2b279;
+        background-color: #b2b2b2a4;
         .text-container, .ttitle, .tdescription {
             color: rgb(0, 0, 0) !important;
         }
@@ -23,19 +26,22 @@
             margin-right: 8px;
         }
     }
-    .obra, .buttoned{
+    .obra, .buttoned, .obra2{
         a{color: var(--cyberpunkPlus);}
         &:hover{
             box-shadow: 5px 5px 1px 2px var(--cyberpunk);
+        }
+        .obraicon{
+            fill: var(--cyberpunk) !important;
         }
     }
     
     .face1, .face, .boxitem {
         transition: all 0.3s ease-in-out;
-        background-color: #e4e4e4a5;
+        background-color: #e4e4e413;
         border-bottom: var(--cyberpunk) solid 1px;
         &:hover{
-            box-shadow: 5px 5px 0px 2px var(--cyberpunk);
+            box-shadow: 5px 5px 0px 1px var(--cyberpunk);
         }
     }
 
@@ -51,12 +57,7 @@
         background: linear-gradient(135deg, #0505055d 60%, #fded0e2e);
     }
     .space2, .about, .boxsecond {
-        transition: all 0.7s ease;
-        opacity: 0.7;
         border-color: var(--cyberpunk) !important;
-        &:active, &:hover {
-            opacity: 1;
-        }
     }
     h6 {
         opacity: 0.8;
@@ -67,7 +68,7 @@
             color: var(--cyberpunkPlus) !important;
         }
     }
-    .buttoned, .btn, .obra, .btnshow {
+    .buttoned, .btn, .obra, .btnshow, .obra2 {
         background-color: #ffffff21 !important;
         border-color: var(--cyberpunk) !important;
         color: var(--cyberpunk);
@@ -97,11 +98,11 @@
     }
     .section, .section-top  {
         color: var(--text-color);
-        background-color: #d4d4d475 !important;
+        background-color: #d4d4d400 !important;
         &:hover {
             border: none;
             opacity: .8 !important;
-            box-shadow: 5px 5px 0px 1px var(--cyberpunk) !important;
+            //box-shadow: 5px 5px 0px 1px var(--cyberpunk) !important;
             border-radius: 10px;
             transform: translateY(-5px);
         }
@@ -130,7 +131,9 @@
     --text-color: #ffffffa0 !important;
     
     .text-container {
-        background-color: #00000020;
+        background-color: #5c5c5c5e;
+        //border: red 2px solid;
+        transition: all 0.8s ease;
         .text-container, .ttitle, .tdescription {
             color: white !important;
         }
@@ -216,20 +219,20 @@
     .boxitem {
         transition: all 0.7s ease;
         border-bottom: var(--cyan) solid 1px;
-        background-color: rgba(255, 255, 255, 0.003) !important;
+        //background-color: rgba(255, 255, 255, 0.003) !important;
         &:hover{
-            box-shadow: 5px 5px 0px 2px var(--cyan);
+            box-shadow: 5px 5px 0px 1px var(--cyan);
         }
     }
     .section, .section-top  {
         color: var(--text-color);
         border: #28293e2d solid 1px;
-        background-color: #e6e6e614 !important;
+        background-color: #e6e6e600 !important;
         &:hover {
             border: none;
             opacity: .8 !important;
             border-radius: 10px;
-            box-shadow: 5px 5px 0px 1px rgba(2, 238, 207, 0.553) !important;
+            //ox-shadow: 5px 5px 0px 1px rgba(2, 238, 207, 0.553) !important;
             transform: translateY(-5px);
         }
     }
@@ -289,8 +292,8 @@ p {
 
 
 body {
-    transition: background 0.7s ease;
-    background: linear-gradient(0.25turn, var(--background-color), var(--background-color-second), var(--background-color));
+    transition: all 0.7s ease;
+    background: linear-gradient(0.50turn, var(--background-color), var(--background-color-second));
 
     //background: linear-gradient(to left, var(--background-color) 40%, #) !important;
     //background-color: var(--background-color) !important;

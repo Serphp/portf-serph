@@ -38,7 +38,7 @@ $section-bg-color: #ffffff9d;
         //width: 100%;
         display: flex;
         justify-content: center;
-        margin: 10px 0 15px 0;
+        margin: 5px 0 5px 0;
     }
 
     // define the styles for the section container
@@ -304,19 +304,19 @@ $section-bg-color: #ffffff9d;
 }
 
 .section-container {
-    //max-width: 900px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; 
+    gap: 10px; 
 
 
 .section {
     width: 33%;
     //height: 200px;
+    //border: red solid 3px;
     display: flex;
     flex-flow: wrap;
-    flex-grow: 2;
+    flex-grow: 3;
     justify-content: center;
     align-items: center;
     opacity: 0.7;
@@ -326,15 +326,23 @@ $section-bg-color: #ffffff9d;
     &:hover {
         border: none;
         opacity: 1;
-        box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 0.553);
+        //box-shadow: 5px 5px 0px 1px rgba(0, 0, 0, 0.553);
         transform: translateY(-5px);
     }
 
+    @keyframes photo {
+    0%{
+        object-position: top;
+    }
+    50%{
+        object-position: center;
+    }
+    100%{
+        object-position: bottom;
+    }
+
+    }
     .image-container {
-    //position: relative;
-    //bottom: 30px;
-    //right: 110px;
-    
     display: flex;
     justify-content: center;
     width: 100%;
@@ -343,10 +351,12 @@ $section-bg-color: #ffffff9d;
         object-position: top;
         object-fit: cover;
         width: 100%;
-        height: 100%;
+        height: 120%;        
+        border-radius: 10px 10px 0 0;
         transition: all 3s ease-in-out;
         &:hover{
-            height: 300px;
+            animation: photo 5s ease-in-out infinite alternate;
+            border-radius: 0 0 10px 10px;
         }
     }
     @media screen and (max-width: 600px) {
@@ -357,14 +367,10 @@ $section-bg-color: #ffffff9d;
 }
 
 .text-container {
-
     width: 100%;
-    color: #868686;
-    font-weight: 200;
     padding: 0 20px;
     border-radius: 0 0 10px 10px;
     backdrop-filter: blur(5px);
-    //margin-top: -60%;
     transition: all 0.8s ease-in-out;
     &:hover, .image-container, img{
         backdrop-filter: blur(1px);
@@ -372,21 +378,31 @@ $section-bg-color: #ffffff9d;
 
     .ttitle{ 
         text-align: right;
-        font-size: 21px;
+        font-size: 18px;
         font-weight: 900;
-        padding: 5px 0 0 0;
+        padding: 10px 0px 0px 0;
+    }
+    .tlinks{
+        //width: 50%;
+        //border: red 2px solid;
+        //text-transform: uppercase;
+        font-size: 12px !important;
+        text-align: right;
+        color: rgb(255, 255, 255);
+        //padding: 20px;
+        //line-height: 2;
+        font-style: italic;
+        //padding: 10px 0 10px 0px;
+        //margin: 10px 0 0px 0;
     }
     .tdescription{
         font-size: 14px;
         margin-bottom: 1px;
-        padding: 0px 10px 0 0px;
-    }
-    .tlinks{
-        text-transform: uppercase;
-        font-size: 11px;
-        line-height: 2;
-        //padding: 10px 0 10px 0px;
-        margin: 10px 0 0px 0;
+        padding: 0px 10px 0 10px;
+        text-align: justify;
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
     }
@@ -403,7 +419,7 @@ $section-bg-color: #ffffff9d;
 @media only screen and (max-width: 600px) {
         .section {
         display: flex;
-        width: 150%;
+        width: 100%;
         margin: 0;
         padding: 0;
         flex-wrap: nowrap;

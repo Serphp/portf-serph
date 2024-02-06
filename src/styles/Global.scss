@@ -82,6 +82,26 @@ body {
   }
 }
 
+//LOGO
+.logo {
+  //border: red solid 1px;
+  opacity: 0.3;
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 1s ease-in-out;
+  &:hover{
+    opacity: 1;
+  }
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
 // HOME SERPH PROFILE
 .extras {
   display: flex;
@@ -1260,20 +1280,20 @@ code {
 .boxitemrow {
   width: 100%;
   display: flex;
-  gap: 20px;
-.boxitem {
-  width: 20%;
-  height: 30px;
-  //border: red solid 1px;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 10px;
-  padding: 30px;
-  //background-color: rgba(245, 245, 245, 0.969);
-  border-radius: 10px;
-  //box-shadow: 5px 5px 0px 1px rgba(102, 175, 199, 0.511);
-
+  gap: 20px;
+    .boxitem {
+      width: 20%;
+      height: 25px;
+      //border: red solid 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
+      padding: 20px;
+      //background-color: rgba(245, 245, 245, 0.969);
+      border-radius: 5px;
+      //box-shadow: 5px 5px 0px 1px rgba(102, 175, 199, 0.511);
 }
 
 .progresbar {
@@ -1308,8 +1328,12 @@ code {
   height: 30px;
   margin: 0 auto;
   padding: 10px;
-  border: #209dbc solid 1px;
+  border: #209dbcde solid 1px;
   border-radius: 10px;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+}
 }
 
 }
@@ -1528,6 +1552,8 @@ code {
 }
 
 .ninicio {
+  //border: red solid 2px;
+  gap: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1567,7 +1593,10 @@ code {
   }
   
   .nlogo {
-    width: 800px;
+    //border: red solid 1px;
+    width: 500px;
+    object-fit: cover;
+    object-position: center;
     @media screen and (max-width: 1200px)  {
     width: 500px;
     }

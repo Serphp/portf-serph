@@ -27,13 +27,13 @@ useEffect(() => {
 }, [pathname]);
 
 useEffect(() => {
-if (theme) {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", "dark");
-    } else {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", "light");
-    }
+    if (theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", "dark");
+        } else {
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", "light");
+        }
 }, [theme]);
 
 return (  
@@ -50,7 +50,7 @@ return (
 
     <div className="titlen">
             {/* <span className="beta">Theme </span>   */}
-            /Serphp
+            <img class="logo" src="https://i.imgur.com/mUMi6bU.png"/>
         </div>
 
     {/* {isLoading ? <Loading /> : <Outlet />} */}
