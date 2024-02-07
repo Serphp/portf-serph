@@ -53,7 +53,7 @@ export default function Home() {
                 <div className="pt-3">
                 {/* <a href={page} target="_blank"><button className="buttoned"> SysAdmin CV </button></a> */}
                 <a href={page2} target="_blank"><button className="buttoned"> 
-                <i class="fa fa-user-tie"></i>
+                <i className="fa fa-user-tie"></i>
                 Curriculum Vitae 
                 </button></a>
 
@@ -124,7 +124,7 @@ export default function Home() {
             <Experiences />
 
     {/* <div className="mainbg">
-            <h6 className="subtitle"><i class="fa fa-location-arrow"></i> Mas información </h6>
+            <h6 className="subtitle"><i className="fa fa-location-arrow"></i> Mas información </h6>
         <h2> Contacto </h2>
         <div className="mb-5"></div>
 

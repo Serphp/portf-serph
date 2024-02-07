@@ -2,7 +2,7 @@ export default function Jobs() {
     return (
     <>
     <div className="mainbg">
-    <h6 className="subtitle"><i class="fa fa-box-open"></i> Servicios </h6>
+    <h6 className="subtitle"><i className="fa fa-box-open"></i> Servicios </h6>
     <h2> Services </h2>
     <div className="mb-4"></div>
 
@@ -23,7 +23,7 @@ export default function Jobs() {
             </div>
             
             <div className="obra">
-            <i class="fa fa-arrow-right"></i>
+            <i className="fa fa-arrow-right"></i>
             
                 Implementaciones 
 

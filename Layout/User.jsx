@@ -43,17 +43,14 @@ return (
     
     {/* <Navbar /> */}
     <div className="header">
-
     {location.pathname !== '/' && (
-        <button className="buttonb">
-            <Link to="/">
+        <Link to="/"><button className="buttonb">
             <Back/>
-            </Link>
-        </button>
-        )}
+        </button></Link>
+    )}
 
     {location.pathname !== '/' && (
-            <button className="buttont" onClick={() => setTheme(!theme)}>
+        <button className="buttont" onClick={() => setTheme(!theme)}>
             {theme ? <SunIcon/> : <MonnIcon/>}
         </button>
     )}
@@ -63,7 +60,7 @@ return (
 
     <div className="titlen">
             {/* <span className="beta">Theme </span>   */}
-            <img class="logo" src="https://i.imgur.com/mUMi6bU.png"/>
+            <img className="logo" src="https://i.imgur.com/Q9bl1Ys.png"/>
         </div>
 
     {/* {isLoading ? <Loading /> : <Outlet />} */}

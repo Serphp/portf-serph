@@ -46,7 +46,7 @@ const ED = () => {
 <div className="ed">
     <div className="edespacio">
         <h6> Proyectos Individuales </h6>
-        <i class="fa fa-arrow-right"></i>
+        <i className="fa fa-arrow-right"></i>
     </div>
 </div>
 
@@ -88,7 +88,7 @@ const ED = () => {
 <div className="ed">
     <div className="edespacio">
         <h6> Mas Proyectos </h6>
-        <i class="fa fa-arrow-right"></i>
+        <i className="fa fa-arrow-right"></i>
     </div>
 </div>
 

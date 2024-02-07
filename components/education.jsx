@@ -1,7 +1,7 @@
 const Education = () => {
     return (
         <div className="mainbg">
-        <h6 className="subtitle"><i class="fa fa-graduation-cap"></i> Formación Academica</h6>
+        <h6 className="subtitle"><i className="fa fa-graduation-cap"></i> Formación Academica</h6>
         <h2> Education </h2>
         <div className="mb-5"></div>
 
