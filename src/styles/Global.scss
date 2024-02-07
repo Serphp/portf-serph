@@ -1583,6 +1583,9 @@ code {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 1200px)  {
+    gap: 30px;
+    }
   .ncontenedor{
     animation: anim2 5s ease-in-out infinite alternate;
     display: flex;
