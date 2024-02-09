@@ -1,4 +1,4 @@
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation, useNavigate  } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 import Loading from '../components/Loading';
 
@@ -18,6 +18,11 @@ const User = () => {
     const [isLoading, setIsLoading] = useState(true);
     const { pathname } = useLocation();
     const location = useLocation();
+    const Regresar  = useNavigate ();
+
+    const Atras = () => {
+        Regresar(-1); // Esta función navegará a la página anterior en el historial
+    };
 
 useEffect(() => {
     setTimeout(() => {setIsLoading(false);}, 3000); // tiempo en milisegundos para mostrar el componente de "loading"
@@ -44,9 +49,9 @@ return (
     {/* <Navbar /> */}
     <div className="header">
     {location.pathname !== '/' && (
-        <Link to="/"><button className="buttonb">
+        <button className="buttonb" onClick={Atras}>
             <Back/>
-        </button></Link>
+        </button>
     )}
 
     {location.pathname !== '/' && (

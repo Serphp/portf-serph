@@ -1,5 +1,4 @@
-import Proyects from "../components/Proyects"
-import ED from "../serph/text/ED"
+import Proyects, { Proyects2 } from "../components/Proyects";
 
 export default function Proyectos() {
 
@@ -10,23 +9,15 @@ export default function Proyectos() {
     return (
         <>
         
-    <h6 className="subtitle"> Proyectos </h6>
-    <h2 style={{'margin-bottom': '50px', 'textAlign': 'center'}}> Personales </h2>
+    {/* <h6 className="subtitle"> Proyectos </h6>
+    <h2 style={{'margin-bottom': '50px', 'textAlign': 'center'}}> Personales </h2> */}
 
 
-        <div className="edcontain">
-        <ED/>
-        </div>
-
-{/* 
+        <Proyects2/>
+        
         <div className="space"></div>
         <h1> En Desarrollo <span className="pause"> Pause </span></h1>
 
-        <div className="ed">
-            <div className="edcont">
-            <h2>test</h2>
-            </div>
-            </div>
 
         <article className="dev">
             <p style={{marginBottom: '10px'}}>
@@ -46,7 +37,7 @@ export default function Proyectos() {
                         <li> Tecnologias: <b> Python, Django  </b></li>
                     </ul>
                 </ul>
-        </article> */}
+        </article> 
 
         {/* <div className="section-top">
             <div className="text-container">
@@ -64,7 +55,7 @@ export default function Proyectos() {
                     <span className="tlinks">2016 - 2020</span>
                 </div>
             </div>
-        </div> */}
+        </div>
 
 {/* 
     <div className="space"></div>

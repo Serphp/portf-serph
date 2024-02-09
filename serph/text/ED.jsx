@@ -12,11 +12,11 @@ const ED = () => {
     (
         <>
         <div className="ed" key={i}>
-                            <div className="edimg">
-                                <img src={previo}  />
-                            </div>
-                            <div className="space2">  
-                            </div>
+        <div className="edimg">
+            <img src={previo}  />
+        </div>
+        <div className="space2">  
+        </div>
         <div className="edcont">
             <div className="edcont2">
             <span className="sub">
@@ -34,10 +34,9 @@ const ED = () => {
                 </span>               
             </div>
             </div>
-            {/* <h2 className="etitle"> {nombre} </h2> */}
-                                        <div className="buttoned"> 
-                            <a href={url}>Ver Proyecto</a></div>
-                                </div>
+            <div className="buttoned"> 
+                <a href={url}>Ver Proyecto</a></div>
+            </div>
         </div>
         </>
     ))
