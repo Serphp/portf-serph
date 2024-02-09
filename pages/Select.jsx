@@ -2,15 +2,16 @@ import { Link } from "react-router-dom";
 import Mensaje from "../components/Mensaje";
 import React, { useState, useEffect } from 'react';
 
-
 export default function Select({ intervalTime = 5000 }) {
     const slogans = ["Sencillo y compacto", "Unico y creativo", "Objetivo y éxito"];
     const [currentSloganIndex, setCurrentSloganIndex] = useState(0);
+    const theme = localStorage.getItem('theme');
 
     useEffect(() => {
         const interval = setInterval(() => {
         setCurrentSloganIndex((prevIndex) => (prevIndex + 1) % slogans.length);
     }, intervalTime);
+
 
     return () => clearInterval(interval);
     }, [slogans, intervalTime]);
@@ -19,12 +20,15 @@ export default function Select({ intervalTime = 5000 }) {
         <>
 
         <div className="blank">
-
         <section className="blank2">
-            
             <div className="ninicio">
                 
-                <img className="nlogo" src="https://i.imgur.com/Q9bl1Ys.png"/>
+            {theme === 'light' ? (
+    <img className="nlogo" src="https://i.imgur.com/ukAZTRr.png" alt="Light Image" />
+) : (
+    <img className="nlogo" src="https://i.imgur.com/Q9bl1Ys.png" alt="Dark Image" />
+)}
+
 
             <div className="ncontenedor">
                 <h6 className="ndes"> {slogans[currentSloganIndex]} </h6>
