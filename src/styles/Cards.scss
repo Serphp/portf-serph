@@ -1,5 +1,6 @@
 
   .containerx{
+    //border: red 2px solid;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,13 +11,6 @@
   title {
     background-color: black;
   }
-  //contenedor
-  .cardx{
-    margin-top: -100px;
-    margin-bottom: -40px;
-    //margin-left: 0px;
-    //margin-right: 10px;
-  }
 
   //tamaño
   .face{
@@ -25,20 +19,16 @@
     transition: .5s; 
     //border-radius: 10px;
     //transform: translateY(-50px);
+    //animation: anim2 5s infinite ease;
+
     &:hover{
       opacity: 1;
       transform: translateY(-10px);
-      box-shadow: 5px 5px 0px 2px rgb(102, 175, 199);
+      box-shadow: 5px 5px 1px 5px var(--cyan);
     }
   }
 
   @media  screen and (max-width: 768px) {
-    .cardx {
-      margin-top: -100px;
-      margin-bottom: -30px;
-      margin-left: 0px;
-      margin-right: 0px;
-    }
     .face {
       width: 160px;
       height: 140px;
@@ -53,15 +43,12 @@
 
   /*CARD BG*/
   .face1{
-    position: relative;
-    //border-radius: 5px;
-    color: #333;
     display: flex;
     justify-content: center;
     font-size: 1.1em; //title size
     flex-direction: column;
-    cursor: pointer;
-    z-index: 1;
+    // cursor: pointer;
+    // z-index: 1;
     //border: #00fffb solid 1px;
     //box-shadow: 5px 5px 0px 2px rgba(102, 175, 199, 0.317);
   }
