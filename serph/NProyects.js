@@ -2,7 +2,7 @@ export const NProyects = [
     {
         id: 0,
         name: 'HelloGeni Store',
-        description: 'Proyecto de emprendimiento ecommerce una tienda virtual para un pequeño negocio con el objetivo de guardar y realizar pedidos para retirar en locales.',
+        description: 'Proyecto de emprendimiento e-commerce una tienda virtual para un pequeño negocio con el objetivo de guardar y realizar pedidos para retirar en locales.',
         lang: 'Wordpress, HTML5, CSS3, PHP',
         categoria: 'Proyecto WP',
         image: 'https://i.imgur.com/g619wCS.png',
@@ -34,7 +34,7 @@ export const NProyects = [
     {
         id: 0,
         name: 'E. Rentals Panamá',
-        description: 'Pagina web informativa Dinamica, el objetivo de E. Rentals es visualizar la información de los alquieres disponibles, con filtros para hacer la experiencia UX/UI mas comoda para los clientes a la hora de informarse de lo que busca exactamente.',
+        description: 'Página web informativa Dinámica, el objetivo de E. Rentals es visualizar la información de los alquileres disponibles, con filtros para hacer la experiencia UX/UI más cómoda para los clientes a la hora de informarse de lo que busca exactamente.',
         lang: 'Wordpress+, HTML5, CSS3, PHP',
         categoria: 'Proyecto WP',
         image: 'https://i.imgur.com/r94UF5A.png',
@@ -44,7 +44,7 @@ export const NProyects = [
     {
         id: 0,
         name: 'E. Realty Panamá',
-        description: 'Pagina web informatica Dinamica, El objetivo de E. Realty era actualizar y mejorar ciertos aspectos visuales, acomodar y darle nuevas funcionalidades al cliente para sentirse mas comodos a la hora de ponerse en contacto con la empresa para buscar disponibilidad de lo que necesita.',
+        description: 'Página web informática Dinámica, El objetivo de E. Reality era actualizar y mejorar ciertos aspectos visuales, acomodar y darle nuevas funcionalidades al cliente para sentirse más cómodos a la hora de ponerse en contacto con la empresa para buscar disponibilidad de lo que necesita.',
         lang: 'Wordpress, HTML5, CSS3, PHP',
         categoria: 'Proyecto WP',
         image: 'https://i.imgur.com/T43l712.png',
@@ -65,7 +65,7 @@ export const NProyects = [
     {
         id: 0,
         name: 'Spomodoro',
-        description: 'Spomodoro se creo con el objetivo de mantener limites de estudios con descansos para tener un mejor enfoque al aprendizaje.',
+        description: 'Spomodoro se creó con el objetivo de mantener límites de estudios con descansos para tener un mejor enfoque al aprendizaje.',
         lang: 'React, Vitejs, Firebase, SASS',
         categoria: 'Proyecto',
         image: 'https://cdn.discordapp.com/attachments/493832893580312579/1115582413553287249/browser_E08lsCUSxM.png',

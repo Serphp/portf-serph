@@ -9,8 +9,7 @@ const Education = () => {
     <div className="edu"> <b>Lic. Administración en sistemas</b> en <b>Universidad del Istmo, Panamá </b>
     <br/>
     <small> Enero 2019 — Diciembre 2023</small>
-    <li> Proyecto Posgrado: destacado por tener una pagina web con la que se podria sustentar mediante dialogo, pero se mostro 
-        un mejor realismo de proyección de emprendimiento.
+    <li> Proyecto Posgrado: destacado por tener una página web con la que se podría sustentar mediante diálogo, pero se mostró un mejor realismo de proyección de emprendimiento.
     </li>
     </div>
 
@@ -18,7 +17,7 @@ const Education = () => {
     <b>Bachiller en Ciencias</b> en <b>Instituto Académico Panamá, INSTACAP</b> 
     <br/>
     <small> Marzo 2016 — Noviembre 2018</small>
-        <li>Estudiante elegido como Profesor de informatica por 1 día por 3 Años, para varios salones con diferentes edades y diferentes grados.</li>
+        <li>Estudiante elegido como Profesor de informática por 1 día por 3 Años, para varios salones con diferentes edades y diferentes grados.</li>
     </div>
     </section>
 

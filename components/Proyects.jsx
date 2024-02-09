@@ -8,14 +8,14 @@ export default function Proyects() {
         <>
 
 <div className="mainbg">
-            <h6 className="subtitle"><i className="fa fa-location-arrow"></i> Proyectos </h6>
-        <h2> Proyects </h2>
+            <h6 className="subtitle"><i className="fa fa-location-arrow"></i> Últimos proyectos </h6>
+        <h2> Last proyects </h2>
         <div className="mb-5"></div>
         
     <div className="section-container">
     {/* {name, description, image, url, url2, lang }, i */}
         {
-            NProyects.map((item, i) => (
+            NProyects.slice(0, 3).map((item, i) => (
                 <div key={i} className="section">
 
                     <div className="image-container">
