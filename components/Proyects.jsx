@@ -59,10 +59,9 @@ export default function Proyects() {
         }
         {/* SEPARACION */}
         </div>
-        <div className="mb-3"></div>
-            <div className='buttoned'>
-                <Link to='/Proyectos'>  Mas proyectos </Link>
-            </div>
+        <div className="mb-3"></div> 
+        <Link to='/Proyectos'><div className='buttoned'>
+                Mas proyectos </div></Link>
 
             {/* {{end}} */}
         </div>

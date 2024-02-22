@@ -2,7 +2,7 @@
 export default function Formulario() {
     return (
     <>
-        <div className="mainbg">
+        <div className="mainbgs">
         <h6 className="subtitle"><i className="fa fa-box-open"></i> Contactame </h6>
         <h2> Contact </h2>
         <div className="mb-5"></div>

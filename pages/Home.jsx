@@ -3,9 +3,9 @@ import Experiences from "../components/Experiences"
 import Cards from "../components/Cards"
 import { useState } from "react";
 import Education from "../components/education";
-import Jobs from "../components/services";
+//import Jobs from "../components/services";
 import Proyects from "../components/Proyects";
-import Formulario from "../components/form";
+//import Formulario from "../components/form";
 
 
 export default function Home() {

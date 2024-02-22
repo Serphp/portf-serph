@@ -35,7 +35,7 @@ export default function Select({ intervalTime = 5000 }) {
                 <Link to="/home"><div className="obra2"> 
                 <IconPro/>
                 Perfil profesional </div></Link>
-                <Link to="#"><div className="obra2"> 
+                <Link to="/company"><div className="obra2"> 
                 <IconCompany/>
                 Serphp Company </div></Link>
                 <h6 className="ndes">Copyright © 2023 - 2024 Serphp</h6>

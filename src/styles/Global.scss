@@ -562,7 +562,6 @@ footer {
   border-color: black;
 }
 
-
 .mainbg {
   //width: 100%;
   text-align: center;
@@ -913,16 +912,6 @@ footer {
   }
 }
 
-//NAVBAR
-nav {
-  li{
-      list-style-type: none;
-  }
-  &:hover .nav-link {
-      display: block;
-  }
-}
-
 .buttonnavbar {
   position: fixed;
   top: 0;
@@ -1040,8 +1029,10 @@ code {
 
 .containernav {
   display: flex;
+  border-radius: 20px;
+  align-items: center;
   justify-content: center;
-  padding: 1px;
+  padding: 3px 5px 3px 0;
   @media screen and (max-width: 600px) {
     align-items: flex-start;
     display: flex;
@@ -1056,21 +1047,25 @@ code {
 }
 
 .nav2 {
+  //border: red solid 1px;
+  position: sticky;
   display: flex;
+  z-index: 1000;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-  position: fixed;
-  height: 50px;
-  top: 0;
-  bottom: 1;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  background-color: #dadada34;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  margin-top: 20px;
+  top: 20px;
+  border-radius: 50px;
+  // height: 50px;
+  // top: 0;
+  // bottom: 1;
+  // left: 0;
+  // right: 0;
+  // z-index: 2;
+  //background-color: #dadada34;
+  //box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   backdrop-filter: blur(5px);
-  transition: all 1s;
+  transition: all 0.1s;
   @media screen and (max-width: 600px) {
     height: 50px;
   }
@@ -1216,6 +1211,69 @@ code {
   }
 }
 
+.mainbgs {
+  width: 100%;
+  text-align: center;
+  margin: 5% 0 10% 0;
+  //padding: 20px 0 20px 0;
+  .centert {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}
+
+.servcont{
+  //max-width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 50px;
+  b {
+    color: rgba(255, 255, 255, 0.637);
+    font-weight: bold;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .servicios {
+    width: 350px;
+    height: 50vh;
+    display: flex;
+    opacity: 0.8;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    // color: #17b6d2;
+    // fill: #17b6d2;
+    border: red solid 1px;
+    animation: identifier2 2s alternate;
+    //box-shadow: 0px 0px 1px 2px rgba(0, 242, 255, 0.5);
+    transition: all .5s ease;
+      // &:hover {
+      //   opacity: 1;
+      //   display: flex;
+      //   box-shadow: 5px 5px 1px 2px rgba(0, 242, 255, 0.5);
+      // }
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+      width: 100%;
+    }
+    .fa {
+      font-size: 1.5em;
+    }
+  }
+}
+
+
 .educont{
   display: flex;
   flex-direction: row;
@@ -1235,10 +1293,10 @@ code {
 }
 
 .edu {
- width: 50%;
- @media screen and (max-width: 600px) {
-  width: 100%;
- }
+  width: 50%;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 .edu3 {
@@ -1246,9 +1304,9 @@ code {
   text-align: center;
   border: red solid 2px;
   @media screen and (max-width: 600px) {
-   width: 100%;
+    width: 100%;
   }
- }
+}
 
 .edu2 {
   margin: 10px;
