@@ -5,6 +5,7 @@ import { useState } from "react";
 import Education from "../components/education";
 //import Jobs from "../components/services";
 import Proyects from "../components/Proyects";
+import { Footer } from "../components";
 //import Formulario from "../components/form";
 
 
@@ -38,7 +39,7 @@ export default function Home() {
     return (
         <>
         <main>
-        <header className="">
+        <header >
         <section className="home">
             <div className="name">
                 <h6 className="subtitle" style={{'textAlign':'left'}}>Bienvenido a mi portfolio.</h6>
@@ -140,6 +141,7 @@ export default function Home() {
     <Proyects/>
 
     {/* <Formulario/> */}
+    <Footer/>
             </main>
         </>)
 }

@@ -10,19 +10,19 @@ export default function Jobs() {
 
     <article className="free">
             
-            <div className="servicios">
+            <div className="text-container">
 
-                Desarrollo web
+                Desarrollo web adawdaw dwad wadaw dadw dad a wda dawd awd awd
 
             </div>
 
-            <div className="servicios">
+            <div className="text-container">
                 
                 Soluciones 
                 
             </div>
             
-            <div className="servicios">
+            <div className="text-container">
             <i className="fa fa-arrow-right"></i>
             
                 Implementaciones 

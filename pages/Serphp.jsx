@@ -9,14 +9,19 @@ import { Navbar } from "../components";
 import { Navigation, Autoplay } from 'swiper/modules';
 import { NProyects } from '../serph/NProyects';
 //swiper
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 import { Mousewheel, Pagination } from 'swiper/modules';
 import Contact from '../components/Company/contacto';
+import Slider from '../components/Company/slider';
 
 export default function Serphp() {
 
     const [show, setShow] = useState(false);
-    const swiperSlide = useSwiperSlide();
+    //const swiperSlide = useSwiperSlide();
     const handleshow = () => {
         setShow(!show);
     }
@@ -24,8 +29,9 @@ export default function Serphp() {
     return (
         <>
         <Navbar/>
-        <div className="mt-5"></div>
+        {/* <div className="mt-5"></div> */}
 
+    <div className='mySwiper'>
     <Swiper
     direction={'vertical'}
     slidesPerView={1}
@@ -35,7 +41,6 @@ export default function Serphp() {
         clickable: true,
     }}
     modules={[Mousewheel, Pagination]}
-    className="mySwiper"
     >
     <SwiperSlide>
         
@@ -45,21 +50,30 @@ export default function Serphp() {
             delay: 5000,
             pauseOnMouseEnter: true,
         }}
-        className="mySwiper">
+        className="">
         {
             NProyects.slice(0,3).map((item) => (
                 <SwiperSlide data-swiper-autoplay="2000">
                     <img src={item.image} alt={item.name} title={item.name}/>
-                    <div className='swiper-title'>{item.name}</div>
+                    
+                    <div className='swiper-title'>
+                    {item.name}
+                    <a href="https://edpanama.com/" target="_blank" class="buttonp">Ver Proyecto</a>
+                    </div>
+                    
                 </SwiperSlide>
             ))
         }
     </Swiper>
 
     </SwiperSlide>
+
+    {/* <SwiperSlide>
+        <Slider/>
+    </SwiperSlide> */}
     <SwiperSlide>
         
-    <Jobs/>
+    <Contact/>
 
     </SwiperSlide>
     <SwiperSlide>
@@ -69,12 +83,12 @@ export default function Serphp() {
     </SwiperSlide>
     <SwiperSlide>
 
-        <Contact/>
+        <Jobs/>
 
     </SwiperSlide>
 
     </Swiper>
-
+    </div>
     </>
     )
 }

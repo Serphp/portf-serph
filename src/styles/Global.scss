@@ -12,8 +12,8 @@ $anim: 0.5s;
 
 
 body {
-  max-width: 1200px;
-  margin: auto;
+  //max-width: 1200px;
+  // margin: auto;
   //padding: 50px;
   --fa-style-family-classic: "Font Awesome 6 Free";
   --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
@@ -39,6 +39,10 @@ body {
   #pinfo {
     color: black;
     margin: 1em 2px 2px 50px;
+  }
+  main{
+    max-width: 1200px;
+    margin: auto;
   }
   a {
     text-decoration: none;
@@ -1053,7 +1057,7 @@ code {
   z-index: 1000;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  //margin-top: 20px;
   top: 20px;
   border-radius: 50px;
   // height: 50px;
@@ -1064,7 +1068,7 @@ code {
   // z-index: 2;
   //background-color: #dadada34;
   //box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-  backdrop-filter: blur(5px);
+  //backdrop-filter: blur(5px);
   transition: all 0.1s;
   @media screen and (max-width: 600px) {
     height: 50px;
@@ -1244,34 +1248,50 @@ code {
     flex-direction: column;
     gap: 20px;
   }
-  .servicios {
+  .cservicios {
     width: 350px;
-    height: 50vh;
-    display: flex;
-    opacity: 0.8;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    // color: #17b6d2;
-    // fill: #17b6d2;
-    border: red solid 1px;
-    animation: identifier2 2s alternate;
-    //box-shadow: 0px 0px 1px 2px rgba(0, 242, 255, 0.5);
-    transition: all .5s ease;
-      // &:hover {
-      //   opacity: 1;
-      //   display: flex;
-      //   box-shadow: 5px 5px 1px 2px rgba(0, 242, 255, 0.5);
-      // }
-    @media screen and (max-width: 768px) {
-      padding: 20px;
-      width: 100%;
+    padding: 0 20px;
+    border-radius: 0 0 10px 10px;
+    backdrop-filter: blur(5px);
+    transition: all 0.8s ease-in-out;
+    @media screen and (min-width: 768px) {
+      width: 100px;
     }
-    .fa {
-      font-size: 1.5em;
+    &:hover, .image-container, img{
+        backdrop-filter: blur(1px);
     }
-  }
+
+    .cstitle{ 
+        text-align: right;
+        font-size: 18px;
+        font-weight: 900;
+        padding: 10px 0px 0px 0;
+    }
+    .cslink{
+        //width: 50%;
+        //border: red 2px solid;
+        //text-transform: uppercase;
+        font-size: 12px !important;
+        text-align: right;
+        color: rgb(255, 255, 255);
+        //padding: 20px;
+        //line-height: 2;
+        font-style: italic;
+        //padding: 10px 0 10px 0px;
+        //margin: 10px 0 0px 0;
+    }
+    .csdes{
+        font-size: 14px;
+        margin-bottom: 1px;
+        padding: 0px 10px 0 10px;
+        text-align: justify;
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
+}
+
 
 
 .educont{
@@ -1300,7 +1320,7 @@ code {
 }
 
 .edu3 {
-  width: 50%;
+  width: 100%;
   text-align: center;
   border: red solid 2px;
   @media screen and (max-width: 600px) {

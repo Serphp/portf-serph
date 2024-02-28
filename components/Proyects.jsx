@@ -7,14 +7,12 @@ export default function Proyects() {
 
     return (
         <>
-
 <div className="mainbg">
             <h6 className="subtitle"><i className="fa fa-location-arrow"></i> Últimos proyectos </h6>
         <h2> Last proyects </h2>
         <div className="mb-5"></div>
         
     <div className="section-container">
-    {/* {name, description, image, url, url2, lang }, i */}
         {
             NProyects.slice(0, 3).map((item, i) => (
                 <div key={i} className="section">
@@ -57,7 +55,6 @@ export default function Proyects() {
                 </div>
             ))
         }
-        {/* SEPARACION */}
         </div>
         <div className="mb-3"></div> 
         <Link to='/Proyectos'><div className='buttoned'>
