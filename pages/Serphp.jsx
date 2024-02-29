@@ -81,7 +81,7 @@ export default function Serphp() {
         <Formulario/>
 
     </SwiperSlide>
-    <SwiperSlide>
+    <SwiperSlide id='servicios'>
 
         <Jobs/>
 

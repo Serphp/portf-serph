@@ -88,19 +88,12 @@ body {
 
 //LOGO
 .logo {
-  //border: red solid 1px;
-  opacity: 0.3;
-  position: fixed;
-  top: 20px;
-  left: 10px;
-  width: 60px;
+  margin: 5px;
+  width: 100px;
   height: 50px;
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
+  // object-position: center;
   transition: opacity 1s ease-in-out;
-  &:hover{
-    opacity: 1;
-  }
   @media (max-width: 1200px) {
     display: none;
   }

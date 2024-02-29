@@ -64,10 +64,9 @@ return (
     
     </div>
 
-    <div className="">
-            {/* <span className="beta">Theme </span>   */}
+    {/* <div className="">
             <img className="logo" src="https://i.imgur.com/Q9bl1Ys.png"/>
-        </div>
+        </div> */}
 
     {/* {isLoading ? <Loading /> : <Outlet />} */}
     <Outlet/>

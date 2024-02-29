@@ -23,17 +23,19 @@ export default function Navbar() {
                 <div className="fa">
                     <CerIcon/>
                     </div>
-                Nuestros proyectos
+                Proyectos
                 </span>
             </Link>
 
-            <Link to="/proyectos">
+            <div className="s"> <img className="logo" src="https://i.imgur.com/Q9bl1Ys.png"/> </div>
+
+            <a href="#servicios">
                 <span className="link-text">
                     <div className="fa">
                     <ProIcon/>
                     </div>
                 Servicios</span>
-            </Link>
+            </a>
 
             <Link to="/Certificates">
                 <span className="link-text">

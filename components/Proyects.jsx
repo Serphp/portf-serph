@@ -128,8 +128,6 @@ export function Proyects2() {
             <div className='buttoned'>
                 <a href='https://github.com/Serphp'>  Mas proyectos </a>
             </div>
-
-            {/* {{end}} */}
         </div>
 
 
