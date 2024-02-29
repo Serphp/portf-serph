@@ -10,32 +10,6 @@ export default function Navbar() {
 <>
     <div className="nav2">
             <div className="containernav">
-
-                {/* <Link to="/">
-                    <span className="link-text">
-                        <div className="fa">
-                        <HomeIcon/>  </div>
-                    Inicio
-                    </span>
-                </Link>
-
-                <Link to="/Certificates">
-                    <span className="link-text">
-                    <div className="fa">
-                        <CerIcon/>
-                        </div>
-                    Certificates
-                    </span>
-                </Link>
-
-                <Link to="/proyectos">
-                    <span className="link-text">
-                        <div className="fa">
-                        <ProIcon/>
-                        </div>
-                    Proyects</span>
-                </Link> */}
-
             <Link to="/">
                 <span className="link-text">
                     <div className="fa">
@@ -44,7 +18,7 @@ export default function Navbar() {
                 </span>
             </Link>
 
-            <Link to="/Certificates">
+            <Link to="/About">
                 <span className="link-text">
                 <div className="fa">
                     <CerIcon/>
@@ -61,12 +35,12 @@ export default function Navbar() {
                 Servicios</span>
             </Link>
 
-            <Link to="/proyectos">
+            <Link to="/Certificates">
                 <span className="link-text">
                     <div className="fa">
                     <ProIcon/>
                     </div>
-                Contactos</span>
+                Certificados</span>
             </Link>
 
         </div>

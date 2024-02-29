@@ -10,14 +10,12 @@ export default function Proyectos() {
 
 
         <Proyects2/>
-        
+{/*         
         <div className="space"></div>
-        <h1> En Desarrollo <span className="pause"> Pause </span></h1>
-
-
-        <article className="dev">
+        <h1> Prácticas <span className="pause"> Pause </span></h1>
+        <article className="">
             <p style={{marginBottom: '10px'}}>
-                El desarrollo de estos proyectos son de largo plazo, la documentacion de cada proyecto se encuentra en desarrollo y se ira actualizando con el tiempo.
+                El desarrollo de estos proyectos fuerón para actualizar mis conocimientos y adaptarme a nuevas tecnologías con rápidez 
                 </p>
                 <ul>
                     <li><a href="https://github.com/Serphp/SI2" target="_blank"><h4>[Github] Proyecto SI2</h4></a></li>
@@ -33,7 +31,7 @@ export default function Proyectos() {
                         <li> Tecnologias: <b> Python, Django  </b></li>
                     </ul>
                 </ul>
-        </article> 
+        </article>  */}
 
         {/* <div className="section-top">
             <div className="text-container">
@@ -51,7 +49,7 @@ export default function Proyectos() {
                     <span className="tlinks">2016 - 2020</span>
                 </div>
             </div>
-        </div>
+        </div> */}
 
 {/* 
     <div className="space"></div>

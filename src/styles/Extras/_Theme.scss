@@ -15,6 +15,7 @@
         background: linear-gradient(0.50turn, var(--background-color), var(--background-color-second));
     }
 
+
     .text-container {
         background-color: #b2b2b2a4;
         .text-container, .ttitle, .tdescription {
@@ -170,6 +171,13 @@
 //         }
 //     }
 
+
+
+    .boxtech{
+        color: var(--cyan) !important;
+        background-color: rgba(92, 92, 92, 0.368627451) !important;
+        //box-shadow: inset rgb(221, 0, 0) 1px 30px !important;
+    }
 
     .face1 {
         border-bottom: var(--cyan) solid 1px;

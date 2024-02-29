@@ -1,5 +1,5 @@
 
-import '../src/styles/Proyect.scss'
+import '../src/styles/Proyect.scss';
 import { NProyects } from '../serph/NProyects';
 import { Link } from 'react-router-dom';
 
