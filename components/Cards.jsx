@@ -39,7 +39,8 @@ const Cards = () => {
                       {...provided.dragHandleProps}
                     >
                       <div className="content">
-                        <i className="fa fa-door-open"></i>
+                        {/* <i className="fa fa-door-open"></i> */}
+                        <i className={skill.icon}></i>
                         <h3>{skill.habilidad}</h3>
                       </div>
                     </div>

@@ -140,6 +140,14 @@
       <>
 
     <main>
+
+      <div className="contenedorselect">
+    <select>
+      <option value="someOption">FullStack</option>
+      <option value="otherOption">Mobile</option>
+    </select>
+    </div>
+
     <div className="section-container">
 
       

@@ -1,44 +1,44 @@
 export const Skills = [
     {
         id: '1',
-        icon: '',
+        icon: 'fa fa-door-open',
         habilidad: 'ADAPTACIÓN Y FLEXIBILIDAD'
 
     },
     {
         id: '2',
-        icon: '',
+        icon: 'fa fa-layer-group',
         habilidad: 'RESOLUCION DE PROBLEMAS'
 
     },
     {
         id: '3',
-        icon: '',
+        icon: 'fa fa-spa',
         habilidad: 'RESILIENCIA'
     },
     {
         id: '4',
-        icon: '',
+        icon: 'fa fa-stack-overflow',
         habilidad: 'AUTODIDACTA Y AUTÓNOMO'
     },
     {
         id: '5',
-        icon: '',
+        icon: 'fa fa-users',
         habilidad: 'COMUNICATIVO Y DETALLADO'
     },
     {
         id: '6',
-        icon: '',
+        icon: 'fa fa-chalkboard',
         habilidad: 'APRENDIZAJE CONSTANTE'
     },
     {
         id: '7',
-        icon: '',
+        icon: 'fa fa-icons',
         habilidad: 'CREATIVO E INNOVADOR'
     },
     {
         id: '8',
-        icon: '',
+        icon: 'fa fa-hand-holding-heart',
         habilidad: 'PROGRAMADOR APASIONADO'
     },
 ]

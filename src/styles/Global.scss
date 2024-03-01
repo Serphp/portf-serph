@@ -1732,3 +1732,18 @@ code {
     animation: cambioSlogan 5s linear infinite alternate;
   }
 }
+
+.contenedorselect{
+  width: 100%;
+  margin: 10px 0 10px 0;
+  border: red solid 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+select{
+  border: red solid 1px;
+  background-color: #0000003f;
+  color: white;
+  padding: 20px;
+}
