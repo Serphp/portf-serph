@@ -1,10 +1,12 @@
 
   .containerx{
-    //border: red 2px solid;
+    border: red 2px solid;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+      max-height: calc(2 * (altura de tus elementos) + 10px); /* Calcula la altura de 2 filas y añade un poco de margen */
+  //overflow-y: auto;
     gap: 20px;
   }
 
