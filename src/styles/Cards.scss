@@ -1,13 +1,14 @@
 
   .containerx{
-    border: red 2px solid;
+    //border: red 2px solid;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // //flex-wrap: wrap;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-      max-height: calc(2 * (altura de tus elementos) + 10px); /* Calcula la altura de 2 filas y añade un poco de margen */
-  //overflow-y: auto;
-    gap: 20px;
+    width: 100%; /* O el ancho deseado */
+    overflow-x: auto; /* Habilita el desplazamiento horizontal */
   }
 
   title {
@@ -16,6 +17,7 @@
 
   //tamaño
   .face{
+    
     width: 250px;
     height: 150px;
     transition: .5s; 
@@ -26,7 +28,7 @@
     &:hover{
       opacity: 1;
       transform: translateY(-10px);
-      box-shadow: 5px 5px 1px 5px var(--cyan);
+      //box-shadow: 5px 5px 1px 5px var(--cyan);
     }
   }
 
@@ -43,16 +45,14 @@
     }
   }
 
-  /*CARD BG*/
+  // /*CARD BG*/
   .face1{
     display: flex;
     justify-content: center;
-    font-size: 1.1em; //title size
     flex-direction: column;
-    // cursor: pointer;
-    // z-index: 1;
-    //border: #00fffb solid 1px;
-    //box-shadow: 5px 5px 0px 2px rgba(102, 175, 199, 0.317);
+    padding: 20px;
+
+    box-shadow: 5px 5px 8px 2px rgba(102, 175, 199, 0.171);
   }
 
   .face.face1 .content i{
@@ -65,7 +65,6 @@
   .face.face1 .content h3{
     font-size: 1em;
     color: #94d8e4;
-    font-weight: bold;
     text-align: center;
     transition: all .5s ease;
     &:hover{
@@ -208,14 +207,15 @@
   
 }
 
-.obra2 {
-  width: 280px;
-  height: 80px;
+.obra2, .obrasocial {
+  width: 100%;
+  height: 50px;
   display: flex;
-  opacity: 0.8;
-  justify-content: space-evenly !important;
-  align-items: center;
+  //opacity: 0.8;
+  justify-content: flex-start !important;
+  align-items: center !important;
   padding: 10px;
+  gap: 20px;
   color: #17b6d2;
   fill: #17b6d2;
   border: #00fffb solid 1px;
@@ -223,10 +223,32 @@
   //box-shadow: 0px 0px 1px 2px rgba(0, 242, 255, 0.5);
   transition: all .5s ease;
     &:hover {
-      opacity: 1;
+      //opacity: 1;
       display: flex;
       box-shadow: 5px 5px 1px 2px rgba(0, 242, 255, 0.5);
     }
+}
+
+.obrasocial {
+  width: 50% !important;
+}
+
+.obracon{
+  //border: red solid 2px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+  
+.obraclose{
+  width: 10%;
+  display: flex;
+  color: #00fffb;
+  justify-content: center;
+  border: #00fffb solid 2px;
+  background-color: transparent;
 }
 
 .obrac {

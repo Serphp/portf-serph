@@ -53,8 +53,8 @@ export default function Home() {
 
 
                 <div className="mt-4">
-                    <a className="buttoned btn-link btn-floating " target="_blank" href="https://twitter.com/Serphp">
-                    <i className="fab fa-twitter"></i></a>
+                    {/* <a className="buttoned btn-link btn-floating " target="_blank" href="https://twitter.com/Serphp">
+                    <i className="fab fa-twitter"></i></a> */}
 
                     <a className="buttoned btn-link btn-floating ms-2" target="_blank" href="https://www.linkedin.com/in/bryaninit/">
                     <i className="fab fa-linkedin"></i></a>

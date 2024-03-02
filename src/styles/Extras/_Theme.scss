@@ -45,9 +45,16 @@
         transition: all 0.3s ease-in-out;
         background-color: #e4e4e413;
         border-bottom: var(--cyberpunk) solid 1px;
-        &:hover{
-            box-shadow: 5px 5px 0px 1px var(--cyberpunk);
-        }
+        border-width: 2px;
+        border-style: solid;
+        border-image: 
+        linear-gradient(
+            to bottom, 
+            #c79288da, 
+            #c7928825
+        ) 1 100%;
+        border-bottom: var(--cyan) solid 1px;
+        box-shadow: 5px 5px 5px 2px #c7928841;
     }
 
     .face.face1 .content i, h3 {
@@ -180,7 +187,15 @@
     }
 
     .face1 {
-        border-bottom: var(--cyan) solid 1px;
+        border-width: 2px;
+        border-style: solid;
+        border-image: 
+        linear-gradient(
+            to bottom, 
+            #2574a1, 
+            rgba(7, 175, 153, 0.404)
+        ) 1 100%;
+        //border-bottom: var(--cyan) solid 1px;
     }
 
 
