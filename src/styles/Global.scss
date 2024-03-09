@@ -1313,9 +1313,14 @@ code {
 }
 
 .edu3 {
-  width: 100%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border: red solid 2px;
+  //border: red solid 2px;
+  background: linear-gradient(var(--cyberpunk), var(--background-color));
   @media screen and (max-width: 600px) {
     width: 100%;
   }
@@ -1528,7 +1533,18 @@ code {
 .about {
   width: 50%;
   margin: 20px 10px 10px 10px;
-  border-left: rgba(0, 255, 247, 0.282) solid 1px;
+  border-left: var(--cyan) solid 1px;
+  box-shadow: -25px 10px 1px -2px var(--cyberpunk);
+  // background-image: 
+  // linear-gradient(to top, var(--cyan), var(--cyan), 6%, transparent 50px); /* Gradiente lineal en el borde izquierdo */
+  
+  border-image: 
+  linear-gradient(
+      to bottom, 
+      var(--cyberpunk), 
+      #0000009a
+  ) 1 100%;
+  
   padding-left: 20px;
     @media screen and (max-width: 600px) {
       width: 100%;
@@ -1715,11 +1731,16 @@ code {
   }
   
   .nlogo {
-    //border: red solid 1px;
-    width: 400px;
+    //border: var(--cyberpunk) solid 1px;
+    box-shadow: var(--cyberpunk) 2px 2px 1px;
+    padding: 20px;
+    border-radius: 50px;
+    width: 333px;
     object-fit: cover;
     object-position: center;
     animation: anim2 5s linear infinite alternate;
+    transition: all 0.9s ease-out;
+
     @media screen and (max-width: 1200px)  {
     width: 250px;
     }

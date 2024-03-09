@@ -26,7 +26,7 @@ const Cards = () => {
       <div className="mb-5"></div>
 
       <DragDropContext onDragEnd={handleDragEnd}>
-        <Droppable droppableId="skills" direction="horizontal">
+        <Droppable droppableId="skills" direction="vertical">
           {(provided) => (
             <div {...provided.droppableProps} ref={provided.innerRef} className="containerx">
               {skills.map((skill, index) => (

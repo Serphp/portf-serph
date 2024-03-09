@@ -1,12 +1,22 @@
 import { Link } from "react-router-dom";
-import Mensaje from "../components/Mensaje";
 import React, { useState, useEffect } from 'react';
+
+// import required modules
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper';
+import Slider from "../components/Company/slider";
+
+
 
 export default function Select({ intervalTime = 5000 }) {
     const slogans = ["Sencillo y compacto", "Unico y creativo", "Objetivo y éxito"];
     const [currentSloganIndex, setCurrentSloganIndex] = useState(0);
     const [showperfil, setperfil] = useState(false);
     const [showcompany, setcompany] = useState(false);
+
+    //swiper
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     const theme = localStorage.getItem('theme');
 
@@ -33,13 +43,16 @@ export default function Select({ intervalTime = 5000 }) {
 
         <div className="blank">
         <section className="blank2">
-            <div className="ninicio">
-                
-            {theme === 'light' ? (
-    <img className="nlogo" src="https://i.imgur.com/ukAZTRr.png" alt="Light Image" />
-) : (
-    <img className="nlogo" src="https://i.imgur.com/Q9bl1Ys.png" alt="Dark Image" />
-)}
+        <div className="ninicio">
+
+            
+
+        {theme === 'light' ? (
+        <img className="nlogo" src="https://i.imgur.com/ukAZTRr.png" alt="Light Image" />
+        ) : (
+        <img className="nlogo" src="https://i.imgur.com/Q9bl1Ys.png" alt="Dark Image" />
+        )}
+
 
 
             <div className="ncontenedor">
@@ -47,7 +60,8 @@ export default function Select({ intervalTime = 5000 }) {
 
                 <article onClick={toggleBotonesPerfil}>
                     {!showperfil ? (
-                        <div className="obra2">Perfiles Profesionales</div>
+                        <div className="obra2"><IconArrow tamaño={tamaño} />
+                            Perfiles Profesionales</div>
                         
                     ) : (
                     <div className="obracon">
@@ -64,7 +78,7 @@ export default function Select({ intervalTime = 5000 }) {
                     <Link to="/home">
                     <div className="obra2"> 
                     <IconPro tamaño={tamaño}/>
-                    Perfil profesional 
+                    Web profesional 
                     </div>
                     </Link>
                     
@@ -79,7 +93,8 @@ export default function Select({ intervalTime = 5000 }) {
 
                 <article onClick={toggleBotonesCompany}>
                     {!showcompany ? (
-                        <div className="obra2">¿Buscas un servicio profesional?</div>
+                        <div className="obra2"><IconArrow tamaño={tamaño} />
+                            ¿Eres un cliente?</div>
                         
                     ) : (
                     <div className="obracon">
@@ -94,7 +109,7 @@ export default function Select({ intervalTime = 5000 }) {
                         <>
                         <Link to="/company"><div className="obra2"> 
                         <IconCompany tamaño={tamaño}/>
-                        ¿Buscas un servicio? </div></Link>
+                        Ingresar a la web </div></Link>
         
                         <Link className="obra2" to="mailto:serphp@hotmail.com">
                         <IconCO tamaño={tamaño} /> Ponerse en contacto
@@ -131,6 +146,14 @@ return (
     </svg>
     </i>
 );
+}
+
+function IconArrow({ tamaño }){
+    return(
+        <Icon tamaño={tamaño}>
+            <path d="M10 18.998a1 1 0 0 1-.77-1.64l4.48-5.36-4.32-5.37a1 1 0 0 1 .15-1.41 1 1 0 0 1 1.46.15l4.83 6a1 1 0 0 1 0 1.27l-5 6a.999.999 0 0 1-.83.36Z"></path>
+        </Icon>
+    )
 }
 
 function IconCO({ tamaño }) {

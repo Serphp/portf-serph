@@ -31,7 +31,7 @@ export default function Serphp() {
         <Navbar/>
         {/* <div className="mt-5"></div> */}
 
-    <div className='mySwiper'>
+    <div className='contenedorswiper'>
     <Swiper
     direction={'vertical'}
     slidesPerView={1}
@@ -49,8 +49,7 @@ export default function Serphp() {
         autoplay={{ 
             delay: 5000,
             pauseOnMouseEnter: true,
-        }}
-        className="">
+        }}>
         {
             NProyects.slice(0,3).map((item) => (
                 <SwiperSlide data-swiper-autoplay="2000">

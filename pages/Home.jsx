@@ -6,6 +6,7 @@ import Education from "../components/education";
 //import Jobs from "../components/services";
 import Proyects from "../components/Proyects";
 import { Footer } from "../components";
+import { Projectsshort } from "../components/Projects";
 //import Formulario from "../components/form";
 
 
@@ -118,7 +119,16 @@ export default function Home() {
 
             {/* <Jobs/> */}
 
-            <Proyects/>
+            <div className="mainbg">
+            <h6 className="subtitle"><i className="fa fa-location-arrow"></i> Últimos proyectos </h6>
+            <h2> Last proyects </h2>
+            <div className="mb-5"></div>
+
+            {/* <Proyects/> */}
+
+            <Projectsshort/>
+
+            </div>
 
             {/* <Formulario/> */}
             <Footer/>

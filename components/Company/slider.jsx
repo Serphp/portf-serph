@@ -1,11 +1,42 @@
 
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
+import { queryPage } from '../../Utils/schemas';
+import { hygraph } from '../../Utils/hygraph.server';
 
 export default function Slider() {
 
+    const [proyectos, setprojects] = useState([]);
+
+    //Second method
+    useEffect(() => {
+    fetchProjects();
+}, []);
+
+const fetchProjects = async () => {
+    try {
+    const { projectsConnection } = await hygraph.request(queryPage, {
+    });
+
+    // Verifica si projectsConnection existe y tiene la estructura esperada
+    if (projectsConnection && projectsConnection.edges) {
+        setprojects([...projectsConnection.edges.map((edge) => edge.node)]);
+    } else {
+        console.error("Respuesta no esperada.");
+    }
+    } catch (error) {
+    console.error("Error:", error);
+    }
+};
+
+const Orden = proyectos.sort((a, b) => {
+// Aquí se supone que tienes una propiedad createdAt en tus objetos de proyecto
+return new Date(b.createdAt) - new Date(a.createdAt);
+});
+    
+    console.log(Orden);
     
     return (
     <>
@@ -34,63 +65,26 @@ export default function Slider() {
             }}
             data-swiper-parallax="-23%"
         ></div>
-        <SwiperSlide>
-            <div className="title" data-swiper-parallax="-300">
-            Slide 1
-            </div>
-            <div className="subtitle" data-swiper-parallax="-200">
-            Subtitle
-            </div>
-            <div className="text" data-swiper-parallax="-100">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-            </p>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="title" data-swiper-parallax="-300">
-            Slide 2
-            </div>
-            <div className="subtitle" data-swiper-parallax="-200">
-            Subtitle
-            </div>
-            <div className="text" data-swiper-parallax="-100">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-            </p>
-            </div>
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="title" data-swiper-parallax="-300">
-            Slide 3
-            </div>
-            <div className="subtitle" data-swiper-parallax="-200">
-            Subtitle
-            </div>
-            <div className="text" data-swiper-parallax="-100">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-            </p>
-            </div>
-        </SwiperSlide>
+
+            {
+                Orden.map((project, i) => (
+                    <>
+                <SwiperSlide>
+                <div className="title" data-swiper-parallax="-300">
+                Slide 1
+                </div>
+                <div className="subtitle" data-swiper-parallax="-200">
+                Subtitle
+                </div>
+                <div className="text" data-swiper-parallax="-100">
+                <p>
+                    {project.description}
+                </p>
+                </div>
+                </SwiperSlide>
+                    </>
+                ))
+            }
         </Swiper>
 
     </div>

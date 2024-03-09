@@ -34,9 +34,11 @@
     .obra, .buttoned, .obra2{
         a{color: var(--cyberpunkPlus);}
         &:hover{
+            color: white !important;
             box-shadow: 5px 5px 1px 2px var(--cyberpunk);
         }
         .obraicon{
+            border-radius: 50px;
             fill: var(--cyberpunk) !important;
         }
     }
@@ -44,13 +46,13 @@
     .face1, .face, .boxitem {
         transition: all 0.3s ease-in-out;
         background-color: #e4e4e413;
-        border-bottom: var(--cyberpunk) solid 1px;
+        //border-bottom: var(--cyberpunk) solid 1px;
         border-width: 2px;
         border-style: solid;
         border-image: 
         linear-gradient(
             to bottom, 
-            #c79288da, 
+            var(--cyberpunk), 
             #c7928825
         ) 1 100%;
         border-bottom: var(--cyan) solid 1px;
@@ -80,13 +82,14 @@
             color: var(--cyberpunkPlus) !important;
         }
     }
-    .buttoned, .btn, .obra, .btnshow, .obra2 {
+    .buttoned, .btn, .obra, .btnshow, .obra2, .obraicon{
         background-color: #ffffff21 !important;
         border-color: var(--cyberpunk) !important;
         color: var(--cyberpunk);
         &:hover{
             //background-color: #0000003f;
-            color: var(--cyberpunkPlus) !important;
+            color: white !important;
+            fill: white !important;
         }
     }
     .button {
@@ -247,10 +250,20 @@
     .boxitem {
         transition: all 0.7s ease;
         border-bottom: var(--cyan) solid 1px;
-        //background-color: rgba(255, 255, 255, 0.003) !important;
-        &:hover{
-            box-shadow: 5px 5px 0px 1px var(--cyan);
-        }
+        border-bottom: var(--cyberpunk) solid 1px;
+        border-width: 2px;
+        border-style: solid;
+        border-image: 
+        linear-gradient(
+            to bottom, 
+            var(--cyberpunk), 
+            #00000028
+        ) 1 100%;
+        border-bottom: var(--cyan) solid 1px;
+        box-shadow: 5px 5px 5px 2px #1a726641;
+        // &:hover{
+        //     box-shadow: 5px 5px 0px 0px #00eeff1a;
+        // }
     }
     .section, .section-top  {
         color: var(--text-color);

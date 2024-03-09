@@ -5,6 +5,7 @@ import HomeIcon from "../../src/assets/home";
 import ProIcon from "../../src/assets/ProIcon";
 
 export default function Navbar() {
+    const theme = localStorage.getItem('theme');
 
     return (
 <>
@@ -27,7 +28,13 @@ export default function Navbar() {
                 </span>
             </Link>
 
-            <div className="s"> <img className="logo" src="https://i.imgur.com/Q9bl1Ys.png"/> </div>
+            {/* <div className="s"> <img className="logo" src="https://i.imgur.com/Q9bl1Ys.png"/> </div> */}
+            <div className="s">
+            {theme === 'light' ? (
+            <img className="logo" src="https://i.imgur.com/ukAZTRr.png" alt="Light Image" />
+            ) : (
+            <img className="logo" src="https://i.imgur.com/Q9bl1Ys.png" alt="Dark Image" />
+            )}</div>
 
             <a href="#servicios">
                 <span className="link-text">

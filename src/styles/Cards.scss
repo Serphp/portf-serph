@@ -6,9 +6,15 @@
     // justify-content: center;
     // //flex-wrap: wrap;
 
-    display: flex;
-    width: 100%; /* O el ancho deseado */
-    overflow-x: auto; /* Habilita el desplazamiento horizontal */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Tres columnas */
+    grid-auto-rows: minmax(100px, auto); /* Altura de fila mínima de 100px, se expandirá automáticamente */
+    grid-auto-flow: dense;
+    gap: 40px 0px;
+    justify-items: center;
+
+    margin: 0 auto; 
+    width: 80%; 
   }
 
   title {
@@ -32,16 +38,28 @@
     }
   }
 
-  @media  screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .face {
       width: 160px;
       height: 140px;
     }
     .containerx { 
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+      grid-auto-flow: dense;
+      width: 80%; 
       gap: 10px;
     }
     h3 {
       font-size: 0.8em !important;
+    }
+    
+    @media screen and (max-width: 390px) {
+      .containerx { 
+        grid-template-columns: repeat(1, 1fr); /* Una columna */
+        grid-auto-flow: dense;
+        width: 100%; 
+        gap: 10px;
+      }
     }
   }
 
@@ -208,7 +226,7 @@
 }
 
 .obra2, .obrasocial {
-  width: 100%;
+  width: 342px;
   height: 50px;
   display: flex;
   //opacity: 0.8;
@@ -218,13 +236,20 @@
   gap: 20px;
   color: #17b6d2;
   fill: #17b6d2;
-  border: #00fffb solid 1px;
+  border-width: 0.5px;
+  border-style: solid;
+  border-image: 
+  linear-gradient(var(--cyberpunk), #0000002f) 1;
+  border-bottom: var(--cyan) solid 1px;
+
+  //border: #00fffb solid 1px;
   animation: identifier2 2s alternate;
   //box-shadow: 0px 0px 1px 2px rgba(0, 242, 255, 0.5);
   transition: all .5s ease;
     &:hover {
       //opacity: 1;
       display: flex;
+      background: linear-gradient(to right, var(--cyberpunk), #ff393910) 340px 20px;
       box-shadow: 5px 5px 1px 2px rgba(0, 242, 255, 0.5);
     }
 }
@@ -245,9 +270,18 @@
 .obraclose{
   width: 10%;
   display: flex;
-  color: #00fffb;
+  color: var(--cyberpunk);
   justify-content: center;
-  border: #00fffb solid 2px;
+  //border: #00fffb solid 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-image: 
+  linear-gradient(
+      to bottom, 
+      var(--cyberpunk), 
+      #c7928825
+  ) 1 100%;
+  border-bottom: var(--cyan) solid 1px;
   background-color: transparent;
 }
 
