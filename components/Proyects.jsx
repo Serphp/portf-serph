@@ -1,5 +1,5 @@
 
-import '../src/styles/Proyect.scss'
+import '../src/styles/Proyect.scss';
 import { NProyects } from '../serph/NProyects';
 import { Link } from 'react-router-dom';
 
@@ -7,14 +7,12 @@ export default function Proyects() {
 
     return (
         <>
-
 <div className="mainbg">
             <h6 className="subtitle"><i className="fa fa-location-arrow"></i> Últimos proyectos </h6>
         <h2> Last proyects </h2>
         <div className="mb-5"></div>
         
     <div className="section-container">
-    {/* {name, description, image, url, url2, lang }, i */}
         {
             NProyects.slice(0, 3).map((item, i) => (
                 <div key={i} className="section">
@@ -57,12 +55,10 @@ export default function Proyects() {
                 </div>
             ))
         }
-        {/* SEPARACION */}
         </div>
-        <div className="mb-3"></div>
-            <div className='buttoned'>
-                <Link to='/Proyectos'>  Mas proyectos </Link>
-            </div>
+        <div className="mb-3"></div> 
+        <Link to='/Proyectos'><div className='buttoned'>
+                Mas proyectos </div></Link>
 
             {/* {{end}} */}
         </div>
@@ -132,8 +128,6 @@ export function Proyects2() {
             <div className='buttoned'>
                 <a href='https://github.com/Serphp'>  Mas proyectos </a>
             </div>
-
-            {/* {{end}} */}
         </div>
 
 

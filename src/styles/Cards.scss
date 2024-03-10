@@ -1,11 +1,20 @@
 
   .containerx{
     //border: red 2px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // //flex-wrap: wrap;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Tres columnas */
+    grid-auto-rows: minmax(100px, auto); /* Altura de fila mínima de 100px, se expandirá automáticamente */
+    grid-auto-flow: dense;
+    gap: 40px 0px;
+    justify-items: center;
+
+    margin: 0 auto; 
+    width: 80%; 
   }
 
   title {
@@ -14,6 +23,7 @@
 
   //tamaño
   .face{
+    
     width: 250px;
     height: 150px;
     transition: .5s; 
@@ -24,33 +34,43 @@
     &:hover{
       opacity: 1;
       transform: translateY(-10px);
-      box-shadow: 5px 5px 1px 5px var(--cyan);
+      //box-shadow: 5px 5px 1px 5px var(--cyan);
     }
   }
 
-  @media  screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .face {
       width: 160px;
       height: 140px;
     }
     .containerx { 
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+      grid-auto-flow: dense;
+      width: 80%; 
       gap: 10px;
     }
     h3 {
       font-size: 0.8em !important;
     }
+    
+    @media screen and (max-width: 390px) {
+      .containerx { 
+        grid-template-columns: repeat(1, 1fr); /* Una columna */
+        grid-auto-flow: dense;
+        width: 100%; 
+        gap: 10px;
+      }
+    }
   }
 
-  /*CARD BG*/
+  // /*CARD BG*/
   .face1{
     display: flex;
     justify-content: center;
-    font-size: 1.1em; //title size
     flex-direction: column;
-    // cursor: pointer;
-    // z-index: 1;
-    //border: #00fffb solid 1px;
-    //box-shadow: 5px 5px 0px 2px rgba(102, 175, 199, 0.317);
+    padding: 20px;
+
+    box-shadow: 5px 5px 8px 2px rgba(102, 175, 199, 0.171);
   }
 
   .face.face1 .content i{
@@ -63,7 +83,6 @@
   .face.face1 .content h3{
     font-size: 1em;
     color: #94d8e4;
-    font-weight: bold;
     text-align: center;
     transition: all .5s ease;
     &:hover{
@@ -188,34 +207,82 @@
     list-style-type: none;
     opacity: 0.5;
     padding: 5px;
-    border: #209dbcde solid 1px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    //border: #91999bde solid 1px;
+
+    //box-shadow: inset black 1px 1px 20px;
+    background-color: #f3f3f3bb;
+
     border-radius: 10px;
+    transition: all 0.5s ease-in;
     &:hover{
+      color: wheat;
+      box-shadow: inset black 1px 30px;
       opacity: 1;
     }
   }
   
 }
 
-.obra2 {
-  width: 280px;
-  height: 80px;
+.obra2, .obrasocial {
+  width: 342px;
+  height: 50px;
   display: flex;
-  opacity: 0.8;
-  justify-content: space-evenly !important;
-  align-items: center;
+  //opacity: 0.8;
+  justify-content: flex-start !important;
+  align-items: center !important;
   padding: 10px;
+  gap: 20px;
   color: #17b6d2;
   fill: #17b6d2;
-  border: #00fffb solid 1px;
+  border-width: 0.5px;
+  border-style: solid;
+  border-image: 
+  linear-gradient(var(--cyberpunk), #0000002f) 1;
+  border-bottom: var(--cyan) solid 1px;
+
+  //border: #00fffb solid 1px;
   animation: identifier2 2s alternate;
   //box-shadow: 0px 0px 1px 2px rgba(0, 242, 255, 0.5);
   transition: all .5s ease;
     &:hover {
-      opacity: 1;
+      //opacity: 1;
       display: flex;
+      background: linear-gradient(to right, var(--cyberpunk), #ff393910) 340px 20px;
       box-shadow: 5px 5px 1px 2px rgba(0, 242, 255, 0.5);
     }
+}
+
+.obrasocial {
+  width: 50% !important;
+}
+
+.obracon{
+  //border: red solid 2px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+  
+.obraclose{
+  width: 10%;
+  display: flex;
+  color: var(--cyberpunk);
+  justify-content: center;
+  //border: #00fffb solid 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-image: 
+  linear-gradient(
+      to bottom, 
+      var(--cyberpunk), 
+      #c7928825
+  ) 1 100%;
+  border-bottom: var(--cyan) solid 1px;
+  background-color: transparent;
 }
 
 .obrac {

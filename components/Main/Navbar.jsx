@@ -5,43 +5,55 @@ import HomeIcon from "../../src/assets/home";
 import ProIcon from "../../src/assets/ProIcon";
 
 export default function Navbar() {
+    const theme = localStorage.getItem('theme');
 
     return (
 <>
-<nav>
-        <div className="nav2">
+    <div className="nav2">
             <div className="containernav">
-
-                <Link to="/">
-                    <span className="link-text">
-                        <div className="fa">
-                        <HomeIcon/>  </div>
-                    Inicio
-                    </span>
-                </Link>
-        
-         
-                <Link to="/Certificates">
-                    <span className="link-text">
+            {/* <Link to="/">
+                <span className="link-text">
                     <div className="fa">
-                        <CerIcon/>
-                        </div>
-                    Certificates
-                    </span>
-                </Link>
-           
-           
-                <Link to="/proyectos">
-                    <span className="link-text">
-                        <div className="fa">
-                        <ProIcon/>
-                        </div>
-                    Proyects</span>
-                </Link>
-           
+                    <HomeIcon/>  </div>
+                Quienes somos
+                </span>
+            </Link> */}
+
+            <Link to="/Proyectos">
+                <span className="link-text">
+                <div className="fa">
+                    <CerIcon/>
+                    </div>
+                Proyectos
+                </span>
+            </Link>
+
+            {/* <div className="s"> <img className="logo" src="https://i.imgur.com/Q9bl1Ys.png"/> </div> */}
+            <div className="s">
+            {theme === 'light' ? (
+            <img className="logo" src="https://i.imgur.com/ukAZTRr.png" alt="Light Image" />
+            ) : (
+            <img className="logo" src="https://i.imgur.com/Q9bl1Ys.png" alt="Dark Image" />
+            )}</div>
+
+            {/* <a href="#servicios">
+                <span className="link-text">
+                    <div className="fa">
+                    <ProIcon/>
+                    </div>
+                Servicios</span>
+            </a> */}
+
+            <Link to="/Certificates">
+                <span className="link-text">
+                    <div className="fa">
+                    <ProIcon/>
+                    </div>
+                Certificados</span>
+            </Link>
+
         </div>
-        </div>
-        </nav> 
+    </div>
 </>
     )
 };

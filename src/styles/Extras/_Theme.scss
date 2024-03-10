@@ -15,7 +15,8 @@
         background: linear-gradient(0.50turn, var(--background-color), var(--background-color-second));
     }
 
-    .text-container {
+
+    .text-container, .contenedorselect {
         background-color: #b2b2b2a4;
         .text-container, .ttitle, .tdescription {
             color: rgb(0, 0, 0) !important;
@@ -33,20 +34,29 @@
     .obra, .buttoned, .obra2{
         a{color: var(--cyberpunkPlus);}
         &:hover{
+            color: white !important;
             box-shadow: 5px 5px 1px 2px var(--cyberpunk);
         }
         .obraicon{
+            border-radius: 50px;
             fill: var(--cyberpunk) !important;
         }
     }
     
-    .face1, .face, .boxitem {
+    .face1, .face, .boxitem, .edu3 {
         transition: all 0.3s ease-in-out;
         background-color: #e4e4e413;
-        border-bottom: var(--cyberpunk) solid 1px;
-        &:hover{
-            box-shadow: 5px 5px 0px 1px var(--cyberpunk);
-        }
+        //border-bottom: var(--cyberpunk) solid 1px;
+        border-width: 2px;
+        border-style: solid;
+        border-image: 
+        linear-gradient(
+            to bottom, 
+            var(--cyberpunk), 
+            #c7928825
+        ) 1 100%;
+        border-bottom: var(--cyan) solid 1px;
+        box-shadow: 5px 5px 5px 2px #c7928841;
     }
 
     .face.face1 .content i, h3 {
@@ -72,13 +82,14 @@
             color: var(--cyberpunkPlus) !important;
         }
     }
-    .buttoned, .btn, .obra, .btnshow, .obra2 {
+    .buttoned, .btn, .obra, .btnshow, .obra2, .obraicon{
         background-color: #ffffff21 !important;
         border-color: var(--cyberpunk) !important;
         color: var(--cyberpunk);
         &:hover{
             //background-color: #0000003f;
-            color: var(--cyberpunkPlus) !important;
+            color: white !important;
+            fill: white !important;
         }
     }
     .button {
@@ -171,8 +182,23 @@
 //     }
 
 
+
+    .boxtech{
+        color: var(--cyan) !important;
+        background-color: rgba(92, 92, 92, 0.368627451) !important;
+        //box-shadow: inset rgb(221, 0, 0) 1px 30px !important;
+    }
+
     .face1 {
-        border-bottom: var(--cyan) solid 1px;
+        border-width: 2px;
+        border-style: solid;
+        border-image: 
+        linear-gradient(
+            to bottom, 
+            #2574a1, 
+            rgba(7, 175, 153, 0.404)
+        ) 1 100%;
+        //border-bottom: var(--cyan) solid 1px;
     }
 
 
@@ -221,13 +247,18 @@
         box-shadow: 10px 5px 2px 3px #000000;
     }
 
-    .boxitem {
+    .boxitem, .edu3 {
         transition: all 0.7s ease;
+        border-width: 1.5px;
+        border-style: solid;
+        border-image: 
+        linear-gradient(
+            to bottom, 
+            var(--cyberpunk), 
+            #00000028
+        ) 1 100%;
         border-bottom: var(--cyan) solid 1px;
-        //background-color: rgba(255, 255, 255, 0.003) !important;
-        &:hover{
-            box-shadow: 5px 5px 0px 1px var(--cyan);
-        }
+        box-shadow: 5px 5px 5px 2px #1a726641;
     }
     .section, .section-top  {
         color: var(--text-color);
@@ -256,7 +287,7 @@ p {
 }
 
 
-.nav2 {
+.containernav {
     background-color: var(--background-color) !important;
     color: var(--text-color) !important;
     transition: all 0.7s ease;

@@ -6,6 +6,7 @@ import Proyectos from "../pages/Proyectos"
 import Certificates from "../pages/Certificates"
 import NotFound from "../pages/NotFound"
 import Select from "../pages/Select"
+import Serphp from "../pages/Serphp"
 
 export const router = createBrowserRouter([
     { 
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
         {
             path: "about",
             element: <About />
+        },
+        {
+            path: "company",
+            element: <Serphp />
         },
         {
             path: "Proyectos",

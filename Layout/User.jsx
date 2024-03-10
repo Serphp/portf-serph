@@ -8,6 +8,7 @@ import {
 } from "../components"
 import '../node_modules/bootswatch/dist/lux/bootstrap.min.css'
 import '../src/styles/Global.scss'
+import '../src/styles/slider.scss'
 import SunIcon from "../src/assets/sunIcon";
 import MonnIcon from "../src/assets/MoonIcon";
 import Back from "../src/assets/back";
@@ -24,10 +25,10 @@ const User = () => {
         Regresar(-1); // Esta función navegará a la página anterior en el historial
     };
 
-useEffect(() => {
-    setTimeout(() => {setIsLoading(false);}, 3000); // tiempo en milisegundos para mostrar el componente de "loading"
-    setTimeout(function() { document.getElementById("loading").style.transform = "translateX(100%)";}, 3000);
-}, []);
+// useEffect(() => {
+//     setTimeout(() => {setIsLoading(false);}, 3000); // tiempo en milisegundos para mostrar el componente de "loading"
+//     setTimeout(function() { document.getElementById("loading").style.transform = "translateX(100%)";}, 3000);
+// }, []);
 
 useEffect(() => {
     window.scrollTo(0, 0);
@@ -63,14 +64,13 @@ return (
     
     </div>
 
-    <div className="titlen">
-            {/* <span className="beta">Theme </span>   */}
+    {/* <div className="">
             <img className="logo" src="https://i.imgur.com/Q9bl1Ys.png"/>
-        </div>
+        </div> */}
 
     {/* {isLoading ? <Loading /> : <Outlet />} */}
     <Outlet/>
-    <Footer />
+    {/* <Footer /> */}
     </>
 
     )

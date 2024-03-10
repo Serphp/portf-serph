@@ -3,9 +3,11 @@ import Experiences from "../components/Experiences"
 import Cards from "../components/Cards"
 import { useState } from "react";
 import Education from "../components/education";
-import Jobs from "../components/services";
+//import Jobs from "../components/services";
 import Proyects from "../components/Proyects";
-import Formulario from "../components/form";
+import { Footer } from "../components";
+import { Projectsshort } from "../components/Projects";
+//import Formulario from "../components/form";
 
 
 export default function Home() {
@@ -38,7 +40,7 @@ export default function Home() {
     return (
         <>
         <main>
-        <header className="">
+        <header >
         <section className="home">
             <div className="name">
                 <h6 className="subtitle" style={{'textAlign':'left'}}>Bienvenido a mi portfolio.</h6>
@@ -52,8 +54,8 @@ export default function Home() {
 
 
                 <div className="mt-4">
-                    <a className="buttoned btn-link btn-floating " target="_blank" href="https://twitter.com/Serphp">
-                    <i className="fab fa-twitter"></i></a>
+                    {/* <a className="buttoned btn-link btn-floating " target="_blank" href="https://twitter.com/Serphp">
+                    <i className="fab fa-twitter"></i></a> */}
 
                     <a className="buttoned btn-link btn-floating ms-2" target="_blank" href="https://www.linkedin.com/in/bryaninit/">
                     <i className="fab fa-linkedin"></i></a>
@@ -115,31 +117,21 @@ export default function Home() {
 
             <Experiences />
 
-    {/* <div className="mainbg">
-            <h6 className="subtitle"><i className="fa fa-location-arrow"></i> Mas información </h6>
-        <h2> Contacto </h2>
-        <div className="mb-5"></div>
+            {/* <Jobs/> */}
 
-        <div className="educont">
-            <div className="edu3">
-                Correo: <br/>
-                <a href="mailto:Serphp@hotmail.com">Serphp@hotmail.com</a>
+            <div className="mainbg">
+            <h6 className="subtitle"><i className="fa fa-location-arrow"></i> Últimos proyectos </h6>
+            <h2> Last proyects </h2>
+            <div className="mb-5"></div>
+
+            {/* <Proyects/> */}
+
+            <Projectsshort/>
+
             </div>
-            <div className="edu3">
-                País <br/>
-                Ciudad de Panamá
-            </div>
-            <div className="edu3">
-                test3
-            </div>
-        </div>
-    </div> */}
 
-    {/* <Jobs/> */}
-
-    <Proyects/>
-
-    {/* <Formulario/> */}
+            {/* <Formulario/> */}
+            <Footer/>
             </main>
         </>)
 }
