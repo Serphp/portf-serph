@@ -2,7 +2,7 @@
   "name": "serph-portf",
   "homepage": ".",
   "private": true,
-  "version": "2024.5",
+  "version": "2024.6",
   "type": "module",
   "scripts": {
     "dev": "vite",

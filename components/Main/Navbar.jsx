@@ -11,15 +11,15 @@ export default function Navbar() {
 <>
     <div className="nav2">
             <div className="containernav">
-            <Link to="/">
+            {/* <Link to="/">
                 <span className="link-text">
                     <div className="fa">
                     <HomeIcon/>  </div>
                 Quienes somos
                 </span>
-            </Link>
+            </Link> */}
 
-            <Link to="/About">
+            <Link to="/Proyectos">
                 <span className="link-text">
                 <div className="fa">
                     <CerIcon/>
@@ -36,13 +36,13 @@ export default function Navbar() {
             <img className="logo" src="https://i.imgur.com/Q9bl1Ys.png" alt="Dark Image" />
             )}</div>
 
-            <a href="#servicios">
+            {/* <a href="#servicios">
                 <span className="link-text">
                     <div className="fa">
                     <ProIcon/>
                     </div>
                 Servicios</span>
-            </a>
+            </a> */}
 
             <Link to="/Certificates">
                 <span className="link-text">

@@ -107,9 +107,9 @@ export default function Select({ intervalTime = 5000 }) {
                 {
                     showcompany && (
                         <>
-                        <Link to="/company"><div className="obra2"> 
+                        {/* <Link to="/company"><div className="obra2"> 
                         <IconCompany tamaño={tamaño}/>
-                        Ingresar a la web </div></Link>
+                        Ingresar a la web </div></Link> */}
         
                         <Link className="obra2" to="mailto:serphp@hotmail.com">
                         <IconCO tamaño={tamaño} /> Ponerse en contacto
