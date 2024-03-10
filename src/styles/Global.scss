@@ -1285,15 +1285,29 @@ code {
 }
 }
 
-
-
 .educont{
   display: flex;
+  //flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  text-align: left;
-  gap: 50px;
+  gap: 30px;
+  b {
+    color: rgba(255, 255, 255, 0.637);
+    font-weight: bold;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.educont2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
   b {
     color: rgba(255, 255, 255, 0.637);
     font-weight: bold;
@@ -1320,7 +1334,8 @@ code {
   align-items: center;
   text-align: center;
   //border: red solid 2px;
-  background: linear-gradient(var(--cyberpunk), var(--background-color));
+  // border: solid;
+  // border-color: linear-gradient(var(--cyberpunk), var(--background-color));
   @media screen and (max-width: 600px) {
     width: 100%;
   }
@@ -1553,6 +1568,7 @@ code {
     }
 }
 
+
 .name {
   width: 50%;
   font-weight: 600;
@@ -1767,4 +1783,136 @@ select{
   background-color: #0000003f;
   color: white;
   padding: 20px;
+}
+
+//form
+.form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  //margin: 20px 10px 10px 10px;
+  border: var(--cyan) solid 1px;
+  //box-shadow: -25px 10px 1px -2px var(--cyberpunk);
+  
+  border-image: 
+  linear-gradient(
+      to bottom, 
+      var(--cyberpunk), 
+      #0000009a,
+      var(--cyan)
+  ) 10 100%;
+  
+  //padding-left: 20px;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      margin: 0;
+    }
+}
+
+.menus, .menus2{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 600px) {
+    width: 100% !important;
+  }
+}
+
+.submit{
+  //border: red solid 2px;
+  transition: all 0.5s ease;
+  &:hover{
+    background-color: #cad9dd13;
+}}
+
+label{
+  margin: 5px;
+  font-size: 14px;
+  //display: flex;
+  text-align: center;
+}
+
+input{
+  margin: 10px;
+  padding: 20px;
+  border: solid rgba(255, 255, 255, 0.212) 1px;
+  color: var(--cyberpunk);
+  border-radius: 10px;
+  background: transparent;
+
+  &:focus{
+    outline: none;
+    border: solid rgba(255, 255, 255, 0.062) 1px;
+    //color: white;
+  }
+}
+
+textarea{
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  color: var(--cyberpunk);
+  &:focus{
+    outline: none;
+    border: solid rgba(255, 255, 255, 0.062) 1px;
+    //color: white;
+  }
+}
+
+// Estilos básicos
+$color-azul-principal: #14467a; // Azul puro
+
+.cuadro-persona5 {
+    width: 400px;
+    height: 200px;
+    background-color: $color-azul-principal;
+    border-radius: 10px;
+    transition: all 0.3s ease; // Transición suave para los efectos
+
+    // Estilo para el texto dentro del cuadro
+    color: white;
+    text-align: center;
+    line-height: 200px; // Centrar verticalmente el texto
+    //font-family: "Arial", sans-serif;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    a{color: white;
+      z-index: 1;}
+
+
+    // Pseudo-elemento para simular el efecto de corte
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 200%;
+        height: 100%;
+        z-index: -1;
+        //background-color: rgba(255, 255, 255, 0.329); // Color blanco transparente
+        //background-color: #e4e4e413;
+        border-width: 100px;
+        border-style: solid;
+        border-image: 
+        linear-gradient(
+            to bottom, 
+            var(--cyberpunk), 
+            #c7928825
+        ) 100 100%;
+        transition: all 0.3s ease;
+        transform: translateX(-50%) skewX(45deg);
+    }
+
+    // Efecto de hover
+    &:hover {
+        background-color: lighten($color-azul-principal, 5%);
+        transform: scale(1.05); // Aumenta ligeramente el tamaño
+
+        &::before {
+            width: 0; // La pseudo-espada se reduce a cero
+        }
+    }
 }

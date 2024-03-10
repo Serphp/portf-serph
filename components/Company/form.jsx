@@ -1,33 +1,38 @@
-
 export default function Formulario() {
-    return (
+  return (
     <>
-        <div className="mainbgs">
-        <h6 className="subtitle"><i className="fa fa-box-open"></i> Contactame </h6>
+      <div className="mainbgs">
+        <h6 className="subtitle">
+          <i className="fa fa-box-open"></i> Contactame{" "}
+        </h6>
         <h2> Contact </h2>
         <div className="mb-5"></div>
 
-        <form >
-            <label>Name</label>
-            <input type="text" name="user_name" />
+        <form className="form">
+          <section className="home">
+            <div className="menus">
+              <h6 className="subtitle" style={{ textAlign: "left" }}>
+                Llenar el formulario.
+              </h6>
 
-            <br/>
+              <input type="text" name="user_name" placeholder="Nombre" />
 
-            <label>Email</label>
-            <input type="email" name="user_email" />
+              <input type="email" name="user_email" placeholder="Email" />
 
-            <br/>
+              <div className="mt-4"></div>
+            </div>
+            <div className="menus2">
 
-            <label>Message</label>
-            <textarea name="message" />
+                <textarea
+                  name="message"
+                  placeholder="Descripción del mensaje..."
+                />
+                <input type="submit" className="submit" value="Enviar correo" />
 
-            <br/>
-
-            <input type="submit" value="Send" />
+            </div>
+          </section>
         </form>
-
-
-    </div>
+      </div>
     </>
-    );
-    }
+  );
+}
