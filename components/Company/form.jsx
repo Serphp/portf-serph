@@ -8,30 +8,24 @@ export default function Formulario() {
         <h2> Contact </h2>
         <div className="mb-5"></div>
 
-        <form className="form">
-          <section className="home">
-            <div className="menus">
-              <h6 className="subtitle" style={{ textAlign: "left" }}>
-                Llenar el formulario.
-              </h6>
+        <section className="home2">
+          <div class="redes-sociales">
+            <a href="#" class="social-link linkedin">
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="#" class="social-link correo">
+              <i class="fas fa-envelope"></i>
+              <span>Correo</span>
+            </a>
+            <a href="#" class="social-link whatsapp">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+          <p> Para consultas o servicios de desarrollo.</p>
+        </section>
 
-              <input type="text" name="user_name" placeholder="Nombre" />
-
-              <input type="email" name="user_email" placeholder="Email" />
-
-              <div className="mt-4"></div>
-            </div>
-            <div className="menus2">
-
-                <textarea
-                  name="message"
-                  placeholder="Descripción del mensaje..."
-                />
-                <input type="submit" className="submit" value="Enviar correo" />
-
-            </div>
-          </section>
-        </form>
       </div>
     </>
   );

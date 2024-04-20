@@ -2,6 +2,7 @@
 [data-theme="true"] {
     --cyan: #0be6df46;
     --cyberpunk: #c79288;
+    --card: hsla(300, 1%, 40%, 0.267);
     --cyberpunkPlus: #c79288;
     --background-color: #d2d2d2e8;
     --background-color-second: #ffffff;
@@ -11,6 +12,10 @@
         color: #000000 !important;
     }
 
+    .service-icon{
+        color: #00000057;
+    }
+    
     .blank{
         background: linear-gradient(0.50turn, var(--background-color), var(--background-color-second));
     }
@@ -26,13 +31,14 @@
         color: var(--cyberpunk) !important;
         text-shadow: 0 10px 20px var(--cyberpunk);
     }
-    i {
-        &:before {
-            color: var(--cyberpunk);
-        }
-    }
+    // i {
+    //     &:before {
+    //         color: var(--cyberpunk);
+    //     }
+    // }
     .obra, .buttoned, .obra2{
         a{color: var(--cyberpunkPlus);}
+
         &:hover{
             color: white !important;
             box-shadow: 5px 5px 1px 2px var(--cyberpunk);
@@ -47,7 +53,7 @@
         transition: all 0.3s ease-in-out;
         background-color: #e4e4e413;
         //border-bottom: var(--cyberpunk) solid 1px;
-        border-width: 2px;
+        border-width: 1px;
         border-style: solid;
         border-image: 
         linear-gradient(
@@ -83,12 +89,13 @@
         }
     }
     .buttoned, .btn, .obra, .btnshow, .obra2, .obraicon{
-        background-color: #ffffff21 !important;
+
+        background-color: transparent !important;
         border-color: var(--cyberpunk) !important;
         color: var(--cyberpunk);
         &:hover{
             //background-color: #0000003f;
-            color: white !important;
+            color: var(--cyberpunk) !important;
             fill: white !important;
         }
     }
