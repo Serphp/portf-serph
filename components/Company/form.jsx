@@ -25,7 +25,6 @@ export default function Formulario() {
           </div>
           <p> Para consultas o servicios de desarrollo.</p>
         </section>
-
       </div>
     </>
   );

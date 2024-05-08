@@ -57,7 +57,7 @@ export default function Serphp() {
                   <div className="swiper-title">
                     {item.name}
                     <a
-                      href="https://edpanama.com/"
+                      href={item.url2}
                       target="_blank"
                       class="buttonp"
                     >
@@ -81,8 +81,6 @@ export default function Serphp() {
           <SwiperSlide>
             <Formulario />
           </SwiperSlide>
-
-
         </Swiper>
       </div>
     </>
