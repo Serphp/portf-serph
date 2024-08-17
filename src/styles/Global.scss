@@ -1751,7 +1751,8 @@ code {
     box-shadow: var(--cyberpunk) 2px 2px 1px;
     padding: 20px;
     border-radius: 50px;
-    width: 333px;
+    opacity: 0.5;
+    width: 200px;
     object-fit: cover;
     object-position: center;
     animation: anim2 5s linear infinite alternate;
