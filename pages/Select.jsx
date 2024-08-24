@@ -44,6 +44,7 @@ export default function Select({ intervalTime = 5000 }) {
     <>
       <div className="blank">
         <section className="blank2">
+
           <div className="ninicio">
             {theme === "light" ? (
               <img
@@ -120,6 +121,7 @@ export default function Select({ intervalTime = 5000 }) {
                   {/* <Link to="/company"><div className="obra2"> 
                         <IconCompany tamaño={tamaño}/>
                         Ingresar a la web </div></Link> */}
+
 
                   <Link className="obra2" to="mailto:serphp@hotmail.com">
                     <IconCO tamaño={tamaño} /> Ponerse en contacto

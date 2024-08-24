@@ -1,39 +1,53 @@
 export default function Jobs() {
-    return (
+  return (
     <>
-    <div className="mainbgs">
-    <h6 className="subtitle"><i className="fa fa-box-open"></i> Servicios </h6>
-    <h2> Services </h2>
-    <div className="mb-4"></div>
+      <div className="mainbgs">
+        <h6 className="subtitle">
+          <i className="fa fa-box-open"></i> Servicios{" "}
+        </h6>
+        <h2> Services </h2>
+        <div className="mb-4"></div>
 
-    <section className="servcont">
-
-    <article className="free">
-            
-            <div className="text-container">
-
-                Desarrollo web adawdaw dwad wadaw dadw dad a wda dawd awd awd
-
+        <article class="service-article">
+          <div class="service-container">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h3>Consultoría Personalizada</h3>
+              <p>
+                Recibe asesoramiento especializado en desarrollo de software,
+                adaptado a tus necesidades específicas. Orientación estratégica
+                en tecnología para tomar decisiones informadas.
+              </p>
             </div>
 
-            <div className="text-container">
-                
-                Soluciones 
-                
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h3>Servicios Mensuales de Mantenimiento</h3>
+              <p>
+                Garantiza el funcionamiento óptimo de tus sistemas con nuestro
+                servicio de mantenimiento mensual. Actualizaciones constantes y
+                soporte personalizado.
+              </p>
             </div>
-            
-            <div className="text-container">
-            <i className="fa fa-arrow-right"></i>
-            
-                Implementaciones 
 
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h3>Desarrollo de Proyectos a Medida</h3>
+              <p>
+                Lleva tus ideas desde la concepción hasta la implementación con
+                nuestro equipo altamente capacitado. Soluciones tecnológicas
+                personalizadas para tus objetivos.
+              </p>
             </div>
-
+          </div>
         </article>
-
-    </section>
-
-    </div>
+      </div>
     </>
-    );
-    }
+  );
+}

@@ -1537,6 +1537,30 @@ code {
     align-items: center;
     margin-top: 40px;
     border-radius: 20px;
+    p{
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    @media screen and (max-width: 680px) {
+      flex-direction: column;
+      width: 100%;
+      height: 100%;      
+      gap: 30px;
+    }
+  }
+
+  
+  .home2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 20px;
+    p{
+      margin-top: 20px;
+      font-size: 10px;
+    }
     @media screen and (max-width: 680px) {
       flex-direction: column;
       width: 100%;
@@ -1748,8 +1772,9 @@ code {
   
   .nlogo {
     //border: var(--cyberpunk) solid 1px;
-    box-shadow: var(--cyberpunk) 2px 2px 1px;
+    box-shadow: var(--cyberpunk) 1px 1px 1px;
     padding: 20px;
+    opacity: 0.3;
     border-radius: 50px;
     opacity: 0.5;
     width: 200px;
@@ -1863,27 +1888,41 @@ textarea{
 // Estilos básicos
 $color-azul-principal: #14467a; // Azul puro
 
-.cuadro-persona5 {
-    width: 400px;
-    height: 200px;
-    background-color: $color-azul-principal;
-    border-radius: 10px;
-    transition: all 0.3s ease; // Transición suave para los efectos
+#mail{
+  background-color: $color-azul-principal;
+  transition: background-image 10s ease;
+  //opacity: 0.5;
+  box-shadow: none;
+  background: none;
+  &:hover {
+    background-image: url('https://www.visitcentroamerica.com/wp-content/uploads/2017/09/ver-centroamerica-panama-ciudad-01.jpg');
+  }
+}
 
-    // Estilo para el texto dentro del cuadro
+
+.cuadro-persona5 {
+    width: 350px;
+    height: 200px;
+    //background-color: $color-azul-principal;
+    border-radius: 20px;
     color: white;
+    text-shadow: #000 1px 1px 10px ;
     text-align: center;
     line-height: 200px; // Centrar verticalmente el texto
     //font-family: "Arial", sans-serif;
-    font-size: 30px;
+
+    //box-shadow: 0px 0px 1px var(--cyberpunk);
+    box-shadow: 0px 10px 15px #0000004d;
+    font-size: 26px;
     font-family: 'Rubik', sans-serif !important;
     font-weight: bold;
     position: relative;
     overflow: hidden;
+    
     a{color: white;
+      text-shadow: #000 1px 1px 10px ;
       z-index: 1;}
-
-
+      transition: all 0.4s ease; // Transición suave para los efectos
     // Pseudo-elemento para simular el efecto de corte
     &::before {
         content: '';
@@ -1893,6 +1932,7 @@ $color-azul-principal: #14467a; // Azul puro
         width: 200%;
         height: 100%;
         z-index: -1;
+        
         //background-color: rgba(255, 255, 255, 0.329); // Color blanco transparente
         //background-color: #e4e4e413;
         border-width: 100px;
@@ -1904,16 +1944,174 @@ $color-azul-principal: #14467a; // Azul puro
             #c7928825
         ) 100 100%;
         transition: all 0.3s ease;
-        transform: translateX(-50%) skewX(45deg);
+        transform: translateX(-60%) skewX(45deg);
     }
 
     // Efecto de hover
     &:hover {
-        background-color: lighten($color-azul-principal, 5%);
+        //background: linear-gradient(45deg, #00ffcc, #00bfff);
+        //background-color: lighten(#6969695e, 5%);
+        box-shadow: 0px 0px 10px var(--cyberpunk);
         transform: scale(1.05); // Aumenta ligeramente el tamaño
 
         &::before {
             width: 0; // La pseudo-espada se reduce a cero
         }
     }
+}
+
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  //border: red solid 1px;
+  margin-top: 50px;
+}
+
+.social-link {
+  //border: red solid 1px;
+  
+  width: 200px;
+  text-decoration: none;
+  font-size: 50px;
+  //margin: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-link i {
+  //margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-link span {
+  //border: red solid 1px;
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  bottom: -100px;
+  width: 100%;
+  text-align: center;
+  transition: bottom 0.3s ease;
+}
+
+.linkedin {
+  color: #0077b5 !important;
+}
+
+.correo {
+  color: rgb(192, 192, 192) !important;
+}
+
+.whatsapp {
+  color: #25D366 !important;
+}
+
+.social-link:hover i {
+  transform: translateY(-10px);
+}
+
+.social-link:hover span {
+  bottom: 0px;
+}
+
+//Services
+
+.service-article {
+  //padding: 30px 0;
+  //ackground-color: #0e0e0e;
+  display: flex;
+  justify-content: center;
+
+  .service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .service-card {
+      width: 300px;
+      //background-color: var(--cyberpunk);
+      
+      background: linear-gradient(20deg, #e7d0d0, var(--card));
+      border-radius: 20px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0px 20px 40px #0000004d;
+
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease; // Transición suave para los efectos
+      &:hover{
+        transform: translateX(-10%) skewX(10deg);
+  
+      }
+      @media screen and (max-width: '490px') {
+
+        //max-width: 390px;
+        height: 200px;
+        box-shadow: 0px 10px 15px #0000004d;
+
+        //border: red solid 1px;
+        p{
+          font-size: 12px !important;
+        }
+      }
+
+
+      .service-icon {
+        font-size: 50px;
+        width: 100px;
+        //color: #00ffcc;
+        //border: red solid 2px;
+        //margin-bottom: 20px;
+        position: absolute;
+        top: -10px;
+        left: 80%;
+        transform: translateX(-30%);
+        //background-color: #1f1f1f;
+        border-radius: 50%;
+        padding: 10px;
+
+      }
+
+      h3 {
+        font-size: 20px;
+        color: #fff !important;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #00ffcc, #00bfff);
+        opacity: 0.5;
+        pointer-events: none;
+        z-index: -1;
+        transition: opacity 0.3s ease;
+      }
+
+      &:hover::before {
+        opacity: 0.8;
+      }
+    }
+  }
 }

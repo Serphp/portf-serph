@@ -1,93 +1,88 @@
-import { useSwiperSlide } from 'swiper/react';
+import { useSwiperSlide } from "swiper/react";
 
 import Jobs from "../components/Company/services";
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 import Formulario from "../components/Company/form";
 import { Navbar } from "../components";
-import { Navigation, Autoplay } from 'swiper/modules';
-import { NProyects } from '../serph/NProyects';
+import { Navigation, Autoplay } from "swiper/modules";
+import { NProyects } from "../serph/NProyects";
 //swiper
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
-import { Mousewheel, Pagination } from 'swiper/modules';
-import Contact from '../components/Company/contacto';
-import Slider from '../components/Company/slider';
+import { Mousewheel, Pagination } from "swiper/modules";
+import Contact from "../components/Company/contacto";
+import Slider from "../components/Company/slider";
 
 export default function Serphp() {
+  const [show, setShow] = useState(false);
+  //const swiperSlide = useSwiperSlide();
+  const handleshow = () => {
+    setShow(!show);
+  };
 
-    const [show, setShow] = useState(false);
-    //const swiperSlide = useSwiperSlide();
-    const handleshow = () => {
-        setShow(!show);
-    }
+  return (
+    <>
+      <Navbar />
+      {/* <div className="mt-5"></div> */}
 
-    return (
-        <>
-        <Navbar/>
-        {/* <div className="mt-5"></div> */}
-
-    <div className='contenedorswiper'>
-    <Swiper
-    direction={'vertical'}
-    slidesPerView={1}
-    spaceBetween={30}
-    mousewheel={true}
-    pagination={{
-        clickable: true,
-    }}
-    modules={[Mousewheel, Pagination]}
-    >
-    <SwiperSlide>
-        
-    <Swiper navigation={true} 
-        modules={[Autoplay, Navigation]} 
-        autoplay={{ 
-            delay: 5000,
-            pauseOnMouseEnter: true,
-        }}>
-        {
-            NProyects.slice(0,3).map((item) => (
+      <div className="contenedorswiper">
+        <Swiper
+          direction={"vertical"}
+          slidesPerView={1}
+          spaceBetween={30}
+          mousewheel={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Mousewheel, Pagination]}
+        >
+          <SwiperSlide>
+            <Swiper
+              navigation={true}
+              modules={[Autoplay, Navigation]}
+              autoplay={{
+                delay: 5000,
+                pauseOnMouseEnter: true,
+              }}
+            >
+              {NProyects.slice(0, 3).map((item) => (
                 <SwiperSlide data-swiper-autoplay="2000">
-                    <img src={item.image} alt={item.name} title={item.name}/>
-                    
-                    <div className='swiper-title'>
+                  <img src={item.image} alt={item.name} title={item.name} />
+
+                  <div className="swiper-title">
                     {item.name}
-                    <a href="https://edpanama.com/" target="_blank" class="buttonp">Ver Proyecto</a>
-                    </div>
-                    
+                    <a
+                      href={item.url2}
+                      target="_blank"
+                      class="buttonp"
+                    >
+                      Ver Proyecto
+                    </a>
+                  </div>
                 </SwiperSlide>
-            ))
-        }
-    </Swiper>
+              ))}
+            </Swiper>
+          </SwiperSlide>
 
-    </SwiperSlide>
-
-    {/* <SwiperSlide>
+          {/* <SwiperSlide>
         <Slider/>
     </SwiperSlide> */}
-    <SwiperSlide>
-        
-    <Contact/>
-
-    </SwiperSlide>
-    <SwiperSlide>
-
-        <Formulario/>
-
-    </SwiperSlide>
-    <SwiperSlide id='servicios'>
-
-        <Jobs/>
-
-    </SwiperSlide>
-
-    </Swiper>
-    </div>
+          <SwiperSlide>
+            <Contact />
+          </SwiperSlide>
+          <SwiperSlide id="servicios">
+            <Jobs />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Formulario />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </>
-    )
+  );
 }
