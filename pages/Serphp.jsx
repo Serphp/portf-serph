@@ -1,13 +1,12 @@
-import { useSwiperSlide } from "swiper/react";
 
 import Jobs from "../components/Company/services";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import Formulario from "../components/Company/form";
 import { Navbar } from "../components";
 import { Navigation, Autoplay } from "swiper/modules";
-import { NProyects } from "../serph/NProyects";
+
 //swiper
 import "swiper/css";
 import "swiper/css/navigation";
@@ -16,14 +15,45 @@ import "swiper/css/scrollbar";
 
 import { Mousewheel, Pagination } from "swiper/modules";
 import Contact from "../components/Company/contacto";
-import Slider from "../components/Company/slider";
+
+import { hygraph } from "../components/Projects";
+import { queryPage } from "../Utils/schemas";
 
 export default function Serphp() {
   const [show, setShow] = useState(false);
-  //const swiperSlide = useSwiperSlide();
+  const [proyectos, setprojects] = useState([]);
+  //const [endCursor, setEndCursor] = useState(null);
+  //const [hasNextPage, setHasNextPage] = useState(true);
+
   const handleshow = () => {
     setShow(!show);
   };
+
+    //Second method
+    useEffect(() => {
+      fetchProjects();
+    }, []);
+
+    const fetchProjects = async () => {
+      try {
+        const { projectsConnection } = await hygraph.request(queryPage, {});
+  
+        // Verifica si projectsConnection existe y tiene la estructura esperada
+        if (projectsConnection && projectsConnection.edges) {
+          setprojects([...projectsConnection.edges.map((edge) => edge.node)]);
+        } else {
+          console.error("Respuesta no esperada.");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    };
+    
+
+  const Orden = proyectos.sort((a, b) => {
+    // Aquí se supone que tienes una propiedad createdAt en tus objetos de proyecto
+    return new Date(b.createdAt) - new Date(a.createdAt);
+  });
 
   return (
     <>
@@ -50,9 +80,13 @@ export default function Serphp() {
                 pauseOnMouseEnter: true,
               }}
             >
-              {NProyects.slice(0, 3).map((item) => (
+              {Orden.slice(0, 3).map((item) => (
                 <SwiperSlide data-swiper-autoplay="2000">
-                  <img src={item.image} alt={item.name} title={item.name} />
+              <img
+                src={item.image.url}
+                alt={item.name}
+                title={item.name}
+              />
 
                   <div className="swiper-title">
                     {item.name}
